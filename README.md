@@ -77,7 +77,7 @@ In order to use this file, you will first need to clone this repository to your 
     - Once succesfully installed, you should see a command displayed telling you how to activate your new environment. 
     
 5. Confirm your environment was installed.
-    - Type `conda list` to display the list of your locally installed environments. 
+    - Type `conda env list` to display the list of your locally installed environments. 
         - You should see 2 environments:
             - `base`
             - `dojo-env`
