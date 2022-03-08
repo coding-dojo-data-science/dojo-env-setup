@@ -25,5 +25,5 @@ dependencies:
     - soupsieve==2.3.1
     - urllib3==1.26.8
     - tensorflow
-    - xgboost
+    
 prefix: /Users/codingdojo/opt/anaconda3/envs/dojo-env
