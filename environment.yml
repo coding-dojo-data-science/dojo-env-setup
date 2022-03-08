@@ -281,7 +281,6 @@ dependencies:
     - pystan==2.19.1.1
     - pytest==3.6.4
     - python-chess==0.23.11
-    - python-graphviz==0.10.1
     - python-louvain==0.15
     - python-slugify==5.0.2
     - python-utils==2.5.6
