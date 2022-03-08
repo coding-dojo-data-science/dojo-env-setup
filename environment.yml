@@ -10,7 +10,7 @@ dependencies:
   - jupyter_contrib_nbextensions
   - statsmodels
   - pip:
-    - beautifulsoup4==4.10.0s
+    - beautifulsoup4==4.10.0
     - bs4==0.0.1
     - charset-normalizer==2.0.12
     - cycler==0.11.0
@@ -24,4 +24,6 @@ dependencies:
     - seaborn==0.11.2
     - soupsieve==2.3.1
     - urllib3==1.26.8
+    - tensorflow
+    - xgboost
 prefix: /Users/codingdojo/opt/anaconda3/envs/dojo-env
