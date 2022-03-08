@@ -98,7 +98,6 @@ dependencies:
     - colorlover==0.3.0
     - convertdate==2.3.2
     - cvxopt==1.2.7
-    - cvxpy==1.0.31
     - cycler==0.11.0
     - cymem==2.0.6
     - cython==0.29.24
