@@ -10,8 +10,8 @@ dependencies:
   - jupyter_contrib_nbextensions
   - statsmodels
   - pip:
-    - beautifulsoup4==4.10.0
-    - bs4==0.0.1
+    - beautifulsoup4
+    - bs4
     - charset-normalizer==2.0.12
     - cycler==0.11.0
     - fonttools==4.29.1
