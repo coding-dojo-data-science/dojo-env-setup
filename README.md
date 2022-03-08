@@ -50,7 +50,7 @@ In order to use this file, you will first need to clone this repository to your 
 
 
 1. Make sure you are logged into the same GitHub account on the github.com website and your local GitHub Desktop application.
-2. Navigate to this repository's web page [repo link]()
+2. Navigate to this repository's web page [repo link](https://github.com/coding-dojo-data-science/dojo-env-setup)
 3. Click on the green Code button and then click Open in GitHub desktop.
     - GitHub desktop should open automatically and ask you what folder you would like to store your repository in.
     - Note: GitHub Desktop will create a NEW folder INSIDE of the folder you select. 
