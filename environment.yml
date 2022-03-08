@@ -116,7 +116,6 @@ dependencies:
     - dm-tree==0.1.6
     - docutils==0.17.1
     - ecos==2.0.7.post1
-    - en-core-web-sm==2.2.5
     - ephem==4.1.2
     - et-xmlfile==1.1.0
     - fastprogress==1.0.0
@@ -129,7 +128,6 @@ dependencies:
     - folium==0.8.3
     - future==0.18.2
     - gast==0.4.0
-    - gensim==3.6.0
     - geographiclib==1.52
     - geopy==1.17.0
     - gitdb==4.0.9
@@ -223,7 +221,6 @@ dependencies:
     - nbclient==0.5.9
     - netcdf4==1.5.8
     - networkx==2.6.3
-    - nltk==3.2.5
     - notebook==6.4.6
     - numba==0.51.2
     - numpy==1.21.5
@@ -333,7 +330,6 @@ dependencies:
     - snowballstemmer==2.2.0
     - sortedcontainers==2.4.0
     - soundfile==0.10.3.post1
-    - spacy==2.2.4
     - sphinx==1.8.6
     - sphinxcontrib-serializinghtml==1.1.5
     - sphinxcontrib-websupport==1.2.4
