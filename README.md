@@ -22,8 +22,8 @@
     - [ ] Download the installer and log into the same github account you have been using for your projects. 
     - [ ] After installing, open GitHub desktop:
         1. Open the Preferences menu
-            - On Mac: Select "GitHub Desktop" on the menu bar and then select Preferences.
-            - **On Windows: <`CHECK WINDOWS APP`> **
+            - On Mac: Select `"GitHub Desktop"` on the menu bar and then select `Preferences`.
+            - **On Windows: Click on `File` in the menu bar and then select `Options` **
         2. Select the Integrations tab.
         3. Make sure the Shell dropdown menu says Terminal (on Mac) or GitBash (on Windows).
             - If not, select it from the dropdown menu.
