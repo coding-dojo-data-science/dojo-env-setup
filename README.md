@@ -30,10 +30,39 @@
         4. Click Save.
 
 
-2. **Anaconda - individual edition.** [Link](https://www.anaconda.com/products/individual)
+3. **Anaconda - individual edition.** [Link](https://www.anaconda.com/products/individual)
     - Anaconda is a data-science-focused python distributable that comes with a convenient GUI program for working with our python environments.
     - Download and run the installer from the link above.
     - Use the default options
+    
+    
+4. [Windows Users Only] **Ensuring GitBash Can Find Anaconda.**
+    - Windows users may need to take an additional step to get anaconda and gitbash working together.
+    - **Inside a GitBash window, type `conda` and hit enter.**
+        - **If you see a list of avialable conda commands, great!** You are all set to move on to the "Setting Up Your `dojo-env`" step.
+        - **If you see a message that says: "bash: conda: command not found", then follow the instructions below:**
+        
+        
+    - **Instructions for Adding Conda to GitBash:**
+        - Note:the instructions below are adapted from this [Blog Post](https://fmorenovr.medium.com/how-to-add-conda-to-git-bash-windows-21f5e5987f3d)
+        1. Once you have installed anaconda, use File Explorer to Open Your **User** folder. 
+            - This is the folder that contains your Desktop, Downloads, My Documents, and other user-specific files. 
+            - Example: `Users/your_name/`
+            
+        2. In File Explorer, open the "`anaconda3`" folder (note: not the hidden folder called `.anaconda` that starts with a `.`)
+            - Open the `etc` folder inside the `anaconda3` folder. 
+            - Open the `profile.d` folder inside the `etc` folder. 
+                - You should see a `conda.sh` file in this folder.
+            - Right click somewhere in the folder and select "Git Bash Here" to open a GitBash window in this current directory. 
+
+        3. From the GitBash window you opened from the `profile.d` folder:
+            - From your GitBash window, confirm that you are in the `profile.d` folder by typing `pwd` and hit enter. 
+            - If the file path displayed ends with `profile.d` then are in the right folder. 
+            - Enter the following command and hit etner.
+                - `echo ". '${PWD}'/conda.sh" >> ~/.bashrc`
+            
+        4. Open a new GitBash window and enter `conda` again. You should no longer get the "bash: conda: command not found" error message! 
+            -   You are all set to move on to "Setting Up Your `dojo-env` Environment"!
 
 
 
@@ -115,26 +144,6 @@ In order to use this file, you will first need to clone this repository to your 
 - [Official `nbextensions` Installation Instructions (also detailed below)](https://jupyter-contrib-nbextensions.readthedocs.io/en/latest/install.html)
 
 
-<!-- 
-#### Installation via Conda
-- **The best way to install is via `conda`** (however, windows users sometimes have issues with the conda installation not working properly).
-    0. Open your terminal and make sure dojo-env is activated.
-        - Mac users: `conda activate dojo-env`
-        - Windows users: `source activate dojo-env`
-        
-
-    1. Install the extensions via conda
-    ```bash
-      conda install -c conda-forge jupyter_contrib_nbextensions
-      ```
-
-    2. Activate the extension configurator
-    ```bash
-    jupyter nbextension enable jupyter_nbextensions_configurator
-      ```
- >- Now, boot up jupyter notebook and look for a new tab called (`nbextensions`) on the jupyter file-explorer view. If its there, great! Move on to the "Turning on extensions" section below.
-      
-       -->
        
 #### Installing Using Pip    
 - **Below is an abbreviated version of the official instructions for Installing jupyter-contrib-nbextensions ([Documentation](https://jupyter-contrib-nbextensions.readthedocs.io/en/latest/install.html)):**
@@ -163,8 +172,13 @@ In order to use this file, you will first need to clone this repository to your 
     - Uncheck "`disable configuration for nbextensions without explicit compatibility (they may break your notebook environment, but can be useful to show for nbextension development)`" at the top of the page next to the search box.
     
     
-    
-- **Clicking the name of an extension will load its options menu** below the table of extensions. 
+- **To enable the recommended extensions**:
+  - Click on the **checkbox** next to the extensions name  
+  
+- **To change the settings for an extension**:
+  - Click on the **name** of the extension to select it. Now, if you scroll down, you should see the list of options for the currently selected extension. 
+  
+- **Note: any extensions that you enable or settings that you change are *automatically* saved.**
 
 ### Recommended extensions & settings
 
@@ -183,9 +197,6 @@ In order to use this file, you will first need to clone this repository to your 
         -  Check 'Collapse/uncollapse notebook sections when the ToC2 nbextension is used to collapse/uncollapse sections in the table of contents. For the inverse behaviour, see ToC2's configuration' at towards the bottom of the options.
 
 
-<!-- - `Codefolding`: Lets you collapse function definitions and blocks of code. 
- -->
-
 - `Live Markdown Preview`: Shows a preview of what the markdown cell you are editing will look like once you render it with Shift+Enter
     - Recommended options:
         - Check `Show the input & output of markdown cells side-by-side while editing them.`
@@ -193,13 +204,6 @@ In order to use this file, you will first need to clone this repository to your 
 - `Ruler` (not Ruler in Editor)
 - `spellchecker`
 
-<!-- 
-- `Variable Inspector` (but warning/caveat): 
-    - Lets you see details about all of the variables in your notebook.
-    - HUGELY helpful for new coders.
-    - Recommended options:
-        - `Display window at startup` (for now while you are learning python)
- -->
 
 ## 4. Setting `dojo-env` as your default 
 
@@ -245,6 +249,21 @@ Make sure you have installed GitBash, per the instructions above.
 ___
 # APPENDIX
 
+## What to do if your environment breaks and you need to re-install it.
+- It is not uncommon to accidentally break our virtual environment by isntalling a new package or updating a pre-existing one. 
+- In the event your environment stops working and it needs to be re-installed: 
+	1. open your terminal/gitbash and deactivate your `dojo-env`:
+		- Type `conda activate base` or `conda deactivate` and press enter. 
+		- Your terminal should now say `(base)` with your promit instead of `(dojo-env)`.
+	2. Remove the broken `dojo-env` using the command:
+		- `conda remove --name dojo-env --all`
+		- enter `y` to approve the removal of the environment and hit enter. 
+	
+	3. Wait for the env to be removed.
+		- This will delete all of the files associated with JUST our `dojo-env`. So anconda will still be installed, we will just need to re-install our `dojo-env`.
+	4. Once its completed, use this repository's environment file to set up the `dojo-env` again. 
+		- Repeat the environment installation commands from the "Setting Up Your `dojo-env` Environment" section above. 
+        
 ## Showing Hidden Files
 
 - Windows Users: 
