@@ -11,6 +11,7 @@ dependencies:
   - pip:
     - beautifulsoup4
     - bs4
+    - boto3
     - charset-normalizer==2.0.12
     - cycler==0.11.0
     - fonttools==4.29.1
@@ -18,6 +19,9 @@ dependencies:
     - kiwisolver==1.3.2
     - matplotlib==3.2.2
     - missingno==0.5.1
+    - PyMySQL==1.0.2
+    - SQLAlchemy
+    - sqlalchemy-utils
     - pillow==9.0.1
     - requests==2.27.1
     - seaborn==0.11.2
