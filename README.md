@@ -30,10 +30,15 @@
         4. Click Save.
 
 
+
 3. **Anaconda - individual edition.** [Link](https://www.anaconda.com/products/individual)
     - Anaconda is a data-science-focused python distributable that comes with a convenient GUI program for working with our python environments.
     - Download and run the installer from the link above.
     - Use the default options
+    
+
+    
+    
     
     
 4. [Windows Users Only] **Ensuring GitBash Can Find Anaconda.**
@@ -41,7 +46,6 @@
     - **Inside a GitBash window, type `conda` and hit enter.**
         - **If you see a list of avialable conda commands, great!** You are all set to move on to the "Setting Up Your `dojo-env`" step.
         - **If you see a message that says: "bash: conda: command not found", then follow the instructions below:**
-        
         
     - **Instructions for Adding Conda to GitBash:**
         - Note:the instructions below are adapted from this [Blog Post](https://fmorenovr.medium.com/how-to-add-conda-to-git-bash-windows-21f5e5987f3d)
@@ -63,8 +67,6 @@
             
         4. Open a new GitBash window and enter `conda` again. You should no longer get the "bash: conda: command not found" error message! 
             -   You are all set to move on to "Setting Up Your `dojo-env` Environment"!
-
-
 
 ## 2. Setting Up Your `dojo-env` Environment
 
@@ -144,6 +146,26 @@ In order to use this file, you will first need to clone this repository to your 
 - [Official `nbextensions` Installation Instructions (also detailed below)](https://jupyter-contrib-nbextensions.readthedocs.io/en/latest/install.html)
 
 
+<!-- 
+#### Installation via Conda
+- **The best way to install is via `conda`** (however, windows users sometimes have issues with the conda installation not working properly).
+    0. Open your terminal and make sure dojo-env is activated.
+        - Mac users: `conda activate dojo-env`
+        - Windows users: `source activate dojo-env`
+        
+
+    1. Install the extensions via conda
+    ```bash
+      conda install -c conda-forge jupyter_contrib_nbextensions
+      ```
+
+    2. Activate the extension configurator
+    ```bash
+    jupyter nbextension enable jupyter_nbextensions_configurator
+      ```
+ >- Now, boot up jupyter notebook and look for a new tab called (`nbextensions`) on the jupyter file-explorer view. If its there, great! Move on to the "Turning on extensions" section below.
+      
+       -->
        
 #### Installing Using Pip    
 - **Below is an abbreviated version of the official instructions for Installing jupyter-contrib-nbextensions ([Documentation](https://jupyter-contrib-nbextensions.readthedocs.io/en/latest/install.html)):**
@@ -172,6 +194,7 @@ In order to use this file, you will first need to clone this repository to your 
     - Uncheck "`disable configuration for nbextensions without explicit compatibility (they may break your notebook environment, but can be useful to show for nbextension development)`" at the top of the page next to the search box.
     
     
+    
 - **To enable the recommended extensions**:
   - Click on the **checkbox** next to the extensions name  
   
@@ -197,6 +220,9 @@ In order to use this file, you will first need to clone this repository to your 
         -  Check 'Collapse/uncollapse notebook sections when the ToC2 nbextension is used to collapse/uncollapse sections in the table of contents. For the inverse behaviour, see ToC2's configuration' at towards the bottom of the options.
 
 
+<!-- - `Codefolding`: Lets you collapse function definitions and blocks of code. 
+ -->
+
 - `Live Markdown Preview`: Shows a preview of what the markdown cell you are editing will look like once you render it with Shift+Enter
     - Recommended options:
         - Check `Show the input & output of markdown cells side-by-side while editing them.`
@@ -204,66 +230,120 @@ In order to use this file, you will first need to clone this repository to your 
 - `Ruler` (not Ruler in Editor)
 - `spellchecker`
 
+<!-- 
+- `Variable Inspector` (but warning/caveat): 
+    - Lets you see details about all of the variables in your notebook.
+    - HUGELY helpful for new coders.
+    - Recommended options:
+        - `Display window at startup` (for now while you are learning python)
+ -->
 
-## 4. Setting `dojo-env` as your default 
+# 4. Setting `dojo-env` as your default + adding `jnb` shortcut
 
-### Mac
-On a Mac, we need to first see what shell you're running in your terminal. Run `echo $SHELL.`
+- This section will require you to enter several commands in your Terminal (on Mac) or GitBash (on Windows). 
+- **Note: when the instructions say to "run" a command**, it means to type that command (or copy and paste it) into your Terminal/Git Bash and then hit `Enter`
 
-- **If the response ends in `bash`:**
-    - run `echo "conda activate dojo-env" >> ~/.bash_profile` to add the configuration to your bash profile
-    - run `source ~/.bash_profile` to activate the changes you just made
+## Mac
+- On a Mac, we need to first see what shell you're running.
+     - In your terminal, type `echo $SHELL.` and hit enter.
+     
+#### If the response ends in `bash`
 
-
-- **If the response ends in `zsh`:**
-
-    - run `echo "conda activate dojo-env" >> ~/.zshrc` to add the configuration to your bash profile
-    - run `source ~/.zshrc` to activate the changes you just made
-
-### Windows
-Make sure you have installed GitBash, per the instructions above.
-
-- Run `touch ~/.bash_profile` to create a new file.
-
-
-- Add the environment activation command.
-    - Depending on if gitbash allowed you to run `conda activate dojo-env` or if you had to use `source activate dojo-env`:
-    - **If you were able to run `conda activate dojo-env`**:
-        - Run `echo "conda activate dojo-env" >> ~/.bash_profile` to add the configuration to your bash profile 
-    - **If you had to run `source activate dojo-env`**:
-        - Run `echo "source activate dojo-env" >> ~/.bash_profile` to add the configuration to your bash profile
+1. Add the environment activation command:
+    - Run `echo "conda activate dojo-env" >> ~/.bash_profile`
 
 
-- Run `source ~/.bash_profile` to activate the changes you just made
+2. Add the alias to start "jupyter notebook" using `jnb`
+    - Run `echo 'alias jnb="jupyter notebook"' >> ~/.bash_profile`
+    
+    
+3. Finally, activate the new settings:
+    - Run `source ~/.bash_profile`.
+
+
+#### If the response ends in `zsh`:
+
+1. Add the environment activation command:
+    - Run `echo "conda activate dojo-env" >> ~/.zshrc` 
+    
+    
+2. Add the alias to start "jupyter notebook" using `jnb`
+    - Run `echo 'alias jnb="jupyter notebook"' >> ~/.zshrc`
+    
+    
+3. Finally, activate the new settings:
+     - Run `source ~/.zshrc` 
+
+## Windows
+
+- Make sure you have installed GitBash, per the instructions above.
+- Determine which set of instructions below to follow:
+    - Take note of if you were able to run `conda activate dojo-env` to activate your `dojo-env` or if you had to use `source activate dojo-env`.
+
+
+####   If you were able to run `conda activate dojo-env`:
+
+
+0. Make sure the profile file for GitBash has been created. 
+    - Run `touch ~/.bash_profile` to create a new hidden file called ".bash_profile" in your user folder.
+    
+1. Add the environment activation command.
+    - Run `echo "conda activate dojo-env" >> ~/.bash_profile` 
+
+2. Add the alias to start "jupyter notebook" using `jnb`
+    - Run `echo 'alias jnb="jupyter notebook"' >> ~/.bash_profile`
+   
+
+3. Finally, activate the new settings:
+
+    - Run `source ~/.bash_profile` to activate the changes you just made
+    
+#### If you had to run `source activate dojo-env`:
+    
+0. Make sure the profile file for GitBash has been created. 
+    - Run `touch ~/.bash_profile` to create a new hidden file called ".bash_profile" in your user folder.
+    
+1. Add the environment activation command.
+    - Run `echo "source activate dojo-env" >> ~/.bash_profile` 
+
+2. Add the alias to start "jupyter notebook" using `jnb`
+    - Run `echo 'alias jnb="jupyter notebook"' >> ~/.bash_profile`
+   
+
+3. Finally, activate the new settings:
+
+    - Run `source ~/.bash_profile` to activate the changes you just made
+    
 
 ## Additional Recommend App Installations
 
 
 - While not explicitly *necessary*, it is strongly recommend you install a text editor for code. 
-    - [ ] [SublimeText](https://www.sublimetext.com/): Great lightweight text editor with some convenient features. 
+    - [ ] [SublimeText](https://www.sublimetext.com/): Great lightweight text editor with some convenient features. |
         - This program will make it easier to work with code-related files that would be difficult to work with if you use your OS's default text editor. 
         - Note: if you already have something like VS Code installed, that will be sufficient
     
 
 
-___
+
 # APPENDIX
 
 ## What to do if your environment breaks and you need to re-install it.
+
 - It is not uncommon to accidentally break our virtual environment by isntalling a new package or updating a pre-existing one. 
 - In the event your environment stops working and it needs to be re-installed: 
-	1. open your terminal/gitbash and deactivate your `dojo-env`:
-		- Type `conda activate base` or `conda deactivate` and press enter. 
-		- Your terminal should now say `(base)` with your promit instead of `(dojo-env)`.
-	2. Remove the broken `dojo-env` using the command:
-		- `conda remove --name dojo-env --all`
-		- enter `y` to approve the removal of the environment and hit enter. 
-	
-	3. Wait for the env to be removed.
-		- This will delete all of the files associated with JUST our `dojo-env`. So anconda will still be installed, we will just need to re-install our `dojo-env`.
-	4. Once its completed, use this repository's environment file to set up the `dojo-env` again. 
-		- Repeat the environment installation commands from the "Setting Up Your `dojo-env` Environment" section above. 
-        
+    1. open your terminal/gitbash and deactivate your `dojo-env`:
+        - Type `conda activate base` or `conda deactivate` and press enter. 
+        - Your terminal should now say `(base)` with your promit instead of `(dojo-env)`.
+    2. Remove the broken `dojo-env` using the command:
+        - `conda remove --name dojo-env --all`
+        - enter `y` to approve the removal of the environment and hit enter. 
+    
+    3. Wait for the env to be removed.
+        - This will delete all of the files associated with JUST our `dojo-env`. So anconda will still be installed, we will just need to re-install our `dojo-env`.
+    4. Once its completed, use this repository's environment file to set up the `dojo-env` again. 
+        - Repeat the environment installation commands from the "Setting Up Your `dojo-env` Environment" section above. 
+
 ## Showing Hidden Files
 
 - Windows Users: 
@@ -277,4 +357,3 @@ ___
     - Use this keyboard shortcut from inside finder:
     `Cmd+Shift+.`
     - Use it again to hide hidden files. 
-
