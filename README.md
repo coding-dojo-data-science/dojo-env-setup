@@ -199,9 +199,6 @@ In order to use this file, you will first need to clone this repository to your 
         -  Check 'Collapse/uncollapse notebook sections when the ToC2 nbextension is used to collapse/uncollapse sections in the table of contents. For the inverse behaviour, see ToC2's configuration' at towards the bottom of the options.
 
 
-<!-- - `Codefolding`: Lets you collapse function definitions and blocks of code. 
- -->
-
 - `Live Markdown Preview`: Shows a preview of what the markdown cell you are editing will look like once you render it with Shift+Enter
     - Recommended options:
         - Check `Show the input & output of markdown cells side-by-side while editing them.`
@@ -209,13 +206,7 @@ In order to use this file, you will first need to clone this repository to your 
 - `Ruler` (not Ruler in Editor)
 - `spellchecker`
 
-<!-- 
-- `Variable Inspector` (but warning/caveat): 
-    - Lets you see details about all of the variables in your notebook.
-    - HUGELY helpful for new coders.
-    - Recommended options:
-        - `Display window at startup` (for now while you are learning python)
- -->
+
 
 # 4. Setting `dojo-env` as your default + adding `jnb` shortcut
 
@@ -296,13 +287,6 @@ In order to use this file, you will first need to clone this repository to your 
 
 # 5. Install a code editor - Visual Studio Code
 
-<!-- - While not explicitly *necessary*, it is strongly recommend you install a text editor for code. 
-    - [ ] [SublimeText](https://www.sublimetext.com/): Great lightweight text editor with some convenient features. |
-        - This program will make it easier to work with code-related files that would be difficult to work with if you use your OS's default text editor. 
-        - Note: if you already have something like VS Code installed, that will be sufficient
-    
-
- -->
 
 - Finally, we will install a text editor that is designed for programmers, called Visual Studio Code.
     - We will use this editor to work with some special settings files (like your terminal's `.bash_profile`. 
@@ -321,7 +305,7 @@ In order to use this file, you will first need to clone this repository to your 
 - For Mac Users:
     - Click on the installer to unzip it. 
     - Once the Application is unzipped, drag the icon for Visual Studio Code.app to your applications folder on your sidebar in Finder. 
-![png](images/mac_vscode_install.png)
+![png](https://raw.githubusercontent.com/coding-dojo-data-science/dojo-env-setup/main/images/mac_vscode_install.png)
 
     
     
@@ -329,13 +313,13 @@ In order to use this file, you will first need to clone this repository to your 
     - Windows Users: check your Start Menu. 
     - Mac Users: check your Applications folder in Finder.
 
-![png](images/vs_code_get_started.png)
+![png](https://raw.githubusercontent.com/coding-dojo-data-science/dojo-env-setup/main/images/vs_code_get_started.png)
 
 ## Install Python Extensions
 - On the left sidebar, there are several icons for different menus.
 - Click on the Extensions sidebar icon (5th down, looks like 4 squares).
 
-![png](images/1_extension_sidebar.png)
+![png](https://raw.githubusercontent.com/coding-dojo-data-science/dojo-env-setup/main/images/1_extension_sidebar.png)
 
 - On the Extension sidebar, there will be several sections (INSTALLED/POPULAR/RECOMMENDED).
     - Right now you should have nothing under the INSTALLED menu.
@@ -344,14 +328,14 @@ In order to use this file, you will first need to clone this repository to your 
         - OR you can click on [this link to the extension ](https://marketplace.visualstudio.com/items?itemName=ms-python.python) on the extension marketplace website.
         
     - Click on the "Install" button for the Python extension.
-![png](images/2_extension_installation.png)
+![png](https://raw.githubusercontent.com/coding-dojo-data-science/dojo-env-setup/main/images/2_extension_installation.png)
 
 
 
 - Note: the Python extension will also install several required extensions. When installation is complete, you should see the following under the "INSTALLED" section:
     - Python, Pylance, Jupyter Notebook renderer,Jupyter, and Jupyter Keymap
 
-![png](images/3_installed_extensions.png)
+![png](https://raw.githubusercontent.com/coding-dojo-data-science/dojo-env-setup/main/images/3_installed_extensions.png)
 
 
 ## Setting VS Code to use your `dojo-env` as the default Python installation
@@ -359,12 +343,12 @@ In order to use this file, you will first need to clone this repository to your 
 - We must teach the Python extension where to find our `dojo-env`'s version of Python.
 
 - On the extension sidebar, click on the Gear icon for the Python extension and select "Extension Settings"
-![png](images/4_python_settings.png)
+![png](https://raw.githubusercontent.com/coding-dojo-data-science/dojo-env-setup/main/images/4_python_settings.png)
 
 - You should see a new "Settings" pane open in the main window. 
     - Take note of the "Default Interpreter Path".
         - It is currently set to just "python".
-![png](images/5_settings_default_interp.png)
+![png](https://raw.githubusercontent.com/coding-dojo-data-science/dojo-env-setup/main/images/5_settings_default_interp.png)
 
 - We need to change this setting to match the exact filepath for our `dojo-env`'s python.
 
@@ -372,12 +356,12 @@ In order to use this file, you will first need to clone this repository to your 
     - Make sure your dojo-env is activated
     - Run the command: `which python`
         - It will print out a filepath to your dojo-env.
-![png](images/6_which_python.png)
+![png](https://raw.githubusercontent.com/coding-dojo-data-science/dojo-env-setup/main/images/6_which_python.png)
     - Copy and paste that exact file path into the "Default Interpreter Path" field in the Python extension settings.
     
     
     
-![png](images/7_replace_default_interp.png)
+![png](https://raw.githubusercontent.com/coding-dojo-data-science/dojo-env-setup/main/images/7_replace_default_interp.png)
 
 ### Mac Users Only: Add the `code` command to your terminal
 
@@ -393,7 +377,7 @@ In order to use this file, you will first need to clone this repository to your 
 2. In the small pop-up window, type "install code" and you should see it auto-suggest the option for "Shell Command: Install 'code' command in PATH".
     - Click on this option. 
     
-![png](images/8_install_code_command.png)
+![png](https://raw.githubusercontent.com/coding-dojo-data-science/dojo-env-setup/main/images/8_install_code_command.png)
     
     
     
