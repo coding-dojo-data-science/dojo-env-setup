@@ -44,7 +44,7 @@
 4. [Windows Users Only] **Ensuring GitBash Can Find Anaconda.**
     - Windows users may need to take an additional step to get anaconda and gitbash working together.
     - **Inside a GitBash window, type `conda` and hit enter.**
-        - **If you see a list of avialable conda commands, great!** You are all set to move on to the "Setting Up Your `dojo-env`" step.
+        - **If you see a list of available conda commands, great!** You are all set to move on to the "Setting Up Your `dojo-env`" step.
         - **If you see a message that says: "bash: conda: command not found", then follow the instructions below:**
         
     - **Instructions for Adding Conda to GitBash:**
@@ -145,27 +145,6 @@ In order to use this file, you will first need to clone this repository to your 
 - [Documentation](https://jupyter-contrib-nbextensions.readthedocs.io/en/latest/install.html)
 - [Official `nbextensions` Installation Instructions (also detailed below)](https://jupyter-contrib-nbextensions.readthedocs.io/en/latest/install.html)
 
-
-<!-- 
-#### Installation via Conda
-- **The best way to install is via `conda`** (however, windows users sometimes have issues with the conda installation not working properly).
-    0. Open your terminal and make sure dojo-env is activated.
-        - Mac users: `conda activate dojo-env`
-        - Windows users: `source activate dojo-env`
-        
-
-    1. Install the extensions via conda
-    ```bash
-      conda install -c conda-forge jupyter_contrib_nbextensions
-      ```
-
-    2. Activate the extension configurator
-    ```bash
-    jupyter nbextension enable jupyter_nbextensions_configurator
-      ```
- >- Now, boot up jupyter notebook and look for a new tab called (`nbextensions`) on the jupyter file-explorer view. If its there, great! Move on to the "Turning on extensions" section below.
-      
-       -->
        
 #### Installing Using Pip    
 - **Below is an abbreviated version of the official instructions for Installing jupyter-contrib-nbextensions ([Documentation](https://jupyter-contrib-nbextensions.readthedocs.io/en/latest/install.html)):**
@@ -315,16 +294,145 @@ In order to use this file, you will first need to clone this repository to your 
     - Run `source ~/.bash_profile` to activate the changes you just made
     
 
-## Additional Recommend App Installations
+# 5. Install a code editor - Visual Studio Code
 
-
-- While not explicitly *necessary*, it is strongly recommend you install a text editor for code. 
+<!-- - While not explicitly *necessary*, it is strongly recommend you install a text editor for code. 
     - [ ] [SublimeText](https://www.sublimetext.com/): Great lightweight text editor with some convenient features. |
         - This program will make it easier to work with code-related files that would be difficult to work with if you use your OS's default text editor. 
         - Note: if you already have something like VS Code installed, that will be sufficient
     
 
+ -->
 
+- Finally, we will install a text editor that is designed for programmers, called Visual Studio Code.
+    - We will use this editor to work with some special settings files (like your terminal's `.bash_profile`. 
+    - You can also use VS Code to edit your projects' README files while previewing them in real time!
+
+## Install Visual Studio Code
+
+- Go to https://code.visualstudio.com/
+    - It should auto-recognize your OS and have a blue Download button with a version for your OS.
+    - Click Download to download the installer. 
+    
+- For Windows Users:
+    - Click on the installer to run it.
+    - Select the default options. 
+    
+- For Mac Users:
+    - Click on the installer to unzip it. 
+    - Once the Application is unzipped, drag the icon for Visual Studio Code.app to your applications folder on your sidebar in Finder. 
+![png](images/mac_vscode_install.png)
+
+    
+    
+- Once Visual Studio Code installation is completed, open it!
+    - Windows Users: check your Start Menu. 
+    - Mac Users: check your Applications folder in Finder.
+
+![png](images/vs_code_get_started.png)
+
+## Install Python Extensions
+- On the left sidebar, there are several icons for different menus.
+- Click on the Extensions sidebar icon (5th down, looks like 4 squares).
+
+![png](images/1_extension_sidebar.png)
+
+- On the Extension sidebar, there will be several sections (INSTALLED/POPULAR/RECOMMENDED).
+    - Right now you should have nothing under the INSTALLED menu.
+    - You should see "Python" listed under POPULAR. 
+        - If not, you can enter "Python" in the search box at the top of the sidebar
+        - OR you can click on [this link to the extension ](https://marketplace.visualstudio.com/items?itemName=ms-python.python) on the extension marketplace website.
+        
+    - Click on the "Install" button for the Python extension.
+![png](images/2_extension_installation.png)
+
+
+
+- Note: the Python extension will also install several required extensions. When installation is complete, you should see the following under the "INSTALLED" section:
+    - Python, Pylance, Jupyter Notebook renderer,Jupyter, and Jupyter Keymap
+
+![png](images/3_installed_extensions.png)
+
+
+## Setting VS Code to use your `dojo-env` as the default Python installation
+
+- We must teach the Python extension where to find our `dojo-env`'s version of Python.
+
+- On the extension sidebar, click on the Gear icon for the Python extension and select "Extension Settings"
+![png](images/4_python_settings.png)
+
+- You should see a new "Settings" pane open in the main window. 
+    - Take note of the "Default Interpreter Path".
+        - It is currently set to just "python".
+![png](images/5_settings_default_interp.png)
+
+- We need to change this setting to match the exact filepath for our `dojo-env`'s python.
+
+- In your terminal or GitBash:
+    - Make sure your dojo-env is activated
+    - Run the command: `which python`
+        - It will print out a filepath to your dojo-env.
+![png](images/6_which_python.png)
+    - Copy and paste that exact file path into the "Default Interpreter Path" field in the Python extension settings.
+    
+    
+    
+![png](images/7_replace_default_interp.png)
+
+### Mac Users Only: Add the `code` command to your terminal
+
+- We want to be able to type the word "code" in our terminal and have that open up VS Code. 
+    - Windows users have this command added automatically during installation. 
+    
+    - Mac Users must run 1 more command from VS Code. 
+    
+1. Open the Command Palette: 
+    - Either click on View in the menu bar and select "Command Palette"
+    - OR use the keyboard shortcut (`Cmd` + `Shift` +`p`)
+
+2. In the small pop-up window, type "install code" and you should see it auto-suggest the option for "Shell Command: Install 'code' command in PATH".
+    - Click on this option. 
+    
+![png](images/8_install_code_command.png)
+    
+    
+    
+
+
+### Test the `code` command
+
+- Open a new terminal or GitBash window.
+- Run the command `code` to verify that VS Code opens. 
+
+- Note: You can add a specific folder or filename to open, after the word code. 
+    - To open the current folder `code .`
+- If it opens, great!
+    - If not, make sure you've opened a new terminal window AFTER installing the code command.
+
+# FINAL NOTES
+
+## Packages NOT Installed in `dojo-env`
+
+### XGBoost
+- Due to Windows vs MacOS differences, we did not include xgboost in our environment.
+- For Windows Users and MacOS Users (that are NOT using a mac with a M1 Apple Chip):
+    - see the official Installation instructions for Python Xgboost here: https://xgboost.readthedocs.io/en/stable/install.html#python 
+
+- For MacOS users with a M1 Apple chip:
+    - see the section below ("M1 Mac Users")
+
+### M1 Mac Users
+
+- There are several packages that you may have previously used on Google Colab that are not currently supported on Apple's M1 processors. 
+
+    - These include:
+        - tensorflow
+        - xgboost
+
+    
+- While there are some third-party instructions for workarounds, they are rather involved and may cause issues with what we have already installed in your environment. 
+
+- **For now, continue to use Google Colab for projects using tensorflow and xgboost.**
 
 # APPENDIX
 
@@ -332,17 +440,17 @@ In order to use this file, you will first need to clone this repository to your 
 
 - It is not uncommon to accidentally break our virtual environment by isntalling a new package or updating a pre-existing one. 
 - In the event your environment stops working and it needs to be re-installed: 
-    1. open your terminal/gitbash and deactivate your `dojo-env`:
-        - Type `conda activate base` or `conda deactivate` and press enter. 
-        - Your terminal should now say `(base)` with your promit instead of `(dojo-env)`.
-    2. Remove the broken `dojo-env` using the command:
-        - `conda remove --name dojo-env --all`
-        - enter `y` to approve the removal of the environment and hit enter. 
-    
-    3. Wait for the env to be removed.
-        - This will delete all of the files associated with JUST our `dojo-env`. So anconda will still be installed, we will just need to re-install our `dojo-env`.
-    4. Once its completed, use this repository's environment file to set up the `dojo-env` again. 
-        - Repeat the environment installation commands from the "Setting Up Your `dojo-env` Environment" section above. 
+	1. open your terminal/gitbash and deactivate your `dojo-env`:
+		- Type `conda activate base` or `conda deactivate` and press enter. 
+		- Your terminal should now say `(base)` with your promit instead of `(dojo-env)`.
+	2. Remove the broken `dojo-env` using the command:
+		- `conda remove --name dojo-env --all`
+		- enter `y` to approve the removal of the environment and hit enter. 
+	
+	3. Wait for the env to be removed.
+		- This will delete all of the files associated with JUST our `dojo-env`. So anconda will still be installed, we will just need to re-install our `dojo-env`.
+	4. Once its completed, use this repository's environment file to set up the `dojo-env` again. 
+		- Repeat the environment installation commands from the "Setting Up Your `dojo-env` Environment" section above. 
 
 ## Showing Hidden Files
 
