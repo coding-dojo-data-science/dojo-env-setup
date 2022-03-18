@@ -174,6 +174,7 @@ In order to use this file, you will first need to clone this repository to your 
     
     
 2. Add the alias to start "jupyter notebook" using `jnb`
+    - **NOTE: it is VERY important that you do not add any spaces on either side of the `=`** sign. The command will not work correctly if you add extra spaces.
     - Run `echo 'alias jnb="jupyter notebook"' >> ~/.zshrc`
     
     
