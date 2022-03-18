@@ -13,20 +13,17 @@
    - [ ] **Windows users should install GitBash, instead of using the windows command prompt**
        - Otherwise, all of the commands for working with your terminal will not match the curriculum and other cloud-based platforms (like Amazon Web Services)
       - Download  the Git for Windows Installer: [Git for Windows download](https://gitforwindows.org/)
-      
-    - Use the default options, EXCEPT when you see the "Advanced Installation Options" window, check BOTH options, like in the screenshot below:
-    
-<img src="images/anaconda_check_path.png" width=400px>
+      - Use the default options.
        
        
 
         
 2. **GitHub Desktop** ([Link](https://desktop.github.com/))
-    - [ ] Download the installer and log into the same GitHub account you have been using for your projects. 
+    - [ ] Download the installer and log into the same github account you have been using for your projects. 
     - [ ] After installing, open GitHub desktop:
         1. Open the Preferences menu
             - On Mac: Select `"GitHub Desktop"` on the menu bar and then select `Preferences`.
-            - **On Windows: Click on `File` in the menu bar and then select `Options`**
+            - **On Windows: Click on `File` in the menu bar and then select `Options` **
         2. Select the Integrations tab.
         3. Make sure the Shell dropdown menu says Terminal (on Mac) or GitBash (on Windows).
             - If not, select it from the dropdown menu.
@@ -37,7 +34,9 @@
 3. **Anaconda - individual edition.** [Link](https://www.anaconda.com/products/individual)
     - Anaconda is a data-science-focused python distributable that comes with a convenient GUI program for working with our python environments.
     - Download and run the installer from the link above.
-    - Use the default options
+    - Use the default options, EXCEPT when you see the "Advanced Installation Options" window, check BOTH options, like in the screenshot below:
+    
+    <img src="images/anaconda_check_path.png">
     
 
     
@@ -51,7 +50,7 @@
         - **If you see a message that says: "bash: conda: command not found", then follow the instructions below:**
         
     - **Instructions for Adding Conda to GitBash:**
-        - Note: the instructions below are adapted from this [Blog Post](https://fmorenovr.medium.com/how-to-add-conda-to-git-bash-windows-21f5e5987f3d)
+        - Note:the instructions below are adapted from this [Blog Post](https://fmorenovr.medium.com/how-to-add-conda-to-git-bash-windows-21f5e5987f3d)
         1. Once you have installed anaconda, use File Explorer to Open Your **User** folder. 
             - This is the folder that contains your Desktop, Downloads, My Documents, and other user-specific files. 
             - Example: `Users/your_name/`
@@ -65,7 +64,7 @@
         3. From the GitBash window you opened from the `profile.d` folder:
             - From your GitBash window, confirm that you are in the `profile.d` folder by typing `pwd` and hit enter. 
             - If the file path displayed ends with `profile.d` then are in the right folder. 
-            - Enter the following command and hitting enter.
+            - Enter the following command and hit etner.
                 - `echo ". '${PWD}'/conda.sh" >> ~/.bashrc`
             
         4. Open a new GitBash window and enter `conda` again. You should no longer get the "bash: conda: command not found" error message! 
@@ -141,126 +140,13 @@ In order to use this file, you will first need to clone this repository to your 
         - Make sure your `dojo-env` is activated.
         - repeat step 6, adding you new environment to Jupyter Notebook
 
-# 3. Setting `dojo-env` as your default + adding `jnb` shortcut
-
-- This section will require you to enter several commands in your Terminal (on Mac) or GitBash (on Windows). 
-    - Make sure that your terminal is not running jupyter notebook (you can press "`Cntrl`+`C`" to force quit the server from your terminal).
-    - Alternatively, you can open a new terminal/GitBash. You can perform these steps from any folder.
-- **Note: when the instructions say to "run" a command**, it means to type that command (or copy and paste it) into your Terminal/Git Bash and then hit `Enter`
-
-## Mac
-- On a Mac, we need to first see what shell you're running.
-     - In your terminal, type `echo $SHELL.` and hit enter.
-     
-#### If the response ends in `bash`
-
-1. Add the environment activation command:
-    - Run `echo "conda activate dojo-env" >> ~/.bash_profile`
-
-
-2. Add the alias to start "jupyter notebook" using `jnb`
-    - **NOTE: it is VERY important that you do not add any spaces on either side of the `=`** sign. The command will not work correctly if you add extra spaces.
-    - Run `echo 'alias jnb="jupyter notebook"' >> ~/.bash_profile`
-    
-    
-3. Finally, activate the new settings:
-    - Run `source ~/.bash_profile`.
-
-
-#### If the response ends in `zsh`:
-
-1. Add the environment activation command:
-    - Run `echo "conda activate dojo-env" >> ~/.zshrc` 
-    
-    
-2. Add the alias to start "jupyter notebook" using `jnb`
-    - Run `echo 'alias jnb="jupyter notebook"' >> ~/.zshrc`
-    
-    
-3. Finally, activate the new settings:
-     - Run `source ~/.zshrc` 
-
-## Windows
-
-- Make sure you have installed GitBash, per the instructions above.
-- Determine which set of instructions below to follow:
-    - Take note of if you were able to run `conda activate dojo-env` to activate your `dojo-env` or if you had to use `source activate dojo-env`.
-
-
-####   If you were able to run `conda activate dojo-env`:
-
-
-0. Make sure the profile file for GitBash has been created. 
-    - Run `touch ~/.bash_profile` to create a new hidden file called ".bash_profile" in your user folder.
-    
-1. Add the environment activation command.
-    - Run `echo "conda activate dojo-env" >> ~/.bash_profile` 
-
-2. Add the alias to start "jupyter notebook" using `jnb`
-    - **NOTE: it is VERY important that you do not add any spaces on either side of the `=`** sign. The command will not work correctly if you add extra spaces.
-    - Run `echo 'alias jnb="jupyter notebook"' >> ~/.bash_profile`
-   
-
-3. Finally, activate the new settings:
-
-    - Run `source ~/.bash_profile` to activate the changes you just made
-    
-#### If you had to run `source activate dojo-env`:
-    
-0. Make sure the profile file for GitBash has been created. 
-    - Run `touch ~/.bash_profile` to create a new hidden file called ".bash_profile" in your user folder.
-    
-1. Add the environment activation command.
-    - Run `echo "source activate dojo-env" >> ~/.bash_profile` 
-
-2. Add the alias to start "jupyter notebook" using `jnb`
-    - Run `echo 'alias jnb="jupyter notebook"' >> ~/.bash_profile`
-   
-
-3. Finally, activate the new settings:
-
-    - Run `source ~/.bash_profile` to activate the changes you just made
-    
-
-## [Mac & Windows] Confirm `dojo-env` is your default 
-
-- To confirm that `dojo-env` is now your default environment, open a new Terminal/GitBash window. 
-    - You should see `(dojo-env)` appear next to your prompt. 
-    
-<img src="images/confirm_dojo_env.png">
-
-- To confirm that `jnb` alias worked, run the command `jnb` and it should boot up jupyter notebook.
->**If so, you are all set to move onto 4. Adding Jupyter Notebook Extensions**
-
-
-# 4. Adding Jupyter Notebook Extensions
+# 3. Adding Jupyter Notebook Extensions
 
 
 ### Jupyter Notebook Extensions Resources
 - [Documentation](https://jupyter-contrib-nbextensions.readthedocs.io/en/latest/install.html)
 - [Official `nbextensions` Installation Instructions (also detailed below)](https://jupyter-contrib-nbextensions.readthedocs.io/en/latest/install.html)
 
-
-<!-- 
-#### Installation via Conda
-- **The best way to install is via `conda`** (however, windows users sometimes have issues with the conda installation not working properly).
-    0. Open your terminal and make sure dojo-env is activated.
-        - Mac users: `conda activate dojo-env`
-        - Windows users: `source activate dojo-env`
-        
-
-    1. Install the extensions via conda
-    ```bash
-      conda install -c conda-forge jupyter_contrib_nbextensions
-      ```
-
-    2. Activate the extension configurator
-    ```bash
-    jupyter nbextension enable jupyter_nbextensions_configurator
-      ```
- >- Now, boot up jupyter notebook and look for a new tab called (`nbextensions`) on the jupyter file-explorer view. If its there, great! Move on to the "Turning on extensions" section below.
-      
-       -->
        
 #### Installing Using Pip    
 - **Below is an abbreviated version of the official instructions for Installing jupyter-contrib-nbextensions ([Documentation](https://jupyter-contrib-nbextensions.readthedocs.io/en/latest/install.html)):**
@@ -315,9 +201,6 @@ In order to use this file, you will first need to clone this repository to your 
         -  Check 'Collapse/uncollapse notebook sections when the ToC2 nbextension is used to collapse/uncollapse sections in the table of contents. For the inverse behaviour, see ToC2's configuration' at towards the bottom of the options.
 
 
-<!-- - `Codefolding`: Lets you collapse function definitions and blocks of code. 
- -->
-
 - `Live Markdown Preview`: Shows a preview of what the markdown cell you are editing will look like once you render it with Shift+Enter
     - Recommended options:
         - Check `Show the input & output of markdown cells side-by-side while editing them.`
@@ -325,79 +208,90 @@ In order to use this file, you will first need to clone this repository to your 
 - `Ruler` (not Ruler in Editor)
 - `spellchecker`
 
-<!-- 
-- `Variable Inspector` (but warning/caveat): 
-    - Lets you see details about all of the variables in your notebook.
-    - HUGELY helpful for new coders.
-    - Recommended options:
-        - `Display window at startup` (for now while you are learning python)
- -->
-
-### Confirming Extensions are Enabled
-
-- **Go back to the Files tab and create a new notebook with the `New` button on the top-right.**
-    - Select `Python(dojo-env)` for your kernel
-<img src="images/new_notebook.png" width=400px>
-
-- **Once your new Untitled notebook opens, you will notice a few new elements to the interface:**
-<img src="images/nbextensions_interface.png">
 
 
-- First, confirm that you have two new buttons on your toolbar:
-    - One that looks like a list (this is your table of contents extension)
-    - One that looks like a check mark (this is your spellchecker)
+# 4. Setting `dojo-env` as your default + adding `jnb` shortcut
+
+- This section will require you to enter several commands in your Terminal (on Mac) or GitBash (on Windows). 
+- **Note: when the instructions say to "run" a command**, it means to type that command (or copy and paste it) into your Terminal/Git Bash and then hit `Enter`
+
+## Mac
+- On a Mac, we need to first see what shell you're running.
+     - In your terminal, type `echo $SHELL.` and hit enter.
+     
+#### If the response ends in `bash`
+
+1. Add the environment activation command:
+    - Run `echo "conda activate dojo-env" >> ~/.bash_profile`
+
+
+2. Add the alias to start "jupyter notebook" using `jnb`
+    - Run `echo 'alias jnb="jupyter notebook"' >> ~/.bash_profile`
     
     
-- Second, confirm that you see a red dashed line in your code cell. (the Ruler extension)
+3. Finally, activate the new settings:
+    - Run `source ~/.bash_profile`.
 
 
-- Third, click on the button for the table of contents (the one that looks like a list).
-    - An empty sidebar should appear on the left.
+#### If the response ends in `zsh`:
+
+1. Add the environment activation command:
+    - Run `echo "conda activate dojo-env" >> ~/.zshrc` 
     
     
-- Fourth, change your code cell to a markdown cell.
-    - You can click on the dropdown menu on your toolbar that currently says "code".
-        - Change this to Markdown. 
+2. Add the alias to start "jupyter notebook" using `jnb`
+    - Run `echo 'alias jnb="jupyter notebook"' >> ~/.zshrc`
     
-        - In the markdown cell, type the following text but do NOT run the cell yet.
-        - `# TEST HEEDER` (misspelled on purpose).
+    
+3. Finally, activate the new settings:
+     - Run `source ~/.zshrc` 
 
-<img src="images/nbextensions_toc_preview_spellcheck.png">
-    - **Confirm that you see a preview of your markdown text off to the right.**
-        - this is your Live Markdown Preview extension.
-    - **Confirm that the word "HEEDER" is highlighted in red.**
-        - This is your spellchecker.
+## Windows
 
-
-- Finally, run the cell "Shift+Enter" and confirm:
-    - that the header appears in the table of contents on the left.
-    - that an dropdown arrow appears to the left of the header in the notebook.
-<img src="images/toc_collapse_headings.png">
-
-- You may notice that the ToC automatically numbered the header and added `1` next to Test Heeder.
-    - If you prefer to disable this, click on the small gear icon next to the word Contents:
-    <img src="images/toc_settings.png" width=400px>
-    - In the menu that appears, uncheck "Automatically number headings"
-    <img src="images/turn_off_numbered_headers.png" width=600px>
+- Make sure you have installed GitBash, per the instructions above.
+- Determine which set of instructions below to follow:
+    - Take note of if you were able to run `conda activate dojo-env` to activate your `dojo-env` or if you had to use `source activate dojo-env`.
 
 
-#### Congrats!
+####   If you were able to run `conda activate dojo-env`:
 
->- **Now you are all set! Your Jupyter Notebook interface will now have additional features added.**
 
+0. Make sure the profile file for GitBash has been created. 
+    - Run `touch ~/.bash_profile` to create a new hidden file called ".bash_profile" in your user folder.
+    
+1. Add the environment activation command.
+    - Run `echo "conda activate dojo-env" >> ~/.bash_profile` 
+
+2. Add the alias to start "jupyter notebook" using `jnb`
+    - Run `echo 'alias jnb="jupyter notebook"' >> ~/.bash_profile`
+   
+
+3. Finally, activate the new settings:
+
+    - Run `source ~/.bash_profile` to activate the changes you just made
+    
+#### If you had to run `source activate dojo-env`:
+    
+0. Make sure the profile file for GitBash has been created. 
+    - Run `touch ~/.bash_profile` to create a new hidden file called ".bash_profile" in your user folder.
+    
+1. Add the environment activation command.
+    - Run `echo "source activate dojo-env" >> ~/.bash_profile` 
+
+2. Add the alias to start "jupyter notebook" using `jnb`
+    - Run `echo 'alias jnb="jupyter notebook"' >> ~/.bash_profile`
+   
+
+3. Finally, activate the new settings:
+
+    - Run `source ~/.bash_profile` to activate the changes you just made
+    
 
 # 5. Install a code editor - Visual Studio Code
 
-<!-- - While not explicitly *necessary*, it is strongly recommend you install a text editor for code. 
-    - [ ] [SublimeText](https://www.sublimetext.com/): Great lightweight text editor with some convenient features. |
-        - This program will make it easier to work with code-related files that would be difficult to work with if you use your OS's default text editor. 
-        - Note: if you already have something like VS Code installed, that will be sufficient
-    
-
- -->
 
 - Finally, we will install a text editor that is designed for programmers, called Visual Studio Code.
-    - We will use this editor to work with some special settings files (like your terminal's `.bash_profile`). 
+    - We will use this editor to work with some special settings files (like your terminal's `.bash_profile`. 
     - You can also use VS Code to edit your projects' README files while previewing them in real time!
 
 ## Install Visual Studio Code
@@ -413,7 +307,7 @@ In order to use this file, you will first need to clone this repository to your 
 - For Mac Users:
     - Click on the installer to unzip it. 
     - Once the Application is unzipped, drag the icon for Visual Studio Code.app to your applications folder on your sidebar in Finder. 
-<img src="images/mac_vscode_install.png">
+![png](https://raw.githubusercontent.com/coding-dojo-data-science/dojo-env-setup/main/images/mac_vscode_install.png)
 
     
     
@@ -421,13 +315,13 @@ In order to use this file, you will first need to clone this repository to your 
     - Windows Users: check your Start Menu. 
     - Mac Users: check your Applications folder in Finder.
 
-<img src="images/vs_code_get_started.png">
+![png](https://raw.githubusercontent.com/coding-dojo-data-science/dojo-env-setup/main/images/vs_code_get_started.png)
 
 ## Install Python Extensions
 - On the left sidebar, there are several icons for different menus.
 - Click on the Extensions sidebar icon (5th down, looks like 4 squares).
 
-<img src="images/1_extension_sidebar.png">
+![png](https://raw.githubusercontent.com/coding-dojo-data-science/dojo-env-setup/main/images/1_extension_sidebar.png)
 
 - On the Extension sidebar, there will be several sections (INSTALLED/POPULAR/RECOMMENDED).
     - Right now you should have nothing under the INSTALLED menu.
@@ -436,14 +330,14 @@ In order to use this file, you will first need to clone this repository to your 
         - OR you can click on [this link to the extension ](https://marketplace.visualstudio.com/items?itemName=ms-python.python) on the extension marketplace website.
         
     - Click on the "Install" button for the Python extension.
-<img src="images/2_extension_installation.png">
+![png](https://raw.githubusercontent.com/coding-dojo-data-science/dojo-env-setup/main/images/2_extension_installation.png)
 
 
 
 - Note: the Python extension will also install several required extensions. When installation is complete, you should see the following under the "INSTALLED" section:
     - Python, Pylance, Jupyter Notebook renderer,Jupyter, and Jupyter Keymap
 
-<img src="images/3_installed_extensions.png">
+![png](https://raw.githubusercontent.com/coding-dojo-data-science/dojo-env-setup/main/images/3_installed_extensions.png)
 
 
 ## Setting VS Code to use your `dojo-env` as the default Python installation
@@ -451,12 +345,12 @@ In order to use this file, you will first need to clone this repository to your 
 - We must teach the Python extension where to find our `dojo-env`'s version of Python.
 
 - On the extension sidebar, click on the Gear icon for the Python extension and select "Extension Settings"
-<img src="images/4_python_settings.png">
+![png](https://raw.githubusercontent.com/coding-dojo-data-science/dojo-env-setup/main/images/4_python_settings.png)
 
 - You should see a new "Settings" pane open in the main window. 
     - Take note of the "Default Interpreter Path".
         - It is currently set to just "python".
-<img src="images/5_settings_default_interp.png">
+![png](https://raw.githubusercontent.com/coding-dojo-data-science/dojo-env-setup/main/images/5_settings_default_interp.png)
 
 - We need to change this setting to match the exact filepath for our `dojo-env`'s python.
 
@@ -464,12 +358,12 @@ In order to use this file, you will first need to clone this repository to your 
     - Make sure your dojo-env is activated
     - Run the command: `which python`
         - It will print out a filepath to your dojo-env.
-<img src="images/6_which_python.png">
+![png](https://raw.githubusercontent.com/coding-dojo-data-science/dojo-env-setup/main/images/6_which_python.png)
     - Copy and paste that exact file path into the "Default Interpreter Path" field in the Python extension settings.
     
     
     
-<img src="images/7_replace_default_interp.png">
+![png](https://raw.githubusercontent.com/coding-dojo-data-science/dojo-env-setup/main/images/7_replace_default_interp.png)
 
 ### Mac Users Only: Add the `code` command to your terminal
 
@@ -485,7 +379,7 @@ In order to use this file, you will first need to clone this repository to your 
 2. In the small pop-up window, type "install code" and you should see it auto-suggest the option for "Shell Command: Install 'code' command in PATH".
     - Click on this option. 
     
-<img src="images/8_install_code_command.png">
+![png](https://raw.githubusercontent.com/coding-dojo-data-science/dojo-env-setup/main/images/8_install_code_command.png)
     
     
     
