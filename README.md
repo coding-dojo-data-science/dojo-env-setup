@@ -47,13 +47,14 @@
 - The main differences between this and non-m1 environment:
     - Python 3.8 instead of 3.7
     - Matploltib (any version) vs Matplotlib 3.2.2 (currently 3.5)
-    
+
 #### Installing Miniforge
 1. Install XCode: `xcode-select --install`
 2. Install Homebrew (if not already installed):
 `Install homebrew: `/bin/bash -c “$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
 3. Install miniforge: `brew install miniforge`
 4. Install pkg-config (for matplotlib) `brew install pkg-config`
+
 
     
 <!--     
@@ -112,9 +113,9 @@ In order to use this file, you will first need to clone this repository to your 
         - You should see a file called `environment.yml`. 
         - If you do not see the folder, check if you see a `dojo-env-setup` folder instead. 
             - If so, type `cd dojo-env-setup` to navigate into the repo.
-            - Type `ls` again and confirm you see `environment.yml`.
+            - Type `ls` again and confirm you see `environment_m1.yml`.
     - **Once you've confirmed you are in the same folder as the `environment.yml` file, type the following command into your terminal.**
-        - `conda env create -f environment.yml`
+        - `conda env create -f environment_m1.yml`
         - press `enter`
     - The installation process will take several minuts. 
     - You may be asked a Y/N question at some point.
