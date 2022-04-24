@@ -1,4 +1,4 @@
-# Installing Python Locally
+# Installing Python Locally - m1 Mac Version
 
 ## 1. Required Installations
 
@@ -34,15 +34,29 @@
 
 
 
-3. **Anaconda - individual edition.** [Link](https://www.anaconda.com/products/individual)
+<!-- 3. **Anaconda - individual edition.** [Link](https://www.anaconda.com/products/individual)
     - Anaconda is a data-science-focused python distributable that comes with a convenient GUI program for working with our python environments.
     - Download and run the installer from the link above.
     - Use the default options
+     -->
+
+### M1-Mac Miniforge Instructions
+- This approach uses miniforge instead of Anaconda.
+- It installs the versions of tensorflow and other packages described in the following blog post:
+    - Blog Post with Starting Instructions: https://caffeinedev.medium.com/how-to-install-tensorflow-on-m1-mac-8e9b91d93706:
+- The main differences between this and non-m1 environment:
+    - Python 3.8 instead of 3.7
+    - Matploltib (any version) vs Matplotlib 3.2.2 (currently 3.5)
     
+#### Installing Miniforge
+1. Install XCode: `xcode-select --install`
+2. Install Homebrew (if not already installed):
+`Install homebrew: `/bin/bash -c “$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
+3. Install miniforge: `brew install miniforge`
+4. Install pkg-config (for matplotlib) `brew install pkg-config`
 
     
-    
-    
+<!--     
     
 4. [Windows Users Only] **Ensuring GitBash Can Find Anaconda.**
     - Windows users may need to take an additional step to get anaconda and gitbash working together.
@@ -69,7 +83,7 @@
                 - `echo ". '${PWD}'/conda.sh" >> ~/.bashrc`
             
         4. Open a new GitBash window and enter `conda` again. You should no longer get the "bash: conda: command not found" error message! 
-            -   You are all set to move on to "Setting Up Your `dojo-env` Environment"!
+            -   You are all set to move on to "Setting Up Your `dojo-env` Environment"! -->
 
 ## 2. Setting Up Your `dojo-env` Environment
 
