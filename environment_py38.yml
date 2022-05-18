@@ -1,18 +1,16 @@
-name: dojo-env-m1
+name: dojo-env-py38
 channels:
   - conda-forge
   - defaults
-  - apple
 dependencies:
   - python=3.8
   - notebook
-  - nbconvert>=6.4.4
-  - pandas>=1.3.5
-  - scikit-learn>=1.1
-  - statsmodels
-  - pip==22.0.4
   - nbconvert==6.4.4
-  - apple::tensorflow-deps
+  - pandas==1.3.5
+  - scikit-learn==1.1.*
+  - statsmodels
+  - pip>=22.0.4
+  - nbconvert>=6.4.4
   - pip:
     - beautifulsoup4
     - bs4
@@ -23,22 +21,19 @@ dependencies:
     - idna==3.3
     - ipywidgets>=7.7.0
     - kiwisolver==1.3.2
-    - matplotlib
+    - matplotlib>=3.3
     - missingno==0.5.1
     - plotly==5.6.0
     - PyMySQL==1.0.2
     - SQLAlchemy
     - sqlalchemy-utils
     - pillow==9.0.1
-    - requests==2.27.1
+    - requests>=2.27.1
     - seaborn==0.11.2
     - soupsieve==2.3.1
     - urllib3==1.26.8
-    # - tensorflow
+    - tensorflow
     - tmdbsimple
     - yelpapi==2.4.0
-    - tensorflow-macos
-    - tensorflow-metal
-    - tensorflow_datasets
     
 prefix: /Users/codingdojo/opt/anaconda3/envs/dojo-env
