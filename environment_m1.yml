@@ -13,6 +13,7 @@ dependencies:
   - statsmodels
   - pip>=22.0.4
   - nbconvert>=6.4.4
+  - shap
   - pip:
     - beautifulsoup4
     - bs4
