@@ -12,6 +12,8 @@ dependencies:
   - pip>=22.0.4
   - nbconvert>=6.4.4
   - shap
+  - conda-forge::mlxtend
+  - conda-forge::dython
   - pip:
     - beautifulsoup4
     - bs4
@@ -31,7 +33,7 @@ dependencies:
     - openpyxl
     - tabulate
     - pmdarima
-    - plotly==5.6.0
+    - plotly==5.8.0
     - PyMySQL==1.0.2
     - SQLAlchemy
     - sqlalchemy-utils
