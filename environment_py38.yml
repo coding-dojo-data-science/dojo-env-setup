@@ -23,6 +23,7 @@ dependencies:
     - fonttools==4.29.1
     - geopy==2.2.0
     - idna==3.3
+    - interpret
     - ipywidgets>=7.7.0
     - joblib>=1.0
     - imbalanced-learn
