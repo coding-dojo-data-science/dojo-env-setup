@@ -1,5 +1,29 @@
 # Installing Python Locally - m1 Mac Version
 
+## UPDATING DOJO-ENV
+
+- IF you have already installed your dojo-env and wish to update to the newer version, you must first remove the current dojo-env from your computer.
+
+    1. open your terminal/gitbash and deactivate your `dojo-env`:
+            - Type `conda activate base` or `conda deactivate` and press enter. 
+            - Your terminal should now say `(base)` with your promit instead of `(dojo-env)`.
+    2. Remove the old `dojo-env` using the command:
+        - `conda remove --name dojo-env --all`
+        - enter `y` to approve the removal of the environment and hit enter. 
+
+    3. Wait for the env to be removed.
+        - This will delete all of the files associated with JUST our `dojo-env`. So anconda will still be installed, we will just need to re-install our `dojo-env`.
+        
+    4. Once its completed, use this repository's environment file to set up the `dojo-env` again. 
+        - Repeat the environment installation commands from the "Setting Up Your `dojo-env` Environment" section above. In brief:
+            - From inside this repo run: `conda env create -f environment_m1.yml`
+            - Wait for the dojo-env to be created.
+        - Activate your dojo-env (`conda activate dojo-env`)
+        - Run the following command to make sure Jupyter know the updated kernel
+            - `python -m ipykernel install --user --name dojo-env --display-name "Python (dojo-env)"`
+
+# New Installations:
+
 ## 1. Required Installations
 
 > Before we install our python environment, we need to take care of a couple requirements. Please make sure to install all of the items listed below before attempting to follow the remaining instructions. 

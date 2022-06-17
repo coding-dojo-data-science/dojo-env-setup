@@ -17,6 +17,8 @@ dependencies:
   - conda-forge::mlxtend
   - conda-forge::dython
   - conda-forge::jupyterlab
+  - conda-forge::sktime
+  - conda-forge::pystan
   - pip:
     - beautifulsoup4
     - bs4
@@ -29,15 +31,18 @@ dependencies:
     - interpret
     - joblib>=1.0
     - imbalanced-learn
+    - kaggle
     - kiwisolver==1.3.2
     - lime
     - lxml
     - matplotlib>=3.3
     - missingno==0.5.1
+    - nltk
     - openpyxl
     - tabulate
     - pmdarima
-    - plotly==5.8.0
+    - plotly==5.8.2
+    - prophet
     - PyMySQL>=1.0.2
     - SQLAlchemy
     - sqlalchemy-utils
