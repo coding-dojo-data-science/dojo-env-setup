@@ -11,8 +11,10 @@
 	- Conda Packages:
 		- apple::tensorflow-deps
 		- conda-forge::sktime
+		- lightgbm
 		
 	- Pip Packages:
 		- tensorflow-macos
     	- tensorflow-metal
 		- prohpet
+		- xgboost

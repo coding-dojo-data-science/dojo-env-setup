@@ -19,6 +19,7 @@ dependencies:
   # - prophet
   - conda-forge::sktime
   - conda-forge::pandas-profiling
+  - lightgbm
   # - conda-forge::pystan
   # - conda-forge::matplotlib
   - pip:
@@ -62,5 +63,6 @@ dependencies:
     - tensorflow-macos
     - tensorflow-metal
     - tensorflow_datasets
+    - xgboost
     
 prefix: /Users/codingdojo/opt/anaconda3/envs/dojo-env
