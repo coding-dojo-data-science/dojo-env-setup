@@ -6,19 +6,21 @@ channels:
 dependencies:
   - python=3.8
   - apple::tensorflow-deps
-  - notebook
+  # - notebook
   - nbconvert>=6.4.4
   - pandas>=1.3.5
   - scikit-learn==1.1.*
   - statsmodels
   - pip>=22.0.4
   - nbconvert>=6.4.4
-  - shap
-  - conda-forge::mlxtend
-  - conda-forge::dython
+  - conda-forge::shap
+  # - conda-forge::dython
   - conda-forge::jupyterlab
+  # - prophet
   - conda-forge::sktime
-  - conda-forge::pystan
+  - conda-forge::pandas-profiling
+  # - conda-forge::pystan
+  # - conda-forge::matplotlib
   - pip:
     - beautifulsoup4
     - bs4
@@ -42,11 +44,13 @@ dependencies:
     - tabulate
     - pmdarima
     - plotly==5.8.2
+    - pystan==2.19.1.1
     - prophet
     - PyMySQL>=1.0.2
     - SQLAlchemy
     - sqlalchemy-utils
     - scipy>=1.3
+    # - sktime[all_extras]
     - pillow>=9.0.1
     - requests>=2.27.1
     - seaborn>=0.11.2
