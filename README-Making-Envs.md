@@ -7,9 +7,12 @@
   		- conda-forge
   		- defaults
   		- apple
+		
 	- Conda Packages:
 		- apple::tensorflow-deps
+		- conda-forge::sktime
 		
 	- Pip Packages:
 		- tensorflow-macos
     	- tensorflow-metal
+		- prohpet
