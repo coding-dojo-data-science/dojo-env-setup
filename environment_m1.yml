@@ -20,8 +20,9 @@ dependencies:
   - conda-forge::sktime
   - conda-forge::pandas-profiling
   - lightgbm
+  - python-graphviz
   # - conda-forge::pystan
-  # - conda-forge::matplotlib
+  # - conda-forge::prophet
   - pip:
     - beautifulsoup4
     - bs4
@@ -64,5 +65,6 @@ dependencies:
     - tensorflow-metal
     - tensorflow_datasets
     - xgboost
+    - yellowbrick
     
 prefix: /Users/codingdojo/opt/anaconda3/envs/dojo-env
