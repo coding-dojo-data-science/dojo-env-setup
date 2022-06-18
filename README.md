@@ -1,4 +1,4 @@
-# Installing Python Locally - m1 Mac Version
+# Installing Python Locally - testing new python 3.8 env
 
 ## UPDATING DOJO-ENV
 
@@ -21,6 +21,11 @@
         - Activate your dojo-env (`conda activate dojo-env`)
         - Run the following command to make sure Jupyter know the updated kernel
             - `python -m ipykernel install --user --name dojo-env --display-name "Python (dojo-env)"`
+    5. (Optional, but recommended ) Start jupyter notebook (`jupyter notebook`) and open the EnvironmentTester notebook. 
+        - Note: This will also install the recommend jupyrter mnotebook extnesions for you.
+        - Once you open the notebook, click on the Kernel menu and "Restart and Run All"
+        - If everything was installed correctly the notebook should run all the way to the end.
+
 
 # New Installations:
 
