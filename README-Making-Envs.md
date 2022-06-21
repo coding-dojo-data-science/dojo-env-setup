@@ -61,7 +61,8 @@
 # CHANGELOG
 - 06/21/22:
 	- Created intel-processor mac environment to test.
-	- renamed m1 mac environment to `environment_mac_mchip.yml`
+	- Renamed m1 mac environment to `environment_mac_mchip.yml`
+	- Renamed EnvironmentTester-py38.ipynb to EnvironmentTester-mac.ipynb
 - 06/16/22-06/17/22:
 	- For m1 environment (on testing branch):
 		- Moved Matplotlib from a pip install to a conda install and downgraded below 3.5 for compatibility with SHAP & yellowbrick
