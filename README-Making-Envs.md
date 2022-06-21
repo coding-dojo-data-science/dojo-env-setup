@@ -4,8 +4,9 @@
 	- `environment_windows.yml`: Windows
 	- `environment_mac_intel.yml`: COMING! Macs without apple silicon chips
 
-## For M1 Mac
+## For M1/M2/etc Macs
 - M1 macs will be using miniforge instead of anaconda.
+- Enviornment File: `environment_mac_mchip.yml`
 - YML File needs:
 	- channels:
   		- conda-forge
@@ -27,6 +28,7 @@
 		
 ## For Windows:
 - Windows uses actual Anaconda insteadof miniforge.
+- Enviornment File: `environment_windows.yml`
 - YML File needs:
 	- channels:
 		- conda-forge
@@ -43,9 +45,23 @@
 	- Pip Packages:
 		- tensorflow
 		
-
+## For Intel-Processor Macs:
+- Use actual Anaconda instead of miniforge.
+- Enviornment File: `environment_mac_intel.yml`
+- channels:
+	- conda-forge
+	- defaults
+- Conda Packages:
+	- conda-forge::sktime
+	- lightgbm
+	- python-graphviz
+- Pip Packages:
+	- tensorflow
 
 # CHANGELOG
+- 06/21/22:
+	- Created intel-processor mac environment to test.
+	- renamed m1 mac environment to `environment_mac_mchip.yml`
 - 06/16/22-06/17/22:
 	- For m1 environment (on testing branch):
 		- Moved Matplotlib from a pip install to a conda install and downgraded below 3.5 for compatibility with SHAP & yellowbrick
@@ -67,4 +83,3 @@
 			- plotly from 5.8.0 to 5.8.2
 			- matplotlib from 3.5+ to 3.4.3 (compatibility with shap and yellowbrick)
 		
-NOTE: testing changing mac prophet to conda 

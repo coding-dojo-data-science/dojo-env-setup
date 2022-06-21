@@ -16,7 +16,7 @@
         
     4. Once its completed, use this repository's environment file to set up the `dojo-env` again. 
         - Repeat the environment installation commands from the "Setting Up Your `dojo-env` Environment" section above. In brief:
-            - From inside this repo run: `conda env create -f environment_m1.yml`
+            - From inside this repo run: `conda env create -f environment_mac_mchip.yml`
             - Wait for the dojo-env to be created.
         - Activate your dojo-env (`conda activate dojo-env`)
         - Run the following command to make sure Jupyter know the updated kernel
@@ -142,9 +142,9 @@ In order to use this file, you will first need to clone this repository to your 
         - You should see a file called `environment.yml`. 
         - If you do not see the folder, check if you see a `dojo-env-setup` folder instead. 
             - If so, type `cd dojo-env-setup` to navigate into the repo.
-            - Type `ls` again and confirm you see `environment_m1.yml`.
+            - Type `ls` again and confirm you see `environment_mac_mchip.yml`.
     - **Once you've confirmed you are in the same folder as the `environment.yml` file, type the following command into your terminal.**
-        - `conda env create -f environment_m1.yml`
+        - `conda env create -f environment_mac_mchip.yml`
         - press `enter`
     - The installation process will take several minuts. 
     - You may be asked a Y/N question at some point.
