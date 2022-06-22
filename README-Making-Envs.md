@@ -62,7 +62,7 @@
 - 06/22/22:
 	- Added pandas-datareader
 	- Removed notebook from all envs (causes plot_tree warning)
-	- Changed sktime to sktime-all-extras
+	- ~~Changed sktime to sktime-all-extras~~
 	- Changed `conda-forge::jupyterlab` to `jupyter`
 	- Added explicit versions for almost all packages.
 		- Exceptions:

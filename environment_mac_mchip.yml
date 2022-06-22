@@ -46,15 +46,15 @@ dependencies:
     - openpyxl==3.0.10
     - tabulate==0.8.9
     - pmdarima==1.8.5
+    - pandas-datareader==0.10.0
     - plotly==5.8.2
     - pystan==2.19.1.1
     - prophet
-    - PyMySQL>=1.0.2
+    - PyMySQL==1.0.2
     - SQLAlchemy==1.4.37 
     - sqlalchemy-utils==0.38.2
     - scipy==1.8.*
     # - sktime[all_extras]
-    - pandas-datareader==0.10.0
     - pillow>=9.0.1
     - requests>=2.27.1
     - seaborn==0.11.2
