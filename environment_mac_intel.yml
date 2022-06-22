@@ -4,7 +4,7 @@ channels:
   - defaults
 dependencies:
   - python=3.8
-  - notebook
+  # - notebook
   - nbconvert>=6.4.4
   - pandas>=1.3.5
   - scikit-learn==1.1.*
@@ -27,6 +27,7 @@ dependencies:
     - fonttools==4.29.1
     - geopy==2.2.0
     - idna==3.3
+    - kaggle
     - interpret
     - ipywidgets>=7.7.0
     - joblib>=1.0
@@ -40,6 +41,7 @@ dependencies:
     - openpyxl
     - tabulate
     - pmdarima
+    - pandas-datareader
     - plotly==5.8.2
     - PyMySQL==1.0.2
     - pystan==2.19.1.1

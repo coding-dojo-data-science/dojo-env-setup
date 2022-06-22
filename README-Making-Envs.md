@@ -59,6 +59,22 @@
 	- tensorflow
 
 # CHANGELOG
+- 06/22/22:
+	- Added pandas-datareader
+	- Removed notebook from all envs (causes plot_tree warning)
+	- Changed sktime to sktime-all-extras
+	- Changed `conda-forge::jupyterlab` to `jupyter`
+	- Added explicit versions for almost all packages.
+		- Exceptions:
+			- kaggle
+			- sktime-all-extras
+			- jupyter
+			- pandas-profiling
+			- python-grapghviz (mchip mac)
+			- prophet
+			- tensorflow-macos (mchip mac)
+			- tensorflow-metal (mchip mac)
+			- tensorflow_datasets (mchip mac)
 - 06/21/22:
 	- Created intel-processor mac environment to test.
 	- Renamed m1 mac environment to `environment_mac_mchip.yml`
