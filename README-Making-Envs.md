@@ -64,6 +64,10 @@
 		- Pmdarima may be the source of the problem.
 	- Added numpy as an explicit conda-forge requiremnet v 1.22.4
 	- Added nbdime 
+	- **KNOWN ISSUES:**
+		- On MacOS with an MChip, using prophet's model.fit causes an error about missing file. 
+			- Will test on windows and see if same error.
+			- May be a pystan related problem.
 	
 - 06/22/22:
 	- Added pandas-datareader
