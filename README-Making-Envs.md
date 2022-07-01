@@ -59,6 +59,12 @@
 	- tensorflow
 
 # CHANGELOG
+- 06/30/22:
+	- After troubleshooting a Windows PC that failed to install the pip packages, I have added requirements.txt files for each of the OS. The idea is that if the pip installs fail for someone, they can try running, for windows: `pip install -r requirements_windows.txt` 
+		- Pmdarima may be the source of the problem.
+	- Added numpy as an explicit conda-forge requiremnet v 1.22.4
+	- Added nbdime 
+	
 - 06/22/22:
 	- Added pandas-datareader
 	- Removed notebook from all envs (causes plot_tree warning)
