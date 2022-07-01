@@ -59,6 +59,19 @@
 	- tensorflow
 
 # CHANGELOG
+- 06/30/22 Windows Update:
+	- Ran into issue on windows pc. Removed charset-normalizer install and removed pystan version which seems to have fixed it.
+	- All packages that were missing version #'s have been filled in with the version that were installed with the current env.
+		- Exceptions:
+			- tensorflow
+			- jupyter
+			- bs4
+			- m2w64-toolchain
+	- Additions:
+		- Added jupyter-contrib-nbextensions and the configurator to simplify extension installation.
+	
+
+
 - 06/30/22:
 	- After troubleshooting a Windows PC that failed to install the pip packages, I have added requirements.txt files for each of the OS. The idea is that if the pip installs fail for someone, they can try running, for windows: `pip install -r requirements_windows.txt` 
 		- Pmdarima may be the source of the problem.

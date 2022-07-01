@@ -154,3 +154,5 @@ cython_debug/
 base-env.txt
 dojo-env-jupterlab.txt
 dojo-env-jupyter.txt
+Misc/tree.dot
+Misc/tree.png
