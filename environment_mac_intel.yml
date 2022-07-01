@@ -47,7 +47,7 @@ dependencies:
     - plotly==5.8.2
     - PyMySQL==1.0.2
     - pystan==2.19.1.1
-    - prophet==1.1
+    - prophet==1.0.1
     - SQLAlchemy==1.4.37 
     - sqlalchemy-utils==0.38.2
     - scipy==1.8.*
