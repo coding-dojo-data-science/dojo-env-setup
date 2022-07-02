@@ -16,8 +16,9 @@ dependencies:
   - nbconvert==6.5.0
   - conda-forge::shap==0.41.0
   - conda-forge::dython==0.7.1.*
-  - jupyter
-  # - conda-forge::jupyterlab
+  # - jupyter
+  - conda-forge::notebook
+  - conda-forge::jupyterlab
   # - prophet
   - conda-forge::sktime==0.12.0 #-all-extras
   - conda-forge::pandas-profiling==3.2.0

@@ -59,6 +59,11 @@
 	- tensorflow
 
 # CHANGELOG
+- 07/01/22: 
+	- on m1 mac, jupyter lab was not successfully installed. Testing new m1 environment (first)
+		- replaced the "jupyter" dependency to:
+			- conda-forge::notebook
+			- conda-forge::jupyterlab
 - 06/30/22 Windows Update:
 	- Ran into issue on windows pc. Removed charset-normalizer install and removed pystan version which seems to have fixed it.
 	- All packages that were missing version #'s have been filled in with the version that were installed with the current env.
