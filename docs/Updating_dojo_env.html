@@ -14,29 +14,36 @@
 			<li>New sklearn v1.1 with simplified column transformer feature names!</li>
 			<li>Jupyter Lab added</li>
 		</ul>
+	</li>
+	<ul>
+		<li>New Packages and Tools Included:</li>
 		<ul>
-			<li>New Packages and Tools Included:<ul>
-					<li>nbdime: Version control for jupyter notebooks.&nbsp;</li>
-					<li>Model Explainer Packages (SHAP, Lime, Yellowbrick)</li>
-					<li>Stack 2 &amp; 3 Packages Previously Not Included:<ul>
-							<li>Tensorflow</li>
-							<li>xgboost</li>
-							<li>lightbgm</li>
-						</ul>
-					</li>
-					<li>Pandas Profiling (incredibly powerful all-in-one EDA report)</li>
-					<li>Time Series Modeling:<ul>
-							<li>pmdarima</li>
-							<li>prohpet</li>
-							<li>sktime (though still some issues to resolve)</li>
-						</ul>
-					</li>
-					<li>And more!</li>
+			<li>nbdime: Version control for jupyter notebooks.&nbsp;</li>
+			<li>Model Explainer Packages (SHAP, Lime, Yellowbrick)</li>
+			<li>Stack 2 &amp; 3 Packages Previously Not Included:<ul>
+					<li>Tensorflow</li>
+					<li>xgboost</li>
+					<li>lightbgm</li>
 				</ul>
 			</li>
+			<li>Pandas Profiling (incredibly powerful all-in-one EDA report)</li>
+			<li>Time Series Modeling:<ul>
+					<li>pmdarima</li>
+					<li>prohpet</li>
+					<li>sktime (though still some issues to resolve)</li>
+				</ul>
+			</li>
+			<li>And more!</li>
 		</ul>
-	</li>
+	</ul>
 </ul>
+<h4>IMPORTANT NOTE FOR MAC USERS WITH AN APPLE CHIP (M1, M1Pro, M2, etc)!</h4>
+<p>The original v1 of dojo-env did not fully support Apple processors, but the new dojo-env does. HOWEVER, in order to
+	do so, <strong>Mac users with an Apple chip need to UNINSTALL ANACONDA and switch to using
+		Miniforge</strong>.&nbsp;&nbsp;</p>
+<p>Please see Step 1 - MacOS (Apple Chip) for detailed instructions on how to uninstall anaconda and install miniforge.
+</p>
+<h4></h4>
 <h2>Step 1: Remove Your Old dojo-env</h2>
 <ul>
 	<li>
@@ -55,7 +62,7 @@
 		</ol>
 	</li>
 </ul>
-<pre class="active_pre language-ruby rainbow" data-language="ruby">conda remove --name dojo-env --all
+<pre class="rainbow" data-language="ruby">conda remove --name dojo-env --all
 </pre>
 <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Enter&nbsp;<code>y</code>&nbsp;to approve the removal of the environment
 	and hit enter.<br></p>
