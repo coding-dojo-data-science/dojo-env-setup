@@ -180,8 +180,8 @@ conda env create -f environment\_windows.yml
 Enjoy your new dojo-env!
 ------------------------ -->
 
-
-<h1>dojo-env-setup</h1><br><p><strong>If the images below are not visible:please open <a href='admin/README_lessons.html' target='_blank' rel='noopener noreferrer'>this file</a> in your webbrowser.</p></strong><br><hr></hr><br><h1>Installation Overview</h1>
+<!DOCTYPE html>
+<html><body>h1>dojo-env-setup</h1><br><p><strong>If the images below are not visible:please open <a href='README_lessons.html' target='_blank' rel='noopener noreferrer'>this file</a> in your webbrowser.</p></strong><br><hr></hr><br><h1>Installation Overview</h1>
 <p><br></p>
 <p><strong>These steps should take&nbsp; ~30-90 minutes,</strong> depending on the speed of your machine and internet
 	connection.&nbsp;<br></p>
@@ -2347,4 +2347,4 @@ jnb
 			id="user-content-new-installations" class="anchor" aria-hidden="true"></a></p>
 </h1>
 <p></p>
-<p> <br> </p>
+<p> <br> </p><br></body></html>
