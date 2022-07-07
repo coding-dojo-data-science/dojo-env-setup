@@ -179,7 +179,6 @@ conda env create -f environment\_windows.yml
 
 Enjoy your new dojo-env!
 ------------------------ -->
-
 <!DOCTYPE html>
 <html><body>h1>dojo-env-setup</h1><br><p><strong>If the images below are not visible:please open <a href='README_lessons.html' target='_blank' rel='noopener noreferrer'>this file</a> in your webbrowser.</p></strong><br><hr></hr><br><h1>Installation Overview</h1>
 <p><br></p>
