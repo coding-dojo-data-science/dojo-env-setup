@@ -1,7 +1,7 @@
 # dojo-env-setup
 
 <img src="images/Data Science Thumbnail.png">
-- Please visit https://coding-dojo-data-science.github.io/dojo-env-setup-instructions/ for the complete installation instructions below as a multi-page website.
+<!-- - Please visit https://coding-dojo-data-science.github.io/dojo-env-setup-instructions/ for the complete installation instructions below as a multi-page website. -->
 
 - **If you are looking for the original dojo-env environment from pre-July 2022**, switch to the legacy-dojo-env-v1 branch after cloning this repository. 
 <img src="images/legacy-branch.png" width=400px>
