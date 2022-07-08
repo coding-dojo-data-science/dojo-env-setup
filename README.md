@@ -1,196 +1,19 @@
 # dojo-env-setup
 
 <img src="images/Data Science Thumbnail.png">
+
 <!-- - Please visit https://coding-dojo-data-science.github.io/dojo-env-setup-instructions/ for the complete installation instructions below as a multi-page website. -->
 
 - **If you are looking for the original dojo-env environment from pre-July 2022**, switch to the legacy-dojo-env-v1 branch after cloning this repository. 
 <img src="images/legacy-branch.png" width=400px>
 
 
-
-___
-<!-- 
-## Updating to New dojo-env
-
-
-*   If you have already installed your dojo-env and wish to update to the new version, you must first remove the current dojo-env from your computer.
-    *   **Note: the new version of dojo-env was released in July 2022.** If you installed your environment in July or later you already have the updated dojo-env.
-*   **The benefits of upgrading to the new dojo-env:**
-    *   New sklearn v1.1 with simplified column transformer feature names!
-    *   Jupyter Lab added
-
-*   New Packages and Tools Included:
-
-*   nbdime: Version control for jupyter notebooks. 
-*   Model Explainer Packages (SHAP, Lime, Yellowbrick)
-*   Stack 2 & 3 Packages Previously Not Included:
-    *   Tensorflow
-    *   xgboost
-    *   lightbgm
-*   Pandas Profiling (incredibly powerful all-in-one EDA report)
-*   Time Series Modeling:
-    *   pmdarima
-    *   prohpet
-    *   sktime (though still some issues to resolve)
-*   And more!
-
-#### IMPORTANT NOTE FOR MAC USERS WITH AN APPLE CHIP (M1, M1Pro, M2, etc)!
-
-The original v1 of dojo-env did not fully support Apple processors, but the new dojo-env does. HOWEVER, in order to do so, **Mac users with an Apple chip need to UNINSTALL ANACONDA and switch to using Miniforge**.  
-
-Please see Step 1 - MacOS (Apple Chip) for detailed instructions on how to uninstall anaconda and install miniforge.
-
-### Step 1: Remove Your Old dojo-env
---------------------------------
-
-*   1.  Open your terminal/GitBash
-    2.  Deactivate`dojo-env`: 
-        1.  Type `conda activate base` (or source activate base if you are on older versions of windows) 
-            1.  Your terminal should now say `(base)` next to your prompt instead of `(dojo-env)`.
-    3.  Remove the old `dojo-env` using the command:
-
-conda remove --name dojo-env --all
-
-            Enter `y` to approve the removal of the environment and hit enter.  
-
-      4. Wait for the env to be removed.
-
-                    This will delete all of the files associated with JUST our `dojo-env`. 
-
-                    Anaconda & GitBash will still be installed.  We will just need to re-install our `dojo-env`
-
-  
-
-### Step 2: Clone (or update) the dojo-env-setup repo 
-
-
-1.  Navigate to the dojo-env-setup repo: [https://github.com/coding-dojo-data-science/dojo-env-setup](https://github.com/coding-dojo-data-science/dojo-env-setup)
-2.  **Clone the Repository to Your Computer:**
-    1.  Click the green Code button and select  "Open in GitHub Desktop. "
-    2.  If you still have your previously cloned copy, GitHub Desktop should show a # and down arrow on the top right corner where it should say "Fetch Origin".
-        1.  Press the button to "Fetch Origin", which will download the updated environment files. 
-        2.  You may need to press it again if it changes to "Pull Origin"
-    3.  If you've updated the repo successfully there should be no remaining #'s or arrows on the top right corner.
-        1.  If so, click on the Repository menu > Open in Terminal (or Open in GitBash).
-
-  
-
-### Step 3: (Re)Create Your dojo-env using the updated repo
-
-
-1.  Run the same commands from the original step "2. Setting Up Your `dojo-env` Environment" (summarized below).
-    1.  If you are unsure about which version of the summary instructions below to use, please go to the original Step 2 lesson for your specific OS and follow those steps again. 
-2.  **"Step 2: Setting Up Your Dojo-Env" Summary:**
-    1.  Depending on your OS and processor, you will use a different environment file in the conda env create command. 
-        1.  In the table below find the environment yml file name that is correct for your computer/OS.
-
-Note: Whenever the instructions below refer to your <ENV\_FILE> below, it means the filename from the following list (without < >).
-
-**Computer/OS Type**
-
-**Environment File Name**
-
-Windows 
-
-environment\_windows.yml
-
-MacOS with an Intel Processor
-
-environment\_mac\_intel.yml
-
-MacOS with an Apple Chip (m1, m1pro, m2,etc)
-
-environment\_mac\_mchip.yml
-
-*   Make sure you are still using a terminal inside the folder for the dojo-env-setup (pwd)
-*   Run the following command (replace <ENV\_FILE> with your filename from the table above)
-
-conda env create -f <env\_file>
-
-*   **Wait (patiently) for the dojo-env to be created.** 
-    *   Note: the new environment includes many additional tools and can take anywhere from 3-20 minutes to finish downloading and installing the packages for the new environment.
-*   Once its complete, run the following "conda activate dojo-env" command:
-
-conda activate dojo-env
-
-*   Note for windows users:
-    *    if you see a message that says "your terminal is not set up for conda activate", change the command to "source activate"
-
-source activate dojo-env
-
-*   You should now see "(dojo-env)" next to your prompt in your terminal (may be above the prompt, on the left, or on the right depending on your OS)
-
-*   After confirming you now see (dojo-env) displayed next to your prompt:
-    *   Run the following command to make sure Jupyter Notebook/Lab knows your new environment.
-
-python -m ipykernel install --user --name dojo-env --display-name "Python (dojo-env)"
-
-## Testing Your New Environment
-
-
-*   From the same terminal window, **start jupyter notebook** (run `jupyter notebook` in your terminal) 
-*   **Open the test notebook for your OS (windows vs mac).**
-    *    EnvironmentTester-Mac.ipynb  or EnvironmentTester-Windows.ipynb 
-*   **Select the Kernel Menu > Restart and Run All.** 
-    *   The notebook should run all the way to the end.
-        *    If it doesn't, contact your instructor for assistance.
-
-#### Bonus: Jupyter Lab
-
-
-Your new dojo-env also includes jupyter lab. It is very similar to jupyter notebook, but has a more fleshed out user interface that is more similar to Colab than jupyter notebook.
-
-To start jupyter lab run the following command:
-
-jupyter lab
-
-## Cheat Sheet/Summary Steps
-
-
-1\. Clone repo or Fetch & Pull: [https://github.com/coding-dojo-data-science/dojo-env-setup  
-](https://github.com/coding-dojo-data-science/dojo-env-setup)
-
-2\. Open in Terminal/GitBash.
-
-Execute the following commands:
-
-#### 1. Deactivate dojo-env 
-`conda activate base`
-- Windows users may need to use "source activate base"
-#### 2. Remove dojo-env
-`conda remove --name dojo-env --all`
-- press y to confirm
-#### 3. Create new environment
-- run ONE of the following (depending on you computer)
-```
-conda env create -f environment\_mac\_mchip.yml
-conda env create -f environment\_mac\_intel.yml
-conda env create -f environment\_windows.yml
-```
-#### Wait patiently, once completed, activate new env
-`conda activate dojo-env`
-- windows users may need "source activate dojo-env"
-#### Add dojo-env kernel to jupyter 
-` python -m ipykernel install --user --name dojo-env --display-name "Python (dojo-env)" `
-#### Boot up jupyter notebook 
-`jupyter notebook `
-- OR If you previously follwed  "3. Setting dojo-env as your default"
-`jnb`
-## Read Final step below code cell
-
-*   **Final step:** Open and run the appropriate environment testing notebook for your OS:
-    *   "EnvironmentTester-mac.ipynb"
-    *   "EnvironmentTester-windows.ipynb"
-*   Notify a TA or instructor if the notebook does not successfully run ALL cells.
-
-Enjoy your new dojo-env!
------------------------- -->
 <!DOCTYPE html>
 <html><body><h1>Installing Python Locally</h1><br><p><strong>If the images below are not visible:please clone repo and then open <a href='./admin/README_lessons.html' target='_blank' rel='noopener noreferrer'>this file</a> in your web browser.</p></strong><br><hr></hr><br><h1>Installation Overview</h1>
-<p><br></p>
+<p></p>
 <p><strong>These steps should take&nbsp; ~30-90 minutes,</strong> depending on the speed of your machine and internet
 	connection.&nbsp;<br></p>
-<p>Over the next ~5 lessons, you will:<br></p>
+<p>By the end of this chapter, you will:</p>
 <ol>
 	<li>&nbsp;Install GitHub Desktop,</li>
 	<li>&nbsp;Install Anaconda&nbsp;(Python).</li>
@@ -198,11 +21,12 @@ Enjoy your new dojo-env!
 	<li>Supercharge Jupyter Notebooks with Extensions</li>
 	<li>&nbsp;Install Visual&nbsp;Studio&nbsp;Code.&nbsp;</li>
 </ol>
-<p><br></p>
-<p>For several steps, there are multiple versions of the instructions, depending on what operating system you are using.
-</p>
+<blockquote>Note: if you previously installed the dojo-env are upgrading to the new one, please see the "Updating to New
+	dojo-env at the end of this chapter.</blockquote>
+<p><strong>For several steps, there are multiple versions of the instructions, depending on what operating system you
+		are using.</strong></p>
 <p>&nbsp;(i.e. a Windows computer, vs a Mac with an Intel processor, vs a Mac with an Apple Chip (m1/m1pro/m2/etc).)</p>
-<p><dfn>For steps, 1-3, please make sure you are on the correct instruction page for your OS.</dfn></p>
+<p><dfn>For step 1, please make sure you are on the correct instruction page for your OS.&nbsp;</dfn></p>
 <p><dfn></dfn></p>
 <p><br></p>
 <p><strong>Regardless of OS, you will be using tools that serve the following purposes:<br></strong></p>
@@ -236,7 +60,6 @@ Enjoy your new dojo-env!
 <p><dfn><br></dfn></p>
 <p><strong><em>Scroll down to the bottom of this page for the recording of the Python&nbsp;Installation Lecture from
 			04/14.</em></strong></p>
-<br>
 <p><br></p>
 <h2>If you encounter an error during installation:&nbsp;</h2>
 <ul>
@@ -247,7 +70,10 @@ Enjoy your new dojo-env!
 		jirving@codingdojo.com</li>
 </ul>
 <h2>Python&nbsp;Installation Video Recording</h2>
-<!-- <iframe src="https://player.vimeo.com/video/701383672?h=1bc863cf8e" width="640" height="414" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="" class="vimeo_responsive" style="width: 938px; height: 606.769px;" data-ready="true"></iframe> -->
+<p><em>Note: the recording below is showing the steps for installing dojo-env version 1. The steps are basically the
+		same but the video does not cover the additional steps required to install the newest version of
+		dojo-env&nbsp;on a Mac with an Apple chip (m1,m2,etc)</em></p>
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLmeeqPbYmMC38Sp2d5nsfMeATQ24Q4-x4"
 	title="YouTube video player" frameborder="0"
 	allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -2176,7 +2002,7 @@ rm -rf ~/opt/anaconda3</pre>
 	</li>
 </ul>
 <pre class="rainbow" data-language="ruby">conda remove --name dojo-env --all
-</pre>
+			</pre>
 <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Enter&nbsp;<code>y</code>&nbsp;to approve the removal of the environment
 	and hit enter.<br></p>
 <p>&nbsp; &nbsp; &nbsp; 4. Wait for the env to be removed.</p>
@@ -2185,8 +2011,15 @@ rm -rf ~/opt/anaconda3</pre>
 <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Anaconda &amp; GitBash will still be
 	installed.&nbsp; We will just need to re-install our&nbsp;<code>dojo-env</code></p>
 <p><br></p>
-<h2>Step 2: Clone (or update) the dojo-env-setup repo&nbsp;</h2>
+<h2>Step 2: Clone the updated dojo-env-setup repo&nbsp;</h2>
 <ol>
+	<li>To avoid merge conflicts when pulling the updated repository,&nbsp;<strong>you should remove your old clone of
+			the dojo-env-setup repo </strong>and then clone it again.<ol>
+			<li>In&nbsp;GitHubDesktop, switch to the dojo-env-setup repository in the Current Repo drop down menu (top
+				left). Once you're in dojo-env-setup, click on the "Repository" menu and select "Remove" &gt; check Move
+				to Trash/Recycle Bin.<br></li>
+		</ol>
+	</li>
 	<li>Navigate to the dojo-env-setup repo:&nbsp;<a href="https://github.com/coding-dojo-data-science/dojo-env-setup"
 			target="_blank">https://github.com/coding-dojo-data-science/dojo-env-setup</a></li>
 	<li><strong>Clone the Repository to Your Computer:</strong>
@@ -2283,7 +2116,7 @@ rm -rf ~/opt/anaconda3</pre>
 	</li>
 </ul>
 <pre class="rainbow" data-language="ruby">python -m ipykernel install --user --name dojo-env --display-name "Python (dojo-env)"
-</pre>
+			</pre>
 <h2></h2>
 <h2>Testing Your New Environment</h2>
 <ul>
@@ -2316,27 +2149,27 @@ rm -rf ~/opt/anaconda3</pre>
 <p>2. Open in Terminal/GitBash.</p>
 <p>Execute the following commands:</p>
 <pre class="rainbow" data-language="ruby">## 1. Deactivate dojo-env 
-conda activate base
-# Windows users may need to use "source activate base"
-## 2. Remove dojo-env
-conda remove --name dojo-env --all
-# press y to confirm
-## 3. Create new environment
-# run ONE of the following (depending on you computer)
-conda env create -f environment_mac_mchip.yml
-conda env create -f environment_mac_intel.yml
-conda env create -f environment_windows.yml
-## Wait patiently, once completed, activate new env
-conda activate dojo-env
-# windows users may need "source activate dojo-env"
-## Add dojo-env kernel to jupyter 
-python -m ipykernel install --user --name dojo-env --display-name "Python (dojo-env)"
-## Boot up jupyter notebook 
-jupyter notebook 
-# OR If you previously follwed  "3. Setting dojo-env as your default"
-jnb
-## Read Final step below code cell
-</pre>
+			conda activate base
+			# Windows users may need to use "source activate base"
+			## 2. Remove dojo-env
+			conda remove --name dojo-env --all
+			# press y to confirm
+			## 3. Create new environment
+			# run ONE of the following (depending on you computer)
+			conda env create -f environment_mac_mchip.yml
+			conda env create -f environment_mac_intel.yml
+			conda env create -f environment_windows.yml
+			## Wait patiently, once completed, activate new env
+			conda activate dojo-env
+			# windows users may need "source activate dojo-env"
+			## Add dojo-env kernel to jupyter 
+			python -m ipykernel install --user --name dojo-env --display-name "Python (dojo-env)"
+			## Boot up jupyter notebook 
+			jupyter notebook 
+			# OR If you previously follwed  "3. Setting dojo-env as your default"
+			jnb
+			## Read Final step below code cell
+			</pre>
 <ul>
 	<li><strong>Final step:&nbsp;</strong>Open and run the appropriate environment testing notebook for your OS:<ul>
 			<li>"EnvironmentTester-mac.ipynb"</li>
