@@ -68,7 +68,7 @@
 					<li>Click on the Apple symbol on the top-left corner of your screen.</li>
 					<li><strong>Click About This Mac.&nbsp;</strong></li>
 					<li>A window with your computer's specs will appear like the one in the screenshot below<ul>
-							<li><img src="../images/lp/About_this_Mac_-Intel.png"
+							<li><img src="images/lp/About_this_Mac_-Intel.png"
 									width="475" height="268"
 									style="background-color: initial; width: 475px; height: 268px;"></li>
 							<li>If it has a "Processor" line that says "Intel" you should follow the instructions for
@@ -462,7 +462,7 @@ rm -rf ~/opt/anaconda3</pre>
     </li>
 </ul>
 <figure><img
-        src="../images/lp/anaconda_check_path.png"
+        src="images/lp/anaconda_check_path.png"
         width="402" height="307" style="max-width: 100%; height: 307px; width: 402px;"></figure>
 <p></p>
 <blockquote><strong>You are all set to move on to the next lesson "2. Setting Up Your dojo-env Environment"</strong>
@@ -526,7 +526,7 @@ rm -rf ~/opt/anaconda3</pre>
 	</li>
 </ul>
 <figure><img
-		src="../images/lp/anaconda_check_path.png"
+		src="images/lp/anaconda_check_path.png"
 		style="width: 402px; height: 307px;" width="402" height="307"></figure>
 <h3>
 	<font face="Gotham-Rounded-Medium">
@@ -644,7 +644,7 @@ rm -rf ~/opt/anaconda3</pre>
 	</li>
 	<li class="text-center"><strong>Click on the green <code>Code</code> button and then click
 			<code>Open in GitHub desktop.<br></code></strong><img
-			src="../images/lp/clone_repo.png"
+			src="images/lp/clone_repo.png"
 			width="608" height="307" style="width: 608px; height: 307px;">
 		<p><br></p>
 		<p><br></p>
@@ -652,7 +652,7 @@ rm -rf ~/opt/anaconda3</pre>
 			<li class="text-center"><strong>GitHub desktop should open automatically&nbsp;</strong>and ask you what
 				folder you would like to store your repository in.<p><br></p>
 				<figure><img
-						src="../images/lp/clone-repo-menu.png"
+						src="images/lp/clone-repo-menu.png"
 						style="width: 339px; height: 207px;" width="339" height="207"></figure>
 				<p><br></p>
 				<ol>
@@ -696,7 +696,7 @@ rm -rf ~/opt/anaconda3</pre>
 											you selected! </strong>(See the screenshot below.&nbsp;)<ol>
 											<li>
 												<figure><img
-														src="../images/lp/clone-repo-menu_annotated.png"
+														src="images/lp/clone-repo-menu_annotated.png"
 														style="width: 356px; height: 217px;" width="356" height="217">
 												</figure>
 											</li>
@@ -840,7 +840,7 @@ cd /Users/codingdojo/Documents/Boot Camp&nbsp;Stuff/</pre>
 	<p><strong>If you are in the right folder, you should see 3 files that start with "environment" and end with ".yml"
 			like in the screenshot below.</strong></p>
 	<figure><img
-			src="../images/lp/dojo-env-setup_ls_result.png"
+			src="images/lp/dojo-env-setup_ls_result.png"
 			style="width: 493px; height: 195px;" width="493" height="195"></figure>
 	<p><strong>If so, you are all set for the next step: create the dojo-env environment!</strong></p>
 	<p><br></p>
@@ -978,7 +978,7 @@ cd /Users/codingdojo/Documents/Boot Camp&nbsp;Stuff/</pre>
 	</li>
 </ul>
 <figure><img
-		src="../images/lp/jupyter_file_view.png"
+		src="images/lp/jupyter_file_view.png"
 		style="width: 600px; height: 327px;" width="600" height="327"></figure>
 <ul>
 	<li>There are 2 "EnvironmentTester"&nbsp;notebooks:<ul>
@@ -995,7 +995,7 @@ cd /Users/codingdojo/Documents/Boot Camp&nbsp;Stuff/</pre>
 	</li>
 </ul>
 <figure><img
-		src="../images/lp/jupyter_notebook_view.png"
+		src="images/lp/jupyter_notebook_view.png"
 		style="width: 637px; height: 266px;" width="637" height="266"></figure>
 <p><br></p>
 <ul>
@@ -1023,7 +1023,7 @@ cd /Users/codingdojo/Documents/Boot Camp&nbsp;Stuff/</pre>
 	</li>
 </ul>
 <figure><img
-		src="../images/lp/env_tester_final_msg.png"
+		src="images/lp/env_tester_final_msg.png"
 		style="width: 755px; height: 221px;" width="755" height="221"></figure>
 <p><br></p>
 <ul>
@@ -1061,7 +1061,7 @@ cd /Users/codingdojo/Documents/Boot Camp&nbsp;Stuff/</pre>
 				<li>Click File &gt; Download As &gt; Notebook (.ipynb)</li>
 				<li>Your web browser should save a copy of the notebook to your normal "Downloads" folder.<br><br>
 					<figure><img
-							src="../images/lp/download_as.png"
+							src="images/lp/download_as.png"
 							style="width: 474px; height: 384px;" width="474" height="384"></figure>
 				</li>
 			</ul>
@@ -1078,7 +1078,7 @@ cd /Users/codingdojo/Documents/Boot Camp&nbsp;Stuff/</pre>
 		</li>
 	</ol>
 	<figure><img
-			src="../images/lp/download_report.png">
+			src="images/lp/download_report.png">
 	</figure>
 	<p><br></p>
 	<ul>
@@ -1282,7 +1282,7 @@ cd /Users/codingdojo/Documents/Boot Camp&nbsp;Stuff/</pre>
 <h2>
 </h2>
 <figure><img
-		src="../images/lp/confirm_dojo_env.png"
+		src="images/lp/confirm_dojo_env.png"
 		style="width: 454px; height: 100px;" width="454" height="100"></figure>
 <h2></h2>
 <p>
@@ -1351,7 +1351,7 @@ cd /Users/codingdojo/Documents/Boot Camp&nbsp;Stuff/</pre>
 </blockquote>
 <p></p>
 <figure><img
-		src="../images/lp/nbextension_tab.png"
+		src="images/lp/nbextension_tab.png"
 		style="width: 304px; height: 87px;" width="304" height="87"></figure>
 <p></p>
 <h2>Activating Specific Extensions:</h2>
@@ -1369,7 +1369,7 @@ cd /Users/codingdojo/Documents/Boot Camp&nbsp;Stuff/</pre>
 			<li><em><strong>NOTE: If the list of available notebook extensions is grayed out like the screenshot below:
 						<p><br></p>
 						<figure><img
-								src="../images/lp/nbextensions_disabled.png"
+								src="images/lp/nbextensions_disabled.png"
 								style="width: 818px; height: 291px;" width="818" height="291"></figure><br>
 					</strong></em>
 				<ul>
@@ -1398,7 +1398,7 @@ cd /Users/codingdojo/Documents/Boot Camp&nbsp;Stuff/</pre>
 		</ul>
 		<p><br></p>
 		<figure><img
-				src="../images/lp/click_name_to_show_settings.png"
+				src="images/lp/click_name_to_show_settings.png"
 				style="width: 658px; height: 231px;" width="658" height="231"></figure>
 	</li>
 	<li>
@@ -1437,7 +1437,7 @@ cd /Users/codingdojo/Documents/Boot Camp&nbsp;Stuff/</pre>
 		</li>
 	</ul>
 	<figure><img
-			src="../images/lp/toc2_settings.png"
+			src="images/lp/toc2_settings.png"
 			style="width: 667px; height: 466px;" width="667" height="466"></figure>
 	<p><br></p>
 	<h3>2. Collapsible Headings</h3>
@@ -1448,7 +1448,7 @@ cd /Users/codingdojo/Documents/Boot Camp&nbsp;Stuff/</pre>
 			<li>Check 'Collapse/uncollapse notebook sections when the ToC2 nbextension is used to collapse/uncollapse
 				sections in the table of contents. For the inverse behaviour, see ToC2's configuration' at towards the
 				bottom of the options.</li>
-			<li><img src="../images/lp/collapsible_headings_settings.png"
+			<li><img src="images/lp/collapsible_headings_settings.png"
 					width="596" height="188" style="width: 596px; height: 188px;"></li>
 		</ul>
 	</li>
@@ -1471,7 +1471,7 @@ cd /Users/codingdojo/Documents/Boot Camp&nbsp;Stuff/</pre>
 		</li>
 	</ul>
 	<figure><img
-			src="../images/lp/live_md_preview_settings.png">
+			src="images/lp/live_md_preview_settings.png">
 	</figure>
 	<p></p>
 	<p>
@@ -1499,7 +1499,7 @@ cd /Users/codingdojo/Documents/Boot Camp&nbsp;Stuff/</pre>
 				top-right.</strong>
 			<ul>
 				<li>Select&nbsp;<code>Python(dojo-env)</code>&nbsp;for your kernel&nbsp;<p><br><img
-							src="../images/lp/new_notebook.png"
+							src="images/lp/new_notebook.png"
 							style="width: 539px; height: 187px;" width="539" height="187"><br><br></p>
 					<p><br></p>
 					<figure></figure>
@@ -1508,7 +1508,7 @@ cd /Users/codingdojo/Documents/Boot Camp&nbsp;Stuff/</pre>
 		</li>
 		<li><strong>Once your new Untitled notebook opens, you will notice a few new elements to the
 				interface</strong>:&nbsp;<p><br><img
-					src="../images/lp/nbextensions_interface.png"
+					src="images/lp/nbextensions_interface.png"
 					style="width: 698px; height: 156px;" width="698" height="156"></p>
 			<p><br></p>
 			<figure></figure>
@@ -1536,7 +1536,7 @@ cd /Users/codingdojo/Documents/Boot Camp&nbsp;Stuff/</pre>
 		</li>
 	</ul>
 	<figure><img
-			src="../images/lp/nbextensions_toc_preview_spellcheck.png">
+			src="images/lp/nbextensions_toc_preview_spellcheck.png">
 	</figure>
 	<p>&nbsp;</p>
 	<ul>
@@ -1553,7 +1553,7 @@ cd /Users/codingdojo/Documents/Boot Camp&nbsp;Stuff/</pre>
 				<li>that a dropdown arrow appears to the left of the header in the notebook.&nbsp;<p><br></p>
 					<p><br></p>
 					<figure><img
-							src="../images/lp/toc_collapse_headings.png">
+							src="images/lp/toc_collapse_headings.png">
 					</figure>
 				</li>
 			</ul>
@@ -1564,13 +1564,13 @@ cd /Users/codingdojo/Documents/Boot Camp&nbsp;Stuff/</pre>
 					</p>
 					<p><br></p>
 					<figure><img
-							src="../images/lp/toc_settings.png"
+							src="images/lp/toc_settings.png"
 							style="width: 351px; height: 262px;" width="351" height="262"></figure>
 				</li>
 				<li>In the menu that appears, uncheck "Automatically number headings"&nbsp;<p><br></p>
 					<p><br></p>
 					<figure><img
-							src="../images/lp/turn_off_numbered_headers.png"
+							src="images/lp/turn_off_numbered_headers.png"
 							style="width: 506px; height: 287px;" width="506" height="287"></figure>
 				</li>
 			</ul>
