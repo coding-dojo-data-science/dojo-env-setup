@@ -1,0 +1,34 @@
+<h1>Reinstalling Dojo-Env</h1>
+<div><br></div>
+<h2>What to do if your environment breaks and you need to re-install it.</h2>
+<ul>
+	<li>It is not uncommon to accidentally break our virtual environment by installing a new package or updating a
+		pre-existing one.</li>
+	<li>In the event that your environment stops working and it needs to be re-installed:<ol>
+			<li>open your terminal/gitbash and deactivate your&nbsp;<code>dojo-env</code>:<ul>
+					<li>Type&nbsp;<code>conda activate base</code>&nbsp;or&nbsp;<code>conda deactivate</code>&nbsp;and
+						press enter.</li>
+					<li>Your terminal should now say&nbsp;<code>(base)</code>&nbsp;with your prompt instead
+						of&nbsp;<code>(dojo-env)</code>.</li>
+				</ul>
+			</li>
+			<li>Remove the broken&nbsp;<code>dojo-env</code>&nbsp;using the command:<ul>
+					<li><code>conda remove --name dojo-env --all</code></li>
+					<li>enter&nbsp;<code>y</code>&nbsp;to approve the removal of the environment and hit enter.</li>
+				</ul>
+			</li>
+			<li>Wait for the env to be removed.<ul>
+					<li>This will delete all of the files associated with JUST our&nbsp;<code>dojo-env</code>. So
+						anconda will still be installed, we will just need to re-install our&nbsp;<code>dojo-env</code>.
+					</li>
+				</ul>
+			</li>
+			<li>Once its completed, repeat the environment installation commands from step "2.3 Create the dojo-env
+				environment"<ol>
+					<li>Don't forget to run the python -m ipykernel command after creating the dojo-env in step 2.3!
+					</li>
+				</ol>
+			</li>
+		</ol>
+	</li>
+</ul>
