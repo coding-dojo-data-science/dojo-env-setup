@@ -1,6 +1,5 @@
 <h1>Step 2.3 Create the dojo-env environment</h1>
-<h3>
-	Identify the correct environment file for your computer</h3>
+<h3>1) Identify the correct environment file for your computer</h3>
 <ul>
 	<li>Depending on your OS and processor, you will use a different environment file name in your "conda create"
 		command.</li>
@@ -12,20 +11,20 @@
 	</li>
 </ul>
 <pre class="rainbow" data-language="ruby">## General Format of the command to create env (but replace &lt;env_file&gt; with filename from table below
-			conda env create -f &lt;env_file&gt;
-			</pre>
+conda env create -f &lt;env_file&gt;
+</pre>
 <table>
 	<tbody>
 		<tr>
 			<td><strong>Computer/OS Type</strong></td>
-			<td><strong>Environment File&nbsp;Name</strong></td>
+			<td><strong>Environment File Name</strong></td>
 		</tr>
 		<tr>
-			<td>Windows&nbsp;</td>
+			<td>Windows </td>
 			<td>environment_windows.yml</td>
 		</tr>
 		<tr>
-			<td>MacOS with an Intel&nbsp;Processor</td>
+			<td>MacOS with an Intel Processor</td>
 			<td>environment_mac_intel.yml</td>
 		</tr>
 		<tr>
@@ -34,21 +33,21 @@
 		</tr>
 	</tbody>
 </table>
-<h3>Create the dojo-env using "conda create"</h3>
+<h3>2) Create the dojo-env using "conda create"</h3>
 <ul>
 	<li><strong>After you've identified the right environment for your computer, run the "conda env create -f
-			&lt;env_file&gt;".&nbsp;</strong></li>
+			&lt;env_file&gt;". </strong></li>
 </ul>
 <pre data-language="ruby" class="rainbow">## Env Creation Commands by OS
-			# Windows 
-			conda env create -f environment_windows.yml
-			# Mac -&nbsp;Intel Processor 
-			conda env create -f environment_mac_intel.yml
-			# Mac - Apple Chip 
-			conda env create -f environment_mac_intel.yml
-			</pre>
+# Windows 
+conda env create -f environment_windows.yml
+# Mac - Intel Processor 
+conda env create -f environment_mac_intel.yml
+# Mac - Apple Chip 
+conda env create -f environment_mac_mchip.yml
+</pre>
 <ul>
-	<li><strong>Wait (patiently) for the dojo-env to be created.&nbsp;</strong>
+	<li><strong>Wait (patiently) for the dojo-env to be created. </strong>
 		<ul>
 			<li>
 				<font color="#505050">It</font> can take anywhere from 3-20 minutes to finish create the environment,
@@ -60,13 +59,14 @@
 	</li>
 </ul>
 <pre class="rainbow" data-language="ruby"># To activate this environment use:
-			&nbsp; &nbsp; $ conda activate dojo-env
-			# To deactivate this environment use:
-			&nbsp; &nbsp; $ conda deactivate"</pre>
+ conda activate dojo-env
+# To deactivate this environment use:
+ conda deactivate 
+# If conda deactivate doesn't work, activate the "base" env
+ conda activate base</pre>
 <ul>
 	<li>Confirm your environment was installed and activate it.<ul>
-			<li>Type&nbsp;<code>conda env list</code>&nbsp;to display the list of your locally installed environments.
-				<ul>
+			<li>Type <code>conda env list</code> to display the list of your locally installed environments.<ul>
 					<li>You should see 2 environments, including dojo-env:<ul>
 							<li><code>base</code></li>
 							<li><code>dojo-env</code></li>
@@ -77,16 +77,16 @@
 		</ul>
 	</li>
 	<li>If you see dojo-env in the list:<ul>
-			<li>Success!&nbsp; dojo-env was successfully created! But we aren't using it yet just yet. We must first
+			<li>Success! dojo-env was successfully created! But we aren't using it yet just yet. We must first
 				"activate" an environment to determine which version of python &amp; packages are currently being
 				used.<br>
 			</li>
 		</ul>
 	</li>
 </ul>
-<h3>Activate the dojo-env</h3>
+<h3>3) Activate the dojo-env</h3>
 <ul>
-	<li><strong>Run the conda activate command to switch to dojo-env.&nbsp;</strong></li>
+	<li><strong>Run the conda activate command to switch to dojo-env. </strong></li>
 </ul>
 <pre data-language="ruby" class="rainbow">conda activate dojo-env</pre>
 <ul>
@@ -95,16 +95,16 @@
 </ul>
 <p><strong>Troubleshooting for Windows users:</strong></p>
 <ul>
-	<li>&nbsp;If you see a message that says "your terminal is not set up for conda activate", you will use a slightly
-		different command to activate your environment.&nbsp;Replace the word "conda" with "source".&nbsp;</li>
+	<li> If you see a message that says "your terminal is not set up for conda activate", you will use a slightly
+		different command to activate your environment. Replace the word "conda" with "source". </li>
 </ul>
 <pre data-language="ruby" class="rainbow">source activate dojo-env</pre>
 <p>
 	<font color="#3e4e5a" face="Gotham-Rounded-Bold"><b><strong><br></strong></b></font>
 </p>
 <h3>
-	<font color="#3e4e5a" face="Gotham-Rounded-Bold"><b><strong>
-				Add dojo-env&nbsp;to jupyter notebook/lab</strong></b></font>
+	<font color="#3e4e5a" face="Gotham-Rounded-Bold"><b><strong>4) Add dojo-env to jupyter notebook/lab</strong></b>
+	</font>
 </h3>
 <ul>
 	<li>After confirming you now see (dojo-env) displayed next to your prompt:<ul>
@@ -113,7 +113,7 @@
 	</li>
 </ul>
 <pre data-language="ruby" class="rainbow">python -m ipykernel install --user --name dojo-env --display-name "Python (dojo-env)"
-			</pre>
-<h2>The moment of truth...&nbsp;</h2>
-<p>You are all set for the next step: Testing Your&nbsp;New Environment!</p>
+</pre>
+<h2>The moment of truth... </h2>
+<p>You are all set for the next step: Testing Your New Environment!</p>
 <p><br></p>

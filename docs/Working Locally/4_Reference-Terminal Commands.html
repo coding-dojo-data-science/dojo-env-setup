@@ -1,0 +1,181 @@
+<p> <br> <br></p>
+<h1>Resource: Terminal Commands</h1>
+<p>To get started, open up your terminal or GitBash and try the commands below. Note that most of these work well in the
+	Windows command prompt (cmd) as well, but not all of them. </p>
+<p><br></p>
+<blockquote><strong>For an interactive game to help learn terminal/gitbash commands</strong>, check out: <a
+		href="http://web.mit.edu/mprat/Public/web/Terminus/Web/main.html">http://web.mit.edu/mprat/Public/web/Terminus/Web/main.html</a>
+</blockquote>
+<p><br></p>
+<p><strong>Windows users are strongly encouraged to use GitBash instead of the Command Prompt. </strong>The Command
+	Prompt does not use the same commands. For a table comparison of commands for a Linux-based shell vs windows'
+	command prompt, <a href="https://www.geeksforgeeks.org/linux-vs-windows-commands/" target="_blank">see this
+		article</a>.</p>
+<p></p>
+<p><br></p>
+<p>
+	<strong>Present working directory</strong>
+</p>
+<pre data-language="python" class="rainbow">pwd
+</pre>
+<p>Use this command any time you are unsure where you are currently in your file structure. <em>pwd</em> stands for
+	Present Working Directory. </p>
+<p><br></p>
+<p>
+	<strong>List files</strong>
+</p>
+<pre data-language="php" class="active_pre rainbow">ls
+</pre>
+<p>Use the <em>ls</em> command to see all the directories and files that are in your current directory. To clear things
+	up, a directory is just a synonym for a folder.</p>
+<p><br></p>
+<p>
+	<strong>List files (long form)</strong>
+</p>
+<pre data-language="python" class="rainbow">ls -l
+</pre>
+<p>Use the '<em>ls -l'</em> command to see a long-form, representation of the directories and files inside your current
+	directory.</p>
+<p>You will see some cryptic messages on the side. The '<i>drwx</i>' thing that you see are just file permissions for
+	that particular directory or file. For example, the first set of<em> '-'s</em> that follow the<i> 'd</i><em>'</em>
+	are the permissions allowed for the user. If it says '<em>rwx'</em> it means the user is allowed to read, write and
+	execute the file. If it just says <em>'r--' </em>means that the user can only read the file. The second set of three
+	<em>'-'s</em> represent the permissions for a group. The last three <em>'-'s</em> represent the permissions for
+	people who are not the user and are not in the particular group that is allowed. We will have to be changing some of
+	these permissions when we deploy our applications in the cloud. For now, it's important to know that there are
+	different file permissions which can either be read, write, or execute, and these permissions can vary depending on
+	if you are the user, or in the group specified in the listing.</p>
+<p><br></p>
+<p>
+	<strong>List all files (long form)</strong>
+</p>
+<pre data-language="python" class="rainbow">ls -a
+</pre>
+<p>Use the<em> 'ls - a'</em> command to see ALL the files. Linux flavored operating systems hide files that start with a
+	'.' by default. This command will show all the previous files and hidden files if there are any. The files that
+	start with a '.' are often configuration files.</p>
+<p><br></p>
+<p>
+	<strong>Changing to the current directory</strong>
+</p>
+<pre data-language="python" class="rainbow">cd .
+</pre>
+<p>From the previous command, we saw that<em> 'ls - a'</em> will list some interesting file names like '.' and '..' The
+	'.' is reserved to represent the current directory that we are in. If you run the <em>'cd . '</em> and then run the
+	'<em>pwd</em>' command, you'll see that we didn't move to a different directory. We told the computer to change our
+	directory to our current directory which means don't go anywhere! </p>
+<p><br></p>
+<p>
+	<strong>Changing to the parent directory</strong>
+</p>
+<pre data-language="php" class="rainbow">cd ..
+</pre>
+<p>Like the <em>'cd . ' </em>command, the '..' is reserved to represent the parent directory of the current folder that
+	we are in. If you run this command and then run the '<em>pwd</em>' command, you'll see that we navigated up one
+	directory(folder) structure. If you feel like the File Structure is starting to resemble the DOM (Document Object
+	Model), it's because they are very similar.</p>
+<p><br></p>
+<p>
+	<strong>Changing to the root directory</strong>
+</p>
+<pre data-language="python" class="rainbow">cd /
+</pre>
+<p>This command will change to the root directory of your computer. From this folder, you can access your application
+	folders.</p>
+<p><br></p>
+<p>
+	<strong>Changing to any folder</strong>
+</p>
+<pre data-language="python" class="rainbow">cd folder_name
+</pre>
+<p>The<em> 'cd' </em>command followed by a space and name of the folder you want to access will move you into that
+	directory, if it exists. This example would move you into the 'folder_name' directory.</p>
+<p><br></p>
+<p>
+	<strong>Making a new folder</strong>
+</p>
+<pre data-language="python" class="rainbow">mkdir new_directory_name
+</pre>
+<p>This command will make a new directory named 'new_directory_name'. Whatever argument you pass into this command will
+	be the name of your new file. After making the directory, you could run 'cd new_folder_name' to enter into that
+	directory.</p>
+<p><br></p>
+<p>
+	<strong>Delete an empty directory(folder)</strong>
+</p>
+<pre data-language="python" class="rainbow">rm directory_name
+//or
+rmdir directory_name</pre>
+<p><strong><br></strong></p>
+<p>
+	<strong>Delete a non-empty directory(folder)</strong>
+</p>
+<pre data-language="python" class="rainbow">rm -rf directory_name
+</pre>
+<p>If you try to delete a folder with contents inside you will get an error! Our computer wants us to say more
+	explicitly to delete this directory and everything inside of it by passing the<em> '-rf'</em> option. <strong>Be
+		careful with this command </strong>as could it accidentally delete files you didn't intend to delete or delete
+	some config files that you wouldn't want deleted at all!</p>
+<p><br></p>
+<p>
+	<strong>Creating a new file</strong>
+</p>
+<pre data-language="python" class="rainbow">touch README.md
+</pre>
+<p>The <em>'touch'</em> command will create a new, empty file with the name and extension type that you specify. You can
+	make any type of file if you provide the extension type. Run the above commands, and then run <em>'ls'</em> and you
+	will see your new files in the listing.</p>
+<p>
+	<strong>Removing a file</strong>
+</p>
+<pre data-language="python" class="rainbow">rm README.md
+</pre>
+<p>The <em>'rm'</em> command removes any file with the filename and extension provided.</p>
+<p>
+	<strong>Renaming/Moving a file</strong>
+</p>
+<pre data-language="python" class="rainbow">mv README.md  new_filename.md
+mv new_filename.md ../new_filename.md
+</pre>
+<p>The<em> 'mv' </em>command has two uses. First, you can rename a file by first providing the file's name and then
+	providing what you want the file to be renamed to. In the first example, <em>index.html</em> would be renamed to
+	<em>new_name_index.html</em>. Second, it can be used to move a file to a different folder. In the second example,
+	<em>new_name_index.html </em>would be moved up one directory with the same name. In either case, think of this
+	command as moving a file - into its current directory with a different name or into a different directory with the
+	same or different name.</p>
+<p><br></p>
+<p>
+	<strong>Copying a file</strong>
+</p>
+<pre data-language="python" class="rainbow">cp README.md README_copy.md
+</pre>
+<p>The <em>'cp</em>' command will copy a file into the current directory with the new name you provided. In the example,
+	say you were in your Desktop directory and you ran the above command. The Desktop directory would now have
+	<em>index.html </em>and <em>copy.html in it.</em></p>
+<p></p>
+<p>
+	<em><strong>Copying a directory</strong></em>
+</p>
+<pre data-language="python" class="rainbow">cp -rf directory_name copy_directory_name
+</pre>
+<p>Copying a directory is similar to a file but we need to pass the <em>'-rf'</em> option in order to copy all the
+	internal contents of the directory. First provide the name of the directory you want to copy and then the name of
+	the copy.</p>
+<p><br></p>
+<p><strong>Opening current directory in your GUI</strong></p>
+<p><em>On Mac or Linux use the "open" command:</em></p>
+<pre data-language="python" class="rainbow">open .
+</pre>
+<p>The <em>'open'</em> command will open your current directory in your GUI (in 'cmd' or command prompt, use "<em>start
+		."</em> instead). Likewise, you could open a file inside your directory by running something like "open
+	file_name". </p>
+<p><br></p>
+<p><em>On Windows, use the explorer command: </em></p>
+<pre class="rainbow" data-language="python">explorer .
+</pre>
+<p>The <em>'open'</em> command will open your current directory in your GUI (in 'cmd' or command prompt, use "<em>start
+		."</em> instead). Likewise, you could open a file inside your directory by running something like "open
+	file_name". </p>
+<p><br></p>
+<p><br></p>
+<p> <br> </p>

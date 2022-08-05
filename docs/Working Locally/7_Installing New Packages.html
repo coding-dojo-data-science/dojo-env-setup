@@ -1,0 +1,94 @@
+<h1>Installing New Python Packages</h1>
+<p><br><br></p>
+<h1>Package Manager: pip</h1>
+<h2>Objectives:</h2>
+<ul>
+	<li>What is a package?</li>
+	<li>What is a package manager?</li>
+	<li>How to install new packages</li>
+</ul>
+<hr>
+<p>Even though programming languages come with a lot right out of the box, you'll find yourself wanting to use some
+	functionality that is not included in your language's standard library. For example, since Python can be used for
+	more than just web development, web functionality does not come pre-loaded when we install Python. However, other
+	developers have created <strong>packages</strong> that we can download so we don't have to reinvent the wheel.</p>
+<p>Pip is the <strong>package manager</strong> we'll use in Python to install these third-party packages. (There are
+	other package managers, but for simplicity and fewer installations, we're sticking with pip because it was included
+	when we installed Python.) Rather than having to go search for packages and versions ourselves, package managers are
+	generally able to find the versions we need with just a single command from our end. </p>
+<h2>Warning: installing new packages can break others!</h2>
+<p>Python packages often rely on code found in other packages, then the other package is a "dependency". If the
+	dependency package dramatically alters the code that the other package uses, updating the dependency package could
+	break the other package!!!</p>
+<p><strong>It is VERY possible that you will break your dojo-env at some point by installing new packages. </strong></p>
+<p><strong>You should consider cloning your dojo-env </strong>as a new environment for you to test installing new
+	packages. If you wanted to create a new clone called "new-env", you would enter the conda command below:</p>
+<pre>conda create --name new-env --clone dojo-env
+</pre>
+<h2>
+	<p>Then, you should switch to your cloned environment before installing the new package. </p>
+	<pre>conda activate new-env</pre>
+	<p><strong>For more information on managing your environment, see the <a
+				href="https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html"
+				target="_blank">Managing Environments page on Anaconda's website.</a></strong></p>To Install a New
+	Package
+</h2>
+<p>Enter the pip install command in your terminal/GitBash. That command will look like this:</p>
+<pre data-language="bash">pip install {{package}} &lt;= NOTE: substitute {{package}} with the package you are installing
+</pre>
+<p>For example, if you wanted to install pandas-profiling (<a href="https://pandas-profiling.ydata.ai/docs/master/rtd/"
+		target="_blank">documentation</a>), you would run the following (in your terminal/GitBash):</p>
+<pre>pip install pandas-profiling</pre>
+<p><strong>Important Note: ALWAYS CHECK THE INSTALLATION INSTRUCTIONS FOR ANY NEW PACKAGE!! </strong></p>
+<p>Usually, python packages have documentation either on a website like read the docs or as their README for the package
+	repository. </p>
+<p><strong>You should always check their instructions, i</strong>n case there are additional steps/considerations.</p>
+<p>For example, if we check pandas-profiling <a
+		href="https://pandas-profiling.ydata.ai/docs/master/rtd/pages/installation.html" target="_blank">Installation
+		instructions</a>, we would see that they have an additional command that we need to run:</p>
+<pre>pip install -U pandas-profiling[notebook]
+jupyter nbextension enable --py widgetsnbextension
+</pre>
+<p><br></p>
+<p>Pip will then download the package requested and any packages that it may require. You will see progress bars and a
+	message indicating if it was successful or not.</p>
+<p>As an example, the output will look something like below if we were to install Django:</p>
+<p>
+	<img width="700"
+		src="https://s3.amazonaws.com/General_V88/boomyeah2015/codingdojo/curriculum/content/chapter/Screen_Shot_2018-03-20_at_5.56.54_PM.png">
+</p>
+<p><br></p>
+<h2>If You Encounter a Permissions Error</h2>
+<ul>
+	<li>First, try adding the --user flag to the end of your command. For example,</li>
+</ul>
+<pre class="active_pre">pip install pandas-profiling --user
+</pre>
+<ul>
+	<li><strong>If the user flag doesn't fix it:</strong></li>
+	<ul>
+		<li><strong>For Windows users: </strong>
+			<ul>
+				<li>Try right-clicking on GitBash in the Start Menu and "Run as Administrator", then try again.</li>
+			</ul>
+		</li>
+		<li><strong>For Mac Users:</strong></li>
+		<ul>
+			<li>Try going into System Preferences &gt; Security and Privacy &gt; click on the Privacy tab. </li>
+			<li>Check the FIles and Folders section on the sidebar. </li>
+			<li>If you do not see Terminal listen in the right sidebar (or if it is grayed out), click on the lock icon
+				in the bottom left corner and then enter your usual password for your computer.</li>
+			<li>Then click on the check box next to Terminal to grant access (or click the + button to add Terminal -
+				which is stored in Applications &gt; Utilities)</li>
+		</ul>
+	</ul>
+</ul>
+<p></p>
+<h1>Package Manager: conda</h1>
+<p>Just like we can install python packages from PyPi (using pip), we can also install packages from Anaconda. Check the
+	Installation instructions on the documentation page for the package you want to install and see if they have both a
+	conda and a pip installation option.</p>
+<p>Generally, if there is a conda install command available, that will be the better option for your dojo-env. </p>
+<p><strong>Note: if you ever break your environment, return to the the Instructions for Install Python Locally.
+		Specifically, see the final lesson for "Updating your dojo-env"</strong></p>
+<p><br></p>

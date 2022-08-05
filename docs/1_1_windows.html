@@ -9,7 +9,7 @@
 							sheet</a>.</li>
 				</ul>
 			</li>
-			<li>Download the Git for Windows Installer:&nbsp;<a href="https://gitforwindows.org/">Git for Windows
+			<li>Download the Git for Windows Installer: <a href="https://gitforwindows.org/">Git for Windows
 					download</a>
 				<ul>
 					<li>Select the default options.</li>
@@ -18,17 +18,16 @@
 		</ul>
 	</li>
 </ul>
-<h3>Tool #2: GitHub&nbsp;Desktop</h3>
+<h3>Tool #2: GitHub Desktop</h3>
 <ul>
-	<li>Download the installer from this link:&nbsp;&nbsp;<a href="https://desktop.github.com/" target="_blank">GitHub
-			Desktop</a></li>
+	<li>Download the installer from this link: <a href="https://desktop.github.com/" target="_blank">GitHub Desktop</a>
+	</li>
 	<li>Once installation is complete, open the application.<ul>
 			<li>Log into the same GitHub account you have been using for your projects.</li>
 		</ul>
 	</li>
-	<li>Once you have logged into the app,&nbsp; open the Options menu<ul>
-			<li>&nbsp;Click on&nbsp;<code>File</code>&nbsp;in the menu bar and then
-				select&nbsp;<code>Options</code>&nbsp;</li>
+	<li>Once you have logged into the app, open the Options menu<ul>
+			<li> Click on <code>File</code> in the menu bar and then select <code>Options</code> </li>
 			<li>Select the "Integrations" tab.</li>
 			<li>Make sure the Shell dropdown menu says GitBash<ul>
 					<li>If not, select it from the dropdown menu.</li>
@@ -38,10 +37,10 @@
 		</ul>
 	</li>
 </ul>
-<h3>Tool #3: Python&nbsp;Distribution - Anaconda&nbsp;</h3>
+<h3>Tool #3: Python Distribution - Anaconda </h3>
 <ul>
 	<li>Anaconda is a data-science-focused python distributable that comes with a convenient GUI program for working
-		with our python environments.&nbsp;</li>
+		with our python environments. </li>
 	<li>Download and run the installer from the following link: <a href="https://www.anaconda.com/products/individual"
 			target="_blank">Anaconda Individual Edition</a>
 		<ul>
@@ -64,7 +63,7 @@
 			<h3>
 				<font face="Gotham-Rounded-Medium"><br></font>
 			</h3>
-		</div>Tool #3 -&nbsp;Verification: Making sure GitBash Knows "conda"
+		</div>Tool #3 - Verification: Making sure GitBash Knows "conda"
 	</font>
 </h3>
 <ol>
@@ -72,19 +71,19 @@
 		<p>Windows users may need to take an additional step to get anaconda and GitBash working together.</p>
 	</li>
 	<li>
-		<p>Open GitBash from your start menu.&nbsp;</p>
+		<p>Open GitBash from your start menu. </p>
 	</li>
 	<li>
-		<p>Enter the command&nbsp;<code>conda</code> and press enter.</p>
+		<p>Enter the command <code>conda</code> and press enter.</p>
 		<ol>
-			<li><strong>If you see a list of available conda commands, great!&nbsp;</strong>
+			<li><strong>If you see a list of available conda commands, great! </strong>
 				<ol>
 					<li>You are all set to move on to Step 2: "Setting Up Your <code>dojo-env</code>"</li>
-					<li>Disregard the final section below that says "Adding Conda to&nbsp;GitBash"</li>
+					<li>Disregard the final section below that says "Adding Conda to GitBash"</li>
 				</ol>
 			</li>
 			<li><strong>If you see a message that says: "bash: conda: command not found", then follow the instructions
-					below under "Adding Conda to&nbsp;GitBash"</strong></li>
+					below under "Adding Conda to GitBash"</strong></li>
 		</ol>
 	</li>
 </ol>
@@ -92,7 +91,7 @@
 <p>Note: the instructions below are adapted from this <a
 		href="https://fmorenovr.medium.com/how-to-add-conda-to-git-bash-windows-21f5e5987f3d">Blog Post</a></p>
 <ul>
-	<li>Once you have installed anaconda, use File Explorer to Open Your <strong>User</strong> folder. (Windows key +E
+	<li>Once you have installed anaconda, <strong>use File Explorer to Open Your User folder</strong>. (Windows key +E
 		is shortcut for File Explorer)<ul>
 			<li>This is the folder that contains your Desktop, Downloads, My Documents, and other user-specific files.
 				<ul>
@@ -109,41 +108,59 @@
 			</li>
 		</ul>
 	</li>
-	<li>Inside your user folder, you should see a folder named "<code>anaconda3</code>" (note: not the hidden folder
-		called <code>.anaconda</code> that starts with a <code>.</code>). Double-click the folder to open it.<ul>
-			<li>Yous should see a folder named&nbsp;<code>etc</code>&nbsp;inside the <code>anaconda3</code> folder. Open
-				it.</li>
-			<li>You should see a folder called&nbsp;<code>profile.d</code> folder inside the <code>etc</code>. Open it.
+	<li><strong>Inside your user folder, you should see a folder named "<code>anaconda3</code>" (note: not the hidden
+			folder called <code>.anaconda</code> that starts with a <code>.</code>). Double-click the folder to open
+			it.</strong>
+		<ul>
+			<li>You should see a <strong>folder named <code>etc</code> inside the <code>anaconda3</code> folder. Open
+					it.</strong></li>
+			<li>You should see a <strong>folder called <code>profile.d</code> folder inside the <code>etc</code>. Open
+					it.</strong>
 				<ul>
-					<li>You should see a <code>conda.sh</code> file in this folder&nbsp;<ul>
+					<li>You <strong>should see a <code>conda.sh</code> file in this folder (</strong>it may just say
+						conda if your File Explorer is set to not show names for known extensions). <ul>
 							<li>(Note: depending on your setting in File Explorer, it may not show the .sh and may just
-								show "conda".&nbsp;</li>
+								show "conda", which is fine!) </li>
 						</ul>
 					</li>
 				</ul>
 			</li>
 		</ul>
 		<ul>
-			<li>Right-click somewhere in the "profile.d" folder and select "Git Bash Here".</li>
+			<li><strong>Right-click somewhere in the "profile.d" folder and select "Git Bash Here".</strong>
+				<ul>
+					<li>Note for Windows 11 Users: "GitBash here" is going to appear in the "Show more options" sub-menu
+						when you right-click<br><img
+							src="https://s3.us-east-1.amazonaws.com/General_V88/boomyeah2015/codingdojo/curriculum/content/chapter/1659739323__windows_11_right_click1.png"
+							width="213" height="325" style="width: 213px; height: 325px;">. <img
+							src="https://s3.us-east-1.amazonaws.com/General_V88/boomyeah2015/codingdojo/curriculum/content/chapter/1659739359__windows_11_right_click2.png"
+							width="225" height="229" style="width: 225px; height: 229px;"></li>
+				</ul>
+			</li>
 		</ul>
 	</li>
-	<li>&nbsp;From the GitBash window that opens:<ul>
-			<li>Enter the command <code>pwd</code>&nbsp;and hit enter and examine the file path that's displayed<ul>
+</ul>
+<p><br></p>
+<ul>
+	<li> From the GitBash window that opens:<ul>
+			<li><strong></strong><strong>Enter the command </strong><code><strong>pwd</strong></code> and hit enter and
+				examine the file path that's displayed<ul>
 					<li>If the file path displayed ends with <code>profile.d</code> then are in the right folder!</li>
-					<li>If not, restart the "Adding Conda to&nbsp;GitBash" instructions again and make sure you can find
-						your profile.d folder.&nbsp;<ul>
+					<li>If not, restart the "Adding Conda to GitBash" instructions again and make sure you can find your
+						profile.d folder. <ul>
 							<li>Reach out to your instructor or a TA if you are still having issues.</li>
 						</ul>
 					</li>
 				</ul>
 			</li>
-			<li class="text-justify">Next, Enter the following command and hit enter:<ul>
+			<li class="text-justify"><strong>Next, Enter the following command and hit enter</strong>:<ul>
 					<li><code>echo ". '${PWD}'/conda.sh" &gt;&gt; ~/.bashrc<br></code></li>
 				</ul>
 			</li>
 		</ul>
 	</li>
-	<li>Open a new GitBash window and enter <code>conda</code> again.&nbsp;<ul>
+	<li><strong>Open a new GitBash window and enter <code>conda</code> again.</strong>
+		<ul>
 			<li>You should no longer get the "bash: conda: command not found" error message!<ul>
 					<li>Reach out to your instructor or a TA if you are still having issues.</li>
 				</ul>
