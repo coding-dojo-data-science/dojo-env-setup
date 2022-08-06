@@ -1,0 +1,83 @@
+<h1>conda activate error - GitBash</h1>
+<h2>PROBLEM:</h2>
+<ul>
+	<li>You see the following error message in GitBash:</li>
+</ul>
+<pre>CommandNotFoundError: Your shell has not been properly configured to use 'conda activate'.
+To initialize your shell, run
+    $ conda init &lt;shell_name&gt;
+Currently supported shells are:
+  - bash
+  - fish
+  - tcsh
+  - xonsh
+  - zsh
+  - powershell
+See 'conda init --help' for more information and options.&lt;/shell_name&gt;
+</pre>
+<h3>Solution 1:</h3>
+<ul>
+	<li>For your computer,&nbsp; run "source activate dojo-env" instead of conda activate.<ul>
+			<li>ANYTIME you see a set of instructions that says to run&nbsp;"conda activate" you should ALWAYS replace
+				the word "conda" with "source".&nbsp;</li>
+		</ul>
+	</li>
+</ul>
+<pre class="active_pre">source activate dojo-env</pre>
+<div>
+	<h3>PROBLEM - V2:&nbsp;</h3>
+</div>
+<div>
+	<ul>
+		<li>If you are seeing this message EVERY time you open a new GitBash Window.&nbsp;</li>
+	</ul>
+	<p>Solution 2:&nbsp;</p>
+	<ul>
+		<li>During step 2, you were told to run the following echo conda activate command but your computer requires you
+			to use "source activate" instead of "conda activate"</li>
+	</ul>
+	<pre>## INCORRECT What you&nbsp;ran previously
+echo "conda activate dojo-env" &gt;&gt; ~/.bash_profile</pre>
+	<ul>
+		<li><strong>Step 1) To fix this, you need to open the hidden file ".bash_profile" in VS Code to fix the
+				command</strong>.<ul>
+				<li>In GitBash run the following command to open the file in VS Code.</li>
+			</ul>
+		</li>
+	</ul>
+	<pre>code ~/.bash_profile</pre>
+	<ul>
+		<li><strong>If this doesn't work and says file not found,</strong> change the "~./" to your full file path to
+			your user folder:<ul>
+				<li>In the example below, replace&nbsp;&lt;USERFOLDER&gt; with your actual User account name.<br>
+					<ul>
+						<li>Note: if you do not know your username, run the "whoami" command in GitBash.&nbsp;The text
+							displayed is your &lt;USERFOLDER&gt;</li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+	</ul>
+	<pre class="active_pre">code /c/Users/&lt;USERFOLDER&gt;/.bash_profile</pre>
+	<p><br></p>
+	<ul>
+		<li><strong>Step 2) in the vs code window that opens, you should see the 3 lines of text
+				below.&nbsp;<br></strong></li>
+	</ul>
+	<pre>conda activate dojo-envalias jnb="jupyter notebook"alias lab="jupyter lab"</pre>
+	<ul>
+		<li>Replace the word "conda" with "source" and then&nbsp;click on&nbsp;File &gt; Save.</li>
+		<ul>
+			<li>So your final .bash_profile should now say:&nbsp;</li>
+		</ul>
+	</ul>
+	<pre>source activate dojo-env
+alias jnb="jupyter notebook"
+alias lab="jupyter lab"</pre>
+	<p>&nbsp;(Note: it is okay if there is additional text in this file. Whats important is that you change the conda
+		activate command to source activate.)&nbsp;</p>
+	<p><br></p>
+	<ul>
+		<li><strong>Step 3)&nbsp;Open a NEW GitBash window and the message should no longer appear!</strong></li>
+	</ul>
+</div>
