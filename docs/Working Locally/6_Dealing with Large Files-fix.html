@@ -1,0 +1,48 @@
+<h1>Dealing with Large Files</h1>
+<p> <br></p>
+<h3>Dealing with Files &gt;100 MB</h3>
+<p>GitHub has a single-file-size limit of 100 MB. This means that attempting to commit any file larger than 100 MB will
+	result in a fatal error when attempting to push your work to GitHub.</p>
+<ul>
+	<li>GitHub Desktop warns you if you are about to save a file that is over this limit using the pop-up below:</li>
+</ul>
+<figure><img
+		src="../../images/lp/Large_file_warning.png"
+		style="cursor: pointer; max-width: 100%; height: auto;"></figure>
+<blockquote>
+	<ul>
+		<li>NOTE: If you filter out all of the requested conditions for your movies, and saved them as gzip-compressed
+			csv's, your files should NOT be over the 100 MB limit!</li>
+	</ul>
+</blockquote>
+<ul>
+	<li>However, should you run into this following warning from GitHub desktop about your data files being too big you
+		should follow the instructions below:<ul>
+			<li>DO NOT CLICK COMMIT ANYWAY!!!</li>
+			<li>Click <code>Cancel</code> instead. We are going to tell git to ignore those large files. This means that
+				it will not try to save them to your commit, but it will let you keep them in the folder without
+				complaining</li>
+		</ul>
+	</li>
+</ul>
+<figure><img
+		src="../../images/lp/Large_file_warning.png"
+		style="cursor: pointer; max-width: 100%; height: auto;"></figure>
+<ul>
+	<li>For EACH file that was too large:<ul>
+			<li>Right click on it from the sidebar of GitHub Desktop.</li>
+			<li>Select <code>"Ignore file"</code></li>
+		</ul>
+	</li>
+</ul>
+<figure><img
+		src="../../images/lp/ignore_file.png"
+		style="cursor: pointer; max-width: 100%; height: auto;"></figure>
+<ul>
+	<li>You will see the large files' names disappear from the changes sidebar. Instead you will see that a file called
+		<code>.gitignore</code> has appeared. This file is how github desktop knows which files to ignore.</li>
+</ul>
+<figure><img
+		src="../../images/lp/gitignore.png"
+		style="cursor: pointer; max-width: 100%; height: auto;"></figure>
+<p> <br> <br></p>

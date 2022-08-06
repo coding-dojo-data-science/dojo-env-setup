@@ -1,0 +1,41 @@
+<h1>GitBash Opens in the Wrong Folder</h1>
+<h2></h2>
+<h3>PROBLEM: </h3>
+<div>Opening GitBash from Windows start menu (not from Github Desktop) and starting jupyter notebook displays a folder
+	containing bin/cmd/dev/etc ( see screenshot below) instead of the expected User folder with Documents/Downloads/etc.
+</div>
+<div>
+	<p><br></p>
+	<figure><img
+			src="../../images/lp/gitbash_wrong_home.png"
+			style="width: 660px; height: 548px;" width="660" height="548"></figure>
+	<p></p>
+	<h2>Cause</h2>
+	<p>Your GitBash program defaults to the folder where GItBash is installed. What you are seeing above is the contents
+		of C:/Program Files/GitBash. This happens to a small percentage of windows users. </p>
+	<p><br></p>
+	<h3>Solution/Workaround</h3>
+</div>
+<ul>
+	<li>First, run the following echo command to add one more alias to GitBash and then open a new GitBash window</li>
+</ul>
+<pre class="rainbow" data-language="ruby">echo 'alias ~="$HOME"' &gt;&gt; ~/.bash_profile</pre>
+<ul>
+	<li>Now test the command by runing the commands below to change directory to "~" and to display the current folder
+		name. </li>
+</ul>
+<pre class="rainbow" data-language="ruby">cd ~
+ls</pre>
+<ul>
+	<li>If you can see your Downloads, Desktop, Documents, etc. folders then the alias worked!</li>
+</ul>
+<h3>New Workflow</h3>
+<ul>
+	<li>From now on, if you want to open a GitBash in your user folder, you will run "cd ~" as soon as you open a new
+		GitBash window.<ul>
+			<li>Note: if you are opening a specific repo from GitHub Desktop you will NOT want to run this command,
+				since you are already in the desired folder.</li>
+		</ul>
+	</li>
+</ul>
+<p> <br></p>
