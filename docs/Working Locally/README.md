@@ -1,0 +1,636 @@
+# WORKING LOCALLY Instructions
+
+<img src="../../images/Data Science Thumbnail.png">
+
+<!DOCTYPE html>
+<html><body><h1>WORKING LOCALLY LESSONS (Copy of LP)</h1><br><h2>Table of Contents:</h2><ol>1. Guide: Your Local Workflow<br>2. GitHub Desktop<br>3. Tips for Colab Users<br>4. Resource: Terminal Commands<br>5. Resource: Jupyter Notebook Cheat Sheets<br>6. Dealing with Large Files<br>7. Installing New Python Packages<br>8. Show Hidden Files<br></ol><br><hr></hr><br><h1>1. Guide: Your Local Workflow</h1>
+<ul>
+	<li>Lecture Recording: <a href="https://youtu.be/5HcBQko4F4c" target="_blank">Intro to Local Workflow</a>
+		<ul>
+			<li>Jump to the "New Tools" section (~5:37)</li>
+		</ul>
+	</li>
+	<li><a href="https://docs.google.com/presentation/d/1GDi5VCNftIaGTtBg2kQtjhKQyCSMiOkhd7K3czxCUZI/edit?usp=sharing"
+			target="_blank">Companion Slide Deck</a></li>
+	<li><a href="https://s3.us-east-1.amazonaws.com/General_V88/boomyeah2015/codingdojo/curriculum/content/chapter/1657053474__Reference_ Local Workflow Slides.pdf"
+			target="_blank">Reference Slides</a> (PDF Download)</li>
+</ul>
+<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/5HcBQko4F4c?start=337"
+	title="YouTube video player" frameborder="0"
+	allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""
+	class="vimeo_responsive" style="width: 938px; height: 527.625px;"></iframe>
+<p><br></p><br><hr></hr><br><h1>2. GitHub Desktop</h1>
+<p>Now that you have 2. GitHub Desktop and python installed locally, you should create a new GitHub repository and Jupyter
+        Notebook for each assignment (except for your Project Assignments - each Project should have its own repo). This
+        lesson will walk you through creating a new repository and notebook with annotated screenshots. <br></p>
+<h4>Reference Slides</h4>
+<p>Additionally, please bookmark these <a
+                href="https://docs.google.com/presentation/d/14YyP3vtZ-CHOa6f-hAQWIO4H4_xlR8yoyvXmE_XzLlE/edit?usp=sharing"
+                target="_blank">reference slides</a> for a summary of the workflow for creating and working in Jupyter
+        notebooks and GitHub desktop. You will want to refer back to this regularly as you get used to working on your
+        local computer. </p>
+<p><br></p>
+<h3>2. GitHub Desktop Keyboard Shortcuts</h3>
+<div>2. GitHub Desktop has many convenient keyboard shortcuts. The select list below is worth learning!</div>
+<div>
+        <p><b>Select List:</b></p>
+        <ul>
+                <li><strong>Open Terminal/GitBash:</strong></li>
+                <ul>
+                        <li>Mac &amp; Windows: <strong>Control + ` </strong>(same key as ~)<br><br>
+                        </li>
+                </ul>
+                <li><strong>Open Visual Studio Code:</strong></li>
+                <ul>
+                        <li>Mac: Command + Shift + A</li>
+                        <li>Windows: Control + Shift + A<br><br>
+                        </li>
+                </ul>
+                <li><strong>Open in File Browser:</strong></li>
+                <ul>
+                        <li>Open in File Explorer (Windows)</li>
+                        <ul>
+                                <li>Control + Shift + F</li>
+                        </ul>
+                        <li> Open in Finder (Mac):</li>
+                        <ul>
+                                <li>Control + Shift + F<br><br>
+                                </li>
+                        </ul>
+                </ul>
+                <li><strong>View on GitHub:</strong></li>
+                <ul>
+                        <li>Mac: Command + Shift + G</li>
+                        <li>Windows: Control + Shift + G</li>
+                </ul>
+        </ul>
+        <p><b>Full List: </b><a
+                        href="https://docs.github.com/en/desktop/installing-and-configuring-github-desktop/overview/keyboard-shortcuts"
+                        target="_blank">https://docs.github.com/en/desktop/installing-and-configuring-github-desktop/overview/keyboard-shortcuts</a><br>
+        </p>
+        <h2></h2>
+        <h2>Creating a Repository </h2>
+        <ul>
+                <li>Open 2. GitHub Desktop and click on the drop-down menu next to the "Current Repository" in the top-left
+                        of the app.</li>
+        </ul>
+        <figure><img src="../images/lp/GitHub%20Desktop%20Screenshot%200A.png"
+                        style="cursor: pointer; max-width: 100%; height: auto;"></figure>
+        <ul>
+                <li>Select the "Add" button next to the search bar <figure><img
+                                        src="../images/lp/GitHub%20Desktop%20Screenshot%200B.png"
+                                        style="cursor: pointer; max-width: 100%; height: auto;"></figure>
+                </li>
+                <li>Select "Create New Repository" from the menu that appears. <figure><img
+                                        src="../images/lp/Github%20Desktop%20Screenshot%200C.png"
+                                        style="cursor: pointer; max-width: 100%; height: auto;"></figure>
+                </li>
+                <li>A pop-up window will appear with several fields/options.</li>
+        </ul>
+        <figure><img src="../images/lp/GitHub%20Desktop%20Screenshot%202.png"
+                        style="cursor: pointer; max-width: 100%; height: auto;"></figure>
+        <ul>
+                <li>Add a Name for the repository.<ul>
+                                <li>Repo names must be unique.<ul>
+                                                <li>Use a descriptive name.</li>
+                                        </ul>
+                                </li>
+                                <li>Description is optional.</li>
+                                <li>Use the Choose button to select an alternative filepath for the repo.<ul>
+                                                <li>By default, 2. GitHub Desktop saves repo's to a <code>GitHub</code>
+                                                        folder inside of your Documents folder.</li>
+                                        </ul>
+                                </li>
+                        </ul>
+                </li>
+        </ul>
+        <figure><img src="../images/lp/GitHub%20Desktop%20Screenshot%203.png"
+                        style="cursor: pointer; max-width: 100%; height: auto;"></figure>
+        <ul>
+                <li>Make sure to:<ul>
+                                <li>Check "initialize this repository with a README"</li>
+                                <li>Select "Python" from the Git Ignore dropdown menu.</li>
+                                <li>Select a license (GNU GPLv3 allows others to use your code for any open-source
+                                        project. It cannot be used in a closed source package.)</li>
+                        </ul>
+                </li>
+                <li>Click "Create Repository".<ul>
+                                <li>You should see the main pane of the app change to look like the image below.</li>
+                        </ul>
+                </li>
+        </ul>
+        <figure><img src="../images/lp/GitHub%20Desktop%20Screenshot%204.png"
+                        style="cursor: pointer; max-width: 100%; height: auto;"></figure>
+        <h2>Open the Repository with Jupyter Notebook</h2>
+        <ul>
+                <li>While it is ultimately up to you if you would rather use Jupyter Notebooks or VS Code, we will walk
+                        through the Jupyter Notebook instructions.</li>
+                <li>Click on the "Repository" menu on the menu bar.</li>
+        </ul>
+        <figure><img src="../images/lp/GitHub%20Desktop%20Screenshot%205.png"
+                        width="215" height="221" style="cursor: pointer; max-width: 100%; height: 221px; width: 215px;">
+        </figure>
+        <ul>
+                <li>Select Open in Terminal(/GitBash for Windows)</li>
+        </ul>
+        <figure><img src="../images/lp/GitHub%20Desktop%20Screenshot%206.png"
+                        style="cursor: pointer; max-width: 100%; height: auto;"></figure>
+        <ul>
+                <li>You should now have a new terminal open inside of the same folder as your repo.</li>
+        </ul>
+        <figure><img src="../images/lp/GitHub%20Desktop%20Screenshot%207.png"
+                        width="528" height="374" style="cursor: pointer; max-width: 100%; height: 374px; width: 528px;">
+        </figure>
+        <ul>
+                <li>Start Jupyter Notebook by entering <code>jupyter notebook</code> in your terminal.<ul>
+                                <li>If you followed the full Local Python Installation instructions, you should be able
+                                        to <code>jnb</code> instead of the entire phrase.</li>
+                        </ul>
+                </li>
+                <li>Your terminal should then start the server for Jupyter Notebook and a new web browser tab should
+                        open. <figure><img
+                                        src="../images/lp/GitHub%20Desktop%20Screenshot%207B.png"
+                                        width="535" height="336"
+                                        style="cursor: pointer; max-width: 100%; height: 336px; width: 535px;"></figure>
+                </li>
+                <li>Click on the "New" button on the top-right of the Jupyter Notebook file browser page. <i><img
+                                        src="../images/lp/GitHub%20Desktop%20Screenshot%208.png"
+                                        width="749" height="367"
+                                        style="cursor: pointer; max-width: 100%; height: 367px; background-color: rgb(255, 255, 255); width: 749px;"></i>
+                </li>
+                <li>You should see <code>Python (dojo-env)</code> as an option in the dropdown menu.<ul>
+                                <li>Select it and a new blank "Untitled" notebook should open.</li>
+                        </ul>
+                </li>
+        </ul>
+        <figure><img src="../images/lp/GitHub%20Desktop%20Screenshot%2010.png"
+                        width="351" height="274" style="cursor: pointer; max-width: 100%; height: 274px; width: 351px;">
+        </figure>
+        <ul>
+                <li>Click on the word "Untitled" and enter a more appropriate title, like "Sakila-Core"</li>
+        </ul>
+        <figure><img src="../images/lp/GitHub%20Desktop%20Screenshot%2011B.png"
+                        width="549" height="270" style="cursor: pointer; max-width: 100%; height: 270px; width: 549px;">
+        </figure>
+        <h3>
+                <div>
+                        <h3></h3>
+                </div>
+                <div>
+                        <h3></h3>
+                </div>Commit Changes with 2. GitHub Desktop
+        </h3>
+        <ul>
+                <li>Hop back to GitHub desktop and notice that the main display has changed. It should be showing that
+                        you have created a new file. <figure><img
+                                        src="../images/lp/GitHub%20Desktop%20Screenshot%2011.png"
+                                        width="651" height="421"
+                                        style="cursor: pointer; max-width: 100%; height: 421px; width: 651px;"></figure>
+                </li>
+                <li>Commit your work thus far, by entering a message in the Message box in the lower left corner.</li>
+        </ul>
+        <figure><img src="../images/lp/GitHub%20Desktop%20Screenshot%2013.png"
+                        style="cursor: pointer; max-width: 100%; height: auto;"></figure>
+        <ul>
+                <li>After entering your commit message, click "Commit to main" <figure><img
+                                        src="../images/lp/GitHub%20Desktop%20Screenshot%2014.png"
+                                        style="cursor: pointer; max-width: 100%; height: auto;"></figure>
+                </li>
+                <li>Finally, click on "Publish repository" at the top of the window. <figure><img
+                                        src="../images/lp/GitHub%20Desktop%20Screenshot%2015.png"
+                                        width="531" height="52"
+                                        style="cursor: pointer; max-width: 100%; height: 52px; width: 531px;"></figure>
+                </li>
+        </ul>
+        <p>As you continue to work in your notebook, you will want to save it and commit the changes to this repository.
+                More commits is better than less! This ensures your most up to date work is saved!</p>
+        <p><br></p>
+        <h2></h2>
+        <h2></h2>
+        <p> <br></p>
+
+</div><br><hr></hr><br><h1>3. Tips for Colab Users</h1>
+<blockquote>Scroll down for a visual comparison of the Colab vs Jupyter Notebook!<br></blockquote>
+<h2>Tips for Moving from Google Colab to Jupyter Notebook</h2>
+<p>Google Colab was designed to mimic Jupyter Notebooks. While they are different, they fundamentally work the same way.
+	Here are a few tips for moving from Colab to Jupyter.</p>
+<ul>
+	<li><strong>Auto-Complete and Docstrings are NOT automatic with Jupyter Notebooks.</strong>
+		<ul>
+			<li>Press "Tab" to get a suggested autocompletion.<ul>
+					<li>This works for file paths, too!</li>
+				</ul>
+			</li>
+			<li>Press "Shift+Tab" when your cursor is inside the parentheses for a function.<ul>
+					<li>Press Shift+Tab 4 times in a row to open the documentation in a larger window.</li>
+				</ul>
+			</li>
+		</ul>
+	</li>
+	<li><strong>Repos, repos, repos!</strong>
+		<ul>
+			<li>You will pretty much always want to create a new notebook or analysis inside a GitHub repository. This
+				makes it easier to find the notebook again, share it, and keep essential files stored with your
+				notebook.</li>
+		</ul>
+	</li>
+	<li><strong>Accessing Files will work very differently.</strong>
+		<ul>
+			<li>You will no longer be mounting Google Drive to access your files.<ul>
+					<li>Instead, you will download files to your computer (preferably in the same repo folder as your
+						notebook).</li>
+				</ul>
+			</li>
+		</ul>
+	</li>
+</ul>
+<p><br></p>
+<p><br></p>
+<h2>Interface Comparison</h2>
+<ul>
+	<li>In the screenshots below, several key functions have been annotated using color to convey which elements of the
+		Coalb interface is equivalent to what elements of the Jupyter Notebook interface. <ul>
+			<li>Note: in some situations, the functionality of 1 element in Colab is split into 2 in Jupyter (or vice
+				versa).</li>
+			<li>For more information, please read the Guide: Your Local Workflow lesson and watch the included
+				walkthrough.</li>
+		</ul>
+	</li>
+</ul>
+<h3>Interface Comparison - Notebook Editor</h3>
+<div>
+	<h3></h3>
+	<figure><img
+			src="../images/lp/Colab_Interface_vs_Jupyter_annotated.png"
+			style="width: 574px; height: 397px;" width="574" height="397"></figure>
+	<p></p>
+	<h3>Interface Comparison - File Sidebar (Colab) / Files Tab (Jupyter)</h3>
+</div>
+<p></p>
+<figure><img
+		src="../images/lp/Colab_vs_Jupyter_Files_annotated.png"
+		style="width: 686px; height: 488px;" width="686" height="488"></figure><br><hr></hr><br><p> <br> <br></p>
+<h1>4. Resource: Terminal Commands</h1>
+<p>To get started, open up your terminal or GitBash and try the commands below. Note that most of these work well in the
+	Windows command prompt (cmd) as well, but not all of them. </p>
+<p><br></p>
+<blockquote><strong>For an interactive game to help learn terminal/gitbash commands</strong>, check out: <a
+		href="http://web.mit.edu/mprat/Public/web/Terminus/Web/main.html">http://web.mit.edu/mprat/Public/web/Terminus/Web/main.html</a>
+</blockquote>
+<p><br></p>
+<p><strong>Windows users are strongly encouraged to use GitBash instead of the Command Prompt. </strong>The Command
+	Prompt does not use the same commands. For a table comparison of commands for a Linux-based shell vs windows'
+	command prompt, <a href="https://www.geeksforgeeks.org/linux-vs-windows-commands/" target="_blank">see this
+		article</a>.</p>
+<p></p>
+<p><br></p>
+<p>
+	<strong>Present working directory</strong>
+</p>
+<pre data-language="python" class="rainbow">pwd
+</pre>
+<p>Use this command any time you are unsure where you are currently in your file structure. <em>pwd</em> stands for
+	Present Working Directory. </p>
+<p><br></p>
+<p>
+	<strong>List files</strong>
+</p>
+<pre data-language="php" class="active_pre rainbow">ls
+</pre>
+<p>Use the <em>ls</em> command to see all the directories and files that are in your current directory. To clear things
+	up, a directory is just a synonym for a folder.</p>
+<p><br></p>
+<p>
+	<strong>List files (long form)</strong>
+</p>
+<pre data-language="python" class="rainbow">ls -l
+</pre>
+<p>Use the '<em>ls -l'</em> command to see a long-form, representation of the directories and files inside your current
+	directory.</p>
+<p>You will see some cryptic messages on the side. The '<i>drwx</i>' thing that you see are just file permissions for
+	that particular directory or file. For example, the first set of<em> '-'s</em> that follow the<i> 'd</i><em>'</em>
+	are the permissions allowed for the user. If it says '<em>rwx'</em> it means the user is allowed to read, write and
+	execute the file. If it just says <em>'r--' </em>means that the user can only read the file. The second set of three
+	<em>'-'s</em> represent the permissions for a group. The last three <em>'-'s</em> represent the permissions for
+	people who are not the user and are not in the particular group that is allowed. We will have to be changing some of
+	these permissions when we deploy our applications in the cloud. For now, it's important to know that there are
+	different file permissions which can either be read, write, or execute, and these permissions can vary depending on
+	if you are the user, or in the group specified in the listing.</p>
+<p><br></p>
+<p>
+	<strong>List all files (long form)</strong>
+</p>
+<pre data-language="python" class="rainbow">ls -a
+</pre>
+<p>Use the<em> 'ls - a'</em> command to see ALL the files. Linux flavored operating systems hide files that start with a
+	'.' by default. This command will show all the previous files and hidden files if there are any. The files that
+	start with a '.' are often configuration files.</p>
+<p><br></p>
+<p>
+	<strong>Changing to the current directory</strong>
+</p>
+<pre data-language="python" class="rainbow">cd .
+</pre>
+<p>From the previous command, we saw that<em> 'ls - a'</em> will list some interesting file names like '.' and '..' The
+	'.' is reserved to represent the current directory that we are in. If you run the <em>'cd . '</em> and then run the
+	'<em>pwd</em>' command, you'll see that we didn't move to a different directory. We told the computer to change our
+	directory to our current directory which means don't go anywhere! </p>
+<p><br></p>
+<p>
+	<strong>Changing to the parent directory</strong>
+</p>
+<pre data-language="php" class="rainbow">cd ..
+</pre>
+<p>Like the <em>'cd . ' </em>command, the '..' is reserved to represent the parent directory of the current folder that
+	we are in. If you run this command and then run the '<em>pwd</em>' command, you'll see that we navigated up one
+	directory(folder) structure. If you feel like the File Structure is starting to resemble the DOM (Document Object
+	Model), it's because they are very similar.</p>
+<p><br></p>
+<p>
+	<strong>Changing to the root directory</strong>
+</p>
+<pre data-language="python" class="rainbow">cd /
+</pre>
+<p>This command will change to the root directory of your computer. From this folder, you can access your application
+	folders.</p>
+<p><br></p>
+<p>
+	<strong>Changing to any folder</strong>
+</p>
+<pre data-language="python" class="rainbow">cd folder_name
+</pre>
+<p>The<em> 'cd' </em>command followed by a space and name of the folder you want to access will move you into that
+	directory, if it exists. This example would move you into the 'folder_name' directory.</p>
+<p><br></p>
+<p>
+	<strong>Making a new folder</strong>
+</p>
+<pre data-language="python" class="rainbow">mkdir new_directory_name
+</pre>
+<p>This command will make a new directory named 'new_directory_name'. Whatever argument you pass into this command will
+	be the name of your new file. After making the directory, you could run 'cd new_folder_name' to enter into that
+	directory.</p>
+<p><br></p>
+<p>
+	<strong>Delete an empty directory(folder)</strong>
+</p>
+<pre data-language="python" class="rainbow">rm directory_name
+//or
+rmdir directory_name</pre>
+<p><strong><br></strong></p>
+<p>
+	<strong>Delete a non-empty directory(folder)</strong>
+</p>
+<pre data-language="python" class="rainbow">rm -rf directory_name
+</pre>
+<p>If you try to delete a folder with contents inside you will get an error! Our computer wants us to say more
+	explicitly to delete this directory and everything inside of it by passing the<em> '-rf'</em> option. <strong>Be
+		careful with this command </strong>as could it accidentally delete files you didn't intend to delete or delete
+	some config files that you wouldn't want deleted at all!</p>
+<p><br></p>
+<p>
+	<strong>Creating a new file</strong>
+</p>
+<pre data-language="python" class="rainbow">touch README.md
+</pre>
+<p>The <em>'touch'</em> command will create a new, empty file with the name and extension type that you specify. You can
+	make any type of file if you provide the extension type. Run the above commands, and then run <em>'ls'</em> and you
+	will see your new files in the listing.</p>
+<p>
+	<strong>Removing a file</strong>
+</p>
+<pre data-language="python" class="rainbow">rm README.md
+</pre>
+<p>The <em>'rm'</em> command removes any file with the filename and extension provided.</p>
+<p>
+	<strong>Renaming/Moving a file</strong>
+</p>
+<pre data-language="python" class="rainbow">mv README.md  new_filename.md
+mv new_filename.md ../new_filename.md
+</pre>
+<p>The<em> 'mv' </em>command has two uses. First, you can rename a file by first providing the file's name and then
+	providing what you want the file to be renamed to. In the first example, <em>index.html</em> would be renamed to
+	<em>new_name_index.html</em>. Second, it can be used to move a file to a different folder. In the second example,
+	<em>new_name_index.html </em>would be moved up one directory with the same name. In either case, think of this
+	command as moving a file - into its current directory with a different name or into a different directory with the
+	same or different name.</p>
+<p><br></p>
+<p>
+	<strong>Copying a file</strong>
+</p>
+<pre data-language="python" class="rainbow">cp README.md README_copy.md
+</pre>
+<p>The <em>'cp</em>' command will copy a file into the current directory with the new name you provided. In the example,
+	say you were in your Desktop directory and you ran the above command. The Desktop directory would now have
+	<em>index.html </em>and <em>copy.html in it.</em></p>
+<p></p>
+<p>
+	<em><strong>Copying a directory</strong></em>
+</p>
+<pre data-language="python" class="rainbow">cp -rf directory_name copy_directory_name
+</pre>
+<p>Copying a directory is similar to a file but we need to pass the <em>'-rf'</em> option in order to copy all the
+	internal contents of the directory. First provide the name of the directory you want to copy and then the name of
+	the copy.</p>
+<p><br></p>
+<p><strong>Opening current directory in your GUI</strong></p>
+<p><em>On Mac or Linux use the "open" command:</em></p>
+<pre data-language="python" class="rainbow">open .
+</pre>
+<p>The <em>'open'</em> command will open your current directory in your GUI (in 'cmd' or command prompt, use "<em>start
+		."</em> instead). Likewise, you could open a file inside your directory by running something like "open
+	file_name". </p>
+<p><br></p>
+<p><em>On Windows, use the explorer command: </em></p>
+<pre class="rainbow" data-language="python">explorer .
+</pre>
+<p>The <em>'open'</em> command will open your current directory in your GUI (in 'cmd' or command prompt, use "<em>start
+		."</em> instead). Likewise, you could open a file inside your directory by running something like "open
+	file_name". </p>
+<p><br></p>
+<p><br></p>
+<p> <br> </p><br><hr></hr><br><h1>5. Resource: Jupyter Notebook Cheat Sheets</h1>
+<p><br></p>
+<h2>JUPYTER NOTEBOOK INTERFACE/KEYBOARD SHORTCUTS</h2>
+<p>PDF Versions of the Images Below:</p>
+<ul>
+	<li><a href="https://drive.google.com/file/d/1A7I560PVqxHl-UnF6iv83lD8e3k-gjOs/view?usp=sharing"
+			target="_blank">Windows Version (PDF)</a></li>
+	<li><a href="https://drive.google.com/file/d/1YEz12NjBBhThhtZ7tF5TgrAruaAX-K6j/view?usp=sharing" target="_blank">Mac
+			Version (PDF)</a></li>
+</ul>
+<h1>For Windows</h1>
+<figure><img
+		src="../images/lp/Jupyter_Notebook_Cheat_Sheet_-_Windows.png"
+		style="width: 745px; height: 1118px;" width="745" height="1118"></figure>
+<h1>For Mac:</h1>
+<figure><img
+		src="../images/lp/Jupyter_Notebook_Cheat_Sheet_-_Mac.png"
+		style="width: 748px; height: 1123px;" width="748" height="1123"></figure>
+<h1></h1>
+<p></p><br><hr></hr><br><h1>6. Dealing with Large Files</h1>
+<p> <br></p>
+<h3>Dealing with Files &gt;100 MB</h3>
+<p>GitHub has a single-file-size limit of 100 MB. This means that attempting to commit any file larger than 100 MB will
+	result in a fatal error when attempting to push your work to GitHub.</p>
+<ul>
+	<li>GitHub Desktop warns you if you are about to save a file that is over this limit using the pop-up below:</li>
+</ul>
+<figure><img
+		src="../images/lp/Large_file_warning.png"
+		style="cursor: pointer; max-width: 100%; height: auto;"></figure>
+<blockquote>
+	<ul>
+		<li>NOTE: If you filter out all of the requested conditions for your movies, and saved them as gzip-compressed
+			csv's, your files should NOT be over the 100 MB limit!</li>
+	</ul>
+</blockquote>
+<ul>
+	<li>However, should you run into this following warning from GitHub desktop about your data files being too big you
+		should follow the instructions below:<ul>
+			<li>DO NOT CLICK COMMIT ANYWAY!!!</li>
+			<li>Click <code>Cancel</code> instead. We are going to tell git to ignore those large files. This means that
+				it will not try to save them to your commit, but it will let you keep them in the folder without
+				complaining</li>
+		</ul>
+	</li>
+</ul>
+<figure><img
+		src="../images/lp/Large_file_warning.png"
+		style="cursor: pointer; max-width: 100%; height: auto;"></figure>
+<ul>
+	<li>For EACH file that was too large:<ul>
+			<li>Right click on it from the sidebar of GitHub Desktop.</li>
+			<li>Select <code>"Ignore file"</code></li>
+		</ul>
+	</li>
+</ul>
+<figure><img
+		src="../images/lp/ignore_file.png"
+		style="cursor: pointer; max-width: 100%; height: auto;"></figure>
+<ul>
+	<li>You will see the large files' names disappear from the changes sidebar. Instead you will see that a file called
+		<code>.gitignore</code> has appeared. This file is how github desktop knows which files to ignore.</li>
+</ul>
+<figure><img
+		src="../images/lp/gitignore.png"
+		style="cursor: pointer; max-width: 100%; height: auto;"></figure>
+<p> <br> <br></p><br><hr></hr><br><h1>7. Installing New Python Packages</h1>
+<p><br><br></p>
+<h1>Package Manager: pip</h1>
+<h2>Objectives:</h2>
+<ul>
+	<li>What is a package?</li>
+	<li>What is a package manager?</li>
+	<li>How to install new packages</li>
+</ul>
+<hr>
+<p>Even though programming languages come with a lot right out of the box, you'll find yourself wanting to use some
+	functionality that is not included in your language's standard library. For example, since Python can be used for
+	more than just web development, web functionality does not come pre-loaded when we install Python. However, other
+	developers have created <strong>packages</strong> that we can download so we don't have to reinvent the wheel.</p>
+<p>Pip is the <strong>package manager</strong> we'll use in Python to install these third-party packages. (There are
+	other package managers, but for simplicity and fewer installations, we're sticking with pip because it was included
+	when we installed Python.) Rather than having to go search for packages and versions ourselves, package managers are
+	generally able to find the versions we need with just a single command from our end. </p>
+<h2>Warning: installing new packages can break others!</h2>
+<p>Python packages often rely on code found in other packages, then the other package is a "dependency". If the
+	dependency package dramatically alters the code that the other package uses, updating the dependency package could
+	break the other package!!!</p>
+<p><strong>It is VERY possible that you will break your dojo-env at some point by installing new packages. </strong></p>
+<p><strong>You should consider cloning your dojo-env </strong>as a new environment for you to test installing new
+	packages. If you wanted to create a new clone called "new-env", you would enter the conda command below:</p>
+<pre>conda create --name new-env --clone dojo-env
+</pre>
+<h2>
+	<p>Then, you should switch to your cloned environment before installing the new package. </p>
+	<pre>conda activate new-env</pre>
+	<p><strong>For more information on managing your environment, see the <a
+				href="https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html"
+				target="_blank">Managing Environments page on Anaconda's website.</a></strong></p>To Install a New
+	Package
+</h2>
+<p>Enter the pip install command in your terminal/GitBash. That command will look like this:</p>
+<pre data-language="bash">pip install {{package}} &lt;= NOTE: substitute {{package}} with the package you are installing
+</pre>
+<p>For example, if you wanted to install pandas-profiling (<a href="https://pandas-profiling.ydata.ai/docs/master/rtd/"
+		target="_blank">documentation</a>), you would run the following (in your terminal/GitBash):</p>
+<pre>pip install pandas-profiling</pre>
+<p><strong>Important Note: ALWAYS CHECK THE INSTALLATION INSTRUCTIONS FOR ANY NEW PACKAGE!! </strong></p>
+<p>Usually, python packages have documentation either on a website like read the docs or as their README for the package
+	repository. </p>
+<p><strong>You should always check their instructions, i</strong>n case there are additional steps/considerations.</p>
+<p>For example, if we check pandas-profiling <a
+		href="https://pandas-profiling.ydata.ai/docs/master/rtd/pages/installation.html" target="_blank">Installation
+		instructions</a>, we would see that they have an additional command that we need to run:</p>
+<pre>pip install -U pandas-profiling[notebook]
+jupyter nbextension enable --py widgetsnbextension
+</pre>
+<p><br></p>
+<p>Pip will then download the package requested and any packages that it may require. You will see progress bars and a
+	message indicating if it was successful or not.</p>
+<p>As an example, the output will look something like below if we were to install Django:</p>
+<p>
+	<img width="700"
+		src="https://s3.amazonaws.com/General_V88/boomyeah2015/codingdojo/curriculum/content/chapter/Screen_Shot_2018-03-20_at_5.56.54_PM.png">
+</p>
+<p><br></p>
+<h2>If You Encounter a Permissions Error</h2>
+<ul>
+	<li>First, try adding the --user flag to the end of your command. For example,</li>
+</ul>
+<pre class="active_pre">pip install pandas-profiling --user
+</pre>
+<ul>
+	<li><strong>If the user flag doesn't fix it:</strong></li>
+	<ul>
+		<li><strong>For Windows users: </strong>
+			<ul>
+				<li>Try right-clicking on GitBash in the Start Menu and "Run as Administrator", then try again.</li>
+			</ul>
+		</li>
+		<li><strong>For Mac Users:</strong></li>
+		<ul>
+			<li>Try going into System Preferences &gt; Security and Privacy &gt; click on the Privacy tab. </li>
+			<li>Check the FIles and Folders section on the sidebar. </li>
+			<li>If you do not see Terminal listen in the right sidebar (or if it is grayed out), click on the lock icon
+				in the bottom left corner and then enter your usual password for your computer.</li>
+			<li>Then click on the check box next to Terminal to grant access (or click the + button to add Terminal -
+				which is stored in Applications &gt; Utilities)</li>
+		</ul>
+	</ul>
+</ul>
+<p></p>
+<h1>Package Manager: conda</h1>
+<p>Just like we can install python packages from PyPi (using pip), we can also install packages from Anaconda. Check the
+	Installation instructions on the documentation page for the package you want to install and see if they have both a
+	conda and a pip installation option.</p>
+<p>Generally, if there is a conda install command available, that will be the better option for your dojo-env. </p>
+<p><strong>Note: if you ever break your environment, return to the the Instructions for Install Python Locally.
+		Specifically, see the final lesson for "Updating your dojo-env"</strong></p>
+<p><br></p><br><hr></hr><br><h1>8. Show Hidden Files</h1>
+<p>Many files are used by our local installation that are "hidden files". </p>
+<p>Hidden files are folders or files whose names start with a period. By default, these are not viewable in File
+	Explorer/Finder. </p>
+<p><strong>The are numerous situations where you may need to view your hidden files, see the OS-specific instructions
+		below on how to show hidden files.</strong> </p>
+<h2></h2>
+<ul>
+	<li><strong>Windows Users:</strong>
+		<ul>
+			<li>Turn on View Hidden Files and Folders in your File Explorer menu:<ul>
+					<li><a
+							href="https://support.microsoft.com/en-us/windows/view-hidden-files-and-folders-in-windows-10-97fbc472-c603-9d90-91d0-1166d1d9f4b5#:~:text=Open%20File%20Explorer%20from%20the,folders%2C%20and%20drives%20and%20OK.">Microsoft
+							Support Article</a></li>
+				</ul>
+			</li>
+			<li>On the same settings page, also deselect "Hide extensions for known file types and click OK."</li>
+		</ul>
+	</li>
+	<li><strong>Mac Users:</strong>
+		<ul>
+			<li>Use this keyboard shortcut from inside finder: <code>Cmd+Shift+.</code></li>
+			<li>Use it again to hide hidden files.</li>
+		</ul>
+	</li>
+</ul><br></body></html>
