@@ -8,8 +8,8 @@ dependencies:
   - apple::tensorflow-deps
   # - notebook # testing adding back 06/22
   - nbconvert>=6.4.4
-  - conda-forge::numpy==1.22.4 
-  - pandas==1.4.2
+  # - conda-forge::numpy==1.22.4 
+  - pandas==1.4.3
   - scikit-learn==1.1.*
   - statsmodels==0.13.2
   - pip>=22.0.4
