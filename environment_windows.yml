@@ -66,6 +66,8 @@ dependencies:
     - yellowbrick==1.4
     - jupyter-contrib-nbextensions==0.5.*
     - jupyter-nbextensions-configurator==0.4.*
+    - tzlocal==4.2
+
 
     
 prefix: /Users/codingdojo/opt/anaconda3/envs/dojo-env
