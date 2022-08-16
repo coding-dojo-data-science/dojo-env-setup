@@ -48,7 +48,7 @@ dependencies:
     - nltk==3.7
     - openpyxl==3.0.10
     - tabulate==0.8.9
-    - pmdarima==1.8.5
+    # - pmdarima==1.8.5
     - pandas-datareader==0.10.0
     - plotly==5.8.2
     - pystan==2.19.1.1
