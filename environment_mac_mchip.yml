@@ -51,8 +51,8 @@ dependencies:
     - pmdarima==1.8.5
     - pandas-datareader==0.10.0
     - plotly==5.8.2
-    - pystan==2.19.1.1
-    - prophet==1.0.1
+    # - pystan==2.19.1.1
+    # - prophet==1.0.1
     - PyMySQL==1.0.2
     - SQLAlchemy==1.4.37 
     - sqlalchemy-utils==0.38.2
