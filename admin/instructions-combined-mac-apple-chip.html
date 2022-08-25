@@ -1,16 +1,16 @@
-<h1>Installation Instructions - Mac with Apple Chip
-	<h2>Installation Overview</h2>
+<h1>Instructions: Mac (Apple Chip)</h1>
+<h1></h1>
+<h2>Installation Overview</h2>
 <p><strong>In Stack 4: Data Enrichment, you will use new tools on your computer that will require a local installation
 		of Python</strong> instead of Google Colab. Please complete these installation steps <strong>by the beginning of
 		Stack 4.<br></strong></p>
-<p></p>
 <p><strong>These steps should take ~30-90 minutes,</strong> depending on the speed of your machine and internet
 	connection. </p>
 <p>The <a href="https://github.com/coding-dojo-data-science/dojo-env-setup" target="_blank">dojo-env-setup
 		repository</a>, which you will clone in Step 2.1, contains a backup copy of the entire set of instructions on
 	the README, for convenience.</p>
 <blockquote>Note: if you previously installed the dojo-env before July 7th, 2022 and are upgrading to the new one,
-	please see the "Updating to New dojo-env" at the end of this chapter (after the Final Notes lesson)<br></blockquote>
+	please see the "Updating to New dojo-env" at the end of this chapter (after the Final Notes lesson)</blockquote>
 <p><strong>By the end of this chapter, you will:</strong></p>
 <ol>
 	<li> Install GitHub Desktop,</li>
@@ -19,73 +19,10 @@
 	<li>Supercharge Jupyter Notebooks with Extensions</li>
 	<li> Install Visual Studio Code. </li>
 </ol>
-<h2>If you encounter an error during installation: </h2>
-<ul>
-	<li><strong>First, read a little further down in the instructions to make sure we do not already address</strong>
-		the error message that you ran into.</li>
-	<li>Second, <strong>please check the "Troubleshooting" chapter</strong> for a lesson about the problem you are
-		running into.<br>(The Troubleshooting section is the 3rd chapter in this course - see the screenshot below)<br>
-		<figure><img
-				src="https://s3.us-east-1.amazonaws.com/General_V88/boomyeah2015/codingdojo/curriculum/content/chapter/1658334627__Troubleshooting-chapter.png"
-				style="width: 191px; height: 193px;" width="191" height="193"></figure>
-	</li>
-	<li>Third, reach out on the #ds-python-installation Discord channel (<a
-			href="https://discord.com/channels/738494436467539968/999108307627294770" target="_blank">Link</a>) with:
-		<ul>
-			<li> What step you are on (e.g. Step 2.3 Creating the dojo-env)
-			</li>
-			<li>What OS you are using (e.g. Windows 10, Windows 11, Mac with an Apple Processor, etc)
-			</li>
-			<li>Screenshots of the error/issue you are running into, whenever possible.</li>
-			<li>Finally, if you have been able to run the test notebook in Step 2.4: Testing the Env, please upload
-				these files with your question. </li>
-		</ul>
-	</li>
-	<li>Fourth, if you do not receive a response by the end of the day on Discord, please email your instructor.</li>
-</ul>
-<p></p>
+<h2><span></span></h2>
 <h2>OS-Specific Steps/Commands</h2>
-
-<p><strong>For several steps (e.g. Step 1), there are multiple versions of the instructions, depending on what operating
-		system you are using.</strong></p>
-<p> (i.e. a Windows computer, vs a Mac with an Intel processor, vs a Mac with an Apple Chip (m1/m1pro/m2/etc).)</p>
-<p><dfn>For step 1, please make sure you are on the correct instruction page for your OS. These are the instructions for
-		Mac computers with an Apple chip. </dfn></p>
-<p><br></p>
-<h3>Currently Supported Operating Systems</h3>
+<p>Please make sure you are on the correct instruction page for your OS. <strong>These are the instructions for Mac computers with an Apple Chip (m1, m1 pro, m1 max, m2, etc).<br></strong></p>
 <h3></h3>
-<ul>
-	<li><strong>We have prepared environment files (.yml files) for 3 different OS configurations:</strong>
-		<ul>
-			<li><strong>Windows (10 &amp; 11)</strong></li>
-			<li><strong>Mac (with Intel processors)</strong></li>
-			<li><strong>Mac (Apple Chips). <br></strong></li>
-		</ul>
-	</li>
-	<li> Reminder for mac users: <ul>
-			<li>Please revisit the "1. Downloading and Installing Apps" lesson if you are not sure which type of mac you
-				are using.</li>
-		</ul>
-	</li>
-	<li>Note to Linux Users:<ul>
-			<li>Sorry Linux users! A Linux machine was not available for testing during the development of the dojo-env.
-			</li>
-			<li>If you are willing to work with an instructor to develop and test a Linux version of dojo-env, contact
-				your instructor or send an email to jirving@codingdojo.com requesting assistance in create a linux
-				version of dojo-env.</li>
-		</ul>
-	</li>
-	<li><strong>The environment files (and a backup of these instructions) are in the dojo-env-setup repository</strong>
-		(<a
-			href="https://github.com/coding-dojo-data-science/dojo-env-setup">https://github.com/coding-dojo-data-science/dojo-env-setup</a>)
-		<ul>
-			<li>The Detailed Instructions below will guide you through how to clone and use the environment setup
-				repository.</li>
-		</ul>
-	</li>
-</ul>
-
-
 <h3>Note for Mac users - if you don't know which type of Mac you have :</h3>
 <div>
 	<ul>
@@ -93,66 +30,20 @@
 				<li>Click on the Apple symbol on the top-left corner of your screen.</li>
 				<li><strong>Click About This Mac. </strong></li>
 				<li>A window with your computer's specs will appear like the one in the screenshot below<ul>
-						<li><img src="https://s3.us-east-1.amazonaws.com/General_V88/boomyeah2015/codingdojo/curriculum/content/chapter/1656714456__About this Mac -Intel.png"
-								width="475" height="268"
-								style="background-color: initial; width: 475px; height: 268px;"></li>
+						<li><img src="https://s3.us-east-1.amazonaws.com/General_V88/boomyeah2015/codingdojo/curriculum/content/chapter/1656714456__About this Mac -Intel.png" width="475" height="268" style="background-color: initial; width: 475px; height: 268px;"></li>
 					</ul>
-				<li>If it has a "Processor" line that says "Intel" you should follow this page of instructions.
-				<li>If it has a "Chip" line that says "Apple" then please switch to the instructions for MacOS (Apple
+				</li><li>If it has a "Processor" line that says "Intel" you should follow this page of instructions.
+				</li><li>If it has a "Chip" line that says "Apple" then please switch to the instructions for MacOS (Apple
 					Chip) </li>
-
-		</li>
+		
 	</ul>
 	</li>
 	</ul>
-	<p><br></p>
-	<p></p>
-	<p><br></p>
-
-
-	</h3>
-</div>
-
-
-<p><strong>Regardless of OS, you will be using tools that serve the following purposes:<br></strong></p>
-<ul>
-	<li>Your "Terminal"/"Shell": <ul>
-			<li>The primary application you will use to execute coding-related commands.</li>
-		</ul>
-	</li>
-	<li>A Python Distribution:<ul>
-			<li>The fundamental infrastructure for installing Python.</li>
-		</ul>
-	</li>
-	<li>GitHub Desktop:<ul>
-			<li>App for working with and managing git repositories. </li>
-		</ul>
-	</li>
-	<li>Our custom Python Environment (dojo-env)<ul>
-			<li>A bundle of packages required for stacks 1-5+</li>
-		</ul>
-	</li>
-	<li>Jupyter Notebooks / Jupyter Lab <ul>
-			<li>The primary editor we will use (instead of Colab).</li>
-		</ul>
-	</li>
-	<li>Visual Studio Code<ul>
-			<li>A special text editor designed for code. It has many extensions and languages available. </li>
-			<li>We will use it to edit special files, but it can also run notebooks too!</li>
-		</ul>
-	</li>
-</ul>
-<p><br></p>
-<h2>Python Installation Video Recording</h2>
-<p><em>Note: the recording below is showing the steps for installing dojo-env version 1. The steps are basically the
-		same but the video does not cover the additional steps required to install the newest version of dojo-env on a
-		Mac with an Apple chip (m1,m2,etc)</em></p>
-<iframe src="https://player.vimeo.com/video/701383672?h=1bc863cf8e" width="640" height="414" frameborder="0"
-	allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="" class="vimeo_responsive"
-	style="width: 938px; height: 606.769px;" data-ready="true"></iframe>
-<p> <br> </p>
-<p> <br> <br> </p>
-<h1>1. Downloading and Installing Required Apps</h1>
+	<p><br></p></div><h2>If you encounter an error during installation:</h2>
+<ul><li>First, read a little further down in the instructions to make sure we do not already address the error message that you ran into.</li><li>Second, please check the "Troubleshooting" chapter for a lesson about the problem you are running into.
+(The Troubleshooting section is the 3rd chapter in this course - see the screenshot below)
+<figure><img src="https://s3.us-east-1.amazonaws.com/General_V88/boomyeah2015/codingdojo/curriculum/content/chapter/1658334627__Troubleshooting-chapter.png" width="191" height="193" style="cursor: pointer; max-width: 100%; height: 193px; width: 191px;"></figure></li><li>Third, reach out on the #ds-python-installation Discord channel (<a href="https://discord.com/channels/738494436467539968/999108307627294770" target="_blank">Link</a>) with:<ul><li>What step you are on (e.g. Step 2.3 Creating the dojo-env)</li><li>What OS you are using (e.g. Windows 10, Windows 11, Mac with an Apple Processor, etc)</li><li>Screenshots of the error/issue you are running into, whenever possible.</li><li>Finally, if you have been able to run the test notebook in Step 2.4: Testing the Env, please upload these files with your question.</li></ul></li><li>Fourth, if you do not receive a response by the end of the day on Discord, please email your instructor.</li></ul><p><br> </p>
+<h1>Step 1. Downloading and Installing Required Apps</h1>
 <blockquote>Before we install our python environment, we need to take care of a couple requirements. </blockquote>
 <p><strong>In step 1, we will install:</strong></p>
 <ul>
@@ -169,48 +60,8 @@
 		</ul>
 	</li>
 </ul>
-<p></p>
 <h3></h3>
-<h2>There are different instructions for step 1, depending on your operating system.</h2>
-<h2><i>Please </i><i>make sure you are on the correct version of step 1 </i><i>before following the instructions:</i>
-</h2>
-<ul>
-	<li>Step 1 - Windows </li>
-	<li>Step 1 - MacOS (Intel Processor)</li>
-	<li>Step 1 - MacOS (Apple Chip) </li>
-</ul>
-<h3>Note for Mac users - if you don't know which type of Mac you have :</h3>
-<div>
-	<h3></h3>
-	<h3>
-		<ul>
-			<li>Check the "About this Mac" screen for your computer. <ul>
-					<li>Click on the Apple symbol on the top-left corner of your screen.</li>
-					<li><strong>Click About This Mac. </strong></li>
-					<li>A window with your computer's specs will appear like the one in the screenshot below<ul>
-							<li><img src="https://s3.us-east-1.amazonaws.com/General_V88/boomyeah2015/codingdojo/curriculum/content/chapter/1656714456__About this Mac -Intel.png"
-									width="475" height="268"
-									style="background-color: initial; width: 475px; height: 268px;"></li>
-							<li>If it has a "Processor" line that says "Intel" you should follow the instructions for
-								MacOS (Intel Processor)</li>
-							<li>If it has a "Chip" line that says "Apple" then follow the instructions for MacOS (Apple
-								Chip) </li>
-						</ul>
-					</li>
-				</ul>
-			</li>
-		</ul>
-		<p><br></p>
-		<p></p>
-		<p><br></p>
-
-
-	</h3>
-</div>
-
-
-<h1>Step 1 - MacOS (Apple Chip)</h1>
-<h2>Preface: Good News and Bad News</h2>
+<h2>Apple Chip Preface: Good News and Bad News</h2>
 <ul>
 	<li>So...you got one of those shiny new(ish) Mac computers with Apple chip, eh? We've got some good news and bad
 		news for you. <ul>
@@ -284,8 +135,7 @@
 				Anaconda. So please, take our word for it that it is worth following our alternative instructions </li>
 		</ul>
 	</li>
-	<li>The following instructions are based on <a
-			href="https://caffeinedev.medium.com/how-to-install-tensorflow-on-m1-mac-8e9b91d93706" target="_blank">this
+	<li>The following instructions are based on <a href="https://caffeinedev.medium.com/how-to-install-tensorflow-on-m1-mac-8e9b91d93706" target="_blank">this
 			blog post</a>, should you wish to review it in-depth.<span></span></li>
 </ul>
 <h3>Pre-Tool #3 Verification:</h3>
@@ -328,15 +178,14 @@
 				to log into your computer.</li>
 		</ul>
 	</li>
-	<pre data-language="ruby">xcode-select --install</pre>
+	<pre data-language="ruby" class="rainbow">xcode-select --install</pre>
 </ul>
 <h3>Step 2: Install Homebrew ( a database of downloadable apps/tools for Mac)</h3>
 <p>Visit <a href="https://brew.sh/" target="_blank">https://brew.sh/</a> for more information about Homebrew</p>
 <ul>
 	<li>To Install homebrew, run the following command in your Terminal (and make sure to read the steps below):</li>
 </ul>
-<pre
-	data-language="ruby">/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"</pre>
+<pre data-language="ruby" class="rainbow">/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"</pre>
 <ul>
 	<li><strong>You may be asked to enter your password in your terminal.</strong>
 		<ul>
@@ -384,18 +233,17 @@
 	</li>
 </ul>
 <h2>Step 3: Install miniforge using homebrew.</h2>
-<br>
 <h3>Step 3 Commands:</h3>
 <ul>
 	<li>Enter the brew installation command below in your terminal:</li>
 </ul>
 <div>
-	<pre data-language="ruby">brew install miniforge</pre>
+	<pre data-language="ruby" class="rainbow">brew install miniforge</pre>
 	<ul>
 		<li>Once miniforge has finished installing, run the following command in your terminal (required for
 			Matplotlib):</li>
 	</ul>
-	<pre data-language="ruby">brew install pkg-config</pre>
+	<pre data-language="ruby" class="rainbow">brew install pkg-config</pre>
 	<h3>Post-Step 3 Verification</h3>
 </div>
 <ul>
@@ -454,17 +302,16 @@
 		miniforge. </li>
 </ul>
 <h4>Official Steps for Fully Uninstalling Anaconda:</h4>
-<p>The following steps are taken directly from the <a href="https://docs.anaconda.com/anaconda/install/uninstall/"
-		target="_blank">Official Uninstalling Anaconda documentation page</a>, specifically "Option B. Full uninstall
+<p>The following steps are taken directly from the <a href="https://docs.anaconda.com/anaconda/install/uninstall/" target="_blank">Official Uninstalling Anaconda documentation page</a>, specifically "Option B. Full uninstall
 	using Anaconda-Clean and simple remove."</p>
 <ul>
 	<li><strong>Install the Anaconda-Clean package from Anaconda Prompt (terminal on Linux or macOS):</strong></li>
 </ul>
-<pre data-language="ruby">conda install anaconda-clean</pre>
+<pre data-language="ruby" class="rainbow">conda install anaconda-clean</pre>
 <ul>
 	<li>In the same window, run the following command:</li>
 </ul>
-<pre data-language="ruby">anaconda-clean --yes</pre>
+<pre data-language="ruby" class="rainbow">anaconda-clean --yes</pre>
 <ul>
 	<li>Once the process has been completed, manually delete any "anaconda3" or "anaconda2" folders that still exist.
 		<ul>
@@ -490,9 +337,9 @@
 		</ul>
 	</li>
 </ul>
-<pre data-language="ruby">ls -a ~/
-		ls -a ~/opt/
-		ls -a /opt/</pre>
+<pre data-language="ruby" class="rainbow">ls -a ~/
+ls -a ~/opt/
+ls -a /opt/</pre>
 <ul>
 	<li>Run the final command to remove the anaconda folder once you've identified your "base folder" and "anaconda
 		folder".<ul>
@@ -503,16 +350,16 @@
 		</ul>
 	</li>
 </ul>
-<pre data-language="ruby">rm -rf {base_folder}{anaconda_folder}
+<pre data-language="ruby" class="rainbow">rm -rf {base_folder}{anaconda_folder}
 		</pre>
 <p><br></p>
 <p>Once you've replaced the placeholder folder names with your actual folder names, the command should look something
 	like this:</p>
-<pre data-language="ruby">rm -rf ~/opt/anaconda3
-		# or 
-		rm -rf ~/anaconda2
-		# or 
-		rm -rf ~/opt/anaconda3</pre>
+<pre data-language="ruby" class="rainbow">rm -rf ~/opt/anaconda3
+# or 
+rm -rf ~/anaconda2
+# or 
+rm -rf ~/opt/anaconda3</pre>
 <h4></h4>
 <h4>Final Verification Step:</h4>
 <ul>
@@ -524,9 +371,7 @@
 		</ul>
 		<ul>
 			<li><strong>If your computer still displays a list of conda commands</strong>: please see the final portion
-				of the <a
-					href="https://docs.anaconda.com/anaconda/install/uninstall/#removing-anaconda-path-from-bash-profile"
-					target="_blank">Official Uninstallation Instructions "Removing Anaconda from .bash_profile"</a>,
+				of the <a href="https://docs.anaconda.com/anaconda/install/uninstall/#removing-anaconda-path-from-bash-profile" target="_blank">Official Uninstallation Instructions "Removing Anaconda from .bash_profile"</a>,
 				which is illustrated below:</li>
 		</ul>
 	</li>
@@ -539,11 +384,9 @@
 				<ul>
 					<li> Examine the contents of this file and <strong>delete any lines that look like either of the
 							screenshots below</strong>:<ul>
-							<li><br><img
-									src="https://s3.us-east-1.amazonaws.com/General_V88/boomyeah2015/codingdojo/curriculum/content/chapter/1659740063__conda_init_code.png">
+							<li><br><img src="https://s3.us-east-1.amazonaws.com/General_V88/boomyeah2015/codingdojo/curriculum/content/chapter/1659740063__conda_init_code.png">
 							</li>
-							<li><img
-									src="https://s3.us-east-1.amazonaws.com/General_V88/boomyeah2015/codingdojo/curriculum/content/chapter/1659740131__Screen Shot 2022-08-05 at 6.55.05 PM.png">
+							<li><img src="https://s3.us-east-1.amazonaws.com/General_V88/boomyeah2015/codingdojo/curriculum/content/chapter/1659740131__Screen Shot 2022-08-05 at 6.55.05 PM.png">
 							</li>
 						</ul>
 					</li>
@@ -580,9 +423,7 @@
 			<li><strong>Try restarting your computer </strong>and attempting to run the command one more time.</li>
 			<li><strong>If you are still seeing conda commands:</strong>
 				<ul>
-					<li>You should post your problem on the <a
-							href="https://discord.com/channels/738494436467539968/999108307627294770"
-							target="_blank">ds-python-installation</a><span></span><span></span> discord channel for a
+					<li>You should post your problem on the <a href="https://discord.com/channels/738494436467539968/999108307627294770" target="_blank">ds-python-installation</a><span></span><span></span> discord channel for a
 						TA or instructor to assist you.</li>
 					<li>You can also email your instructor about the issue (please cc: jirving@codingdojo.com)</li>
 				</ul>
@@ -590,8 +431,6 @@
 		</ul>
 	</li>
 </ul>
-
-
 <h1>2. Setting Up Your dojo-env Environment</h1>
 <h2>Step 2 Overview:</h2>
 <ul>
@@ -614,7 +453,6 @@
 				may not have a reason to add additional environments. </li>
 		</ul>
 	</li>
-
 	<h2>Brief Summary of the Following Steps:</h2>
 	<ul>
 		<li>Step 2.1: Clone the dojo-env-setup repository</li>
@@ -623,14 +461,11 @@
 		<li>Step 2.4: Setting dojo-env as your default.</li>
 	</ul>
 	<h1></h1>
-
-
 	<h1>Step 2.1 Clone the dojo-env-setup repository</h1>
 	<ol>
 		<li><strong>Open the dojo-env-setup repository on GitHub.com:</strong>
 			<ol>
-				<li> <a
-						href="https://github.com/coding-dojo-data-science/dojo-env-setup">https://github.com/coding-dojo-data-science/dojo-env-setup</a>
+				<li> <a href="https://github.com/coding-dojo-data-science/dojo-env-setup">https://github.com/coding-dojo-data-science/dojo-env-setup</a>
 				</li>
 			</ol>
 		</li>
@@ -643,18 +478,14 @@
 			</ol>
 		</li>
 		<li class="text-center"><strong>Click on the green <code>Code</code> button and then click
-				<code>Open in GitHub desktop.<br></code></strong><img
-				src="https://s3.us-east-1.amazonaws.com/General_V88/boomyeah2015/codingdojo/curriculum/content/chapter/1656802816__clone_repo.png"
-				width="608" height="307" style="width: 608px; height: 307px;">
+				<code>Open in GitHub desktop.<br></code></strong><img src="https://s3.us-east-1.amazonaws.com/General_V88/boomyeah2015/codingdojo/curriculum/content/chapter/1656802816__clone_repo.png" width="608" height="307" style="width: 608px; height: 307px;">
 			<p><br></p>
 			<p><br></p>
 			<ol>
 				<li class="text-center"><strong>GitHub desktop should open automatically </strong>and ask you what
 					folder
 					you would like to store your repository in.<p><br></p>
-					<figure><img
-							src="https://s3.us-east-1.amazonaws.com/General_V88/boomyeah2015/codingdojo/curriculum/content/chapter/1656806399__clone-repo-menu.png"
-							style="width: 339px; height: 207px;" width="339" height="207"></figure>
+					<figure><img src="https://s3.us-east-1.amazonaws.com/General_V88/boomyeah2015/codingdojo/curriculum/content/chapter/1656806399__clone-repo-menu.png" style="width: 339px; height: 207px;" width="339" height="207"></figure>
 					<p><br></p>
 					<ol>
 						<li><strong>Troubleshooting Note: if you are brought to the Download GitHub Desktop web page
@@ -701,10 +532,7 @@
 												folder
 												you selected! </strong>(See the screenshot below. )<ol>
 												<li>
-													<figure><img
-															src="https://s3.us-east-1.amazonaws.com/General_V88/boomyeah2015/codingdojo/curriculum/content/chapter/1656806548__clone-repo-menu annotated.png"
-															style="width: 356px; height: 217px;" width="356"
-															height="217">
+													<figure><img src="https://s3.us-east-1.amazonaws.com/General_V88/boomyeah2015/codingdojo/curriculum/content/chapter/1656806548__clone-repo-menu annotated.png" style="width: 356px; height: 217px;" width="356" height="217">
 													</figure>
 												</li>
 											</ol>
@@ -721,11 +549,9 @@
 	<p>
 		<font color="#505050" face="Gotham-Rounded-Medium"><br></font>
 	</p>
-
-
-	<h1>Step 2.2: Open the Repo in Terminal/GitBash</h1>
-	<h2>Open the Repo in Terminal (mac) or GitBash (windows)</h2>
-	<p>Once you have cloned the repository, you will need to open a terminal/gitbash window in the same folder as the
+	<h1>Step 2.2: Open the Repo in Terminal</h1>
+	<h2>Open the Repo in Terminal </h2>
+	<p>Once you have cloned the repository, you will need to open a terminal window in the same folder as the
 		repository.</p>
 	<ul>
 		<li><strong>Open a new terminal in the dojo-env-setup folder</strong>
@@ -763,7 +589,6 @@
 		</li>
 	</ul>
 	<p><br></p>
-
 	<h2>Verify Step 2.2</h2>
 	<p>Run one last command to verify that you are indeed in the correct folder. </p>
 	<p>Run the "ls -a" command to see a detailed list of all files in the repo.</p>
@@ -772,25 +597,19 @@
 	<p><br></p>
 	<p><strong>If you are in the right folder, you should see 3 files that start with "environment" and end with ".yml"
 			like in the screenshot below.</strong></p>
-	<figure><img
-			src="https://s3.us-east-1.amazonaws.com/General_V88/boomyeah2015/codingdojo/curriculum/content/chapter/1656808093__dojo-env-setup ls result.png"
-			style="width: 493px; height: 195px;" width="493" height="195"></figure>
+	<figure><img src="https://s3.us-east-1.amazonaws.com/General_V88/boomyeah2015/codingdojo/curriculum/content/chapter/1656808093__dojo-env-setup ls result.png" style="width: 493px; height: 195px;" width="493" height="195"></figure>
 	<p><strong>If so, you are all set for the next step: create the dojo-env environment!</strong></p>
 	<p><br></p>
 	<p><br></p>
-
-
-	</div>
-
+	
 	<h1>Step 2.3 Create the dojo-env environment</h1>
-
 	<h3>1) Create the dojo-env using "conda create"</h3>
 	<ul>
 		<li><strong>After you've identified the right environment for your computer, run the "conda env create -f
 				&lt;env_file&gt;". </strong></li>
 	</ul>
-	<pre data-language="ruby" class="rainbow">## Env Creation Commands - Mac with Intel
-conda env create -f environment_mac_intel.yml
+	<pre data-language="ruby" class="rainbow">## Env Creation Commands - Mac with an Apple Chip 
+conda env create -f environment_mac_mchip.yml
 </pre>
 	<ul>
 		<li><strong>Wait (patiently) for the dojo-env to be created. </strong>
@@ -841,9 +660,8 @@ conda env create -f environment_mac_intel.yml
 			or
 			on the right depending on your OS)</li>
 	</ul>
-
 	<font color="#3e4e5a" face="Gotham-Rounded-Bold"><b><strong><br></strong></b></font>
-	</p>
+	
 	<h3>
 		<font color="#3e4e5a" face="Gotham-Rounded-Bold"><b><strong>3) Add dojo-env to jupyter notebook/lab</strong></b>
 		</font>
@@ -859,7 +677,6 @@ conda env create -f environment_mac_intel.yml
 	<h2>The moment of truth... </h2>
 	<p>You are all set for the next step: Testing Your New Environment!</p>
 	<p><br></p>
-
 	<h1>Step 2.4: Setting dojo-env as the default + alias commands</h1>
 	<ul>
 		<li>This section will require you to enter several commands in your Terminal (on Mac) or GitBash (on Windows).
@@ -873,36 +690,15 @@ conda env create -f environment_mac_intel.yml
 			</ul>
 		</li>
 	</ul>
-	<h1>1) Commands For Mac OS </h1>
-	<ul>
-		<li>All mac users should follow these instructions (regardless of if your have an Intel or Apple processor).
-		</li>
-		<li>On a Mac, we need to first see what shell terminal is using. <ul>
-				<li>There are 2 possible options that your mac may be using:<ul>
-						<li> zsh</li>
-						<li>bash</li>
-					</ul>
-				</li>
-			</ul>
-		</li>
-		<li>T<strong>he major difference between zsh and bash is which file it checks for the settings </strong>to use
-			when
-			you create a new terminal.<ul>
-				<li>Otherwise, zsh and bash behave very similarly and you may not notice the difference if you switched.
-				</li>
-			</ul>
-		</li>
-	</ul>
-	<p><br></p>
-	<h2>Determining If your Shell is Bash or Zsh</h2>
-	<ul>
-		<li>In your terminal, type <code>echo $SHELL</code> and hit enter.</li>
-	</ul>
+	<h1></h1></ul>
+<h2>Determine If your Terminal is Using Bash or Zsh</h2>
+<ul><li>On Mac, there are multiple options for what shell the Terminal app uses. <ul><li>There are 2 possible options that your mac may be using:<ul><li>zsh</li><li>bash</li></ul></li></ul></li><ul><li>The major difference between zsh and bash is which file it checks for the settings to use when you create a new terminal.</li><ul><li>Otherwise, zsh and bash behave very similarly and you may not notice the difference if you switched.</li><li>Note: If you have a newer mac (last 1-2 years) and have not previously used your Terminal, you are likely using zsh.</li></ul></ul></ul><p></p>
+<ul><li><strong>To confirm which type of shell your terminal is using</strong>:</li><ul><li>in your terminal, type <code>echo $SHELL</code> and hit enter.</li><ul><li>Select option A or B below based on the output.</li></ul></ul></ul><p></p><ul>
 	<h3>A) If the response ends in bash</h3>
 	<ul>
 		<li><strong>Run the following commands to automatically activate dojo-env</strong></li>
 	</ul>
-	<pre data-language="ruby">touch ~/.bash_profile
+	<pre data-language="ruby" class="rainbow">touch ~/.bash_profile
 echo "conda activate dojo-env" &gt;&gt; ~/.bash_profile</pre>
 	<ul>
 		<li><strong>Run the following 2 commands to add shortcuts for opening jupyter</strong>
@@ -913,7 +709,7 @@ echo "conda activate dojo-env" &gt;&gt; ~/.bash_profile</pre>
 			</ul>
 		</li>
 	</ul>
-	<pre data-language="ruby">echo 'alias jnb="jupyter notebook"' &gt;&gt; ~/.bash_profile
+	<pre data-language="ruby" class="rainbow">echo 'alias jnb="jupyter notebook"' &gt;&gt; ~/.bash_profile
 echo 'alias lab="jupyter lab"' &gt;&gt; ~/.bash_profile</pre>
 	<p><br></p>
 	<h3>B) If the response ends in zsh:</h3>
@@ -921,7 +717,7 @@ echo 'alias lab="jupyter lab"' &gt;&gt; ~/.bash_profile</pre>
 	<ul>
 		<li>Run the following commands to automatically activate dojo-env</li>
 	</ul>
-	<pre data-language="ruby">touch ~/.zshrc
+	<pre data-language="ruby" class="rainbow">touch ~/.zshrc
 echo "conda activate dojo-env" &gt;&gt; ~/.zshrc</pre>
 	<ul>
 		<li>Run the following 2 commands to add shortcuts for opening jupyter<ul>
@@ -931,11 +727,10 @@ echo "conda activate dojo-env" &gt;&gt; ~/.zshrc</pre>
 			</ul>
 		</li>
 	</ul>
-	<pre data-language="ruby">echo 'alias jnb="jupyter notebook"' &gt;&gt; ~/.zshrc
+	<pre data-language="ruby" class="rainbow">echo 'alias jnb="jupyter notebook"' &gt;&gt; ~/.zshrc
 echo 'alias lab="jupyter lab"' &gt;&gt; ~/.zshrc</pre>
 	<p><br></p>
-
-	<h1>2) Final Verification Steps (Mac &amp; Windows)</h1>
+	<h1>2) Final Verification Steps </h1>
 	<h3>Confirm <code>dojo-env</code> is your default</h3>
 	<ul>
 		<li>To confirm that <code>dojo-env</code> is now your default environment:<ul>
@@ -945,9 +740,7 @@ echo 'alias lab="jupyter lab"' &gt;&gt; ~/.zshrc</pre>
 	</ul>
 	<h2>
 	</h2>
-	<figure><img
-			src="https://s3.us-east-1.amazonaws.com/General_V88/boomyeah2015/codingdojo/curriculum/content/chapter/1647634446__confirm_dojo_env.png"
-			style="width: 454px; height: 100px;" width="454" height="100"></figure>
+	<figure><img src="https://s3.us-east-1.amazonaws.com/General_V88/boomyeah2015/codingdojo/curriculum/content/chapter/1647634446__confirm_dojo_env.png" style="width: 454px; height: 100px;" width="454" height="100"></figure>
 	<h2></h2>
 	<h3>Confirm the shortcut aliases work</h3>
 	<div>
@@ -975,10 +768,8 @@ echo 'alias lab="jupyter lab"' &gt;&gt; ~/.zshrc</pre>
 		</ul>
 		<h2></h2>
 		<h2> <br>
-
 		</h2>
 	</div>
-
 	<h1>Step 2.5: Testing the Environment</h1>
 	<p>To test that your installation and packages are working properly. We are going to run a specific Environment
 		Testing
@@ -1013,7 +804,7 @@ echo 'alias lab="jupyter lab"' &gt;&gt; ~/.zshrc</pre>
 			</ul>
 		</ul>
 	</ul>
-	<p></p>
+	
 	<ul>
 		<li><strong>In the new window that opens, start jupyter notebook by entering the <code>jupyter notebook</code>
 				command in your terminal (or the "jnb" shortcut!)</strong></li>
@@ -1024,9 +815,7 @@ echo 'alias lab="jupyter lab"' &gt;&gt; ~/.zshrc</pre>
 			</ul>
 		</li>
 	</ul>
-	<figure><img
-			src="https://s3.us-east-1.amazonaws.com/General_V88/boomyeah2015/codingdojo/curriculum/content/chapter/1657130012__jupyter_file_view.png"
-			style="width: 600px; height: 327px;" width="600" height="327"></figure>
+	<figure><img src="https://s3.us-east-1.amazonaws.com/General_V88/boomyeah2015/codingdojo/curriculum/content/chapter/1657130012__jupyter_file_view.png" style="width: 600px; height: 327px;" width="600" height="327"></figure>
 	<ul>
 		<li>There are 2 "EnvironmentTester" notebooks:<ul>
 				<li>"EnvironmentTester-mac.ipynb" for macs (both Intel and Apple Chip macs)</li>
@@ -1041,9 +830,7 @@ echo 'alias lab="jupyter lab"' &gt;&gt; ~/.zshrc</pre>
 			</ul>
 		</li>
 	</ul>
-	<figure><img
-			src="https://s3.us-east-1.amazonaws.com/General_V88/boomyeah2015/codingdojo/curriculum/content/chapter/1657130146__jupyter_notebook_view.png"
-			style="width: 637px; height: 266px;" width="637" height="266"></figure>
+	<figure><img src="https://s3.us-east-1.amazonaws.com/General_V88/boomyeah2015/codingdojo/curriculum/content/chapter/1657130146__jupyter_notebook_view.png" style="width: 637px; height: 266px;" width="637" height="266"></figure>
 	<p><br></p>
 	<ul>
 		<li>We want to run all of the cells in this notebook and confirm it can make it to the end without errors.</li>
@@ -1071,9 +858,7 @@ echo 'alias lab="jupyter lab"' &gt;&gt; ~/.zshrc</pre>
 			</ul>
 		</li>
 	</ul>
-	<figure><img
-			src="https://s3.us-east-1.amazonaws.com/General_V88/boomyeah2015/codingdojo/curriculum/content/chapter/1657130803__env_tester_final_msg.png"
-			style="width: 755px; height: 221px;" width="755" height="221"></figure>
+	<figure><img src="https://s3.us-east-1.amazonaws.com/General_V88/boomyeah2015/codingdojo/curriculum/content/chapter/1657130803__env_tester_final_msg.png" style="width: 755px; height: 221px;" width="755" height="221"></figure>
 	<p><br></p>
 	<ul>
 		<li><strong>If the entire notebook ran successfully</strong>
@@ -1111,9 +896,7 @@ echo 'alias lab="jupyter lab"' &gt;&gt; ~/.zshrc</pre>
 					<li>Click File &gt; Download As &gt; Notebook (.ipynb)</li>
 					<li>Your web browser should save a copy of the notebook to your normal "Downloads" folder.<br>
 						<p><br></p>
-						<figure><img
-								src="https://s3.us-east-1.amazonaws.com/General_V88/boomyeah2015/codingdojo/curriculum/content/chapter/1657132437__download_as.png"
-								style="width: 474px; height: 384px;" width="474" height="384"></figure>
+						<figure><img src="https://s3.us-east-1.amazonaws.com/General_V88/boomyeah2015/codingdojo/curriculum/content/chapter/1657132437__download_as.png" style="width: 474px; height: 384px;" width="474" height="384"></figure>
 					</li>
 				</ul>
 			</li>
@@ -1130,8 +913,7 @@ echo 'alias lab="jupyter lab"' &gt;&gt; ~/.zshrc</pre>
 				</ul>
 			</li>
 		</ol>
-		<figure><img
-				src="https://s3.us-east-1.amazonaws.com/General_V88/boomyeah2015/codingdojo/curriculum/content/chapter/1657132692__download_report.png">
+		<figure><img src="https://s3.us-east-1.amazonaws.com/General_V88/boomyeah2015/codingdojo/curriculum/content/chapter/1657132692__download_report.png">
 		</figure>
 		<p><br></p>
 		<ul>
@@ -1156,7 +938,6 @@ echo 'alias lab="jupyter lab"' &gt;&gt; ~/.zshrc</pre>
 			</li>
 		</ul>
 	</div>
-
 	<h1>Step 2.6 Adding nbextensions</h1>
 	<h1>Jupyter Notebook Extensions Resources</h1>
 	<ul>
@@ -1168,22 +949,21 @@ echo 'alias lab="jupyter lab"' &gt;&gt; ~/.zshrc</pre>
 	<ul>
 		<li><strong>Below is an abbreviated version of the official instructions for Installing
 				jupyter-contrib-nbextensions
-				(<a
-					href="https://jupyter-contrib-nbextensions.readthedocs.io/en/latest/install.html">Documentation</a>):</strong>
+				(<a href="https://jupyter-contrib-nbextensions.readthedocs.io/en/latest/install.html">Documentation</a>):</strong>
 			<ol>
 				<li>Install extensions</li>
 			</ol>
-			<pre data-language="language-bash rainbow">pip install jupyter_contrib_nbextensions
+			<pre data-language="language-bash rainbow" class="rainbow">pip install jupyter_contrib_nbextensions
 </pre>
 			<ol start="2">
 				<li>Install additional requirements (Install javascript and css file):</li>
 			</ol>
-			<pre data-language="language-bash rainbow">jupyter contrib nbextension install --user
+			<pre data-language="language-bash rainbow" class="rainbow">jupyter contrib nbextension install --user
 </pre>
 			<ol start="3">
 				<li>Activate the extension configurator</li>
 			</ol>
-			<pre data-language="language-bash rainbow">jupyter nbextension enable jupyter_nbextensions_configurator
+			<pre data-language="language-bash rainbow" class="rainbow">jupyter nbextension enable jupyter_nbextensions_configurator
 </pre>
 		</li>
 	</ul>
@@ -1193,11 +973,9 @@ echo 'alias lab="jupyter lab"' &gt;&gt; ~/.zshrc</pre>
 				file-explorer view. If its there, great! Move on to the "Turning on extensions" section below.</li>
 		</ul>
 	</blockquote>
-	<p></p>
-	<figure><img
-			src="https://s3.us-east-1.amazonaws.com/General_V88/boomyeah2015/codingdojo/curriculum/content/chapter/1657134126__nbextension_tab.png"
-			style="width: 304px; height: 87px;" width="304" height="87"></figure>
-	<p></p>
+	
+	<figure><img src="https://s3.us-east-1.amazonaws.com/General_V88/boomyeah2015/codingdojo/curriculum/content/chapter/1657134126__nbextension_tab.png" style="width: 304px; height: 87px;" width="304" height="87"></figure>
+	
 	<h2>Activating Specific Extensions:</h2>
 	<h3>
 		<div></div>
@@ -1213,9 +991,7 @@ echo 'alias lab="jupyter lab"' &gt;&gt; ~/.zshrc</pre>
 				<li><em><strong>NOTE: If the list of available notebook extensions is grayed out like the screenshot
 							below:
 							<p><br></p>
-							<figure><img
-									src="https://s3.us-east-1.amazonaws.com/General_V88/boomyeah2015/codingdojo/curriculum/content/chapter/1657134336__nbextensions_disabled.png"
-									style="width: 818px; height: 291px;" width="818" height="291"></figure><br>
+							<figure><img src="https://s3.us-east-1.amazonaws.com/General_V88/boomyeah2015/codingdojo/curriculum/content/chapter/1657134336__nbextensions_disabled.png" style="width: 818px; height: 291px;" width="818" height="291"></figure><br>
 						</strong></em>
 					<ul>
 						<li>Uncheck
@@ -1243,9 +1019,7 @@ echo 'alias lab="jupyter lab"' &gt;&gt; ~/.zshrc</pre>
 					see the list of options for the currently selected extension.</li>
 			</ul>
 			<p><br></p>
-			<figure><img
-					src="https://s3.us-east-1.amazonaws.com/General_V88/boomyeah2015/codingdojo/curriculum/content/chapter/1657135650__click_name_to_show_settings.png"
-					style="width: 658px; height: 231px;" width="658" height="231"></figure>
+			<figure><img src="https://s3.us-east-1.amazonaws.com/General_V88/boomyeah2015/codingdojo/curriculum/content/chapter/1657135650__click_name_to_show_settings.png" style="width: 658px; height: 231px;" width="658" height="231"></figure>
 		</li>
 		<li>
 			<p><strong>Note: any extensions that you enable or settings that you change are <em>automatically</em>
@@ -1283,9 +1057,7 @@ echo 'alias lab="jupyter lab"' &gt;&gt; ~/.zshrc</pre>
 				</ul>
 			</li>
 		</ul>
-		<figure><img
-				src="https://s3.us-east-1.amazonaws.com/General_V88/boomyeah2015/codingdojo/curriculum/content/chapter/1657134622__toc2_settings.png"
-				style="width: 667px; height: 466px;" width="667" height="466"></figure>
+		<figure><img src="https://s3.us-east-1.amazonaws.com/General_V88/boomyeah2015/codingdojo/curriculum/content/chapter/1657134622__toc2_settings.png" style="width: 667px; height: 466px;" width="667" height="466"></figure>
 		<p><br></p>
 		<h3>2. Collapsible Headings</h3>
 	</div>
@@ -1297,13 +1069,12 @@ echo 'alias lab="jupyter lab"' &gt;&gt; ~/.zshrc</pre>
 					sections in the table of contents. For the inverse behaviour, see ToC2's configuration' at towards
 					the
 					bottom of the options.</li>
-				<li><img src="https://s3.us-east-1.amazonaws.com/General_V88/boomyeah2015/codingdojo/curriculum/content/chapter/1657135109__collapsible_headings_settings.png"
-						width="596" height="188" style="width: 596px; height: 188px;"></li>
+				<li><img src="https://s3.us-east-1.amazonaws.com/General_V88/boomyeah2015/codingdojo/curriculum/content/chapter/1657135109__collapsible_headings_settings.png" width="596" height="188" style="width: 596px; height: 188px;"></li>
 			</ul>
 		</li>
 	</ul>
 	<div>
-		<p></p>
+		
 		<h3>3. Live Markdown Preview</h3>
 	</div>
 	<div>Shows a preview of what the markdown cell you are editing will look like once you render it with Shift+Enter
@@ -1320,10 +1091,9 @@ echo 'alias lab="jupyter lab"' &gt;&gt; ~/.zshrc</pre>
 				</ul>
 			</li>
 		</ul>
-		<figure><img
-				src="https://s3.us-east-1.amazonaws.com/General_V88/boomyeah2015/codingdojo/curriculum/content/chapter/1657135333__live_md_preview_settings.png">
+		<figure><img src="https://s3.us-east-1.amazonaws.com/General_V88/boomyeah2015/codingdojo/curriculum/content/chapter/1657135333__live_md_preview_settings.png">
 		</figure>
-		<p></p>
+		
 		<p>
 			<font color="#3e4e5a" face="Gotham-Rounded-Bold"><b>4. Ruler (not Ruler in Editor)</b></font>
 		</p>
@@ -1350,9 +1120,7 @@ echo 'alias lab="jupyter lab"' &gt;&gt; ~/.zshrc</pre>
 			<li><strong>Go back to the Files tab and create a new notebook with the <code>New</code> button on the
 					top-right.</strong>
 				<ul>
-					<li>Select <code>Python(dojo-env)</code> for your kernel <p><br><img
-								src="https://s3.us-east-1.amazonaws.com/General_V88/boomyeah2015/codingdojo/curriculum/content/chapter/1647634592__new_notebook.png"
-								style="width: 539px; height: 187px;" width="539" height="187"><br><br></p>
+					<li>Select <code>Python(dojo-env)</code> for your kernel <p><br><img src="https://s3.us-east-1.amazonaws.com/General_V88/boomyeah2015/codingdojo/curriculum/content/chapter/1647634592__new_notebook.png" style="width: 539px; height: 187px;" width="539" height="187"><br><br></p>
 						<p><br></p>
 						<figure></figure>
 					</li>
@@ -1360,9 +1128,7 @@ echo 'alias lab="jupyter lab"' &gt;&gt; ~/.zshrc</pre>
 			</li>
 			<li><strong>Once your new Untitled notebook opens, you will notice a few new elements to the
 					interface</strong>:
-				<p><br><img
-						src="https://s3.us-east-1.amazonaws.com/General_V88/boomyeah2015/codingdojo/curriculum/content/chapter/1647634606__nbextensions_interface.png"
-						style="width: 698px; height: 156px;" width="698" height="156"></p>
+				<p><br><img src="https://s3.us-east-1.amazonaws.com/General_V88/boomyeah2015/codingdojo/curriculum/content/chapter/1647634606__nbextensions_interface.png" style="width: 698px; height: 156px;" width="698" height="156"></p>
 				<p><br></p>
 				<figure></figure>
 			</li>
@@ -1388,10 +1154,9 @@ echo 'alias lab="jupyter lab"' &gt;&gt; ~/.zshrc</pre>
 				</ul>
 			</li>
 		</ul>
-		<figure><img
-				src="https://s3.us-east-1.amazonaws.com/General_V88/boomyeah2015/codingdojo/curriculum/content/chapter/1647634678__nbextensions_toc_preview_spellcheck.png">
+		<figure><img src="https://s3.us-east-1.amazonaws.com/General_V88/boomyeah2015/codingdojo/curriculum/content/chapter/1647634678__nbextensions_toc_preview_spellcheck.png">
 		</figure>
-		<p> </p>
+		
 		<ul>
 			<li><strong>Confirm that you see a preview of your markdown text off to the right.</strong>
 				<ul>
@@ -1407,8 +1172,7 @@ echo 'alias lab="jupyter lab"' &gt;&gt; ~/.zshrc</pre>
 					<li>that the header appears in the table of contents on the left.</li>
 					<li>that a dropdown arrow appears to the left of the header in the notebook. <p><br></p>
 						<p><br></p>
-						<figure><img
-								src="https://s3.us-east-1.amazonaws.com/General_V88/boomyeah2015/codingdojo/curriculum/content/chapter/1647634746__toc_collapse_headings.png">
+						<figure><img src="https://s3.us-east-1.amazonaws.com/General_V88/boomyeah2015/codingdojo/curriculum/content/chapter/1647634746__toc_collapse_headings.png">
 						</figure>
 					</li>
 				</ul>
@@ -1419,15 +1183,11 @@ echo 'alias lab="jupyter lab"' &gt;&gt; ~/.zshrc</pre>
 					<li>If you prefer to disable this, click on the small gear icon next to the word Contents: <p><br>
 						</p>
 						<p><br></p>
-						<figure><img
-								src="https://s3.us-east-1.amazonaws.com/General_V88/boomyeah2015/codingdojo/curriculum/content/chapter/1647634778__toc_settings.png"
-								style="width: 351px; height: 262px;" width="351" height="262"></figure>
+						<figure><img src="https://s3.us-east-1.amazonaws.com/General_V88/boomyeah2015/codingdojo/curriculum/content/chapter/1647634778__toc_settings.png" style="width: 351px; height: 262px;" width="351" height="262"></figure>
 					</li>
 					<li>In the menu that appears, uncheck "Automatically number headings" <p><br></p>
 						<p><br></p>
-						<figure><img
-								src="https://s3.us-east-1.amazonaws.com/General_V88/boomyeah2015/codingdojo/curriculum/content/chapter/1647634797__turn_off_numbered_headers.png"
-								style="width: 506px; height: 287px;" width="506" height="287"></figure>
+						<figure><img src="https://s3.us-east-1.amazonaws.com/General_V88/boomyeah2015/codingdojo/curriculum/content/chapter/1647634797__turn_off_numbered_headers.png" style="width: 506px; height: 287px;" width="506" height="287"></figure>
 					</li>
 				</ul>
 			</li>
@@ -1439,7 +1199,6 @@ echo 'alias lab="jupyter lab"' &gt;&gt; ~/.zshrc</pre>
 		<p> <br> <br> <br> <br> <br> </p>
 		<p> <br> <br></p>
 	</div>
-
 	<h1>Step 3: Install a Code Text Editor </h1>
 	<h2>Visual Studio Code</h2>
 	<ul>
@@ -1455,7 +1214,7 @@ echo 'alias lab="jupyter lab"' &gt;&gt; ~/.zshrc</pre>
 			</ul>
 		</li>
 	</ul>
-	<p></p>
+	
 	<ul>
 		<li><strong>How will we use VS Code?</strong>
 			<ul>
@@ -1498,7 +1257,7 @@ echo 'alias lab="jupyter lab"' &gt;&gt; ~/.zshrc</pre>
 		</li>
 	</ul>
 	<p><br></p>
-	<ul></ul>
+	
 	<h2>Install Visual Studio Code</h2>
 	<ul>
 		<li>
@@ -1515,9 +1274,7 @@ echo 'alias lab="jupyter lab"' &gt;&gt; ~/.zshrc</pre>
 				<li>Click on the installer to unzip it.</li>
 				<li>Once the Application is unzipped, drag the icon for Visual Studio Code.app to your applications
 					folder
-					on your sidebar in Finder.<br><br> <img
-						src="https://raw.githubusercontent.com/coding-dojo-data-science/dojo-env-setup/main/images/mac_vscode_install.png"
-						alt="png" width="424" height="115" style="color: rgb(80, 80, 80); width: 424px; height: 115px;">
+					on your sidebar in Finder.<br><br> <img src="https://raw.githubusercontent.com/coding-dojo-data-science/dojo-env-setup/main/images/mac_vscode_install.png" alt="png" width="424" height="115" style="color: rgb(80, 80, 80); width: 424px; height: 115px;">
 				</li>
 			</ul>
 		</li>
@@ -1530,15 +1287,13 @@ echo 'alias lab="jupyter lab"' &gt;&gt; ~/.zshrc</pre>
 			</ul>
 		</li>
 	</ul>
-	<p><img src="https://raw.githubusercontent.com/coding-dojo-data-science/dojo-env-setup/main/images/vs_code_get_started.png"
-			alt="png" style="width: 644px; height: 486px;" width="644" height="486"></p>
+	<p><img src="https://raw.githubusercontent.com/coding-dojo-data-science/dojo-env-setup/main/images/vs_code_get_started.png" alt="png" style="width: 644px; height: 486px;" width="644" height="486"></p>
 	<h2>Install Python Extensions</h2>
 	<ul>
 		<li>On the left sidebar, there are several icons for different menus.</li>
 		<li>Click on the Extensions sidebar icon (5th down, looks like 4 squares).</li>
 	</ul>
-	<p><img src="https://raw.githubusercontent.com/coding-dojo-data-science/dojo-env-setup/main/images/1_extension_sidebar.png"
-			alt="png" style="width: 598px; height: 450px;" width="598" height="450"></p>
+	<p><img src="https://raw.githubusercontent.com/coding-dojo-data-science/dojo-env-setup/main/images/1_extension_sidebar.png" alt="png" style="width: 598px; height: 450px;" width="598" height="450"></p>
 	<ul>
 		<li>
 			<p>On the Extension sidebar, there will be several sections (INSTALLED/POPULAR/RECOMMENDED).</p>
@@ -1550,16 +1305,14 @@ echo 'alias lab="jupyter lab"' &gt;&gt; ~/.zshrc</pre>
 					<p>You should see "Python" listed under POPULAR.</p>
 					<ul>
 						<li>If not, you can enter "Python" in the search box at the top of the sidebar</li>
-						<li>OR you can click on <a
-								href="https://marketplace.visualstudio.com/items?itemName=ms-python.python">this link to
+						<li>OR you can click on <a href="https://marketplace.visualstudio.com/items?itemName=ms-python.python">this link to
 								the
 								extension </a> on the extension marketplace website.</li>
 					</ul>
 				</li>
 				<li>
 					<p>Click on the "Install" button for the Python extension.<br>
-						<img src="https://raw.githubusercontent.com/coding-dojo-data-science/dojo-env-setup/main/images/2_extension_installation.png"
-							alt="png" style="width: 249px; height: 617px;" width="249" height="617">
+						<img src="https://raw.githubusercontent.com/coding-dojo-data-science/dojo-env-setup/main/images/2_extension_installation.png" alt="png" style="width: 249px; height: 617px;" width="249" height="617">
 					</p>
 				</li>
 			</ul>
@@ -1573,8 +1326,7 @@ echo 'alias lab="jupyter lab"' &gt;&gt; ~/.zshrc</pre>
 			</ul>
 		</li>
 	</ul>
-	<p><img src="https://raw.githubusercontent.com/coding-dojo-data-science/dojo-env-setup/main/images/3_installed_extensions.png"
-			alt="png" style="width: 508px; height: 380px;" width="508" height="380"></p>
+	<p><img src="https://raw.githubusercontent.com/coding-dojo-data-science/dojo-env-setup/main/images/3_installed_extensions.png" alt="png" style="width: 508px; height: 380px;" width="508" height="380"></p>
 	<h2>Setting VS Code to use your <code>dojo-env</code> as the default Python installation</h2>
 	<ul>
 		<li>
@@ -1582,8 +1334,7 @@ echo 'alias lab="jupyter lab"' &gt;&gt; ~/.zshrc</pre>
 		</li>
 		<li>
 			<p>On the extension sidebar, click on the Gear icon for the Python extension and select "Extension Settings"
-				<img src="https://raw.githubusercontent.com/coding-dojo-data-science/dojo-env-setup/main/images/4_python_settings.png"
-					alt="png" style="width: 455px; height: 393px;" width="455" height="393">
+				<img src="https://raw.githubusercontent.com/coding-dojo-data-science/dojo-env-setup/main/images/4_python_settings.png" alt="png" style="width: 455px; height: 393px;" width="455" height="393">
 			</p>
 		</li>
 		<li>
@@ -1592,8 +1343,7 @@ echo 'alias lab="jupyter lab"' &gt;&gt; ~/.zshrc</pre>
 				<li>Take note of the "Default Interpreter Path".
 					<ul>
 						<li>It is currently set to just "python".<br>
-							<img src="https://raw.githubusercontent.com/coding-dojo-data-science/dojo-env-setup/main/images/5_settings_default_interp.png"
-								alt="png" style="width: 612px; height: 530px;" width="612" height="530">
+							<img src="https://raw.githubusercontent.com/coding-dojo-data-science/dojo-env-setup/main/images/5_settings_default_interp.png" alt="png" style="width: 612px; height: 530px;" width="612" height="530">
 						</li>
 					</ul>
 				</li>
@@ -1609,8 +1359,7 @@ echo 'alias lab="jupyter lab"' &gt;&gt; ~/.zshrc</pre>
 				<li>Run the command: <code>which python</code>
 					<ul>
 						<li>It will print out a filepath to your dojo-env.<br>
-							<img src="https://raw.githubusercontent.com/coding-dojo-data-science/dojo-env-setup/main/images/6_which_python.png"
-								alt="png" style="width: 413px; height: 269px;" width="413" height="269">
+							<img src="https://raw.githubusercontent.com/coding-dojo-data-science/dojo-env-setup/main/images/6_which_python.png" alt="png" style="width: 413px; height: 269px;" width="413" height="269">
 						</li>
 					</ul>
 				</li>
@@ -1620,13 +1369,11 @@ echo 'alias lab="jupyter lab"' &gt;&gt; ~/.zshrc</pre>
 			</ul>
 		</li>
 	</ul>
-	<p><img src="https://raw.githubusercontent.com/coding-dojo-data-science/dojo-env-setup/main/images/7_replace_default_interp.png"
-			alt="png" style="width: 461px; height: 149px;" width="461" height="149"></p>
+	<p><img src="https://raw.githubusercontent.com/coding-dojo-data-science/dojo-env-setup/main/images/7_replace_default_interp.png" alt="png" style="width: 461px; height: 149px;" width="461" height="149"></p>
 	<h3>Mac Users Only: Add the <code>code</code> command to your terminal</h3>
 	<ul>
 		<li>We want to be able to type the word "code" in our terminal and have that open up VS Code.
 			<ul>
-
 				<li>
 					<p>Mac Users must run 1 more command from VS Code.</p>
 				</li>
@@ -1649,8 +1396,7 @@ echo 'alias lab="jupyter lab"' &gt;&gt; ~/.zshrc</pre>
 			</ul>
 		</li>
 	</ol>
-	<p><img src="https://raw.githubusercontent.com/coding-dojo-data-science/dojo-env-setup/main/images/8_install_code_command.png"
-			alt="png" style="width: 533px; height: 80px;" width="533" height="80"></p>
+	<p><img src="https://raw.githubusercontent.com/coding-dojo-data-science/dojo-env-setup/main/images/8_install_code_command.png" alt="png" style="width: 533px; height: 80px;" width="533" height="80"></p>
 	<h3>Test the <code>code</code> command</h3>
 	<ul>
 		<li>
@@ -1704,3 +1450,4 @@ echo 'alias lab="jupyter lab"' &gt;&gt; ~/.zshrc</pre>
 			</ul>
 		</li>
 	</ul>
+</ul>
