@@ -26,7 +26,7 @@ dependencies:
   - conda-forge::pystan==2.19.1.1
   - conda-forge::prophet==1.0.*
   - pip:
-    - nbdime
+    - nbdime==3.1.1
     - beautifulsoup4==4.11.1
     # - bs4
     # - charset-normalizer==2.0.12
