@@ -1,0 +1,8 @@
+conda create -n dojo-env-39 python=3.9 jupyter scikit-learn pandas numpy scipy seaborn matplotlib pmdarima statsmodels conda-forge::jupyter_contrib_nbextensions pymysql  sqlalchemy conda-forge::sqlalchemy-utils conda-forge::shap conda-forge::imbalanced-learn lime xgboost pandas-datareader plotly dython yellowbrick beautifulsoup4 lxml conda-forge::pandas-profiling conda-forge::lightgbm  conda-forge::missingno conda-forge::tabulate numexpr openpyxl  html5lib conda-forge::nbdime conda-forge::xlsxwriter conda-forge::google-api-python-client conda-forge::google-auth-httplib2 conda-forge::google-auth-oauthlib  conda-forge::dataframe_image nltk
+
+
+conda activate dojo-env-39
+python -m ipykernel install --user --name dojo-env-39 --display-name "Python (dojo-env-39)"
+
+pip install tensorflow-macos
+pip install tensorflow-metal
