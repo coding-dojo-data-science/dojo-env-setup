@@ -22,10 +22,15 @@ mac_command += "pip install tensorflow-macos\n"
 mac_command += "pip install tensorflow-metal\n"
 # print("\n\n"+mac_command)
 
+## Add Mac-intel
+mac_intel_command = command + activate + pip_reqs
+mac_intel_command += "pip install tensorflow"
+print("\n\n"+mac_intel_command)
+
 
 ## add windows - conda
 windows_conda_cmd = command + " tensorflow " + activate + pip_reqs
-print(windows_conda_cmd)
+# print(windows_conda_cmd)
 
 
 ## add windows -source 

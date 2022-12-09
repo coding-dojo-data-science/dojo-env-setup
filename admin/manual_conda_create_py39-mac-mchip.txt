@@ -8,5 +8,4 @@ pip install tensorflow-macos
 pip install tensorflow-metal
 
 
-pip install matplotlib==3.5.2
-pip install matplotlib-inline
+
