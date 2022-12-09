@@ -21,6 +21,8 @@ dependencies:
   - conda-forge::pandas-profiling==3.2.0
   - lightgbm==3.3.2 
   - python-graphviz==0.20
+  - conda-forge::ipython==8.6.0
+  - conda-forge::ipykernel==6.17.0
 
   - pip:
     - nbdime==3.1.1

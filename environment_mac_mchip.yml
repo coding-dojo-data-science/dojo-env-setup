@@ -25,6 +25,8 @@ dependencies:
   - conda-forge::pandas-profiling==3.2.0
   - lightgbm==3.3.2 
   - python-graphviz==0.20
+  - conda-forge::ipython==8.6.0
+  - conda-forge::ipykernel==6.17.0
   # - conda-forge::pystan
   # - conda-forge::prophet
   - pip:
@@ -75,6 +77,7 @@ dependencies:
     - yellowbrick==1.4
     - jupyter-contrib-nbextensions==0.5.*
     - jupyter-nbextensions-configurator==0.4.*
+
     
     
 prefix: /Users/codingdojo/opt/anaconda3/envs/dojo-env

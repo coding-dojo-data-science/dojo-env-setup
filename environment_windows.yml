@@ -25,6 +25,9 @@ dependencies:
   - conda-forge::m2w64-toolchain # for pystan #msys2::
   - conda-forge::pystan==2.19.1.1
   - conda-forge::prophet==1.0.*
+  - conda-forge::ipython==8.6.0
+  - conda-forge::ipykernel==6.17.0
+  
   - pip:
     - nbdime==3.1.1
     - beautifulsoup4==4.11.1
