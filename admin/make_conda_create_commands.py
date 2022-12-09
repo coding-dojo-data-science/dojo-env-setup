@@ -20,12 +20,12 @@ jupyter contrib nbextension install --user\n\n
 mac_command = command + activate + pip_reqs
 mac_command += "pip install tensorflow-macos\n"
 mac_command += "pip install tensorflow-metal\n"
-print("\n\n"+mac_command)
+# print("\n\n"+mac_command)
 
 
 ## add windows - conda
-windows_conda_cmd = command + activate + pip_reqs
-# print(windows_conda_cmd)
+windows_conda_cmd = command + " tensorflow " + activate + pip_reqs
+print(windows_conda_cmd)
 
 
 ## add windows -source 

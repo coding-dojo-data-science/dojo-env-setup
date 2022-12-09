@@ -33,16 +33,34 @@
 
 - Example for Mac:
 ```bash
-conda env export -f  environemnt_mac_mchip.yml --no-builds  
+conda env export -f  environment_mac_mchip.yml --no-builds  
+```
+
+
+- Example for Windows:
+```bash
+conda env export -f  environment_windows.yml --no-builds  
 ```
 
 ### 5. Remove manually created env and rebuild
 - Remove the manually created env:
+
+##### MAC
 ```bash
 conda activate base
 conda remove --name dojo-env --all  
 
 conda env create -f environemnt_mac_mchip.yml
+conda activate dojo-env
+python -m ipykernel install --user --name dojo-env --display-name "Python (dojo-env)"
+```
+
+##### WINDOWS
+```bash
+conda activate base
+conda remove --name dojo-env --all  
+
+conda env create -f environment_windows.yml
 conda activate dojo-env
 python -m ipykernel install --user --name dojo-env --display-name "Python (dojo-env)"
 ```
