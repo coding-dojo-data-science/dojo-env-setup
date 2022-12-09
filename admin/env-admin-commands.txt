@@ -1,0 +1,14 @@
+### remove env
+
+conda activate base
+conda remove --name dojo-env --all  
+
+# Respond: y
+
+
+
+### Install Commands (for my macbook computer)
+cd $HOME/Documents/GitHub/_CURRICULUM/dojo-env-setup
+conda env create -f environment_py39_mac_mchip.yml
+conda activate dojo-env
+python -m ipykernel install --user --name dojo-env --display-name "Python (dojo-env)"
