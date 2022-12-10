@@ -70,7 +70,34 @@ ___
 
 ## Terminal Commands
 
-### Remove env
+
+
+### Installation Commands 
+
+#### Macs with Apple Chip
+
+```bash
+conda env create -f environment_mac_mchip.yml
+conda activate dojo-env
+python -m ipykernel install --user --name dojo-env --display-name "Python (dojo-env)"
+```
+
+#### Macs with Intel Processor
+```bash
+conda env create -f environment_mac_intel.yml
+conda activate dojo-env
+python -m ipykernel install --user --name dojo-env --display-name "Python (dojo-env)"
+```
+
+
+#### Macs with Intel Processor
+```bash
+conda env create -f environment_mac_intel.yml
+conda activate dojo-env
+python -m ipykernel install --user --name dojo-env --display-name "Python (dojo-env)"
+```
+
+## Remove env
 ```bash
 conda activate base
 conda remove --name dojo-env --all  
@@ -78,21 +105,14 @@ conda remove --name dojo-env --all
 - Respond: y
 
 
-
-### Install Commands (for my macbook computer)
-```bash
-cd $HOME/Documents/GitHub/_CURRICULUM/dojo-env-setup
-conda env create -f environment_py39_mac_mchip.yml
-conda activate dojo-env
-python -m ipykernel install --user --name dojo-env --display-name "Python (dojo-env)"
-```
-
 ## Clone Environment
+
 - To create a clone of dojo-env called "my-env":
 ```bash
 conda create --name my-env --clone dojo-env
 python -m ipykernel install --user --name my-env --display-name "Python (my-env)"
 ```
+
 ___
 ___
 
