@@ -101,6 +101,7 @@ dependencies:
   - jsonschema=4.16.0
   - jupyter=1.0.0
   - jupyter-server-mathjax=0.2.6
+  - conda-forge::jupyter_contrib_nbextensions
   - jupyter_client=7.4.7
   - jupyter_console=6.4.3
   - jupyter_core=4.11.2
