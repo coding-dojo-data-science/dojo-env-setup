@@ -50,7 +50,7 @@ conda env export -f  environment_windows.yml --no-builds
 conda activate base
 conda remove --name dojo-env --all  
 
-conda env create -f environemnt_mac_mchip.yml
+conda env create -f environment_mac_mchip.yml
 conda activate dojo-env
 python -m ipykernel install --user --name dojo-env --display-name "Python (dojo-env)"
 ```
