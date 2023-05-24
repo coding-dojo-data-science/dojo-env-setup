@@ -1,19 +1,53 @@
 # Admin: Constructing dojo-env
 
 ## New Python 3.10 Environment Workflow [WIP] 
-- 05/23/23
+- 05/24/23
 
-1. Manually created the original environment file (now named "environment-ts-mvp_mac_m1_SOURCE.yml")
+- Open `Make Reqs and Conda Create Commands.ipynb`
+
+
+### 1. Update package versions in the "## MAKING THE REQUIREMENTS FILE" cell
+1. Manually created the original environment using the code cells in the notebook to generate the conda create commands (with versions).
 	- Minimal packages, but specific version numbers (3-digits vx.xx.xx) to speed up package solving by conda. 
-	- called it 'dojo-env-ts-mvp"
-2. After creating the env and waiting for for a long time for the solver to resolve the MVP packages, I exported the resulting environment with all installed dependencies using: 
+	- called it `STARTER_ENV_NAME = 'dojo-env-ds-STARTER'`
+2. After creating the env and waiting for for a long time for the solver to resolve the MVP packages, open jupyter notebook and test the mvp packages. 
+	```
+	conda activate dojo-env-ds-STARTER
+	python -m ipykernel install --user --name dojo-env-ds-STARTER --display-name "Python (dojo-env-ds-STARTER)"
+	jupyter notebook
+	```
+3. If everything works, export the resulting environment with all installed dependencies using: 
+	
 ```
-conda activate dojo-env-ts-mvp
-conda env export -f  environment-ts-mvp_mac_mchip.yml --no-builds
+conda activate dojo-env-ds-STARTER
+conda env export -f  environment-ds_STARTER_mac_mchip.yml --no-builds
 ```
-## 📌BOOKMARK 05/23/23
-3. [ ] TO DO: Next, I am going to manually install remaining packages manually, then export the resulting env with a similar command. 
 
+4. Remove the original starter environment:
+```
+conda activate base
+conda remove --name dojo-env-ds-STARTER --all  
+```
+
+5. Reinstall from the starter environment from .yml file:
+```
+conda env create -f environment-ds_STARTER_mac_mchip.yml
+```
+After recreating the env, open jupyter notebook and test the mvp packages. 
+	```
+	conda activate dojo-env-ds-STARTER
+	python -m ipykernel install --user --name dojo-env-ds-STARTER --display-name "Python (dojo-env-ds-STARTER)"
+	jupyter notebook
+	```
+
+
+3. If everything works, manually install remaining packages manually, then export the resulting env with a similar command. 
+	- (See the "###  Additional Manual Installations " header in  notebook for commands)
+	- Then, starter jupyter and run the test notebook, if it works, export the final env 
+```
+conda activate {STARTER_ENV_NAME}
+conda env export -f  environment-ds_mac_mchip.yml --name {FINAL_ENV_NAME} --no-builds"
+```
 4. Then, attempt to install the env all over again, but using the newly generated .yml file.
 
 5. If it works, great! ready for students (after running test notebook, of course)
