@@ -1,10 +1,10 @@
 jupyter
+# tzlocal
 scikit-learn==1.2.2
 pandas==1.5.3
 scipy==1.10.1
 matplotlib==3.7.1
 seaborn==0.12.2
-plotly::plotly==5.13.1
 
 pmdarima==2.0.3
 statsmodels==0.13.5
@@ -14,24 +14,25 @@ sqlalchemy==2.0.9
 "sqlalchemy-utils<=0.41.0"
 conda-forge::shap==0.41.0
 conda-forge::imbalanced-learn==0.10.1
-lime
-xgboost=='1.7.*'
+conda-forge::lime==0.2.0.1
+xgboost=="1.7.*"
 pandas-datareader==0.10.0
-# dython
-beautifulsoup4
-lxml
+"beautifulsoup4>4.10.0"
+"lxml>4.8.0"
 conda-forge::lightgbm==3.3.5
+plotly::plotly==5.13.1
 
-# conda-forge::missingno
+# missingno==0.5.2
 conda-forge::tabulate
-numexpr
-openpyxl
+conda-forge::numexpr==2.8.4
+"openpyxl>3.0.8"
 
-html5lib
-conda-forge::nbdime
+"html5lib<1.2"
 conda-forge::xlsxwriter
 conda-forge::dataframe_image
 
 nltk==3.8.1
 wordcloud==1.8.2.2
 gensim==4.3.1
+conda-forge::spacy
+numpy==1.22.4

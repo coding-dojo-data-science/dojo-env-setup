@@ -1,5 +1,24 @@
 # Admin: Constructing dojo-env
-- Workflow as of 12/09/22
+
+## New Python 3.10 Environment Workflow [WIP]
+
+1. Manually created the original environment file (now named "environment-ts-mvp_mac_m1_SOURCE.yml")
+	- Minimal packages, but specific version numbers (3-digits vx.xx.xx) to speed up package solving by conda. 
+	- called it 'dojo-env-ts-mvp"
+2. After creating the env and waiting for for a long time for the solver to resolve the MVP packages, I exported the resulting environment with all installed dependencies using: 
+```
+conda activate dojo-env-ts-mvp
+conda env export -f  environment-ts-mvp_mac_mchip.yml --no-builds
+```
+## 📌BOOKMARK 05/23/23
+3. [ ] TO DO: Next, I am going to manually install remaining packages manually, then export the resulting env with a similar command. 
+
+4. Then, attempt to install the env all over again, but using the newly generated .yml file.
+
+5. If it works, great! ready for students (after running test notebook, of course)
+___
+
+# Workflow as of 12/09/22
 
 ## Summary
 - NOTE: steps below must be repeated on a windows AND mac computer to generate each env
