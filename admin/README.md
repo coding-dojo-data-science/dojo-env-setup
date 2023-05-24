@@ -1,6 +1,7 @@
 # Admin: Constructing dojo-env
 
-## New Python 3.10 Environment Workflow [WIP]
+## New Python 3.10 Environment Workflow [WIP] 
+- 05/23/23
 
 1. Manually created the original environment file (now named "environment-ts-mvp_mac_m1_SOURCE.yml")
 	- Minimal packages, but specific version numbers (3-digits vx.xx.xx) to speed up package solving by conda. 
