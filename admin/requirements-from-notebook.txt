@@ -23,4 +23,9 @@ conda-forge::lime==0.2.0.1
 conda-forge::imbalanced-learn==0.10.1
 conda-forge::shap==0.41.0
 conda-forge:numba==0.56.4
+conda-forge::joblib==1.1.1
+conda-forge::py-xgboost==1.7.4
+conda-forge::lightgbm==3.3.5
+plotly::plotly==5.14.1
+conda-forge::tornado==6.3.2
 numpy==1.23.4
