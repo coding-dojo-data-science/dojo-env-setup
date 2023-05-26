@@ -1,8 +1,7 @@
 name: dojo-env-ds
 channels:
-  - conda-forge
-  - plotly
   - defaults
+  - conda-forge
 dependencies:
   - _py-xgboost-mutex=2.0
   - aiohttp=3.8.3
@@ -18,6 +17,8 @@ dependencies:
   - attrs=22.1.0
   - babel=2.11.0
   - backcall=0.2.0
+  - backports=1.0
+  - backports.functools_lru_cache=1.6.4
   - bcrypt=3.2.0
   - beautifulsoup4=4.12.2
   - blas=2.116
@@ -31,7 +32,7 @@ dependencies:
   - brunsli=0.1
   - bzip2=1.0.8
   - c-ares=1.19.0
-  - ca-certificates=2023.01.10
+  - ca-certificates=2023.5.7
   - certifi=2023.5.7
   - cffi=1.15.1
   - cfitsio=3.470
@@ -39,6 +40,7 @@ dependencies:
   - charset-normalizer=2.0.4
   - click=8.0.4
   - cloudpickle=2.2.1
+  - colorama=0.4.6
   - colour=0.1.5
   - comm=0.1.2
   - contourpy=1.0.5
@@ -53,6 +55,7 @@ dependencies:
   - defusedxml=0.7.1
   - entrypoints=0.4
   - executing=0.8.3
+  - flit-core=3.9.0
   - fonttools=4.25.0
   - freetype=2.12.1
   - frozenlist=1.3.3
@@ -72,6 +75,8 @@ dependencies:
   - imageio=2.26.0
   - imbalanced-learn=0.10.1
   - importlib-metadata=6.0.0
+  - importlib_metadata=6.0.0
+  - importlib_resources=5.12.0
   - infinity=1.5
   - intervals=0.9.2
   - ipykernel=6.19.2
@@ -90,6 +95,7 @@ dependencies:
   - jupyter_core=5.3.0
   - jupyter_server=1.23.4
   - jupyterlab=3.5.3
+  - jupyterlab_code_formatter=2.2.1
   - jupyterlab_pygments=0.1.2
   - jupyterlab_server=2.22.0
   - jupyterlab_widgets=3.0.5
@@ -105,7 +111,6 @@ dependencies:
   - libbrotlidec=1.0.9
   - libbrotlienc=1.0.9
   - libcblas=3.9.0
-  - libclang=14.0.6
   - libclang13=14.0.6
   - libcurl=7.88.1
   - libcxx=16.0.4
@@ -190,6 +195,7 @@ dependencies:
   - pickleshare=0.7.5
   - pillow=9.4.0
   - pip=23.0.1
+  - pkgutil-resolve-name=1.3.10
   - platformdirs=2.5.2
   - plotly=5.14.1
   - ply=3.11
@@ -208,13 +214,14 @@ dependencies:
   - pyopenssl=22.0.0
   - pyparsing=3.0.9
   - pyqt=5.15.7
+  - pyqt5-sip=12.11.0
   - pyrsistent=0.18.0
   - pysocks=1.7.1
   - python=3.10.10
   - python-dateutil=2.8.2
   - python-fastjsonschema=2.16.2
   - python_abi=3.10
-  - pytz=2022.7
+  - pytz=2022.7.1
   - pytzdata=2020.1
   - pywavelets=1.4.1
   - pyyaml=6.0
@@ -222,6 +229,7 @@ dependencies:
   - qt-main=5.15.8
   - qt-webengine=5.15.9
   - qtconsole=5.4.2
+  - qtconsole-base=5.4.2
   - qtpy=2.2.0
   - qtwebkit=5.212
   - readline=8.2
@@ -231,6 +239,7 @@ dependencies:
   - scikit-learn=1.2.2
   - scipy=1.10.1
   - seaborn=0.12.2
+  - seaborn-base=0.12.2
   - send2trash=1.8.0
   - setuptools=66.0.0
   - shap=0.41.0
@@ -243,6 +252,17 @@ dependencies:
   - soupsieve=2.4
   - sqlalchemy=2.0.9
   - sqlalchemy-utils=0.41.1
+  - sqlalchemy-utils-arrow=0.41.1
+  - sqlalchemy-utils-babel=0.41.1
+  - sqlalchemy-utils-base=0.41.1
+  - sqlalchemy-utils-color=0.41.1
+  - sqlalchemy-utils-encrypted=0.41.1
+  - sqlalchemy-utils-intervals=0.41.1
+  - sqlalchemy-utils-password=0.41.1
+  - sqlalchemy-utils-pendulum=0.41.1
+  - sqlalchemy-utils-phone=0.41.1
+  - sqlalchemy-utils-timezone=0.41.1
+  - sqlalchemy-utils-url=0.41.1
   - sqlite=3.41.2
   - stack_data=0.2.0
   - statsmodels=0.13.5
@@ -280,10 +300,49 @@ dependencies:
   - zlib=1.2.13
   - zstd=1.5.5
   - pip:
+      - absl-py==1.4.0
+      - astunparse==1.6.3
+      - autopep8==2.0.2
+      - black==23.3.0
+      - cachetools==5.3.0
+      - flatbuffers==23.5.9
       - frozendict==2.3.8
+      - gast==0.4.0
+      - google-auth==2.18.1
+      - google-auth-oauthlib==1.0.0
+      - google-pasta==0.2.0
+      - grpcio==1.54.2
+      - h5py==3.8.0
+      - holidays==0.25
       - html5lib==1.1
+      - isort==5.12.0
+      - jax==0.4.10
+      - keras==2.12.0
+      - korean-lunar-calendar==0.3.1
+      - libclang==16.0.0
+      - markdown==3.4.3
+      - missingno==0.5.2
+      - ml-dtypes==0.1.0
       - multitasking==0.0.11
-      - pyqt5-sip==12.11.0
+      - mypy-extensions==1.0.0
+      - oauthlib==3.2.2
+      - opt-einsum==3.3.0
+      - pathspec==0.11.1
+      - protobuf==4.23.1
+      - pyasn1==0.5.0
+      - pyasn1-modules==0.3.0
+      - pycodestyle==2.10.0
+      - requests-oauthlib==1.3.1
+      - rsa==4.9
+      - tensorboard==2.12.3
+      - tensorboard-data-server==0.7.0
+      - tensorflow-estimator==2.12.0
+      - tensorflow-macos==2.12.0
+      - tensorflow-metal==0.8.0
+      - termcolor==2.3.0
       - tzlocal==5.0.1
+      - werkzeug==2.3.4
+      - wrapt==1.14.1
+      - yapf==0.33.0
       - yfinance==0.2.18
-prefix: /opt/homebrew/Caskroom/miniforge/base/envs/dojo-env-ds-STARTER
+prefix: /opt/homebrew/Caskroom/miniforge/base/envs/dojo-env-ds
