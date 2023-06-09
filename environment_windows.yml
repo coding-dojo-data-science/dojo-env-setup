@@ -196,7 +196,7 @@ dependencies:
   - protobuf=3.20.1
   - psutil=5.9.4
   - pure_eval=0.2.2
-  - py-xgboost=1.5.0
+  - conda-forge::py-xgboost=1.5.0
   - pyasn1=0.4.8
   - pyasn1-modules=0.2.8
   - pycparser=2.21
