@@ -5,7 +5,7 @@
 - **If you are looking for the original dojo-env environment from pre-July 2022**, switch to the legacy-dojo-env-v1 branch after cloning this repository. 
 <img src="images/legacy-branch.png" width=400px>
 
-<!DOCTYPE html>
+
 <html><body><h1>Installing Python Locally</h1><br><hr></hr><br><div id="lesson_content">
  <h1>
   Installation Overview
