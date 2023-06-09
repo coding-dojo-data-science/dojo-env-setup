@@ -1,0 +1,179 @@
+<div id="lesson_content">
+ <h1>
+  Step 2.3 Create the dojo-env environment
+ </h1>
+ <h3>
+ </h3>
+ <h3>
+  <br/>
+  1) Create the dojo-env using the correct "conda create" command for your OS
+ </h3>
+ <ul>
+  <li>
+   Depending on your OS and processor, you will use a different environment file name in your "conda create" command.
+  </li>
+  <li>
+   <strong>
+    Run the "conda env create -f &lt;env_file&gt;" command for your OS from section below:
+   </strong>
+   <ul>
+    <li>
+     Reminder for Mac Users: see Step 1. Downloading and Installing Required Apps to remember how to identity if you have an Intel processor or an Apple chip.
+    </li>
+   </ul>
+  </li>
+ </ul>
+ <h4>
+  Windows
+ </h4>
+ <pre>conda env create -f environment_windows.yml</pre>
+ <h4 data-language="ruby">
+  MacOS with an Intel Processor
+ </h4>
+ <pre>conda env create -f environment_mac_intel.yml</pre>
+ <h4>
+  MacOS with an Apple Chip
+ </h4>
+ <pre>conda env create -f environment_mac_mchip.yml</pre>
+ <p>
+  <br/>
+ </p>
+ <h3>
+  Wait (patiently) for the dojo-env to be created.
+ </h3>
+ <ul>
+  <li>
+   <font color="#505050">
+    It
+   </font>
+   can take anywhere from 3-20 minutes to finish create the environment, depending on your computer and internet connection.
+  </li>
+  <li>
+   You will see several progress bars during the process. Once it has been completed you should see a message that says
+  </li>
+ </ul>
+ <pre data-language="ruby"><span class="comment"># To activate this environment use:</span>
+ conda activate dojo<span class="keyword operator">-</span>env
+<span class="comment"># To deactivate this environment use:</span>
+ conda deactivate 
+<span class="comment"># If conda deactivate doesn't work, activate the "base" env</span>
+ conda activate base<button class="copy_code_snippet_btn">copy</button></pre>
+ <ul>
+  <li>
+   Confirm your environment was installed and activate it.
+   <ul>
+    <li>
+     Type
+     <code>
+      conda env list
+     </code>
+     to display the list of your locally installed environments.
+     <ul>
+      <li>
+       You should see 2 environments, including dojo-env:
+       <ul>
+        <li>
+         <code>
+          base
+         </code>
+        </li>
+        <li>
+         <code>
+          dojo-env
+         </code>
+        </li>
+       </ul>
+      </li>
+     </ul>
+    </li>
+   </ul>
+  </li>
+  <li>
+   If you see dojo-env in the list:
+   <ul>
+    <li>
+     Success!  dojo-env was successfully created! But we aren't using it yet just yet. We must first "activate" an environment to determine which version of python &amp; packages are currently being used.
+     <br/>
+    </li>
+   </ul>
+  </li>
+ </ul>
+ <h3>
+  2) Activate the dojo-env
+ </h3>
+ <ul>
+  <li>
+   <strong>
+    Run the conda activate command to switch to dojo-env.
+   </strong>
+  </li>
+ </ul>
+ <pre data-language="ruby">conda activate dojo<span class="keyword operator">-</span>env<button class="copy_code_snippet_btn">copy</button></pre>
+ <ul>
+  <li>
+   You should now see "(dojo-env)" next to your prompt in your terminal (may be above the prompt, on the left, or on the right depending on your OS)
+  </li>
+ </ul>
+ <p>
+  <strong>
+   Troubleshooting for Windows users:
+  </strong>
+ </p>
+ <ul>
+  <li>
+   If you see a message that says "your terminal is not set up for conda activate":
+   <ul>
+    <li>
+     [Recommended Solution] you should navigate to the Troubleshooting section on the course sidebar and follow the instructions on the "
+     <a href="https://login.codingdojo.com/m/213/13547/107855" target="_blank">
+      Enable Conda Activate for GitBash
+     </a>
+     " page.
+    </li>
+    <li>
+     [Alternative/Older Solution] Alternatively, you could use a slightly different command to activate your environment. Replace the word "conda" with "source"
+    </li>
+   </ul>
+  </li>
+ </ul>
+ <pre data-language="ruby">source activate dojo<span class="keyword operator">-</span>env<button class="copy_code_snippet_btn">copy</button></pre>
+ <p>
+  <font color="#3e4e5a" face="Gotham-Rounded-Bold">
+   <b>
+    <strong>
+     <br/>
+    </strong>
+   </b>
+  </font>
+ </p>
+ <h3>
+  <font color="#3e4e5a" face="Gotham-Rounded-Bold">
+   <b>
+    <strong>
+     3) Add dojo-env to jupyter notebook/lab
+    </strong>
+   </b>
+  </font>
+ </h3>
+ <ul>
+  <li>
+   After confirming you now see (dojo-env) displayed next to your prompt:
+   <ul>
+    <li>
+     Run the following command to make sure Jupyter Notebook/Lab knows your new environment.
+    </li>
+   </ul>
+  </li>
+ </ul>
+ <pre data-language="ruby">python <span class="keyword operator">-</span>m ipykernel install <span class="keyword operator">-</span><span class="keyword operator">-</span>user <span class="keyword operator">-</span><span class="keyword operator">-</span>name dojo<span class="keyword operator">-</span>env <span class="keyword operator">-</span><span class="keyword operator">-</span>display<span class="keyword operator">-</span>name <span class="string"><span class="string open">"</span>Python (dojo-env)<span class="string close">"</span></span>
+<button class="copy_code_snippet_btn">copy</button></pre>
+ <h2>
+  The moment of truth...
+ </h2>
+ <p>
+  You are all set for the next step: Testing Your New Environment!
+ </p>
+ <p>
+  <br/>
+ </p>
+</div>

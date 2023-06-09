@@ -1,0 +1,380 @@
+<div id="lesson_content">
+ <h1>
+  Step 2.4: Setting dojo-env as the default + alias commands
+ </h1>
+ <ul>
+  <li>
+   This section will require you to enter several commands in your Terminal (on Mac) or GitBash (on Windows).
+   <ul>
+    <li>
+     Make sure that your terminal is not running jupyter notebook (you can press "
+     <code>
+      Cntrl
+     </code>
+     +
+     <code>
+      C
+     </code>
+     " to force quit the server from your terminal).
+    </li>
+   </ul>
+   <ul>
+    <li>
+     Alternatively, you can open a new terminal/GitBash. (You can perform these steps from any folder.)
+    </li>
+   </ul>
+  </li>
+ </ul>
+ <hr/>
+ <h1>
+  Part 1) Commands For Mac OS
+ </h1>
+ <ul>
+  <li>
+   All mac users should follow these instructions (regardless of if your have an Intel or Apple processor).
+  </li>
+  <li>
+   On a Mac, we need to first see what shell terminal is using.
+   <ul>
+    <li>
+     There are 2 possible options that your mac may be using:
+     <ul>
+      <li>
+       zsh
+      </li>
+      <li>
+       bash
+      </li>
+     </ul>
+    </li>
+   </ul>
+  </li>
+  <li>
+   T
+   <strong>
+    he major difference between zsh and bash is which file it checks for the settings
+   </strong>
+   to use when you create a new terminal.
+   <ul>
+    <li>
+     Otherwise, zsh and bash behave very similarly and you may not notice the difference if you switched.
+    </li>
+   </ul>
+  </li>
+ </ul>
+ <h2>
+  Determining If your Shell is Bash or Zsh
+ </h2>
+ <ul>
+  <li>
+   In your terminal, type
+   <code>
+    echo $SHELL
+   </code>
+   and hit enter.
+  </li>
+  <li>
+   You will see a filepath displayed in the terminal, take note of the last few letters of the filepath and select the correct option (A or B) below:
+  </li>
+ </ul>
+ <hr/>
+ <h3>
+  1A) If the response ends in bash
+ </h3>
+ <ul>
+  <li>
+   <strong>
+    Run the following commands to automatically activate dojo-env
+   </strong>
+  </li>
+ </ul>
+ <pre data-language="ruby">touch <span class="keyword operator">~</span><span class="keyword operator">/</span>.bash_profile
+echo <span class="string"><span class="string open">"</span>conda activate dojo-env<span class="string close">"</span></span> <span class="keyword operator">&gt;&gt;</span> <span class="keyword operator">~</span><span class="keyword operator">/</span>.bash_profile<button class="copy_code_snippet_btn">copy</button></pre>
+ <ul>
+  <li>
+   <strong>
+    Run the following 2 commands to add shortcuts for opening jupyter
+   </strong>
+   <ul>
+    <li>
+     <strong>
+      NOTE: it is VERY important that you do not add any spaces on either side of the
+      <code>
+       =
+      </code>
+      sign
+     </strong>
+     . The command will not work correctly if you add extra spaces.
+    </li>
+   </ul>
+  </li>
+ </ul>
+ <pre data-language="ruby">echo <span class="string">'alias jnb="jupyter notebook"'</span> <span class="keyword operator">&gt;&gt;</span> <span class="keyword operator">~</span><span class="keyword operator">/</span>.bash_profile
+echo <span class="string">'alias lab="jupyter lab"'</span> <span class="keyword operator">&gt;&gt;</span> <span class="keyword operator">~</span><span class="keyword operator">/</span>.bash_profile<button class="copy_code_snippet_btn">copy</button></pre>
+ <ul>
+  <li>
+   <strong>
+    <em>
+     Scroll down to the "Part 2) Final Verification Steps (Mac &amp; Windows)" step.
+    </em>
+   </strong>
+  </li>
+ </ul>
+ <hr/>
+ <h3>
+  1B) If the response ends in zsh:
+ </h3>
+ <ul>
+  <li>
+   Run the following commands to automatically activate dojo-env
+  </li>
+ </ul>
+ <pre data-language="ruby">touch <span class="keyword operator">~</span><span class="keyword operator">/</span>.zshrc
+echo <span class="string"><span class="string open">"</span>conda activate dojo-env<span class="string close">"</span></span> <span class="keyword operator">&gt;&gt;</span> <span class="keyword operator">~</span><span class="keyword operator">/</span>.zshrc<button class="copy_code_snippet_btn">copy</button></pre>
+ <ul>
+  <li>
+   Run the following 2 commands to add shortcuts for opening jupyter
+   <ul>
+    <li>
+     NOTE: it is VERY important that you do not add any spaces on either side of the
+     <code>
+      =
+     </code>
+     sign. The command will not work correctly if you add extra spaces.
+    </li>
+   </ul>
+  </li>
+ </ul>
+ <pre data-language="ruby">echo <span class="string">'alias jnb="jupyter notebook"'</span> <span class="keyword operator">&gt;&gt;</span> <span class="keyword operator">~</span><span class="keyword operator">/</span>.zshrc
+echo <span class="string">'alias lab="jupyter lab"'</span> <span class="keyword operator">&gt;&gt;</span> <span class="keyword operator">~</span><span class="keyword operator">/</span>.zshrc<button class="copy_code_snippet_btn">copy</button></pre>
+ <ul>
+  <li>
+   <strong>
+    <em>
+     Scroll down to the "Part 2) Final Verification Steps (Mac &amp; Windows)" step.
+    </em>
+   </strong>
+  </li>
+ </ul>
+ <hr/>
+ <hr/>
+ <h1>
+  Part 1) Commands for Windows
+ </h1>
+ <h3>
+  Determine if your PC Can Run "conda activate" or "source activate"
+ </h3>
+ <p>
+  For windows computers,
+  <strong>
+   we need to determine if your computer uses the word "conda" or "source" to activate an environment
+  </strong>
+  .
+ </p>
+ <p>
+  You've already run this command before, but if you don't remember which command you ran:
+ </p>
+ <ul>
+  <li>
+   <strong>
+    In a new GitBash window, enter the "conda activate base" or "conda activate dojo-env" command.
+   </strong>
+   <ul>
+    <li>
+     <strong>
+      If you see a message about your shell not being set up to run conda activate,
+     </strong>
+     <ul>
+      <li>
+       You need to
+       <strong>
+        use the "1B) if your PC has to run source activate"
+       </strong>
+       section below
+      </li>
+     </ul>
+    </li>
+    <li>
+     <strong>
+      If the conda activate command worked,
+     </strong>
+     <ul>
+      <li>
+       Follow the
+       <strong>
+        "1A) If your PC ran conda activate"
+       </strong>
+       section below.
+      </li>
+     </ul>
+    </li>
+   </ul>
+  </li>
+ </ul>
+ <hr/>
+ <h2>
+  1A) If your PC can run "conda activate":
+ </h2>
+ <ul>
+  <li>
+   Run the following commands to automatically activate dojo-env
+  </li>
+ </ul>
+ <pre data-language="ruby">touch <span class="keyword operator">~</span><span class="keyword operator">/</span>.bash_profile
+echo <span class="string"><span class="string open">"</span>conda activate dojo-env<span class="string close">"</span></span> <span class="keyword operator">&gt;&gt;</span> <span class="keyword operator">~</span><span class="keyword operator">/</span>.bash_profile<button class="copy_code_snippet_btn">copy</button></pre>
+ <ul>
+  <li>
+   Run the following 2 commands to add shortcuts for opening jupyter
+   <ul>
+    <li>
+     NOTE: it is VERY important that you do not add any spaces on either side of the
+     <code>
+      =
+     </code>
+     sign. The command will not work correctly if you add extra spaces.
+    </li>
+   </ul>
+  </li>
+ </ul>
+ <pre data-language="ruby">echo <span class="string">'alias jnb="jupyter notebook"'</span> <span class="keyword operator">&gt;&gt;</span> <span class="keyword operator">~</span><span class="keyword operator">/</span>.bash_profile
+echo <span class="string">'alias lab="jupyter lab"'</span> <span class="keyword operator">&gt;&gt;</span> <span class="keyword operator">~</span><span class="keyword operator">/</span>.bash_profile<button class="copy_code_snippet_btn">copy</button></pre>
+ <ul>
+  <li>
+   Finally, activate the new settings:
+  </li>
+  <ul>
+   <li>
+    Run
+    <code>
+     source ~/.bash_profile
+    </code>
+    or open a new GitBash window to activate the changes you just made
+   </li>
+  </ul>
+  <li>
+   <strong>
+    <em>
+     Scroll down to the "Part 2) Final Verification Steps (Mac &amp; Windows)" step.
+    </em>
+   </strong>
+  </li>
+ </ul>
+ <hr/>
+ <h2>
+  1B) If your PC has to "source activate":
+ </h2>
+ <ul>
+  <li>
+   Run the following commands to automatically activate dojo-env
+  </li>
+ </ul>
+ <pre data-language="ruby">touch <span class="keyword operator">~</span><span class="keyword operator">/</span>.bash_profile
+echo <span class="string"><span class="string open">"</span>source activate dojo-env<span class="string close">"</span></span> <span class="keyword operator">&gt;&gt;</span> <span class="keyword operator">~</span><span class="keyword operator">/</span>.bash_profile<button class="copy_code_snippet_btn">copy</button></pre>
+ <ul>
+  <li>
+   Run the following 2 commands to add shortcuts for opening jupyter
+   <ul>
+    <li>
+     NOTE: it is VERY important that you do not add any spaces on either side of the
+     <code>
+      =
+     </code>
+     sign. The command will not work correctly if you add extra spaces.
+    </li>
+   </ul>
+  </li>
+ </ul>
+ <pre data-language="ruby">echo <span class="string">'alias jnb="jupyter notebook"'</span> <span class="keyword operator">&gt;&gt;</span> <span class="keyword operator">~</span><span class="keyword operator">/</span>.bash_profile
+echo <span class="string">'alias lab="jupyter lab"'</span> <span class="keyword operator">&gt;&gt;</span> <span class="keyword operator">~</span><span class="keyword operator">/</span>.bash_profile<button class="copy_code_snippet_btn">copy</button></pre>
+ <ul>
+  <li>
+   Finally, activate the new settings:
+  </li>
+  <ul>
+   <li>
+    Run
+    <code>
+     source ~/.bash_profile
+    </code>
+    or open a new GitBash window to activate the changes you just made
+   </li>
+  </ul>
+  <li>
+   <strong>
+    <em>
+     Scroll down to the "Part 2) Final Verification Steps (Mac &amp; Windows)" step.
+    </em>
+   </strong>
+  </li>
+ </ul>
+ <hr/>
+ <hr/>
+ <h1>
+  Part 2) Final Verification Steps (Mac &amp; Windows)
+ </h1>
+ <h3>
+  Confirm
+  <code>
+   dojo-env
+  </code>
+  is your default
+ </h3>
+ <ul>
+  <li>
+   To confirm that
+   <code>
+    dojo-env
+   </code>
+   is now your default environment:
+   <ul>
+    <li>
+     You should see
+     <code>
+      (dojo-env)
+     </code>
+     appear next to your prompt.
+    </li>
+   </ul>
+  </li>
+ </ul>
+ <h2>
+ </h2>
+ <figure>
+  <img height="100" src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1647634446__confirm_dojo_env.png" style="width: 454px; height: 100px;" width="454"/>
+ </figure>
+ <h2>
+ </h2>
+ <h3>
+  Confirm the shortcut aliases work
+ </h3>
+ <div>
+  <ul>
+   <li>
+    <strong>
+     Try running the command "jnb" in your terminal/kitbash.
+    </strong>
+    <ul>
+     <li>
+      If jupyter notebook launches, you're all set!
+     </li>
+    </ul>
+    <ul>
+     <li>
+      If not, contact your instructor or a TA for assistance.
+     </li>
+    </ul>
+   </li>
+  </ul>
+  <h2>
+   Note: you can still move on to the next step even if you could not successfully complete this step.
+  </h2>
+  <ul>
+   <li>
+    These steps are for convenience and are not strictly required.
+   </li>
+   <li>
+    You should still contact your instructor or a TA for assistance to successfully complete this step at your earliest convenience.
+   </li>
+  </ul>
+ </div>
+</div>
