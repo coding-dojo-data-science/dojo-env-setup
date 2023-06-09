@@ -104,9 +104,7 @@
    <p>
     <br/>
    </p>
-   <figure>
     <img height="193" src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1658334627__Troubleshooting-chapter.png" style="width: 191px; height: 193px;" width="191"/>
-   </figure>
   </li>
   <li>
    Third, reach out on the #ds-python-installation Discord channel (
