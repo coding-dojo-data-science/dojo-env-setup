@@ -62,7 +62,7 @@ So far in this program, you have been working in Google Colab which provides a c
 
 ------
 
-# Instructions Pages
+## Instructions
 
 - [Windows](https://file+.vscode-resource.vscode-cdn.net/Users/codingdojo/Documents/GitHub/dojo-env-setup/docs/instructions-windows-v23.md)
 - [Mac-Apple Chip (m1,m2,etc.)](https://file+.vscode-resource.vscode-cdn.net/Users/codingdojo/Documents/GitHub/dojo-env-setup/docs/instructions-mac-mchip-v23.md)
@@ -139,4 +139,6 @@ jupyter kernelspec list
 
 - To remove a kernel that no longer exists (replace `<kernel name>` with name of kernel from the jupyter kernelspec list command ):
 
-
+```bash
+jupyter kernelspec remove <kernel name>
+```
