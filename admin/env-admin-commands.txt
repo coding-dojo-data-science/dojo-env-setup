@@ -12,3 +12,27 @@ cd $HOME/Documents/GitHub/_CURRICULUM/dojo-env-setup
 conda env create -f environment_py39_mac_mchip.yml
 conda activate dojo-env
 python -m ipykernel install --user --name dojo-env --display-name "Python (dojo-env)"
+
+
+### Install dojo-ds Commands (for my macbook computer)
+conda env create -f environment-ds_mac_mchip.yml
+conda activate dojo-env-ds
+python -m ipykernel install --user --name dojo-env-ds --display-name "Python (dojo-env-ds)"
+
+
+
+
+## TEST env
+conda env create -f environment-ds_mac_mchip-TEST.yml
+
+#add kernel
+conda activate dojo-env-ds-test
+python -m ipykernel install --user --name dojo-env-ds-test --display-name "Python (dojo-env-ds-test)"
+
+# test env
+lab
+
+#remove
+conda activate base
+conda remove --name dojo-env-ds-test --all  
+

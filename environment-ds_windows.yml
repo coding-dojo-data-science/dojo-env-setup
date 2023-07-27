@@ -1,6 +1,5 @@
 name: dojo-env-ds
 channels:
-  - plotly
   - conda-forge
   - defaults
 dependencies:
@@ -87,6 +86,7 @@ dependencies:
   - jupyter_core=5.3.0
   - jupyter_server=1.23.4
   - jupyterlab=3.5.3
+  - jupyterlab_code_formatter=2.2.1
   - jupyterlab_pygments=0.1.2
   - jupyterlab_server=2.22.0
   - jupyterlab_widgets=3.0.5
@@ -162,7 +162,7 @@ dependencies:
   - pillow=9.4.0
   - pip=23.0.1
   - platformdirs=2.5.2
-  - plotly=5.14.1
+  - plotly::plotly=5.15
   - ply=3.11
   - pmdarima=2.0.3
   - pooch=1.4.0
@@ -213,7 +213,7 @@ dependencies:
   - snappy=1.1.9
   - sniffio=1.2.0
   - soupsieve=2.4
-  - sqlalchemy=2.0.9
+  - "sqlalchemy<2.0.0"
   - sqlalchemy-utils=0.41.1
   - sqlite=3.41.2
   - stack_data=0.2.0
@@ -259,6 +259,8 @@ dependencies:
   - pip:
     - absl-py==1.4.0
     - astunparse==1.6.3
+    - autopep8==2.0.2
+    - black==23.3.0
     - cachetools==5.3.0
     - flatbuffers==23.5.9
     - frozendict==2.3.8
@@ -268,13 +270,15 @@ dependencies:
     - google-pasta==0.2.0
     - grpcio==1.54.2
     - h5py==3.8.0
+    - holidays==0.25
     - html5lib==1.1
+    - isort==5.12.0
     - jax==0.4.10
-    - jupyter-contrib-core==0.4.2
-    - jupyter-contrib-nbextensions==0.5.1
-    - jupyter-highlight-selected-word==0.2.0
-    - jupyter-latex-envs==1.4.6
-    - jupyter-nbextensions-configurator==0.6.3
+    # - jupyter-contrib-core==0.4.2
+    # - jupyter-contrib-nbextensions==0.5.1
+    # - jupyter-highlight-selected-word==0.2.0
+    # - jupyter-latex-envs==1.4.6
+    # - jupyter-nbextensions-configurator==0.6.3
     - keras==2.12.0
     - libclang==16.0.0
     - lightgbm==3.3.5
@@ -288,6 +292,7 @@ dependencies:
     - pyasn1-modules==0.3.0
     - requests-oauthlib==1.3.1
     - rsa==4.9
+    - selenium==4.10.0
     - tensorboard==2.12.3
     - tensorboard-data-server==0.7.0
     - tensorflow==2.12.0
@@ -300,4 +305,5 @@ dependencies:
     - werkzeug==2.3.4
     - wrapt==1.14.1
     - yfinance==0.2.18
+    - yellowbrick==1.5
 prefix: C:\Users\james\anaconda3\envs\dojo-env-ds-STARTER
