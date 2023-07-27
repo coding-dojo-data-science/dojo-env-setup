@@ -1,4 +1,4 @@
-name: dojo-env-ds
+name: dojo-env
 channels:
   - conda-forge
   - defaults

@@ -1,7 +1,7 @@
-name: dojo-env-ds
+name: dojo-env
 channels: # consider swapping so conda-forge is first
-  - defaults
   - conda-forge
+  - defaults
 dependencies:
   - _py-xgboost-mutex=2.0
   - aiohttp=3.8.3
