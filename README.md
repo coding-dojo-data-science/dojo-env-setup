@@ -288,4 +288,10 @@
   <hr/>
   
   <hr><hr>
-  
+
+
+## Instructions 
+- [Windows](./docs/instructions-windows-v23.md)
+- [Mac-Apple Chip (m1,m2,etc.)](./docs/instructions-mac-mchip-v23.md)
+- [Mac-Intel](./docs/instructions-mac-intel-v23.md)
+- `WIP` Linux[]]()
