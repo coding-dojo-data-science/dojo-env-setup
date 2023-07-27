@@ -567,7 +567,7 @@ echo ". '${PWD}'/conda.sh" >> ~/.bashrc
 
           - You should see 2 environments, including dojo-env:
             - `base`
-            - `dojo-env-ds`
+            - `dojo-env`
 
       - If you see dojo-env in the list:
 
@@ -575,12 +575,12 @@ echo ". '${PWD}'/conda.sh" >> ~/.bashrc
 
       - ### 2) Activate the dojo-env and Install the Env in Jupyter
 
-        - The first line in the code block below will switch to dojo-env-ds.
-        - The second line will install dojo-env-ds as an option in Juyter Notebook/Lab, which you will use instead of Google Colab when working locally.
+        - The first line in the code block below will switch to dojo-env.
+        - The second line will install dojo-env as an option in Juyter Notebook/Lab, which you will use instead of Google Colab when working locally.
 
         ```
-        conda activate dojo-env-ds
-        python -m ipykernel install --user --name dojo-env-ds --display-name "Python (dojo-env-ds)"
+        conda activate dojo-env
+        python -m ipykernel install --user --name dojo-env --display-name "Python (dojo-env)"
         ```
 
       
@@ -594,8 +594,8 @@ echo ". '${PWD}'/conda.sh" >> ~/.bashrc
         - [Alternative/Older Solution] Alternatively, you could use a slightly different command to activate your environment. Replace the word "conda" with "source" 
 
       ```
-      source activate dojo-env-ds
-      python -m ipykernel install --user --name dojo-env-ds --display-name "Python (dojo-env-ds)"
+      source activate dojo-env
+      python -m ipykernel install --user --name dojo-env --display-name "Python (dojo-env)"
       ```
 
 # Step 2.4: Setting dojo-env as the default + alias commands
@@ -668,8 +668,8 @@ echo 'alias lab="jupyter lab"' >> ~/.bash_profile
 
 
 
-- To confirm that dojo-env-ds is now your default environment:
-  - You should see `(dojo-env-ds)` appear next to your prompt.
+- To confirm that dojo-env is now your default environment:
+  - You should see `(dojo-env)` appear next to your prompt.
 
 ![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1647634446__confirm_dojo_env.png)
 
@@ -882,7 +882,7 @@ Once the notebook interface has loaded, you should see a toolbar with several me
 
 ![png](https://raw.githubusercontent.com/coding-dojo-data-science/dojo-env-setup/main/images/3_installed_extensions.png)
 
-## Setting VS Code to use your `dojo-env-ds` as the default Python installation
+## Setting VS Code to use your `dojo-env` as the default Python installation
 
 - We must teach the Python extension where to find our `dojo-env`'s version of Python.
 

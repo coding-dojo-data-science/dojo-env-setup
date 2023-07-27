@@ -20,7 +20,7 @@ By the end of this chapter, you will:
 
 1. Install GitHub Desktop,
 2. Install Python via miniforge (Non Apple-chip macs and Windows use the larger version: Anaconda)
-3. Create a special Python environment (dojo-env-ds)
+3. Create a special Python environment (dojo-env)
 4. Supercharge Jupyter Notebooks with Extensions
 5. Install Visual Studio Code.
 
@@ -525,7 +525,7 @@ conda env create -f environment-ds_mac_mchip.yml
 
     - You should see 2 environments, including dojo-env:
       - `base`
-      - `dojo-env-ds`
+      - `dojo-env`
 
 - If you see dojo-env in the list:
 
@@ -533,12 +533,12 @@ conda env create -f environment-ds_mac_mchip.yml
 
 ### 2) Activate the dojo-env and Install the Env in Jupyter
 
-- The first line in the code block below will switch to dojo-env-ds.
-- The second line will install dojo-env-ds as an option in Juyter Notebook/Lab, which you will use instead of Google Colab when working locally.
+- The first line in the code block below will switch to dojo-env.
+- The second line will install dojo-env as an option in Juyter Notebook/Lab, which you will use instead of Google Colab when working locally.
 
 ```
-conda activate dojo-env-ds
-python -m ipykernel install --user --name dojo-env-ds --display-name "Python (dojo-env-ds)"
+conda activate dojo-env
+python -m ipykernel install --user --name dojo-env --display-name "Python (dojo-env)"
 ```
 
 # Step 2.4: Setting dojo-env as the default + alias commands
@@ -571,7 +571,7 @@ echo $SHELL
 
 ```
 touch ~/.bash_profile
-echo "conda activate dojo-env-ds" >> ~/.bash_profile
+echo "conda activate dojo-env" >> ~/.bash_profile
 echo 'alias jnb="jupyter notebook"' >> ~/.bash_profile
 echo 'alias lab="jupyter lab"' >> ~/.bash_profile
 ```
@@ -584,7 +584,7 @@ echo 'alias lab="jupyter lab"' >> ~/.bash_profile
 
 ```
 touch ~/.zshrc
-echo "conda activate dojo-env-ds" >> ~/.zshrc
+echo "conda activate dojo-env" >> ~/.zshrc
 echo 'alias jnb="jupyter notebook"' >> ~/.zshrc
 echo 'alias lab="jupyter lab"' >> ~/.zshrc
 ```
@@ -593,10 +593,10 @@ echo 'alias lab="jupyter lab"' >> ~/.zshrc
 
 ### Confirm `dojo-env` is your default
 
-To confirm that dojo-env-ds is now your default environment:
+To confirm that dojo-env is now your default environment:
 
 - Open a Terminal window.
-- You should see `(dojo-env-ds)` appear next to your prompt automatically.
+- You should see `(dojo-env)` appear next to your prompt automatically.
 
 ## 
 
@@ -816,9 +816,9 @@ Once the notebook interface has loaded, you should see a toolbar with several me
 
 ![png](https://raw.githubusercontent.com/coding-dojo-data-science/dojo-env-setup/main/images/3_installed_extensions.png)
 
-## Setting VS Code to use your `dojo-env-ds` as the default Python installation
+## Setting VS Code to use your `dojo-env` as the default Python installation
 
-- We must teach the Python extension where to find our `dojo-env-ds`'s version of Python.
+- We must teach the Python extension where to find our `dojo-env`'s version of Python.
 
 - On the extension sidebar, click on the Gear icon for the Python extension and select "Extension Settings" ![png](https://raw.githubusercontent.com/coding-dojo-data-science/dojo-env-setup/main/images/4_python_settings.png)
 
