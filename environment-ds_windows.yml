@@ -142,6 +142,7 @@ dependencies:
   - matplotlib=3.7.1
   - matplotlib-base=3.7.1
   - matplotlib-inline=0.1.6
+  - missingno==0.5.2
   # - mistune=0.8.4
   - mkl=2021.4.0
   - mkl-service=2.4.0
