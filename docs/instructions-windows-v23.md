@@ -608,6 +608,10 @@ echo ". '${PWD}'/conda.sh" >> ~/.bashrc
 
 ------
 
+## ✅To Do: address cygwyine
+
+
+
 # Part 1) Commands for Windows
 
 ### Determine if your PC Can Run "conda activate" or "source activate"
