@@ -13,7 +13,7 @@ dependencies:
   - appdirs=1.4.4
   - appnope=0.1.2
   - argon2-cffi=21.3.0
-  - argon2-cffi-bindings=21.2.0
+  - argon2-cffi-bindings=21.2.0s
   - arrow=1.2.3
   - asttokens=2.0.5
   - async-timeout=4.0.2
@@ -76,8 +76,7 @@ dependencies:
   - idna=3.4
   - imagecodecs=2021.8.26
   - imageio=2.26.0
-  - imbalanced-learn=0.10.1
-  - importlib-metadata=6.0.0
+  - imbalanced-learn=0.11.0 #0.10.1
   - importlib_metadata=6.0.0
   - importlib_resources=5.12.0
   - infinity=1.5
@@ -103,6 +102,7 @@ dependencies:
   - jupyter_server_ydoc=0.8.0
   - jupyter_ydoc=0.2.4
   - jupyterlab=3.6.3
+  - jupyterlab_code_formatter=2.2.1
   - jupyterlab_pygments=0.1.2
   - jupyterlab_server=2.22.0
   - jupyterlab_widgets=3.0.5
