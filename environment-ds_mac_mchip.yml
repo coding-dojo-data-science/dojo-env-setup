@@ -13,7 +13,7 @@ dependencies:
   - appdirs=1.4.4
   - appnope=0.1.2
   - argon2-cffi=21.3.0
-  - argon2-cffi-bindings=21.2.0s
+  - argon2-cffi-bindings=21.2.0
   - arrow=1.2.3
   - asttokens=2.0.5
   - async-timeout=4.0.2
