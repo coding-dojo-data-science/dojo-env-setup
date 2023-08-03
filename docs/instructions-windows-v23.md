@@ -1,5 +1,3 @@
-
-
 # Windows Installation Overview
 
 So far in this program, you have been working in Google Colab which provides a cloud-based coding environment. We will be transitioning to using a Python environment stored on your local machine. You will be working in Jupyter Notebook, which is very common in the data industry. In addition, these instructions will include the installation of Github Desktop and Visual Studio Code (VS Code). 
