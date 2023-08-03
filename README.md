@@ -85,7 +85,14 @@ python -m ipykernel install --user --name dojo-env --display-name "Python (dojo-
 - To re-add `conda` command:
 
 ```bash
-conda init 
+# Generic command (doesn't always work)
+conda init
+
+# Windows
+conda init  bash
+
+# Mac 
+conda init zsh
 ```
 
 ### Uninstall commands
