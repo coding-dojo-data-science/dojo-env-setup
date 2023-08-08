@@ -6,7 +6,7 @@ So far in this program, you have been working in Google Colab which provides a c
 
 - We recommend you begin the step-by-step installation AS SOON AS POSSIBLE to ensure you have time to troubleshoot any difficulties you may encounter. 
 
-- If you run into issues during installation, post your questions/issues on the [ds-python-installation](https://discord.com/channels/738494436467539968/999108307627294770) Discord channel, and tag your instructor in your question (e.g. @dojo_Instructor_name).
+- If you run into issues during installation, post your questions/issues on the [ds-python-installation](https://discord.com/channels/738494436467539968/1099094868762042400) Discord channel, and tag your instructor in your question (e.g. @dojo_Instructor_name).
 
 - These steps should take ~30-90 minutes, depending on the speed of your machine and internet connection.
 
@@ -36,7 +36,7 @@ By the end of this chapter, you will:
 
   ![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1658334627__Troubleshooting-chapter.png)
 
-- Third, reach out on the #ds-python-installation Discord channel (Link) with:
+- Third, reach out on the #[ds-python-installation Discord channel](https://discord.com/channels/738494436467539968/1099094868762042400) with:
 
   - What step you are on (e.g. Step 2.3 Creating the dojo-env)
   - What OS you are using (e.g. Windows 10, Windows 11, Mac with an Apple Processor, etc)
@@ -629,6 +629,8 @@ ___
 ## The moment of truth... 
 
 You are all set for the next step: Testing Your New Environment!
+
+
 
 # Step 2.5: Testing the Environment
 

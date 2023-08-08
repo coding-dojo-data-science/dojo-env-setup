@@ -1,127 +1,57 @@
-# Windows Installation Overview
-
-So far in this program, you have been working in Google Colab which provides a cloud-based coding environment. We will be transitioning to using a Python environment stored on your local machine. You will be working in Jupyter Notebook, which is very common in the data industry. In addition, these instructions will include the installation of Github Desktop and Visual Studio Code (VS Code). 
-
-- In the Advanced Machine Learning course, you will need to submit a CORE ASSIGNMENT containing the error-free test notebook that is included within these instructions. This will ensure that you have the tools you will need to be successful. 
-
-- We recommend you begin the step-by-step installation AS SOON AS POSSIBLE to ensure you have time to troubleshoot any difficulties you may encounter. 
-
-- If you run into issues during installation, post your questions/issues on the [ds-python-installation](https://discord.com/channels/738494436467539968/999108307627294770) Discord channel, and tag your instructor in your question (e.g. @dojo_Instructor_name).
-
-- These steps should take ~30-90 minutes, depending on the speed of your machine and internet connection.
-
-- The [dojo-env-setup repository](https://github.com/coding-dojo-data-science/dojo-env-setup), which you will clone in Step 2.1, contains a backup copy of the entire set of instructions on the README, for convenience.
-
-------
-
-> Note: if you previously installed the dojo-env and are upgrading to the current version, please see the "Updating to New dojo-env" at the end of this chapter (after the Final Notes lesson)
-
-By the end of this chapter, you will:
-
-1. Install GitHub Desktop,
-2. Install Python via Anaconda (or via miniforge - if on a Mac with an Apple Chip)
-3. Create a special Python environment (dojo-env)
-4. Supercharge Jupyter Notebooks with Extensions
-5. Install Visual Studio Code.
-
-## If you encounter an error during installation:
-
-- First, read a little further down in the instructions to make sure we do not already address the error message that you ran into.
-
-- Second, please check the "Troubleshooting" chapter for a lesson about the problem you are running into.
-
-  (The Troubleshooting section is the 3rd chapter in this course - see the screenshot below)
-
-  
-
-  ![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1658334627__Troubleshooting-chapter.png)
-
-- Third, reach out on the #ds-python-installation Discord channel (Link) with:
-
-  - What step you are on (e.g. Step 2.3 Creating the dojo-env)
-  - What OS you are using (e.g. Windows 10, Windows 11, Mac with an Apple Processor, etc)
-  - Screenshots of the error/issue you are running into, whenever possible.
-  - Finally, if you have been able to run the test notebook in Step 2.4: Testing the Env, please upload these files with your question.
-  
-- Fourth, if you do not receive a response by the end of the day on Discord, please email your instructor.
-
-------
-
-## OS-Specific Steps/Commands
-
-For several steps (e.g. Step 1), there are multiple versions of the instructions, depending on what operating system you are using.
-
-For step 1, please make sure you are on the correct instruction page for your OS.
-
-### Currently Supported Operating Systems
-
-- We have prepared environment files (.yml files) for 4 different OS configurations:
-  - Windows (10 & 11)
-  - Mac (with Intel processors)*
-  - Mac (Apple Chips)*
-  - Linux**
-
-#### **Note to Linux Users:
-
-- Our Linux installation instructions are still in beta. While they have successfully been installed on students' Linux machines, we currently do not have a Linux machine available for troubleshooting.
-  - The beta Linux instructions are located [here](https://login.codingdojo.com/m/213/13909/99742) and all steps are combined into 1 lesson.
-
-------
-
-Regardless of OS, you will be using tools that serve the following purposes:
-
-- Your "Terminal"/"Shell":
-  - The primary application you will use to execute coding-related commands.
-- A Python Distribution:
-  - The fundamental infrastructure for installing Python.
-- GitHub Desktop:
-  - App for working with and managing git repositories.
-- Our custom Python Environment (dojo-env)
-  - A bundle of packages required for stacks 1-5+
-- Jupyter Notebooks / Jupyter Lab
-  - The primary editor we will use (instead of Colab).
-- Visual Studio Code
-  - A special text editor designed for code. It has many extensions and languages available.
-  - We will use it to edit special files, but it can also run notebooks too!
-
-------
-
-# 1. Downloading and Installing Required Apps
-
-> Before we install our python environment, we need to take care of a couple requirements. 
-
-In step 1, we will install:
-
-- Your "Terminal"/"Shell": 
-  - The primary application you will use to execute coding-related commands.
-- A Python Distribution (Anaconda/miniforge):
-  - The fundamental infrastructure that will allow us to install Python.
-- GitHub Desktop:
-  - The way we will work with git repositories and the starting point for our local workflows.
-
-# Step 1 - Windows
+# Windows Installation Instructions
 
 ## Overview
 
-In step 1, you will install 3 critical tools:
+**Step 1) Download and install required applications**
 
-- Tool #1: A Linux-based bash terminal (Windows Terminal + GitBash)
-- Tool #2: GitHub Desktop
-- Tool #3: Anaconda
+- Step 1.1) Install Tool #1: Windows Terminal with GitBash
+    - Step 1.1.0) Install Windows Terminal
+    - Step 1.1.1) Install Git for Windows
+    - Step 1.1.2) Make GitBash the Default Profile in Windows Terminal
+    - Step 1.1.3) Confirm that your default shell is set to GitBash
+- Step 1.2) Install Tool #2: GitHub Desktop
+    - Step 1.2.1) Install GitHub Desktop and Log Into GitHub Account
+    - Step 1.2.2) Make Windows Terminal the Default Shell in GitHub Desktop
+- Step 1.3) Install a Python distribution (Anaconda)
+    - Step 1.3.1) Download and Install Anaconda
+    - Step 1.3.2) Verifying that Terminal/GitBash Knows "conda"
+    - Step 1.3.3) (if needed) Adding Conda to GitBash
 
-------
+**Step 2) Setting Up Your dojo-env Environment**
 
-# Tool #1: A Linux-based bash Terminal:
+- Step 2.1) Clone the dojo-env-setup repository
+- Step 2.2) Open the repo's folder in your Terminal
+- Step 2.3) Create the dojo-env environment from file
+    - Step 2.3.1) Run the correct "conda env create" command for your OS
+    - Step 2.3.2) Wait for the dojo-env to be created
+    - Step 2.3.3 Confirm your environment was installed.
+- Step 2.4) Activate dojo-env and set it as your default environment.
+- Step 2.5) Test the environment.
+
+**Step 3) Customize Jupyter Settings & Test the environment**
+
+- Step 3.1) Testing the Environment
+- Step 3.2) Changing Jupyter Settings
+
+**Step 4) Install VS Code**
+
+___
+
+
+
+# **Step 1) Download and install required applications**
+
+Before we install our python environment, we need to take care of a couple of requirements. 
+
+## Step 1.1) Install Tool #1: Windows Terminal with GitBash
 
 - Windows users will use a combination of GitBash and Windows Terminal. Windows Terminal comes pre-installed with Windows 11, but can be added to Windows 10.
 
-- You should not use the 
-
-  windows command prompt because the commands for working with your terminal will not match the curriculum and other cloud-based platforms (like Amazon Web Services).
+- You should not use the  windows command prompt because the commands for working with your terminal will not match the curriculum and other cloud-based platforms (like Amazon Web Services).
 
   - Note: for a list of the equivalent commands for Windows command prompt see [this cheat sheet](https://www.geeksforgeeks.org/linux-vs-windows-commands/).
 
-### Tool 1, Step 0: (Windows 10 Only) Install Windows Terminal via the Microsoft Store
+### Step 1.1.0) (Windows 10 Only) Install Windows Terminal via the Microsoft Store
 
 NOTE: Windows 11 comes with Windows Terminal pre-installed. If you are running Windows 11, you can skip Step 0 and start with Step 1.
 
@@ -155,7 +85,7 @@ NOTE: Windows 11 comes with Windows Terminal pre-installed. If you are running W
 
 ------
 
-### Tool 1, Step 1: Install Git for Windows
+### Step 1.1.1) Install Git for Windows
 
 - Download the Git for Windows installer (https://gitforwindows.org/) and open it.
 
@@ -165,9 +95,7 @@ NOTE: Windows 11 comes with Windows Terminal pre-installed. If you are running W
 
 ![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1670711700__Screenshot_20221210_050015.png)
 
-- Make sure to select the option pictured below "Add Git Bash Profile to Windows Terminal"!!
-
-
+- <font color=red>Make sure to select the option pictured below "Add Git Bash Profile to Windows Terminal"!!</font></font>
 
 ![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1670711711__Screenshot_20221210_050049.png)
 
@@ -204,7 +132,7 @@ NOTE: Windows 11 comes with Windows Terminal pre-installed. If you are running W
 
 - Click install and wait for the process to finish. Next, move on to Tool #2: GitHub Desktop.
 
-### Tool 1, Step 2: Make GitBash the Default Profile in Windows Terminal
+### Step 1.1.2) Make GitBash the Default Profile in Windows Terminal
 
 - From your Windows Start menu, search for "Terminal" and open a new Windows Terminal window.
 - It will open using the default shell "Powershell", pictured below:
@@ -226,12 +154,10 @@ NOTE: Windows 11 comes with Windows Terminal pre-installed. If you are running W
 
 - Click the blue Save button in the bottom right corner.
 
-### Tool 1, Step 3: Confirm that your default shell is set to GitBash
+### Step 1.1.3) Confirm that your default shell is set to GitBash
 
 - To test if the default shell is now set to GitBash, open a new Terminal window.
 - If you see a window like the one below that has the GitBash icon (the multicolored 4-squares in the top left corner), then you are all set!
-
-
 
 ![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1670713874__Screenshot_20221210_061055.png)
 
@@ -239,15 +165,17 @@ NOTE: Windows 11 comes with Windows Terminal pre-installed. If you are running W
 
 ------
 
-# Tool #2: GitHub Desktop
+## Step 1.2) Install Tool #2: GitHub Desktop
 
-### Tool 2, Step 1: Install GitHub Desktop and Log Into GitHub Account
+### Step 1.2.1) Install GitHub Desktop and Log Into GitHub Account
 
 - Download the installer from this link: [GitHub Desktop](https://desktop.github.com/)
 - Once installation is complete, open the application.
-  - Log into the same GitHub account you have been using for your projects.
+- Log into the same GitHub account you have been using for your projects.
 
-### Tool 2, Step 2: Make Windows Terminal the Default Shell in GitHub Desktop
+
+
+### Step 1.2.2) Make Windows Terminal the Default Shell in GitHub Desktop
 
 - Once you have logged into the app, open the Options menu.![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1670712744__Screenshot_20221210_050900.png)
 
@@ -271,79 +199,103 @@ NOTE: Windows 11 comes with Windows Terminal pre-installed. If you are running W
 
 ------
 
-# Tool #3: Python Distribution - Anaconda
+___
+
+
+
+# **Step 1.3) Install a Python Distribution - Anaconda**
 
 - Anaconda is a data-science-focused python distributable that comes with a convenient GUI program for working with our python environments.
 
-### Tool #3, Step 1: Download and Install Anaconda
+### Step 1.3.1) Download and Install Anaconda
 
-- Download and run the installer from the following link:
+- Download and run the installer from the following link:  [Anaconda Individual Edition](https://www.anaconda.com/download)
 
-   
-
-  Anaconda Individual Edition
-
-  - Use the default options, EXCEPT when you see the "Advanced Installation Options" window (like in the screenshot below).
-  - Select "Add Anaconda3 to my Path environment variable". Disregard the warning message will appear in red text.
+- Use the default options**, EXCEPT when you see the "Advanced Installation Options" window (like in the screenshot below).**
+    - Select "Add Anaconda3 to my Path environment variable". Disregard the warning message will appear in red text.
     - BOTH options should be checked, like in the screenshot below:
 
 ![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1681423160__anacondafinalnew.png)
 
-### Tool 3, Step 2: Verifying that Terminal/GitBash Knows "conda"
 
-1. Windows users may need to take an additional step to get anaconda and Terminal working together.
-2. Open a new Terminal window from your start menu. It MUST be a new window
-3. Enter the command `conda` and press enter.
-   1. If you see a list of available conda commands, great!
-      1. You are all set to move on to Step 2: "Setting Up Your `dojo-env`"
-      2. Disregard the final section below that says "Adding Conda to GitBash"
-   2. If you see a message that says: "bash: conda: command not found", then follow the instructions below under "Adding Conda to GitBash"
 
-### Tool 3, Step 3 (if needed) Adding Conda to GitBash:
+### Step 1.3.2) Verify that Terminal/GitBash Knows "conda"
 
-If a NEW terminal window recognized the conda command in Tool 3, Step 2 then you may skip this step!
+You may need to take another step to get anaconda and Terminal working together.
+
+- Open **a new Terminal window** from your start menu. It MUST be a new window!
+
+- **Type the command `conda` and press enter.**
+- **If you see a list of available conda commands, great!**
+    - **You are all set to move on to Step 2!** Disregard the final section below that says "Adding Conda to GitBash"
+- **If you see a message that says: "bash: conda: command not found"**:
+    - Follow the instructions below under "Adding Conda to GitBash"
+
+### Step 1.3.3) (if needed) Adding Conda to GitBash:
+
+**If a NEW terminal window recognized the conda command in the previous step, then skip this step!**
+
+#### **Step 1.3.3-Option A) Easy Solution (if it works!)**
+
+- **Open the start menu and search for "Anaconda Prompt"**
+
+    - Double-click on Anaconda Prompt to open it.
+
+- **In the window that appears, enter the following command:** 
+
+    ````
+    conda init bash
+    ````
+
+- **Open a new Windows Terminal window and attempt to run the `conda` command again.** 
+    - if it displays a list of commands, great! 
+    - If it says something like "conda not found" then move on to Option B below.
+
+#### **Step 1.3.3-Option B) Thorough solution (if option A didn't work)**
 
 Note: the instructions below are adapted from this [Blog Post](https://fmorenovr.medium.com/how-to-add-conda-to-git-bash-windows-21f5e5987f3d)
 
-- Once you have installed anaconda, use File Explorer to Open Your User folder. (Windows key +E is shortcut for File Explorer)
+- Once you have installed anaconda**, use File Explorer to Open Your User folder.** (Windows key +E is shortcut for File Explorer)
 
-  - This is the folder that contains your Desktop, Downloads, My Documents, and other user-specific files.
+  - **Your User folder is the folder that contains your Desktop, Downloads, My Documents, and other user-specific files.**
     - Example: `Users/your_name/`
-  - If you're having trouble finding your user folder:
-    - Go to This PC in File Explorer, and then double click on your C drive.
+  - **If you're having trouble finding your user folder:**
+    - A) Go to This PC in File Explorer, and then double click on your C drive.
       - Then double click the Users folder and then click on the folder that corresponds to your windows username.
+    - or B) Alternatively, you can run the command `whoami` which should display the name of your user folder. 
 
-- Inside your user folder, you should see a folder named "`anaconda3`" (note: not the hidden folder called `.anaconda` that starts with a `.`). Double-click the folder to open it.
+  
 
-  - You should see a folder named `etc` inside the `anaconda3` folder. Open it.
-  - You should see a folder called `profile.d` folder inside the `etc`. Open it.
-    - You should see a `conda.sh` file in this folder (it may just say conda if your File Explorer is set to not show names for known extensions).
-      - (Note: depending on your setting in File Explorer, it may not show the .sh and may just show "conda", which is fine!)
+- **Inside your user folder, you should see a folder named "`anaconda3`"** (note: not the hidden folder called `.anaconda` that starts with a `.`). Double-click the folder to open it.
 
-  - Right-click somewhere in the "profile.d" folder and select "Git Bash Here".
+  - You should **see a folder named `etc` inside the `anaconda3` folder**. **Open it.**
+  - You should **see a folder called `profile.d` folder** inside the `etc`. **Open it.**
+  
+  - You should **see a `conda.sh` file in this folder** (Note: depending on your settings in File Explorer, it may not show the file extension, .sh,  and may just show "conda". This is the correct file!
+  - **Right-click somewhere in the "profile.d" folder and select "Open in Terminal" or "Git Bash Here"**
     - Note for Windows 11 Users: "GitBash here" is going to appear in the "Show more options" sub-menu when you right-click
       ![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1659739323__windows_11_right_click1.png). ![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1659739359__windows_11_right_click2.png)
 
 
 
-- From the GitBash window that opens:
+- **From the GitBash window that opens, enter the command**
 
-  - Enter the command 
+  ```
+  pwd
+  ```
+  
+  Press enter and examine the file path that's displayed.
 
-    ```
-    pwd
-    ```
-
-    and hit enter and examine the file path that's displayed
-
-    - If the file path displayed ends with `profile.d` then are in the right folder!
-    - If not, restart the "Adding Conda to GitBash" instructions again and make sure you can find your profile.d folder.
-      - Reach out to your instructor or a TA if you are still having issues.
-
+  - If the file path displayed ends with `profile.d` then you are in the right folder!
+  - If not, restart the "Adding Conda to GitBash" instructions again and make sure you can find your profile.d folder.
+    - Reach out to your instructor or a TA if you are still having issues.
+  
   - Next, Enter the following command and hit enter:
 
 ```bash
+
 echo ". '${PWD}'/conda.sh" >> ~/.bashrc
+
 ```
 
 - Open a new GitBash window and enter `conda` again.
@@ -352,7 +304,11 @@ echo ". '${PWD}'/conda.sh" >> ~/.bashrc
 
 > You are all set to move on to the next lesson "2. Setting Up Your dojo-env Environment"
 
-# 2. Setting Up Your dojo-env Environment
+
+
+
+
+# **Step 2) Setting Up the dojo-env Environment**
 
 ## Step 2 Overview:
 
@@ -370,233 +326,321 @@ echo ". '${PWD}'/conda.sh" >> ~/.bashrc
 - The environment files (and a backup of these instructions) are in the [dojo-env-setup repository](https://github.com/coding-dojo-data-science/dojo-env-setup)
   - The Detailed Instructions below will guide you through how to clone and use the environment setup repository.
 
-
-
-## Brief Summary of the Following Steps:
+**Brief Summary of the Following Steps:**
 
 - Step 2.1: Clone the dojo-env-setup repository
 - Step 2.2: Open the repo in your terminal/GitBash
 - Step 2.3: Create the dojo-env environment
-- Step 2.4: Setting dojo-env as your default.
+    - 
 
-# Step 2.1 Clone the dojo-env-setup repository
+- Step 2.4: Activate dojo-env and add to Jupyter
+- Step 2.5: (if needed) Troubleshooting Conda Activate
+- Step 2.6
 
-1. Open the dojo-env-setup repository on GitHub.com:
+## Step 2.1) Clone the dojo-env-setup repository
 
-   1.  https://github.com/coding-dojo-data-science/dojo-env-setup
+- **Open the dojo-env-setup repository on GitHub.com:** https://github.com/coding-dojo-data-science/dojo-env-setup
 
-2. Make sure that :
+- **Before the next step, make sure that :**
+    - you are logged in to your account on GitHub.com 
+    - you are logged into the SAME account in the GitHub Desktop app
 
-   1. you are logged in to your account on GitHub.com 
-   2. and you are logged into the SAME account in the GitHub Desktop app (that you installed in step 1.)
+- **Click on the green `Code` button and then click `Open in GitHub desktop.`**
+- GitHub desktop should open automatically and ask you what folder you would like to store your repository in.
+    ![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1656806399__clone-repo-menu.png)
 
-3. Click on the green `Code` button and then click `Open in GitHub desktop.`
 
-   1. GitHub desktop should open automatically and ask you what folder you would like to store your repository in.
 
-      
 
-      ![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1656806399__clone-repo-menu.png)
 
-      
+- **Troubleshooting Note: if you are brought to the Download GitHub Desktop web page instead:**
+    - It means you were not logged into the same account on GitHub.com and GitHub Desktop when you clicked Open in GitHub Desktop. 
+        - Make sure you see your user profile pic in the top right of GitHub.com 
+        - and check your Account in GitHub Desktop's Preferences/Options menu.
+        - and then try again.
 
-      **Troubleshooting Note: if you are brought to the Download GitHub Desktop web page instead:**
+- **Decide where to save the repo:**
 
-      1.  It means you were not logged into the same account on GitHub.com and GitHub Desktop when you clicked Open in GitHub Desktop. 
-         1. Make sure you see your user profile pic in the top right of GitHub.com 
-         2. and check your Account in GitHub Desktop's Preferences/Options menu.
-         3. and then try again.
+    - By default, GitHub Desktop will use a new "GitHub" folder in your Documents folder.
+        - GitHub Desktop will create a NEW folder with the same name as the repository INSIDE of whichever folder you select.
+        - If you use the default options, then this will create a "dojo-env-setup/" folder inside of "Documents/GitHub/"
+    - **Note: it is strongly recommended that you use the Documents/GitHub folder for this repository.**
+        - But if you'd rather save the folder somewhere else: 
+            - Use the "Choose" button (the button name may be "Browse" on Windows).
+            - A window should pop up for you to find and click on the folder where you want to create the "dojo-env-setup" folder.
+            - Once you have selected a new folder using the Browse button, you should see the full folder path displayed.
 
-   1. By default, GitHub Desktop will use a new "GitHub" folder in your Documents folder
+- **Once you've decided where you will clone the repository:**
 
-      1. GitHub Desktop will create a NEW folder with the same name as the repository INSIDE of whichever folder you select.
+    - Remember the full file path of the folder you selected!  **(See the screenshot below. )**
+        ![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1656806548__clone-repo-menu%20annotated.png)
 
-      2. If you use the default options, then this will create a "dojo-env-setup/" folder inside of "Documents/GitHub/"
+        
 
-      3. Note: it is strongly recommended that you use the Documents/GitHub folder for this repository.
+- **Click Clone**
 
-         
+GitHub Desktop will download a copy of the repository into a new folder on your computer.
 
-         1. But if you'd rather save the folder somewhere else:
+## Step 2.2) Open the Repo in Terminal(GitBash)
 
-            1. Use the "Choose" button (the button name may be "Browse" on Windows).
+# 
 
-            2. A window should pop up for you to find and click on the folder where you want to create the "dojo-env-setup" folder.
+### Step 2.2.1) Open the dojo-env-setup repository in Terminal.
 
-            3. Once you have selected a new folder using the Browse button, you should see the full folder path displayed.
+Once you have cloned the repository, **you must open a Terminal Window in the same folder as the repository**.  The easiest way to do so is from within GitHub Desktop.
 
-            4. IMPORTANT STEP: Make sure to remember the full file path of the folder you selected! 
+- **In GitHub Desktop: make sure the left sidebar says "dojo-env-setup**" in the top-left corner under Current Repository.
+- **Click on the Repository menu and select "`Open in terminal`" or "`Open in gitbash`"**
+  - For Windows Users, the menu will be at the top of GitHub Desktop's window.
+- **Alternatively, you can use the keyboard shortcut:** 
+  - `**Control**` +  **`**   (the key above tab that also has the tilde symbol ~)
 
-               (See the screenshot below. )
+### Step 2.2.2) Confirm you are in the correct folder.
 
-               1. ![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1656806548__clone-repo-menu%20annotated.png)
+- First, in the terminal window that appears, **type the "pwd" command** (which stands for print working directory) and press Enter.
 
-      # Step 2.2: Open the Repo in Terminal(GitBash)
+  ```
+  pwd
+  ```
 
-      ## Open the Repo in Terminal
+  - **It will display the folder name of the folder your terminal is currently located.** 
+    - The **folder path should end in "dojo-env-setup/"**
+    - If you used the default GitHub folder when you cloned dojo-env, the full filepath would be something similar to "/Users/yourname/Documents/GitHub/dojo-env-setup/"
 
-      Once you have cloned the repository, you will need to open a terminal/gitbash window in the same folder as the repository.
+- **Second, run the command to list all of the files contained in the current fol**de ( the command "ls -a" will display a detailed list of all files in the repo.
 
-      - Open a new terminal in the dojo-env-setup folder
+```
+ls -a
+```
 
-        - First, in GitHub Desktop: make sure the left sidebar says "dojo-env-setup" in the top-left corner under Current Repository.
+- **You should see a list of all the files in the current folder,** similar to the screenshot below. 
+    - You should see 3 files that start with "environment-ds_" and end with ".yml" similar in the screenshot below.
 
-        - Click on the Repository menu and select "`Open in terminal`" or "`Open in gitbash`"
-          - Windows Users: the menu will be at the top of GitHub Desktop's window.
-        - Alternatively, you can use the keyboard shortcut to do the same thing. The command for both Mac and Windows is:
-          - Control + ` (the key above tab that also has the tilde symbol ~)
+![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1656808093__dojo-env-setup%20ls%20result.png)
 
-      - In the terminal window that appears, type the "pwd" command (stands for print working directory) and press Enter.
+**If so, you are all set for step 2.3: create the dojo-env environment!**
 
-        - It will display the folder name of the folder your terminal is currently located. 
-          - The folder path should end in "dojo-env-setup/"
-          - If you used the default GitHub folder when you cloned dojo-env, the full filepath would be something similar to "/Users/yourname/Documents/GitHub/dojo-env-setup/"
+### Step 2.2-Troubleshooting): 
 
-      
+If you are having trouble getting GitHub desktop to open GitBash in the correct folder there are 2 solutions for getting your gitbash window in the dojo-env-setup folder.
 
-      ### Troubleshooting (Windows): 
+#### Solution #1: Using File Explorer + Right Click
 
-      If you are having trouble getting GitHub desktop to open GitBash in the correct folder there are 2 solutions for getting your gitbash window in the dojo-env-setup folder.
+If you followed the instructions in step 1 and used the default options when installing Git for Windows/GitBash, you should have a new option in your Right-Click menu that says "GitBash here".
 
-      #### Solution #1: Using File Explorer + Right Click
+- In GitHub Desktop click the Repository menu again and select "Show in File Explorer".
+- Once file explorer opens,  right-click anywhere inside the folder  (right-click on empty space, not on a file) and select GitBash here.
+  - A GitBash window should open in the correct folder.
 
-      If you followed the instructions in step 1 and used the default options when installing Git for Windows/GitBash, you should have a new option in your Right-Click menu that says "GitBash here".
+- Type pwd to confirm that you are indeed in the dojo-env-setup folder.
 
-      - In GitHub Desktop click the Repository menu again and select "Show in File Explorer".
-      - Once file explorer opens,  right-click anywhere inside the folder  (right-click on empty space, not on a file) and select GitBash here.
-        - A GitBash window should open in the correct folder.
 
-      - Type pwd to confirm that you are indeed in the dojo-env-setup folder.
 
-      
+#### Solution #2: Open a new GitBash and navigate to the right folder.
 
-      #### Solution #2: Open a new GitBash and navigate to the right folder.
+If you do not have the option to "GitBash here", you can manually navigate there in GitBash.
 
-      If you do not have the option to "GitBash here", you can manually navigate there in GitBash.
+- Open the windows start menu, find and click on GitBash to open a new window.
 
-      - Open the windows start menu, find and click on GitBash to open a new window.
+- Important Note: You must know the full file path for the repo for the next step. We will refer to as <repo_filepath> in the instructions below.
 
-      - Important Note: You must know the full file path for the repo for the next step. We will refer to as <repo_filepath> in the instructions below.
+  -  if you used the suggested default folder 
 
-        -  if you used the suggested default folder 
+    when cloning the repo, your repo_filepath should be: 
 
-          when cloning the repo, your repo_filepath should be: 
+    - " /Users/<your name>/Documents/GitHub/dojo-env-setup" 
 
-          - " /Users/<your name>/Documents/GitHub/dojo-env-setup" 
+      - But instead of <your name> it will be your actual user name for your computer
 
-            - But instead of <your name> it will be your actual user name for your computer
+      - If you are not sure what your username is, run the "whoami" command in your GitBash to see your user name.
 
-            - If you are not sure what your username is, run the "whoami" command in your GitBash to see your user name.
+  - If you did NOT use the suggested default folder, 
 
-        - If you did NOT use the suggested default folder, 
+    - Your repo_filepath will be the path displayed in the window that appeared when you cloned the repo.
+      - You should have taken note of the file path you selected, as indicated in the screenshot.
 
-          - Your repo_filepath will be the path displayed in the window that appeared when you cloned the repo.
-            - You should have taken note of the file path you selected, as indicated in the screenshot.
+- Once you know what your repo_filepath is navigate to that folder using the change directory command (cd)
+  - "cd <repo_filepath>".
+  - See the examples below:
 
-      - Once you know what your repo_filepath is navigate to that folder using the change directory command (cd)
-        - "cd <repo_filepath>".
-        - See the examples below:
+```
+## Examples are assuming your username is "codingdojo"
+# Example if you used default folder:
+cd /Users/codingdojo/Documents/GitHub/dojo-env-setup/
+# Example if you used a different folder. e.g. you made a Boot Camp Stuff folder in your Documents folder.
+cd /Users/codingdojo/Documents/Boot Camp Stuff/
+```
 
-      ```
-      ## Examples are assuming your username is "codingdojo"
-      # Example if you used default folder:
-      cd /Users/codingdojo/Documents/GitHub/dojo-env-setup/
-      # Example if you used a different folder. e.g. you made a Boot Camp Stuff folder in your Documents folder.
-      cd /Users/codingdojo/Documents/Boot Camp Stuff/
-      ```
 
-      ## Verify Step 2.2
 
-      Run one last command to verify that you are indeed in the correct folder. 
 
-      Run the "ls -a" command to see a detailed list of all files in the repo.
 
-      ```
-      ls -a
-      ```
+## Step 2.3 Create the dojo-env environment
 
-      You should see a list of all the files in the current folder. 
+Now that you have your terminal open in the repo's folder, run the "conda create" command for your 
 
-      
+###  Step 2.3.1) Run the correct "conda env create" command for your OS
 
-      If you are in the right folder, you should see 3 files that start with "environment" and end with ".yml" like in the screenshot below.
+- Run the  conda env create command below in your Terminal
 
-      ![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1656808093__dojo-env-setup%20ls%20result.png)
+```
+conda env create -f environment-ds_windows.yml
+```
 
-      If so, you are all set for the next step: create the dojo-env environment!
+### Step 2.3.2) Wait (patiently) for the dojo-env to be created. 
 
-   2. # Step 2.3 Create the dojo-env environment
+- **You will see several progress bars during the process as Anaconda checks the list of packages requested for compatibility** with your machine. 
+    - It will then download and install the final versions that it determined would work best for your machine.
+    - **Note that it can take anywhere from 15-60 minutes** to finish creating the environment, depending on your computer and internet connection.
 
-       
+-  **Once it has been completed you should see a message that says:**
 
-      ###  1) Create the dojo-env using the correct "conda create" command for your OS
+```
+# To activate this environment use:
+ conda activate dojo-env
+# To deactivate this environment use:
+ conda deactivate 
+```
 
-      - Run the  conda env create command below in your Terminal
+### Step 2.3.3) Confirm your environment was installed
 
-      #### Windows
+- Enter the following command to display the list of your locally installed environments.
 
-      ```
-      conda env create -f environment-ds_windows.yml
-      ```
+  ```
+  conda env list
+  ```
 
-      
+- **You should see 2 environments, including dojo-env:**
 
-      ### Wait (patiently) for the dojo-env to be created. 
+  - `base`
+  - `dojo-env`
 
-      - It can take anywhere from 3-45 minutes to finish creating the environment, depending on your computer and internet connection.
-      - You will see several progress bars during the process. Once it has been completed you should see a message that says
+  - **If you see dojo-env in the list:**
 
-      ```
-      # To activate this environment use:
-       conda activate dojo-env
-      # To deactivate this environment use:
-       conda deactivate 
-      # If conda deactivate doesn't work, activate the "base" env
-       conda activate base
-      ```
+    - **Success! dojo-env was successfully created! But we aren't using it yet just yet.** 
+    - We must first "activate" an environment to determine which version of python & packages are currently being used.
 
-      - Confirm your environment was installed and activate it.
+  - **If you do not see dojo-env**:
 
-        - Enter the following command  to display the list of your locally installed environments.
+      - Something went wrong during your installation. 
 
-          ```
-          conda env list
-          ```
+          
 
-          - You should see 2 environments, including dojo-env:
-            - `base`
-            - `dojo-env`
 
-      - If you see dojo-env in the list:
+### **Step 2.3.4) Activate dojo-env and set it as the default env**
 
-        - Success! dojo-env was successfully created! But we aren't using it yet just yet. We must first "activate" an environment to determine which version of python & packages are currently being used.
+- **Run the following 2 commands in your Terminal:**
 
-      - ### 2) Activate the dojo-env and Install the Env in Jupyter
+```python
+conda activate dojo-env
+python -m ipykernel install --user --name dojo-env --display-name "Python (dojo-env)"
+```
 
-        - The first line in the code block below will switch to dojo-env.
-        - The second line will install dojo-env as an option in Juyter Notebook/Lab, which you will use instead of Google Colab when working locally.
+- The first line in the code block anove will switch to dojo-env.
 
-        ```
-        conda activate dojo-env
-        python -m ipykernel install --user --name dojo-env --display-name "Python (dojo-env)"
-        ```
+- The second line will install dojo-env as an option in Juyter Notebook, which you will use instead of Google Colab when working locally.
 
-      
 
-      ## ✅ TO DO: ADD BETTER TIPS ON HANDLING CONDA ACTIVATE (the t.s. lesson)
 
-      **Troubleshooting:**
+### Step 2.3.5) (if needed)**Troubleshooting Conda Activate Errors:**
 
-      -  If you see a message that says "your terminal is not set up for conda activate":
-        -  [Recommended Solution] you should navigate to the Troubleshooting section on the course sidebar and follow the instructions on the "[Enable Conda Activate for GitBash](https://login.codingdojo.com/m/213/13547/107855)" page.
-        - [Alternative/Older Solution] Alternatively, you could use a slightly different command to activate your environment. Replace the word "conda" with "source" 
+-  **Problem**: when you attempt to run "conda activate dojo-env" you see a message that says something like "your terminal is not set up for conda activate", like the example below: 
 
-      ```
-      source activate dojo-env
-      python -m ipykernel install --user --name dojo-env --display-name "Python (dojo-env)"
-      ```
+```bash
+CommandNotFoundError: Your shell has not been properly configured to use 'conda activate'.
+To initialize your shell, run
+    $ conda init <shell_name>
+Currently supported shells are:
+  - bash
+  - fish
+  - tcsh
+  - xonsh
+  - zsh
+  - powershell
+See 'conda init --help' for more information and options.
+```
 
-# Step 2.4: Setting dojo-env as the default + alias commands
+
+
+#### Solution to Enable Conda Activate:
+
+##### Step 1) Run Conda Init with Anaconda Prompt
+
+- **Open Anaconda Prompt from your start menu.** This was installed with Anaconda automatically.
+
+![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1671129412__A1_anaconda_prompt.png)
+
+- **A window will open that looks the one below**: (if no text appears in the window, press enter and it should appear
+
+![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1671129457__a2_prompt_window.png)
+
+
+
+- **Run the following command:**
+
+```
+conda init bash
+```
+
+![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1671129622__A3_A_conda_init_command.png)
+
+- **You will see a long list of file paths and should see the word "modified" next to 1-2 of them.**
+
+![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1671129488__A3_conda_init_bash.png)
+
+- **Close Anaconda Prompt**
+
+
+
+##### Step 2: Run conda init with GitBash
+
+- Open Windows Terminal/GitBash
+
+![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1671129694__a4_open_gitbash.png)
+
+- Run the same command again
+
+```
+conda init bash
+```
+
+![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1671129713__a5_conda_init_gitbash.png)
+
+- **You will see another list of filepaths.**
+
+![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1671129743__a6_conda_init_bash_result.png)
+
+
+
+- **Run the following command:**
+
+```
+source ~/.bash_profile
+```
+
+![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1671129907__a7_source_bash_profile.png)
+
+- **Now you should be able to run "conda activate dojo-env"!**  
+
+#### Alternative Solution
+
+-  [Alternative/Older Solution] Alternatively, you could use a slightly different command to activate your environment. Replace the word "conda" with "source".
+    -  If you use this approach, you will **always** need to say `source activate` instead of `conda activate`
+
+```
+source activate dojo-env
+python -m ipykernel install --user --name dojo-env --display-name "Python (dojo-env)"
+```
+
+# 
+
+### Setting the dojo-env as the default environment
+
+
+
+# PREVIOUS
+
+### Step 2.4: Setting dojo-env as the default + alias commands
 
 - This section will require you to enter several commands in your Terminal (on Mac) or GitBash (on Windows).
 

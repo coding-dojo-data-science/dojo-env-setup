@@ -6,7 +6,7 @@ So far in this program, you have been working in Google Colab which provides a c
 
 - We recommend you begin the step-by-step installation AS SOON AS POSSIBLE to ensure you have time to troubleshoot any difficulties you may encounter. 
 
-- If you run into issues during installation, post your questions/issues on the [ds-python-installation](https://discord.com/channels/738494436467539968/999108307627294770) Discord channel, and tag your instructor in your question (e.g. @dojo_Instructor_name).
+- If you run into issues during installation, post your questions/issues on the [ds-python-installation](https://discord.com/channels/738494436467539968/1099094868762042400) Discord channel, and tag your instructor in your question (e.g. @dojo_Instructor_name).
 
 - These steps should take ~30-90 minutes, depending on the speed of your machine and internet connection.
 
@@ -28,33 +28,19 @@ By the end of this chapter, you will:
 
 - First, read a little further down in the instructions to make sure we do not already address the error message that you ran into.
 
-- Second,
-
-   
-
-  please check the "Troubleshooting" chapter
-
-   
-
-  for a lesson about the problem you are running into.
-
-  (The Troubleshooting section is the 3rd chapter in this course - see the screenshot below)
+- Second, please check the "Troubleshooting" chapter for a lesson about the problem you are running into. (The Troubleshooting section is the 3rd chapter in this course - see the screenshot below)
 
   
 
   ![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1658334627__Troubleshooting-chapter.png)
 
-- Third, reach out on the #ds-python-installation Discord channel (
-
-  Link
-
-  ) with:
+- Third, reach out on the #[ds-python-installation Discord channel](https://discord.com/channels/738494436467539968/1099094868762042400) with:
 
   - What step you are on (e.g. Step 2.3 Creating the dojo-env)
   - What OS you are using (e.g. Windows 10, Windows 11, Mac with an Apple Processor, etc)
   - Screenshots of the error/issue you are running into, whenever possible.
   - Finally, if you have been able to run the test notebook in Step 2.4: Testing the Env, please upload these files with your question.
-
+  
 - Fourth, if you do not receive a response by the end of the day on Discord, please email your instructor.
 
 ------
