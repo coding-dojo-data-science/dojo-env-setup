@@ -319,6 +319,7 @@ dependencies:
       - markdown==3.4.3
       - missingno==0.5.2
       - ml-dtypes==0.1.0
+      - mlxtend==0.22.0
       - multitasking==0.0.11
       - mypy-extensions==1.0.0      
       - oauthlib==3.2.2
