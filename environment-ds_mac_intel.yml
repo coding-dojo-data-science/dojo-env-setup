@@ -337,8 +337,8 @@ dependencies:
       - tensorboard-data-server==0.7.0
       - tensorflow-estimator==2.12.0
       ## Changed for Intel:
-      - tensorflow==2.11.0
-      - tensorflow-io-gcs-filesystem==0.28.0
+      - tensorflow==2.12.0 #2.11.0
+      - tensorflow-io-gcs-filesystem==0.31.0 #0.28.0
       # - tensorflow-macos==2.12.0
       # - tensorflow-metal==0.8.0
       - scikeras==0.11.0
