@@ -1,8 +1,8 @@
 name: dojo-env
 channels:
   - plotly
-  - defaults
   - conda-forge
+  - defaults
 dependencies:
   - _py-xgboost-mutex=2.0
   - aiofiles=22.1.0

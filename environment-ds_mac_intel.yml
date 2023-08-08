@@ -1,8 +1,8 @@
 name: dojo-env
 channels: # consider swapping so conda-forge is first
   - plotly
-  - defaults #- conda-forge
   - conda-forge #- defaults 
+  - defaults #- conda-forge
 dependencies:
   - _py-xgboost-mutex=2.0
   - aiohttp=3.8.3
