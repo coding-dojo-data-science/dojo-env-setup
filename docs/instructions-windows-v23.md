@@ -641,12 +641,13 @@ source activate dojo-env
 python -m ipykernel install --user --name dojo-env --display-name "Python (dojo-env)"
 ```
 
-# 📌BOOKMARK
+# 📌BOOKMARK END OF 08/08
 
 # ✅TO DO
 
 - Address if the "~"  != their user folder
 - Address cygwyine (cygdrive?) 
+- add customizing settings
 
 ### (NEW) 2.4.3 Confirm that "~" is your User folder.
 
