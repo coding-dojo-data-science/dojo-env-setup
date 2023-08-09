@@ -91,7 +91,7 @@ Our Linux installation instructions are still in beta. While they have successfu
 
 # If you encounter an error during installation:
 
-***You may continue to work through the first half of the data enrichment week 1 lessons & assignments while troubleshooting your local installation! The first lessons and assignments can be completed using Google Colab.***
+***You may continue to work through the first half of the data enrichment week 1 lessons & assignments while troubleshooting your local installation!*** The first lessons and assignments can be completed using Google Colab.
 
 - **First, read a little further down in the instructions** to make sure we do not already address the error message that you ran into.
 

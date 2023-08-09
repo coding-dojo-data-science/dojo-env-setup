@@ -685,7 +685,7 @@ In your Terminal, the tilde character (~) represents your home directory.  Your 
     - Note: **it is very important that you do not add any spaces next to the "="** in the alias commands below:
 
 
-```
+```bash
 touch ~/.bash_profile
 echo "conda activate dojo-env" >> ~/.bash_profile
 echo 'alias jnb="jupyter notebook"' >> ~/.bash_profile
@@ -720,11 +720,9 @@ echo 'alias lab="jupyter lab"' >> ~/.bash_profile
   - Press Control+C to shut down the server. 
   - Respond "y" when asked to confirm.
 
-## 
+#### The moment of truth... 
 
-## The moment of truth... 
-
-You are all set for the next step: Testing Your New Environment!
+You are all set for the next step: Testing the Environment!
 
 # Step 2.5) Testing the Environment
 
@@ -872,17 +870,163 @@ We want to run all of the cells in this notebook and confirm it can make it to t
 - An instructor or TA will get back to you within 1 business day with the next steps for you to try.
   - You will most likely need to set up a Zoom call and share your screen for us to help.
 
+___
+
+## ✅📌BOOKMARK#2:
+
+- `ADMIN`: Should this become a separate #'d step?
+
+##  Step 2.6) Jupyter Notebook Preferences
+
+There are several convenient features in Jupyter Notebook that are not enabled by default. We strongly suggest updating your Jupyter Notebook settings according to the instructions below:
 
 
-### TO DO: Customizing settings
+
+___
+
+### Quick Settings
+
+- Start from the Jupyter files page,
+- Open the Settings Menu on the toolbar. 
+
+<img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691609201__01settingsmenuwidecropped.jpg">
+
+- There are several options that you should select, which are highlighted in the screenshot below.
+
+<img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691609201__01settingsmenuoptionstocheck.jpg">
+
+
+
+- Activate the following options:
+    - Autosave Documents
+    - Auto Close Brackets
+    - Enable Extension Manager
+    - Save Widget State Automatically
+
+
+
+### In-Depth Settings
+
+- **After selecting these options, click on the Settings Editor at the bottom of the Settings menu.**
+
+<img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691609592__02settingscheckedopensettingsedit.png">
+
+- The large Settings Editor will open and should look like the screenshot below:
+
+<img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691610277__03settingseditor.png">
+
+
+
+For each of the settings, you will first click on the correct section on the left sidebar to reveal the options. Then change the settings as directed.
+
+Note: you can use the search box at the top of the left side bar to search for the name of settings. 
+
+
+
+### Code Completion
+
+- Check the "Enable autocompletion" box to turn on code autocompletion.
+
+<img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691611052__03settingscodecompletion.png">
+
+
+
+### File Browser
+
+- Find "File Browser" on the sidebar.
+
+- Turn on the following options:
+    - Show file size column.
+    - Show hidden files
+    - Use checkboxes to select items
+
+<img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691611467__03settingsfilebrowser.png">
+
+### Notebook
+
+- Open "Notebook" on the sidebar. 
+
+There are many settings on the Notebook settings tab. We have split them into separate steps for clarity:
+
+##### Code Cell Configuration
+
+- **In the "Code Cell Configuration" section, turn on the following options:**
+    - Auto Closing Brackets
+    - Code Folding
+    - Line Numbers
+    - Line Wrap
+    - Match Brackets
+    - Rectangular selection
+
+<img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691611789__03settingsnotebookcodecells.png">`
+
+##### Rulers
+
+Below the check boxes for Code Cell configuration is a Rulers section.
+
+- **Under the Rulers section, click on the "Add" button to add "rulers-0"**
+- **Enter 80 in the text field that says ""must be a number"**
+
+<img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691612584__03settingsnotebookwithrulers.png">
+
+#### Indentation options
+
+- Immediately below the Rulers section, make sure that:
+    - Smart indentation is turn on.
+    - Tab size is set to 4
+
+<img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691615274__03settingsnotebookindentoptions.jpeg">
+
+#### Document Manager
+
+- Find and open ""Document Manager" on the left sidebar.
+- Make sure that the following options are turned on:
+    - Autosave Documents
+    - Ask for confirmation to close a document
+    - Rename Untitled File on First Save
+
+<img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691613922__03settingsdocumentmanager.png"> 
+
+
+
+### Table of Contents
+
+- Find and open "Table of Contents" on the left sidebar.
+- Select the following options:
+    - Decrease Maximum headings depth from 4 to 3.
+    - Turn on Synchronize collapse state.
+
+<img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691614475__03settingstableofcontents.png">`
+
+#### Shut Down Options
+
+To ensure that jupyter shuts down the notebooks and kernels after closing them, make enable the following 2 shut-down options
+
+- In the left sidebar, search for **"shut down kernel".** 
+    - Click on the listing for **Notebook> Shut down kernel** that should appear on the left sidebar.
+    - Make sure that **"Shut down kernel" is turned on.**
+
+<img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691614850__03setingsshutdownkernel.png">
+
+- In the left sidebar, search for **"shut down on close"**
+    - Click on the listing for **Terminal > Shut down on close** that should appear on the left sidebar.
+    - Make sure that **"Shut down on close" is turned on.**
+
+<img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691615068__03settingsshutdownonclose.png">
+
+
+
+
+
+
 
 ____
 
 ___
 
-___
 
 
+## 🛑END OF OS-SPECIFIC INSTRUCTIONS
 
 # Step 3: Install a Code Text Editor
 
@@ -1157,7 +1301,7 @@ Note: Whenever the instructions below refer to your <ENV_FILE> below, it means t
 - Make sure you are still using a terminal inside the folder for the dojo-env-setup (pwd)
 - Run the following command (replace <ENV_FILE> with your filename from the table above)
 
-```
+```bash
 conda env create -f <env_file>
 ## Env Creation Commands by OS
 # Windows 
