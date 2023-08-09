@@ -1,6 +1,6 @@
 # Windows Installation Instructions
 
-## Overview
+## Table of Contents
 
 **Step 1) Download and install required applications**
 
@@ -26,6 +26,11 @@
     - Step 2.3.2) Wait for the dojo-env to be created
     - Step 2.3.3 Confirm your environment was installed.
 - Step 2.4) Activate dojo-env and set it as your default environment.
+    - Step 2.4.1) Activate dojo-env
+    - Step 2.4.2) (if needed): Troubleshoot Conda Activate Errors
+    - Step 2.4.3) `ADMIN: NEW` - Confirm "~" is your user folder
+    - Step 2.4.3) Make dojo-env the default environment
+    - Step 2.4.4) Add alias shortcuts for jupyter
 - Step 2.5) Test the environment.
 
 **Step 3) Customize Jupyter Settings & Test the environment**
@@ -414,13 +419,13 @@ ls -a
 ```
 
 - **You should see a list of all the files in the current folder,** similar to the screenshot below. 
-    - You should see 3 files that start with "environment-ds_" and end with ".yml" similar in the screenshot below.
+    - You should see 3 files that start with "environment-ds_" and end with ".yml" similar in the screenshot below. Note: the exact names of the environment files may be slightly different than the screenshot below.
 
 ![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1656808093__dojo-env-setup%20ls%20result.png)
 
 **If so, you are all set for step 2.3: create the dojo-env environment!**
 
-### Step 2.2-Troubleshooting): 
+### Step 2.2-Troubleshooting Opening the Repo: 
 
 If you are having trouble getting GitHub desktop to open GitBash in the correct folder there are 2 solutions for getting your gitbash window in the dojo-env-setup folder.
 
@@ -475,7 +480,7 @@ cd /Users/codingdojo/Documents/Boot Camp Stuff/
 
 
 
-## Step 2.3 Create the dojo-env environment
+## Step 2.3) Create the dojo-env environment
 
 Now that you have your terminal open in the repo's folder, run the "conda create" command for your 
 
@@ -522,12 +527,16 @@ conda env create -f environment-ds_windows.yml
 
   - **If you do not see dojo-env**:
 
-      - Something went wrong during your installation. 
+      - Something went wrong during your installation. **You should reach out for assistance on the discord channel.**
 
           
 
 
-### **Step 2.3.4) Activate dojo-env and set it as the default env**
+## **Step 2.4) Activate dojo-env and set it as the default env**
+
+
+
+### Step 2.4.1) Activate dojo-env
 
 - **Run the following 2 commands in your Terminal:**
 
@@ -536,13 +545,13 @@ conda activate dojo-env
 python -m ipykernel install --user --name dojo-env --display-name "Python (dojo-env)"
 ```
 
-- The first line in the code block anove will switch to dojo-env.
+- The first line in the code block above will switch to dojo-env.
 
-- The second line will install dojo-env as an option in Juyter Notebook, which you will use instead of Google Colab when working locally.
+- The second line will install dojo-env as an option in Juyter Notebook.
 
 
 
-### Step 2.3.5) (if needed)**Troubleshooting Conda Activate Errors:**
+### Step 2.4.2) (if needed)**Troubleshoot Conda Activate Errors:**
 
 -  **Problem**: when you attempt to run "conda activate dojo-env" you see a message that says something like "your terminal is not set up for conda activate", like the example below: 
 
@@ -632,25 +641,52 @@ source activate dojo-env
 python -m ipykernel install --user --name dojo-env --display-name "Python (dojo-env)"
 ```
 
-# 
+# 📌BOOKMARK
 
-### Setting the dojo-env as the default environment
+### (NEW) 2.4.3 Confirm that "~" is your User folder.
+
+In your Terminal, the tilde character (~) represents your home directory.  Your home directory should be your User folder (e.g., "/c/Users/codingdojo").
+
+- **Open a new Terminal window.**
+
+- **Run the following commands to change directories  to the "~" folder**  and to print the name of the folder.
+
+    ``` 
+    cd ~
+    pwd
+    ```
+
+- **If the folder it displays looks like: "/c/Users/YOUR_USERNAME"**:
+
+    - then you're all set to move on to the next step!
+
+- **If the file path does *not* start with** "/c/Users/":
+
+    - Then you must run the following command, replacing {your-username} with your User folder. 
+
+        - Note: if you do not know your User folder's name, you can run the `whoami` command to see the name of your User folder.
+
+        <img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691541053__changesource.png">
+
+
+
+### Step 2.4.4) Setting the dojo-env as the default environment
+
+- Make sure that your terminal is not running jupyter notebook (you can press "`Cntrl`+`C`" to force quit the server from your terminal).
+- Alternatively, you can open a new terminal/GitBash. (You can perform these steps from any folder.)
+
+# ✅TO DO
+
+- Address if the "~"  != their user folder
+- Address cygwyine (cygdrive?) 
 
 
 
 # PREVIOUS
 
-### Step 2.4: Setting dojo-env as the default + alias commands
-
-- This section will require you to enter several commands in your Terminal (on Mac) or GitBash (on Windows).
-
-  - Make sure that your terminal is not running jupyter notebook (you can press "`Cntrl`+`C`" to force quit the server from your terminal).
-
-  - Alternatively, you can open a new terminal/GitBash. (You can perform these steps from any folder.)
-
 ------
 
-## ✅To Do: address cygwyine
+## 
 
 
 
@@ -658,7 +694,7 @@ python -m ipykernel install --user --name dojo-env --display-name "Python (dojo-
 
 ### Determine if your PC Can Run "conda activate" or "source activate"
 
-For windows computers, we need to determine if your computer uses the word "conda" or "source" to activate an environment.
+For Windows computers, we need to determine if your computer uses the word "conda" or "source" to activate an environment.
 
 You've already run this command before, but if you don't remember which command you ran:
 
