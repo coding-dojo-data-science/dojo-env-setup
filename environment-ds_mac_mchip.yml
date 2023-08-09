@@ -359,4 +359,5 @@ dependencies:
       - yapf==0.33.0
       - yellowbrick==1.5
       - yfinance==0.2.18
+      - collinearity==0.6.1
 prefix: /opt/homebrew/Caskroom/miniforge/base/envs/dojo-env
