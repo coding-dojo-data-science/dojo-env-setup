@@ -643,6 +643,11 @@ python -m ipykernel install --user --name dojo-env --display-name "Python (dojo-
 
 # 📌BOOKMARK
 
+# ✅TO DO
+
+- Address if the "~"  != their user folder
+- Address cygwyine (cygdrive?) 
+
 ### (NEW) 2.4.3 Confirm that "~" is your User folder.
 
 In your Terminal, the tilde character (~) represents your home directory.  Your home directory should be your User folder (e.g., "/c/Users/codingdojo").
@@ -675,111 +680,60 @@ In your Terminal, the tilde character (~) represents your home directory.  Your 
 - Make sure that your terminal is not running jupyter notebook (you can press "`Cntrl`+`C`" to force quit the server from your terminal).
 - Alternatively, you can open a new terminal/GitBash. (You can perform these steps from any folder.)
 
-# ✅TO DO
-
-- Address if the "~"  != their user folder
-- Address cygwyine (cygdrive?) 
-
-
-
-# PREVIOUS
-
-------
-
-## 
-
-
-
-# Part 1) Commands for Windows
-
-### Determine if your PC Can Run "conda activate" or "source activate"
-
-For Windows computers, we need to determine if your computer uses the word "conda" or "source" to activate an environment.
-
-You've already run this command before, but if you don't remember which command you ran:
-
-- In a new GitBash window, enter the "conda activate base" or "conda activate dojo-env" command.
-  - If you see a message about your shell not being set up to run conda activate,
-    - You need to use the "1B) if your PC has to run source activate" section below
-  - If the conda activate command worked,
-    - Follow the "1A) If your PC ran conda activate" section below.
-
-------
-
-## 1A) If your PC can run "conda activate":
-
 - Run the following commands to automatically activate dojo-env and to add shortcuts for Jupyter:
+    - Note: **it is very important that you do not add any spaces next to the "="** in the alias commands below:
+
 
 ```
 touch ~/.bash_profile
 echo "conda activate dojo-env" >> ~/.bash_profile
 echo 'alias jnb="jupyter notebook"' >> ~/.bash_profile
 echo 'alias lab="jupyter lab"' >> ~/.bash_profile
+
 ```
 
 - Finally, activate the new settings:
-
-- - Run `source ~/.bash_profile` or open a new GitBash window to activate the changes you just made
-
-- *Scroll down to the "Part 2) Final Verification Steps (Mac & Windows)" step.*
-
-------
-
-## 1B) If your PC has to "source activate":
-
-- Run the following commands to automatically activate dojo-env and to add shortcuts for Jupyter:
-
-```
-touch ~/.bash_profile
-echo "source activate dojo-env" >> ~/.bash_profile
-echo 'alias jnb="jupyter notebook"' >> ~/.bash_profile
-echo 'alias lab="jupyter lab"' >> ~/.bash_profile
-```
-
-- Finally, activate the new settings:
-
-- - Run `source ~/.bash_profile` or open a new GitBash window to activate the changes you just made
+    - Run `source ~/.bash_profile` or open a new GitBash window to activate the changes you just made
 
 - *Scroll down to the "Part 2) Final Verification Steps (Mac & Windows)" step.*
 
-------
+### Step 2.4.5) Testing the default env and aliases
 
-# Part 2) Final Verification Steps (Mac & Windows)
-
-### Confirm `dojo-env` is your default
-
-
+##### Confirm `dojo-env` is your default
 
 - To confirm that dojo-env is now your default environment:
   - You should see `(dojo-env)` appear next to your prompt.
 
 ![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1647634446__confirm_dojo_env.png)
 
-### Confirm the shortcut aliases work
 
-- Try running the command "lab" in your terminal/kitbash.
 
-  - If jupyter lab launches, you're all set!
+##### 2.5.2) Confirm the shortcut aliases work
 
-  - If not, contact your instructor or a TA for assistance.
-
-- Shut down jupyter from the terminal
-
+- **Try running the command "job" in your terminal/kitbash.**
+- If jupyter notebook launches, you're all set!
+  
+- If not, contact your instructor or a TA for assistance.
+- **Shut down jupyter from the terminal**
   - Return to your Terminal window that you used to start jupyter.
   - Press Control+C to shut down the server. 
   - Respond "y" when asked to confirm.
 
-## Note: you can still move on to the next step even if you could not successfully complete this step.
+## 
 
 ## The moment of truth... 
 
 You are all set for the next step: Testing Your New Environment!
 
-# Step 2.5: Testing the Environment
+# Step 2.5) Testing the Environment
 
 To test that your installation and packages are working properly. We are going to run a specific Environment Testing notebook that is also located in the "dojo-env-setup" folder.
 
-## Running the environment tester notebook with jupyter notebook
+**2.5.1) Open the dojo-env-setup repo in Jupyter notebook.**
+
+
+
+## 2.5.1) Open the environment tester notebook with jupyter notebook
 
 - Next, you will close all of your previous Terminal/GitBash windows BUT before you do:
 
@@ -790,54 +744,77 @@ To test that your installation and packages are working properly. We are going t
 
 - Now, return to GitHub desktop and click on the "Open in Terminal/GitBash" to open a terminal in the dojo-env-setup folder.
 
-- - Type pwd to confirm it says dojo-env-setup.
-
+- Type pwd to confirm it says dojo-env-setup.
   - Note: if you do not see the button for Open in Terminal:
+      - Click on the menu for "Repository" at the very top of the window (if using Windows) or at the very top of your screen on your menu bar (if using a Mac).
 
-  - - Click on the menu for "Repository" at the very top of the window (if using Windows) or at the very top of your screen on your menu bar (if using a Mac).
-
-    - You should see the word "Repository" next to the FIle, Edit, View menus.
-
-    - - From the Repository menu: click on Open in Terminal/GitBash
-
+      - You should see the word "Repository" next to the FIle, Edit, View menus.
+          - From the Repository menu: click on Open in Terminal/GitBash
+  
 
 
-- In the new window that opens, start jupyter notebook by entering the `jupyter lab` command in your terminal (or the "lab" shortcut!)
+
+- In the new window that opens, start jupyter notebook by entering the `jupyter notebook` command in your terminal (or the "jnb" shortcut!)
 
 A new tab should open in your web browser that shows the File view for jupyter notebook.
 
 You should see all of the files that were in the dojo-env-folder.
 
-![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1657130012__jupyter_file_view.png)
+![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691542923__jupyterfilesviewtabs.png)
 
 - There are 2 "EnvironmentTester" notebooks:
   - "EnvironmentTester-mac.ipynb" for macs (both Intel and Apple Chip macs)
   - "EnvironmentTester-windows.ipynb" for Windows.
 
-- Click on the EnvironmentTester-mac.ipynb notebook to open it.
+- **Click on the "EnvironmentTester-windows.ipynb" notebook to open it.**
 
 Once the notebook interface has loaded, you should see a toolbar with several menu choices.
 
-##  ✅ TO DO: NEW SCREENSHOTS	
-
-![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1657130146__jupyter_notebook_view.png)
+![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691543038__jupyternotebookview.png)
 
 
 
-- We want to run all of the cells in this notebook and confirm it can make it to the end without errors.
 
-- To Run the Entire Notebook:
 
-  - Select the "Kernel" Menu > "Restart and Run All"
+### Step 2.5.2) Change the notebook's kernel to dojo-env
 
-  - Wait patiently. 
+We want to run all of the cells in this notebook and confirm it can make it to the end without errors.
 
-    The testing notebook is going to run through several modeling and EDA steps to confirm that the packages are working correctly.
+- First, confirm the notebook is using dojo-env. In the top-right corner you should see "Python (dojo-env)". 
 
-    - This could take anywhere from 2-10 minutes to run.
-    - You will see the web browser tab icon turn to an hourglass when the notebook is running and back to an orange notebook icon when it is done.
+    <img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691543292__jupyternotebooktoolbarannotatekernel.jpg">
 
-- Scroll down to the bottom of the notebook and confirm the cells have run:
+- If you do not see Python(dojo-env), click on the name of the kernel displayed to open the Change Kernel menu.
+
+    <img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691543640__jupyterkernelarrow.png">
+
+-   Select Python(dojo-env) from the dropdown menu:
+
+    <img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691543640__jupyterdropdown.png">
+
+    <img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691543640__jupyterdropdownselectkernel.png">
+
+    
+
+### Step 2.5.3) Run the environment tester notebook from start to finish.
+
+- **Run the Entire Notebook:**
+
+  - **Select the "Kernel" Menu > "Restart and Run All Cells"**
+
+      - You can also use the toolbar button, which resembles a fast-forward symbol >>.
+
+      <img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691544402__jupyternotebooktoolbarrunall.jpg">
+
+- **Wait patiently.** 
+
+  The testing notebook is going to run through several modeling and EDA steps to confirm that the packages are working correctly.
+
+  - This could take anywhere from 2-20 minutes to run.
+  - You will see the web browser tab icon turn to an hourglass when the notebook is running and back to an orange notebook icon when it is done.
+
+- **Scroll down to the bottom of the notebook and confirm the cells have run:**
+
   - Check if the very last cell printed the success message.
 
 ![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1657130803__env_tester_final_msg.png)
@@ -850,6 +827,10 @@ Once the notebook interface has loaded, you should see a toolbar with several me
 - If your notebook did not run the entire notebook successfully:
   - You need to contact your instructor or a TA for assistance.
   - Before contacting them, please follow the instructions below to prepare the troubleshooting files to give to your instructor.
+  
+- Shut down the notebook by clicking on the **File menu>Close and shut down the notebook.** 
+  
+  <img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691543984__closeandshutdownnotebook.png">
 
 ### To Get Help Troubleshooting Your Environment.
 
@@ -861,13 +842,13 @@ Once the notebook interface has loaded, you should see a toolbar with several me
 
    - Click File > Save & Checkpoint.
 
-   - Click File > Download As > Notebook (.ipynb)
+   - Click File > Download
 
    - Your web browser should save a copy of the notebook to your normal "Downloads" folder.
 
      
 
-     ![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1657132437__download_as.png)
+     ![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691543895__downloadnotebook.png)
 
 2. To share a copy of your FINAL_REPORT.txt:
 
@@ -877,7 +858,7 @@ Once the notebook interface has loaded, you should see a toolbar with several me
    - Check the checkbox next to the file and click on the "Download" button that appears at the top of the list of files.
    - Your web browser will also save this file to your Downloads folder.
 
-![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1657132692__download_report.png)
+![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691544219__downloadfinalreport.png)
 
 
 
@@ -889,6 +870,18 @@ Once the notebook interface has loaded, you should see a toolbar with several me
       - "I share this computer with someone else who also uses python"
 - An instructor or TA will get back to you within 1 business day with the next steps for you to try.
   - You will most likely need to set up a Zoom call and share your screen for us to help.
+
+
+
+### TO DO: Customizing settings
+
+____
+
+___
+
+___
+
+
 
 # Step 3: Install a Code Text Editor
 
