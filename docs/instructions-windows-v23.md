@@ -500,7 +500,7 @@ conda env create -f environment-ds_windows.yml
 
 -  **Once it has been completed you should see a message that says:**
 
-```
+```bash
 # To activate this environment use:
  conda activate dojo-env
 # To deactivate this environment use:
@@ -532,11 +532,15 @@ conda env create -f environment-ds_windows.yml
           
 
 
-## **Step 2.4) Activate dojo-env and set it as the default env**
+## **Step 2.4) Set `dojo-env` as the default**
 
+- Step 2.4.1) Activate dojo-env & add dojo-env kernel to Jupyter
+- Step 2.4.2) (if needed) Troubleshoot Conda Activate Errors:
+    - Conda Activate Solution #1
+    - Conda Activate Solution #2
+- Step 2.4.3) Confirm that your User folder is your home folder ("~")
 
-
-### Step 2.4.1) Activate dojo-env
+### Step 2.4.1) Activate dojo-env & add dojo-env kernel to Jupyter
 
 - **Run the following 2 commands in your Terminal:**
 
@@ -545,15 +549,12 @@ conda activate dojo-env
 python -m ipykernel install --user --name dojo-env --display-name "Python (dojo-env)"
 ```
 
-- The first line in the code block above will switch to dojo-env.
-
-- The second line will install dojo-env as an option in Juyter Notebook.
-
-
+- The first line in the code block above will switch to dojo-env environment.
+- The second line will install dojo-env as an option in Jupyter Notebook.
 
 ### Step 2.4.2) (if needed)**Troubleshoot Conda Activate Errors:**
 
--  **Problem**: when you attempt to run "conda activate dojo-env" you see a message that says something like "your terminal is not set up for conda activate", like the example below: 
+-  **Problem**: when you attempt to run "conda activate dojo-env" you see a message that says something like "your terminal is not set up for conda activate". See the example below: 
 
 ```bash
 CommandNotFoundError: Your shell has not been properly configured to use 'conda activate'.
@@ -571,7 +572,7 @@ See 'conda init --help' for more information and options.
 
 
 
-#### Solution to Enable Conda Activate:
+#### Conda Activate Solution #1
 
 ##### Step 1) Run Conda Init with Anaconda Prompt
 
@@ -582,8 +583,6 @@ See 'conda init --help' for more information and options.
 - **A window will open that looks the one below**: (if no text appears in the window, press enter and it should appear
 
 ![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1671129457__a2_prompt_window.png)
-
-
 
 - **Run the following command:**
 
@@ -598,8 +597,6 @@ conda init bash
 ![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1671129488__A3_conda_init_bash.png)
 
 - **Close Anaconda Prompt**
-
-
 
 ##### Step 2: Run conda init with GitBash
 
@@ -631,52 +628,62 @@ source ~/.bash_profile
 
 - **Now you should be able to run "conda activate dojo-env"!**  
 
-#### Alternative Solution
+#### Conda Activate Solution #2
 
 -  [Alternative/Older Solution] Alternatively, you could use a slightly different command to activate your environment. Replace the word "conda" with "source".
-    -  If you use this approach, you will **always** need to say `source activate` instead of `conda activate`
+    -  If you use this approach, you will **always** need to say `source activate` instead of `conda activate.`
 
 ```
 source activate dojo-env
 python -m ipykernel install --user --name dojo-env --display-name "Python (dojo-env)"
 ```
 
-# 📌BOOKMARK END OF 08/08
+- 
 
-# ✅TO DO
+### Step 2.4.3) Confirm that your User folder is your home folder ("~")
 
-- Address if the "~"  != their user folder
-- Address cygwyine (cygdrive?) 
-- add customizing settings
+In your Terminal, the tilde character (~) represents your home directory.  Your home directory should be your User folder (e.g., "/c/Users/codingdojo"). 
 
-### (NEW) 2.4.3 Confirm that "~" is your User folder.
-
-In your Terminal, the tilde character (~) represents your home directory.  Your home directory should be your User folder (e.g., "/c/Users/codingdojo").
+We will use the "~" character in the following commands, so we must ensure that your machine has it defined correctly. 
 
 - **Open a new Terminal window.**
 
-- **Run the following commands to change directories  to the "~" folder**  and to print the name of the folder.
+- **Run the following command to change your terminal's current directory to the "~" folder** 
 
     ``` 
     cd ~
+    ```
+    
+- **Run the following command to print the name of the folder:**
+
+    ```
     pwd
     ```
-
+    
 - **If the folder it displays looks like: "/c/Users/YOUR_USERNAME"**:
 
-    - then you're all set to move on to the next step!
+    - Then you're all set to move on to the next step!
+        
 
 - **If the file path does *not* start with** "/c/Users/":
 
-    - Then you must run the following command, replacing {your-username} with your User folder. 
+    - **Note: if your file path starts with "/cygdrive/c/Users/"** this is **not** the same folder and you must perform the following steps.
 
+    - **You run the following 2 commands, replacing {your-username} with your personal User folder.:**
+
+        ```bash
+        touch /c/Users/{your-username}/.bash_profile
+        source /c/Users/{your-username}/.bash_profile
+        ```
+    
         - Note: if you do not know your User folder's name, you can run the `whoami` command to see the name of your User folder.
+    
+        <img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691619428__changesource.png">
+    
 
-        <img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691541053__changesource.png">
 
 
-
-### Step 2.4.4) Setting the dojo-env as the default environment
+### Step 2.4.4) Add automatic activation of dojo-env
 
 - Make sure that your terminal is not running jupyter notebook (you can press "`Cntrl`+`C`" to force quit the server from your terminal).
 - Alternatively, you can open a new terminal/GitBash. (You can perform these steps from any folder.)
@@ -696,33 +703,59 @@ echo 'alias lab="jupyter lab"' >> ~/.bash_profile
 - Finally, activate the new settings:
     - Run `source ~/.bash_profile` or open a new GitBash window to activate the changes you just made
 
-- *Scroll down to the "Part 2) Final Verification Steps (Mac & Windows)" step.*
+### Step 2.4.5) Confirm dojo-env is the default & "jnb" alias works
 
-### Step 2.4.5) Testing the default env and aliases
-
-##### Confirm `dojo-env` is your default
+##### Confirm `dojo-env` is your default env
 
 - To confirm that dojo-env is now your default environment:
-  - You should see `(dojo-env)` appear next to your prompt.
+  - **Open a new terminal window.**
+  - **You should see `(dojo-env)` appear next to, or above, your prompt.**
 
 ![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1647634446__confirm_dojo_env.png)
 
 
 
-##### 2.5.2) Confirm the shortcut aliases work
+##### Confirm the shortcut aliases work
 
-- **Try running the command "job" in your terminal/kitbash.**
-- If jupyter notebook launches, you're all set!
-  
-- If not, contact your instructor or a TA for assistance.
+- **Try running the command "`jnb`" in your terminal.**
+
+    - You should see a lot of messages printed in the terminal and then your web browser should open  jupyter automatically .
+
+    
+
+    <img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691620120__jupyterrunning.png">
+
+    - **If jupyter notebook launches, you're all set!**
+
+    - **If not, contact your instructor or a TA for assistance.**
+
+
+
+
 - **Shut down jupyter from the terminal**
+
   - Return to your Terminal window that you used to start jupyter.
   - Press Control+C to shut down the server. 
-  - Respond "y" when asked to confirm.
+      - If you're asked to confirm, respond "y" and press enter.
+
+  The jupyter server should shut down and the prompt should reappear, ready for new commands:
+
+<img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691620127__jupytershutdown.png">
 
 #### The moment of truth... 
 
 You are all set for the next step: Testing the Environment!
+
+
+
+# 📌BOOKMARK - Mid-Day 08/09
+
+# ✅TO DO
+
+- ~~Address if the "~"  != their user folder~~
+- **Address cygwyine (cygdrive?)  (I *think* this was addressed by confirming ~ is your User folder)**
+- ~~add customizing settings~~
+- **Decide if Jupyter Notebook Preferenes should become a separate numbered step?** 
 
 # Step 2.5) Testing the Environment
 
