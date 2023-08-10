@@ -1,6 +1,7 @@
 # **Updating to a new dojo-env**
 
 If you have already dojo-env installed on your computer, you must first rename it or remove it.
+Note: these instructions are intended non OS-specific. Your terminal may not look exactly like the esamples in the screenshots (for example, the filepaths for the environemnts will be very different). However, the steps are the same across all platforms.
 
 ## Step 1: Rename or Remove Your Current dojo-env
 
