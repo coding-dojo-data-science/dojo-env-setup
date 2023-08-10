@@ -27,13 +27,15 @@ conda env list
 
 ### Step 1.2) Deactivate dojo-env
 
-In order to remove an environment, it must be deactivated. Run the following command to deactivate the environment:
+In order to remove/rename an environment, it must be deactivated. 
+
+- Run the following command to deactivate the environment:
 
 ```bash
 conda deactivate
 ```
 
-If this command doesn't work correctly, use the following alternative command:
+- If this command doesn't work correctly, use the following alternative command:
 
 ```bash
 conda activate base
@@ -84,7 +86,7 @@ You're ready to install the new dojo-env!
 
 - To use your renamed old dojo-env:
     - First, you must run the `conda activate dojo-env-old` command manually after starting your Terminal before starting jupyter notebook.
-    - Second, form within your Jupyter Notebook, you must click on Kernel > Change Kernel> and select "Python (dojo-env-old)"
+    - Second, from within your Jupyter Notebook, you must click on Kernel > Change Kernel> and select "Python (dojo-env-old)"
 
 ### Option B)  Remove Your Old dojo-env
 
@@ -137,7 +139,7 @@ jupyter kernelspec remove dojo-env
 
 ## Step 2: Get the updated dojo-env environment file
 
-To install the new dojo-env, you will need to download the update environment.yml file from the dojo-env-setup repository. 
+To install the new dojo-env, you will need to download the updated environment.yml file from the dojo-env-setup repository. 
 
 ### Step 2.1 Open the dojo-env-setup repo in GitHub Desktop.
 
