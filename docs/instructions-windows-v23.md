@@ -20,23 +20,33 @@
 **Step 2) Setting Up Your dojo-env Environment**
 
 - Step 2.1) Clone the dojo-env-setup repository
+
 - Step 2.2) Open the repo's folder in your Terminal
+
 - Step 2.3) Create the dojo-env environment from file
     - Step 2.3.1) Run the correct "conda env create" command for your OS
     - Step 2.3.2) Wait for the dojo-env to be created
     - Step 2.3.3 Confirm your environment was installed.
+
 - Step 2.4) Activate dojo-env and set it as your default environment.
     - Step 2.4.1) Activate dojo-env
     - Step 2.4.2) (if needed): Troubleshoot Conda Activate Errors
-    - Step 2.4.3) `ADMIN: NEW` - Confirm "~" is your user folder
-    - Step 2.4.3) Make dojo-env the default environment
-    - Step 2.4.4) Add alias shortcuts for jupyter
+    - Step 2.4.3) Confirm that your Home folder is your User folder
+    - Step 2.4.4) Add automatic activation of dojo-env 
+    - Step 2.4.5) Confirm dojo-env is the default & "jnb" alias works.
+    - Step 2.4.6) Shut Down Jupyter (properly)
+
 - Step 2.5) Test the environment.
 
-**Step 3) Customize Jupyter Settings & Test the environment**
+    - Step 2.5.1) Open the environment tester notebook 
+    - Step 2.5.2) Change the notebook's kernel to dojo-env
+    - Step 2.5.3) Run the environment test notebook from start to finish.
 
-- Step 3.1) Testing the Environment
-- Step 3.2) Changing Jupyter Settings
+- To Get Help Troubleshooting Your Environment
+
+- Step 2.6) Jupyter Notebook Preferences
+
+    ....
 
 **Step 4) Install VS Code**
 
@@ -664,7 +674,7 @@ We will use the "~" character in the following commands, so we must ensure that 
 - **If the folder it displays looks like: "/c/Users/YOUR_USERNAME"**:
 
     - Then you're all set to move on to the next step!
-        
+      
 
 - **If the file path does *not* start with** "/c/Users/":
 
@@ -722,53 +732,68 @@ echo 'alias lab="jupyter lab"' >> ~/.bash_profile
 
     - You should see a lot of messages printed in the terminal and then your web browser should open  jupyter automatically .
 
-    
-
     <img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691620120__jupyterrunning.png">
 
     - **If jupyter notebook launches, you're all set!**
 
-    - **If not, contact your instructor or a TA for assistance.**
+    <img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691692984__jupyterfilesview.png" width=800px>
+
+    - **If not, follow the instructions on How to Ask for Help from the Installation Overview** 
 
 
 
+### 2.4.6) Shut Down Jupyter (Properly)
 
-- **Shut down jupyter from the terminal**
+It is very important that you shut down Jupyter Notebook in the correct way. 
 
-  - Return to your Terminal window that you used to start jupyter.
-  - Press Control+C to shut down the server. 
-      - If you're asked to confirm, respond "y" and press enter.
+- Closing the web browser tabs for Jupyter Notebook **doe**s not shut down the jupyter notebook! The notebook is still running in the jupyter server** that was launched in your Terminal window. 
+- **Do not force-close the Terminal window by closing it if it is running Jupyter!** If you simply X out of Terminal while Jupyter server was running, it can lead to issues with Windows Terminal, such as the "could not fork child process" error in the screenshot below:
 
-  The jupyter server should shut down and the prompt should reappear, ready for new commands:
+<img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691694396__forkchildprocess.png" width=500px>
+
+
+
+#### Option A) Shut Down Jupyter From  Jupyter Notebook
+
+- The best way to shut down Jupyter Notebook is from Jupyer's File menu.
+
+<img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691692985__jupyterfilesmenu.png">
+
+
+- **Click on File > Shut Down**
+
+  <img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691692985__jupyterfilesshutdown.png">
+  
+- If a confirmation window appears, click on Shut Down:
+
+<img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691693251__jupytershutdownconfirm.png">
+
+- The terminal running Jupyter should stop running the server and return to an empty prompt, waiting for input.
 
 <img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691620127__jupytershutdown.png">
+
+#### Option B) Shut down jupyter from the terminal
+
+- Return to the Terminal window that you used to start jupyter.
+- Press "Control+C" to shut down the server. 
+    - The jupyter server should shut down and the prompt should reappear, ready for new commands:
+- If you're asked to confirm, respond "y" and press enter.
+
+- The terminal should stop running the server and return to an empty prompt, waiting for input.
+
+<img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691620127__jupytershutdown.png">
+
+
 
 #### The moment of truth... 
 
 You are all set for the next step: Testing the Environment!
 
-
-
-# 📌BOOKMARK - Mid-Day 08/09
-
-# ✅TO DO
-
-- ~~Address if the "~"  != their user folder~~
-- **Address cygwyine (cygdrive?)  (I *think* this was addressed by confirming ~ is your User folder)**
-- ~~add customizing settings~~
-- **Decide if Jupyter Notebook Preferenes should become a separate numbered step?** 
-
-
-
 ## Step 2.5) Testing the Environment
 
-To test that your installation and packages are working properly. 
-
-We are going to run a specific Environment Testing notebook that is also located in the "dojo-env-setup" folder.
+To test that your installation and packages are working correctly, You are going to run a specific Environment Testing notebook that is also located in the "dojo-env-setup" folder.
 
 ### 2.5.1) Open the environment tester notebook with jupyter notebook
-
-
 
 - **Make sure Jupyter Notebook is not running in any Terminal windows.**
   - Check any open terminals and make sure that they are not running the notebook server. 
@@ -871,7 +896,9 @@ We want to run all of the cells in this notebook and confirm it can make it to t
   
   <img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691543984__closeandshutdownnotebook.png">
 
-### To Get Help Troubleshooting Your Environment.
+### ✅TO DO: To Get Help Troubleshooting Your Environment.
+
+***TO DO: FIgure out the best formatted version of the following text (may be in the Ask for Help.md file)***
 
 - There are 2 files that you should share with your instructor/TA
   1. A copy of your Environment Tester notebook that error'd.
@@ -912,15 +939,11 @@ We want to run all of the cells in this notebook and confirm it can make it to t
 
 ___
 
-## ✅📌BOOKMARK#2:
-
-- `ADMIN`: Should this become a separate #'d step?
-
 ##  Step 2.6) Jupyter Notebook Preferences
 
+`ADMIN`: Should this become a separate #'d step?
+
 There are several convenient features in Jupyter Notebook that are not enabled by default. We strongly suggest updating your Jupyter Notebook settings according to the instructions below:
-
-
 
 ___
 
@@ -1058,15 +1081,22 @@ To ensure that jupyter shuts down the notebooks and kernels after closing them, 
 
 
 
+- **When you're finished, close the Settings. The options have been saved to Jupyter's configuration files.**
 
 
-____
 
-___
-
-
+# ADMIN
 
 ## 🛑END OF OS-SPECIFIC INSTRUCTIONS
+
+# ✅TO DO
+
+- **Address cygwyine (cygdrive?)  (I *think* this was addressed by confirming ~ is your User folder)**
+- **Decide if Jupyter Notebook Preferenes should become a separate numbered step?** 
+
+
+
+## WIP BELOW:
 
 # Step 3: Install a Code Text Editor
 
@@ -1082,8 +1112,6 @@ ___
 
   - It is maintained by Microsoft and has a robust community of extensions and add-ons.
   - It is very popular and is used by many companies (e.g. Facebook/Meta)
-
-
 
 - How will we use VS Code?
 
@@ -1187,8 +1215,6 @@ ___
 
 # Final Notes
 
-## 
-
 Congrats! You've got a fully functional professional data science environment on your local machine!
 
 - Please see the next chapter "Working Locally" for:
@@ -1203,246 +1229,4 @@ Congrats! You've got a fully functional professional data science environment on
   - "code" command not working
   - GitBash "Could not fork child process" error
 
-
-
-**Updating to New dojo-env**
-
-- If you have already installed your dojo-env and wish to update to the new version, you must first remove the current dojo-env from your computer.
-
-  - Note: the new version of dojo-env was released in July 2022. If you installed your environment in July or later you already have the updated dojo-env.
-
-- The benefits of upgrading to the new dojo-env:
-
-  - New sklearn v1.1 with simplified column transformer feature names!
-  - Jupyter Lab added
-
-- - New Packages and Tools Included:
-
-  - - nbdime: Version control for jupyter notebooks.
-    - Model Explainer Packages (SHAP, Lime, Yellowbrick)
-    - Stack 2 & 3 Packages Previously Not Included:
-      - Tensorflow
-      - xgboost
-      - lightbgm
-    - Pandas Profiling (incredibly powerful all-in-one EDA report)
-    - Time Series Modeling:
-      - pmdarima
-      - prohpet
-      - sktime (though still some issues to resolve)
-    - And more!
-
-#### IMPORTANT NOTE FOR MAC USERS WITH AN APPLE CHIP (M1, M1Pro, M2, etc)!
-
-The original v1 of dojo-env did not fully support Apple processors, but the new dojo-env does. HOWEVER, in order to do so, Mac users with an Apple chip need to UNINSTALL ANACONDA and switch to using Miniforge.
-
-Please see "Step 1 - MacOS (Apple Chip)" and scroll to the bottom for the UNINSTALLING ANACONDA instructions.
-IT IS CRITICAL THAT YOU DO THIS OR IT MAY PERMANENTLY BREAK YOUR ENVIRONMENT!
-
-
-
-> NOTE: there is an abbreviated summary of commands for this process at the bottom of this page for convenience.
-
-## Step 1: Remove Your Old dojo-env
-
-- 1. Open your terminal/GitBash
-
-  2. Deactivate
-
-     ```
-     dojo-env
-     ```
-
-     :
-
-     1. Type
-
-         
-
-        ```
-        conda activate base
-        ```
-
-         
-
-        (or source activate base if you are on older versions of windows)
-
-        1. Your terminal should now say `(base)` next to your prompt instead of `(dojo-env)`.
-
-  3. Remove the old `dojo-env` using the command:
-
-```
-conda remove --name dojo-env --all
-```
-
-Enter `y` to approve the removal of the environment and hit enter.
-
-4. Wait for the env to be removed.
-
-This will delete all of the files associated with JUST our `dojo-env`.
-
-Anaconda & GitBash will still be installed. We will just need to re-install our `dojo-env`
-
-
-
-## Step 2: Clone the updated dojo-env-setup repo
-
-1. To avoid merge conflicts when pulling the updated repository,
-
-    
-
-   you should remove your old clone of the dojo-env-setup repo 
-
-   and then clone it again.
-
-   1. In GitHubDesktop, switch to the dojo-env-setup repository in the Current Repo drop down menu (top left). Once you're in dojo-env-setup, click on the "Repository" menu and select "Remove" > check Move to Trash/Recycle Bin.
-
-2. Navigate to the dojo-env-setup repo: https://github.com/coding-dojo-data-science/dojo-env-setup
-
-3. Clone the Repository to Your Computer:
-
-   1. Click the green Code button and select "Open in GitHub Desktop. "
-   2. If you still have your previously cloned copy, GitHub Desktop should show a # and down arrow on the top right corner where it should say "Fetch Origin".
-      1. Press the button to "Fetch Origin", which will download the updated environment files.
-      2. You may need to press it again if it changes to "Pull Origin"
-   3. If you've updated the repo successfully there should be no remaining #'s or arrows on the top right corner.
-      1. If so, click on the Repository menu > Open in Terminal (or Open in GitBash).
-
-
-
-## Step 3: (Re)Create Your dojo-env using the updated repo
-
-1. Run the same commands from the original step "2. Setting Up Your
-
-    
-
-   ```
-   dojo-env
-   ```
-
-    
-
-   Environment" (summarized below).
-
-   1. If you are unsure about which version of the summary instructions below to use, please go to the original Step 2 lesson for your specific OS and follow those steps again.
-
-2. "Step 2: Setting Up Your Dojo-Env" Summary:
-
-   1. Depending on your OS and processor, you will use a different environment file in the conda env create command.
-      1. In the table below find the environment yml file name that is correct for your computer/OS.
-
-Note: Whenever the instructions below refer to your <ENV_FILE> below, it means the filename from the following list (without < >).
-
-| Computer/OS Type                             | Environment File Name     |
-| -------------------------------------------- | ------------------------- |
-| Windows                                      | environment_windows.yml   |
-| MacOS with an Intel Processor                | environment_mac_intel.yml |
-| MacOS with an Apple Chip (m1, m1pro, m2,etc) | environment_mac_mchip.yml |
-
-- Make sure you are still using a terminal inside the folder for the dojo-env-setup (pwd)
-- Run the following command (replace <ENV_FILE> with your filename from the table above)
-
-```bash
-conda env create -f <env_file>
-## Env Creation Commands by OS
-# Windows 
-conda env create -f environment_windows.yml
-# Mac - Intel Processor 
-conda env create -f environment_mac_intel.yml
-# Mac - Apple Chip 
-conda env create -f environment_mac_mchip.yml
-```
-
-- Wait (patiently) for the dojo-env to be created.
-  - Note: the new environment includes many additional tools and can take anywhere from 3-20 minutes to finish downloading and installing the packages for the new environment.
-- Once its complete, run the following "conda activate dojo-env" command:
-
-```
-conda activate dojo-env
-```
-
-- Note for Windows users:
-  - if you see a message that says "your terminal is not set up for conda activate", change the command to "source activate"
-
-```
-source activate dojo-env
-```
-
-- You should now see "(dojo-env)" next to your prompt in your terminal (may be above the prompt, on the left, or on the right depending on your OS)
-  ![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1659742362__confirm_dojo_env.png)
-
-- After confirming you now see (dojo-env) displayed next to your prompt:
-  - Run the following command to make sure Jupyter Notebook/Lab knows your new environment.
-
-```
-python -m ipykernel install --user --name dojo-env --display-name "Python (dojo-env)"
-```
-
-## 
-
-## Testing Your New Environment
-
-- From the same terminal window, start jupyter notebook (run `jupyter notebook` in your terminal)
-- Open the test notebook for your OS (windows vs mac).
-  - EnvironmentTester-Mac.ipynb or EnvironmentTester-Windows.ipynb
-- Select the Kernel Menu > Restart and Run All.
-  - The notebook should run all the way to the end.
-    - If it doesn't, contact your instructor for assistance.
-
-## Bonus: Jupyter Lab
-
-Your new dojo-env also includes jupyter lab. It is very similar to jupyter notebook, but has a more fleshed out user interface that is more similar to Colab than jupyter notebook.
-
-To start jupyter lab run the following command:
-
-```
-jupyter lab
-```
-
-# 
-
-# Cheat Sheet/Summary Steps
-
-1. Clone repo or Fetch & Pull: [https://github.com/coding-dojo-data-science/dojo-env-setup
-
-](https://github.com/coding-dojo-data-science/dojo-env-setup)
-
-2. Open in Terminal/GitBash.
-
-Execute the following commands:
-
-```
-## 1. Deactivate dojo-env 
-conda activate base
-# Windows users may need to use "source activate base"
-## 2. Remove dojo-env
-conda remove --name dojo-env --all
-# press y to confirm
-## 3. Create new environment
-# run ONE of the following (depending on you computer)
-conda env create -f environment_mac_mchip.yml
-conda env create -f environment_mac_intel.yml
-conda env create -f environment_windows.yml
-## Wait patiently, once completed, activate new env
-conda activate dojo-env
-# windows users may need "source activate dojo-env"
-## Add dojo-env kernel to jupyter 
-python -m ipykernel install --user --name dojo-env --display-name "Python (dojo-env)"
-## Boot up jupyter notebook 
-jupyter notebook 
-# OR If you previously follwed  "3. Setting dojo-env as your default"
-jnb
-## Read Final step below code cell
-```
-
-- Final step: 
-
-  Open and run the appropriate environment testing notebook for your OS:
-
-  - "EnvironmentTester-mac.ipynb"
-  - "EnvironmentTester-windows.ipynb"
-
-- Notify a TA or instructor if the notebook does not successfully run ALL cells.
-
-## Enjoy your new dojo-env!
-
-# 
+## Enjoy your new dojo-env! 
