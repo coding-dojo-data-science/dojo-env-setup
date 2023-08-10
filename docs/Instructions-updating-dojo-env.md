@@ -216,35 +216,49 @@ conda activate dojo-env
 python -m ipykernel install --user --name dojo-env --display-name "Python (dojo-env)"
 ```
 
+## Troubleshooting conda env create: "Prefix already exists"
+
+**Problem**: 
+
+- You receive an error when you attempt to re-create the dojo-env that says `"CondaValueError: previx already exists {filepath to env}"` like the screenshot below
+
+<img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691700179__prefixalreadyexists.png">
+
+**Cause**:
+
+- The folder for the old dojo-env was not fully deleted by `conda remove` or `conda rename` your old dojo-env's folder was not fully deleted.
+
+**Solutions:**
+
+- **Check the `conda env list` command again to determine which solution to use.**
+
+- **Solution A): If you see `dojo-env` in the env list:**
+
+    - You may have skipped Step 1.3: rename or remove your dojo-env or something went wrong during step 1.3
+    - **Return to step 1.3 and perform the rename/remove option again.**
+
+- **Solution B): If you do *not* see `dojo-env` in the list**
+
+    - Conda deleted the environment, but for some reason it finish deleting the dojo-env folder.
+
+    - **Delete the old dojo-env folder.:**
+
+        - To delete the dojo-env folder and all of the contents within it, run the `rm -rf {env-folder}` command AFTER READING THE FOLLOWING WARNINGS:
+        - **Warning: the `rm -rf` command, if executed incorrectly, could accidentally delete data from your computer!!!**
+        - It is very important that you use the correct folder path (`{env-folder}`):
+            - `{env-folder}`should be replaced with the filepath from the "Prefix already exists" error message."  
+                - **Note: for windows computers, you must replace any backslashes** `\` with a forward slash`/` and must remove the `:`and add a `/` at the beginning of the folder path. Examine the example below:
+                    - Error message path: `Prefix already exists C:\Users\brend\anaconda3\envs\dojo-env`
+                    - Corrected path for the remove command: 
+                        `/c/Users/brend/anaconda3/envs/doj-env`
+                    - **And the final command would be:**
+                        - `rm -rf /c/Users/brend/anaconda3/envs/doj-env`
+
+        
 
 
-## Confirm the New dojo-env Works
 
-- Start Jupyter Notebook and run the environment tester notebook for your operating system to confirm your installation was a success!
-
-    
-
-___
-
-# Appendix
-
-- Troubleshooting To-Dos to add later.
-
-
-
-### ✅TO DO: Troubleshooting: Step 3) if the dojo-env folder didn't get deleted with the env
-
-
-
-If you receive a message that the environment already exists when you attempt to run the conda create command, check the `conda env list` again. 
-
-- If you do not see the `dojo-env` in the list, then conda deleted the environment, but didn't delete the folder it was stored in. 
-
-- To delete the dojo-env folder and all of the contents within it, you must remember the folder path that was displayed by conda env list.
-
-
-
-TO DO: 
+### TO DO: 
 
 Conda env list screenshot to see path:
 
@@ -257,6 +271,24 @@ rm -rf <ENVIRONMENT_FPATH>
 
 
 `rm -rf <ENVIRONMENT_FPATH>`
+
+## Confirm the New dojo-env Works
+
+- Start Jupyter Notebook and run the environment tester notebook for your operating system to confirm your installation was a success!
+
+    
+
+___
+
+
+
+
+
+
+
+# Appendix
+
+- Troubleshooting To-Dos to add later.
 
 
 

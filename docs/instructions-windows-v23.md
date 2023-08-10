@@ -298,14 +298,17 @@ Note: the instructions below are adapted from this [Blog Post](https://fmorenovr
   ```
   pwd
   ```
-  
-  Press enter and examine the file path that's displayed.
 
-  - If the file path displayed ends with `profile.d` then you are in the right folder!
-  - If not, restart the "Adding Conda to GitBash" instructions again and make sure you can find your profile.d folder.
-    - Reach out to your instructor or a TA if you are still having issues.
-  
-  - Next, Enter the following command and hit enter:
+- **Press enter and examine the file path that's displayed.**
+
+    - If the file path displayed ends with `profile.d` then you are in the right folder!
+    - If not, restart the "Adding Conda to GitBash" instructions again and make sure you can find your profile.d folder.
+      - Reach out to your instructor or a TA if you are still having issues.
+
+- **Next, Copy and paste the following command into your Terminal and hit enter:**
+
+    - **Reminder: You can paste in Windows Terminal by simply right-clicking** anywhere within the activate Terminal window.
+
 
 ```bash
 
@@ -344,11 +347,10 @@ echo ". '${PWD}'/conda.sh" >> ~/.bashrc
 **Brief Summary of the Following Steps:**
 
 - Step 2.1: Clone the dojo-env-setup repository
-- Step 2.2: Open the repo in your terminal/GitBash
+- Step 2.2: Open the repo in your Terminal
 - Step 2.3: Create the dojo-env environment
-    - 
-
-- Step 2.4: Activate dojo-env and add to Jupyter
+  
+- Step 2.4: Set `dojo-env` as the default environment.
 - Step 2.5: (if needed) Troubleshooting Conda Activate
 - Step 2.6
 
@@ -411,6 +413,10 @@ Once you have cloned the repository, **you must open a Terminal Window in the sa
   - `**Control**` +  **`**   (the key above tab that also has the tilde symbol ~)
 
 ### Step 2.2.2) Confirm you are in the correct folder.
+
+- **Note: Terminal/GitBash does not support the Copy and Paste Keyboard Shortcuts (Control+C) /(Control+V).**  
+    -  We recommend typing out the shorter commands for experience, but there will be several long commands that we will encourage top copy and paste for accuracy.
+    - **You can paste in Windows Terminal by simply right-clicking** anywhere within the activate Terminal window.
 
 - First, in the terminal window that appears, **type the "pwd" command** (which stands for print working directory) and press Enter.
 
@@ -486,15 +492,11 @@ cd /Users/codingdojo/Documents/GitHub/dojo-env-setup/
 cd /Users/codingdojo/Documents/Boot Camp Stuff/
 ```
 
-
-
-
-
 ## Step 2.3) Create the dojo-env environment
 
-Now that you have your terminal open in the repo's folder, run the "conda create" command for your 
+Now that your terminal is open in the repo's folder, you're ready to create your dojo-env environment.
 
-###  Step 2.3.1) Run the correct "conda env create" command for your OS
+###  Step 2.3.1) Run the "conda env create" command for your OS
 
 - Run the  conda env create command below in your Terminal
 
@@ -543,7 +545,7 @@ conda env create -f environment-ds_windows.yml
 
 
 
-## Step 2.4) Set `dojo-env` as the default
+## Step 2.4) Set `dojo-env` as the default environment
 
 - Step 2.4.1) Activate dojo-env & add dojo-env kernel to Jupyter
 - Step 2.4.2) (if needed) Troubleshoot Conda Activate Errors:
@@ -649,7 +651,7 @@ source activate dojo-env
 python -m ipykernel install --user --name dojo-env --display-name "Python (dojo-env)"
 ```
 
-- 
+
 
 ### Step 2.4.3) Confirm that your User folder is your home folder ("~")
 
@@ -692,7 +694,9 @@ We will use the "~" character in the following commands, so we must ensure that 
         <img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691619428__changesource.png">
     
 
+## TO DO:
 
+- Mention pasting into Windows Terminal
 
 ### Step 2.4.4) Add automatic activation of dojo-env
 
@@ -701,6 +705,7 @@ We will use the "~" character in the following commands, so we must ensure that 
 
 - Run the following commands to automatically activate dojo-env and to add shortcuts for Jupyter:
     - Note: **it is very important that you do not add any spaces next to the "="** in the alias commands below:
+    - **Reminder: You can paste in Windows Terminal by simply right-clicking** anywhere within the activate Terminal window.
 
 
 ```bash
