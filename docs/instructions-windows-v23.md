@@ -388,7 +388,7 @@ GitHub Desktop will download a copy of the repository into a new folder on your 
 
 ## Step 2.2) Open the Repo in Terminal(GitBash)
 
-# 
+
 
 ### Step 2.2.1) Open the dojo-env-setup repository in Terminal.
 
@@ -532,7 +532,8 @@ conda env create -f environment-ds_windows.yml
           
 
 
-## **Step 2.4) Set `dojo-env` as the default**
+
+## Step 2.4) Set `dojo-env` as the default
 
 - Step 2.4.1) Activate dojo-env & add dojo-env kernel to Jupyter
 - Step 2.4.2) (if needed) Troubleshoot Conda Activate Errors:
@@ -757,18 +758,24 @@ You are all set for the next step: Testing the Environment!
 - ~~add customizing settings~~
 - **Decide if Jupyter Notebook Preferenes should become a separate numbered step?** 
 
-# Step 2.5) Testing the Environment
-
-To test that your installation and packages are working properly. We are going to run a specific Environment Testing notebook that is also located in the "dojo-env-setup" folder.
-
-**2.5.1) Open the dojo-env-setup repo in Jupyter notebook.**
 
 
+## Step 2.5) Testing the Environment
 
-## 2.5.1) Open the environment tester notebook with jupyter notebook
+To test that your installation and packages are working properly. 
+
+We are going to run a specific Environment Testing notebook that is also located in the "dojo-env-setup" folder.
+
+### 2.5.1) Open the environment tester notebook with jupyter notebook
+
+
+
+- **Make sure Jupyter Notebook is not running in any Terminal windows.**
+  - Check any open terminals and make sure that they are not running the notebook server. 
+  - If you see a lot of text in your terminal window and the final line is not an empty command prompt, like in the screenshot below:
+  - <img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691620120__jupyterrunning.png">
 
 - Next, you will close all of your previous Terminal/GitBash windows BUT before you do:
-
   - if your terminal is still running jupyter notebook and you do not see the prompt waiting for a command:
     - You must press "Control +C" to force-quit jupyter.
     - Make sure to reply "y" if asked for confirmation.
@@ -782,7 +789,7 @@ To test that your installation and packages are working properly. We are going t
 
       - You should see the word "Repository" next to the FIle, Edit, View menus.
           - From the Repository menu: click on Open in Terminal/GitBash
-  
+
 
 
 
