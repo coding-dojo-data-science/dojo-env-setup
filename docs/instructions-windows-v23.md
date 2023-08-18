@@ -993,9 +993,11 @@ Note: you can use the search box at the top of the left side bar to search for t
 
 ### Code Completion
 
-- Check the "Enable autocompletion" box to turn on code autocompletion.
+- Check the "Show the documentation panel" option.
+- Recommended: do not check the "Enable autocompletion" box to turn on code autocompletion.
+    - Instead of Autocompletion, press `Tab` when typing to have jupyter complete your command.
 
-<img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691611052__03settingscodecompletion.png">
+<img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1692379310__settingscodecompletion.png">
 
 
 
