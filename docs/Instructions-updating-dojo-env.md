@@ -1,7 +1,7 @@
 # **Updating to a new dojo-env**
 
-If you have already dojo-env installed on your computer, you must first rename it or remove it.
-Note: these instructions are intended non OS-specific. Your terminal may not look exactly like the esamples in the screenshots (for example, the filepaths for the environemnts will be very different). However, the steps are the same across all platforms.
+If you already have dojo-env installed on your computer, you must first rename it or remove it.
+Note: these instructions are intended non-OS-specific. Your terminal may not look exactly like the examples in the screenshots (for example, the file paths for the environments will be very different). However, the steps are the same across all platforms.
 
 ## Step 1: Rename or Remove Your Current dojo-env
 
@@ -262,15 +262,11 @@ python -m ipykernel install --user --name dojo-env --display-name "Python (dojo-
 
 Conda env list screenshot to see path:
 
-`TO DO: SCREENSHOT`
+<img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1692724550__condaenvlist.png">
 
 ```bash
 rm -rf <ENVIRONMENT_FPATH>
 ```
-
-
-
-`rm -rf <ENVIRONMENT_FPATH>`
 
 ## Confirm the New dojo-env Works
 
@@ -288,13 +284,20 @@ ___
 
 # Appendix
 
-- Troubleshooting To-Dos to add later.
-
-
-
 ### Activating dojo-env is still the default, but it no longer exists
 
 <img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691688537__00envnamenotfound.png">
+
+- The command to `conda activate dojo-env` is still in terminal's settings file. 
+- Manually open the correct file for your Terminal and remove the conda activate command. 
+    - Windows:
+        - `/c/Users/<your-username/.bash_profile`
+    - Mac (bash):
+        - `/Users/<your-username>/.bash_profile`
+    - Mac (zsh):
+        - `/Users/<your-username>/.zshrc`
+- After removing the conda activate command, save the file and close it. 
+- Open a new terminal window. You should no longer see that message.
 
 ## Backup Your Env/Export Your Env to a .yml file
 
