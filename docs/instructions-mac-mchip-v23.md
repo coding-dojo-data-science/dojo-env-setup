@@ -346,8 +346,7 @@ conda init zsh
 
     - You can install many environments on your computer and switch between them as needed for different projects.
 
-
-    - We have designed the dojo-env to include everything you'd need for our program, so you may not have a reason to add additional environments. 
+    -  We have designed the dojo-env to include everything you'd need for our program, so you may not have a reason to add additional environments. 
 
 
 - The environment files (and a backup of these instructions) are in the [dojo-env-setup repository](https://github.com/coding-dojo-data-science/dojo-env-setup)
@@ -363,7 +362,7 @@ conda init zsh
 
 - **Click on the green `Code` button and then click `Open in GitHub desktop.`**
 - GitHub desktop should open automatically and ask you what folder you would like to store your repository in.
-    
+  
 
 ![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1656806399__clone-repo-menu.png)
 
@@ -574,7 +573,7 @@ echo 'alias lab="jupyter lab"' >> ~/.zshrc
 
 ```
 
-### Step 2.4.4) Confirm `dojo-env` is the default * "jnb" alias works
+### Step 2.4.4) Confirm `dojo-env` is the default & "jnb" alias works
 
 ##### Confirm `dojo-env` is your default env
 
