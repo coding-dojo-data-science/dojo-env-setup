@@ -303,13 +303,13 @@ Alternatively, could export your current dojo-env to a new .yml file, just like 
 - To export your environment to a file called "my-old-environment.yml" in your User folder, run the command:
 
 ```
-conda env export > ~./my-old-environment.yml --no-builds
+conda env export > ~/my-old-environment.yml --no-builds
 ```
 
 - To re-create the environment, you would run:
 
 ```bash
-conda env create -f ~./my-old-environment.yml
+conda env create -f ~/my-old-environment.yml
 ```
 
 
