@@ -20,14 +20,11 @@
 **Step 2) Setting Up Your dojo-env Environment**
 
 - Step 2.1) Clone the dojo-env-setup repository
-
 - Step 2.2) Open the repo's folder in your Terminal
-
 - Step 2.3) Create the dojo-env environment from file
     - Step 2.3.1) Run the correct "conda env create" command for your OS
     - Step 2.3.2) Wait for the dojo-env to be created
     - Step 2.3.3 Confirm your environment was installed.
-
 - Step 2.4) Activate dojo-env and set it as your default environment.
     - Step 2.4.1) Activate dojo-env
     - Step 2.4.2) (if needed): Troubleshoot Conda Activate Errors
@@ -35,26 +32,30 @@
     - Step 2.4.4) Add automatic activation of dojo-env 
     - Step 2.4.5) Confirm dojo-env is the default & "jnb" alias works.
     - Step 2.4.6) Shut Down Jupyter (properly)
-
 - Step 2.5) Test the environment.
 
     - Step 2.5.1) Open the environment tester notebook 
     - Step 2.5.2) Change the notebook's kernel to dojo-env
     - Step 2.5.3) Run the environment test notebook from start to finish.
-
 - To Get Help Troubleshooting Your Environment
 
-- Step 2.6) Jupyter Notebook Preferences
+**Step 3) Jupyter Notebook Preferences**
 
-    ....
-
-**Step 4) Install VS Code**
+**Step 4) Install a Text Editor - VS Code**
 
 ___
 
 
 
 # **Step 1) Download and install required applications**
+
+### Table of Contents - Step 1:
+
+- Step 1.1) Install Tool #1: Windows Terminal with GitBash
+- Step 1.2) Install Tool #2: GitHub Desktop
+- Step 1.3) Install a Python Distribution - Anaconda
+
+
 
 Before we install our python environment, we need to take care of a couple of requirements. 
 
@@ -64,7 +65,7 @@ Before we install our python environment, we need to take care of a couple of re
 
 - You should not use the  windows command prompt because the commands for working with your terminal will not match the curriculum and other cloud-based platforms (like Amazon Web Services).
 
-  - Note: for a list of the equivalent commands for Windows command prompt see [this cheat sheet](https://www.geeksforgeeks.org/linux-vs-windows-commands/).
+    - Note: for a list of the equivalent commands for Windows command prompt see [this cheat sheet](https://www.geeksforgeeks.org/linux-vs-windows-commands/).
 
 ### Step 1.1.0) (Windows 10 Only) Install Windows Terminal via the Microsoft Store
 
@@ -133,15 +134,15 @@ NOTE: Windows 11 comes with Windows Terminal pre-installed. If you are running W
 ![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1670712094__Screenshot_20221210_050148.png)
 
 - One non-default option that you may want to select is to "Enable symbolic links" in the screenshot below.
-  - This option will be helpful if you ever need to access data stored on a network drive. This will *not* be required for the program.
+    - This option will be helpful if you ever need to access data stored on a network drive. This will *not* be required for the program.
 
 ![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1670712081__Screenshot_20221210_050152.png)
 
 ![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1670712246__Screenshot_20221210_050157.png)
 
 - TROUBLESHOOTING NOTE:
-  - If you see the following "Replacing in-use files" screen (screenshot below) about closing open instances of gitbash: close all other windows of GitBash.
-  - If it still shows items that are running that you cannot find, the easiest solution is to cancel the installation, restart your computer, and then open the installer again before opening any gitbash windows.
+    - If you see the following "Replacing in-use files" screen (screenshot below) about closing open instances of gitbash: close all other windows of GitBash.
+    - If it still shows items that are running that you cannot find, the easiest solution is to cancel the installation, restart your computer, and then open the installer again before opening any gitbash windows.
 
 ![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1670712402__Screenshot_20221210_050206.png)
 
@@ -155,7 +156,7 @@ NOTE: Windows 11 comes with Windows Terminal pre-installed. If you are running W
 ![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1670713406__Screenshot_20221210_060318.png)
 
 - Click on the drop down arrow to reveal the menu.
-  - Select Settings
+    - Select Settings
 
 ![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1670713567__Screenshot_20221210_060553.png)
 
@@ -263,6 +264,7 @@ You may need to take another step to get anaconda and Terminal working together.
     ````
 
 - **Open a new Windows Terminal window and attempt to run the `conda` command again.** 
+
     - if it displays a list of commands, great! 
     - If it says something like "conda not found" then move on to Option B below.
 
@@ -272,38 +274,38 @@ Note: the instructions below are adapted from this [Blog Post](https://fmorenovr
 
 - Once you have installed anaconda**, use File Explorer to Open Your User folder.** (Windows key +E is shortcut for File Explorer)
 
-  - **Your User folder is the folder that contains your Desktop, Downloads, My Documents, and other user-specific files.**
-    - Example: `Users/your_name/`
-  - **If you're having trouble finding your user folder:**
-    - A) Go to This PC in File Explorer, and then double click on your C drive.
-      - Then double click the Users folder and then click on the folder that corresponds to your windows username.
-    - or B) Alternatively, you can run the command `whoami` which should display the name of your user folder. 
+    - **Your User folder is the folder that contains your Desktop, Downloads, My Documents, and other user-specific files.**
+        - Example: `Users/your_name/`
+    - **If you're having trouble finding your user folder:**
+        - A) Go to This PC in File Explorer, and then double click on your C drive.
+            - Then double click the Users folder and then click on the folder that corresponds to your windows username.
+        - or B) Alternatively, you can run the command `whoami` which should display the name of your user folder. 
 
-  
+    
 
 - **Inside your user folder, you should see a folder named "`anaconda3`"** (note: not the hidden folder called `.anaconda` that starts with a `.`). Double-click the folder to open it.
 
-  - You should **see a folder named `etc` inside the `anaconda3` folder**. **Open it.**
-  - You should **see a folder called `profile.d` folder** inside the `etc`. **Open it.**
-  
-  - You should **see a `conda.sh` file in this folder** (Note: depending on your settings in File Explorer, it may not show the file extension, .sh,  and may just show "conda". This is the correct file!
-  - **Right-click somewhere in the "profile.d" folder and select "Open in Terminal" or "Git Bash Here"**
-    - Note for Windows 11 Users: "GitBash here" is going to appear in the "Show more options" sub-menu when you right-click
-      ![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1659739323__windows_11_right_click1.png). ![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1659739359__windows_11_right_click2.png)
+    - You should **see a folder named `etc` inside the `anaconda3` folder**. **Open it.**
+    - You should **see a folder called `profile.d` folder** inside the `etc`. **Open it.**
+
+    - You should **see a `conda.sh` file in this folder** (Note: depending on your settings in File Explorer, it may not show the file extension, .sh,  and may just show "conda". This is the correct file!
+    - **Right-click somewhere in the "profile.d" folder and select "Open in Terminal" or "Git Bash Here"**
+        - Note for Windows 11 Users: "GitBash here" is going to appear in the "Show more options" sub-menu when you right-click
+            ![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1659739323__windows_11_right_click1.png). ![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1659739359__windows_11_right_click2.png)
 
 
 
 - **From the GitBash window that opens, enter the command**
 
-  ```
-  pwd
-  ```
+    ```
+    pwd
+    ```
 
 - **Press enter and examine the file path that's displayed.**
 
     - If the file path displayed ends with `profile.d` then you are in the right folder!
     - If not, restart the "Adding Conda to GitBash" instructions again and make sure you can find your profile.d folder.
-      - Reach out to your instructor or a TA if you are still having issues.
+        - Reach out to your instructor or a TA if you are still having issues.
 
 - **Next, Copy and paste the following command into your Terminal and hit enter:**
 
@@ -311,48 +313,46 @@ Note: the instructions below are adapted from this [Blog Post](https://fmorenovr
 
 
 ```bash
-
 echo ". '${PWD}'/conda.sh" >> ~/.bashrc
 
 ```
 
 - Open a new GitBash window and enter `conda` again.
-  - You should no longer get the "bash: conda: command not found" error message!
-    - Reach out to your instructor or a TA if you are still having issues.
+    - You should no longer get the "bash: conda: command not found" error message!
+        - Reach out to your instructor or a TA if you are still having issues.
 
 > You are all set to move on to the next lesson "2. Setting Up Your dojo-env Environment"
 
 
 
+___
+
 
 
 # **Step 2) Setting Up the dojo-env Environment**
+
+### Table of Contents - Step 2
+
+- Step 2  Overview
+- Step 2.1: Clone the dojo-env-setup repository
+- Step 2.2: Open the repo in your Terminal
+- Step 2.3: Create the dojo-env environment
+- Step 2.4: Set `dojo-env` as the default environment.
+- Step 2.5: Testing the Environment
 
 ## Step 2 Overview:
 
 - In Step 1, we installed the foundational tools needed for our local python installation. 
 
-  - While we did install a Python distribution with a basic copy of Python (Anaconda or miniforge), we have not installed all of the packages and tools that we need as data scientists.
-
+    - While we did install a Python distribution with a basic copy of Python (Anaconda or miniforge), we have not installed all of the packages and tools that we need as data scientists.
 - In Step 2, you will be creating a custom python environment called "dojo-env". 
 
-  - An "environment" is a bundle of specific python packages that are used together. Importantly, an environment specifies specific version #'s of the packages to ensure that all of the versions installed are mutually compatible.
-  - You can install many environments on your computer and switch between them as needed for different projects.
+    - An "environment" is a bundle of specific python packages that are used together. Importantly, an environment specifies specific version #'s of the packages to ensure that all of the versions installed are mutually compatible.
+    - You can install many environments on your computer and switch between them as needed for different projects.
 
-  - We have designed the dojo-env to include everything you'd need for our program, so you may not have a reason to add additional environments. 
-
+    - We have designed the dojo-env to include everything you'd need for our program, so you may not have a reason to add additional environments. 
 - The environment files (and a backup of these instructions) are in the [dojo-env-setup repository](https://github.com/coding-dojo-data-science/dojo-env-setup)
-  - The Detailed Instructions below will guide you through how to clone and use the environment setup repository.
-
-**Brief Summary of the Following Steps:**
-
-- Step 2.1: Clone the dojo-env-setup repository
-- Step 2.2: Open the repo in your Terminal
-- Step 2.3: Create the dojo-env environment
-  
-- Step 2.4: Set `dojo-env` as the default environment.
-- Step 2.5: (if needed) Troubleshooting Conda Activate
-- Step 2.6
+    - The Detailed Instructions below will guide you through how to clone and use the environment setup repository.
 
 ## Step 2.1) Clone the dojo-env-setup repository
 
@@ -371,6 +371,7 @@ echo ". '${PWD}'/conda.sh" >> ~/.bashrc
 
 
 - **Troubleshooting Note: if you are brought to the Download GitHub Desktop web page instead:**
+
     - It means you were not logged into the same account on GitHub.com and GitHub Desktop when you clicked Open in GitHub Desktop. 
         - Make sure you see your user profile pic in the top right of GitHub.com 
         - and check your Account in GitHub Desktop's Preferences/Options menu.
@@ -408,25 +409,26 @@ Once you have cloned the repository, **you must open a Terminal Window in the sa
 
 - **In GitHub Desktop: make sure the left sidebar says "dojo-env-setup**" in the top-left corner under Current Repository.
 - **Click on the Repository menu and select "`Open in terminal`" or "`Open in gitbash`"**
-  - For Windows Users, the menu will be at the top of GitHub Desktop's window.
+    - For Windows Users, the menu will be at the top of GitHub Desktop's window.
 - **Alternatively, you can use the keyboard shortcut:** 
-  - `**Control**` +  **`**   (the key above tab that also has the tilde symbol ~)
+    - **Control + `**   (the key above tab that also has the tilde symbol ~)
 
 ### Step 2.2.2) Confirm you are in the correct folder.
 
 - **Note: Terminal/GitBash does not support the Copy and Paste Keyboard Shortcuts (Control+C) /(Control+V).**  
+
     -  We recommend typing out the shorter commands for experience, but there will be several long commands that we will encourage top copy and paste for accuracy.
-    - **You can paste in Windows Terminal by simply right-clicking** anywhere within the activate Terminal window.
+    -  **You can paste in Windows Terminal by simply right-clicking** anywhere within the activate Terminal window.
 
 - First, in the terminal window that appears, **type the "pwd" command** (which stands for print working directory) and press Enter.
 
-  ```
-  pwd
-  ```
+    ```
+    pwd
+    ```
 
-  - **It will display the folder name of the folder your terminal is currently located.** 
-    - The **folder path should end in "dojo-env-setup/"**
-    - If you used the default GitHub folder when you cloned dojo-env, the full filepath would be something similar to "/Users/yourname/Documents/GitHub/dojo-env-setup/"
+    - **It will display the folder name of the folder your terminal is currently located.** 
+        - The **folder path should end in "dojo-env-setup/"**
+        - If you used the default GitHub folder when you cloned dojo-env, the full filepath would be something similar to "/Users/yourname/Documents/GitHub/dojo-env-setup/"
 
 - **Second, run the command to list all of the files contained in the current fol**de ( the command "ls -a" will display a detailed list of all files in the repo.
 
@@ -451,7 +453,7 @@ If you followed the instructions in step 1 and used the default options when ins
 
 - In GitHub Desktop click the Repository menu again and select "Show in File Explorer".
 - Once file explorer opens,  right-click anywhere inside the folder  (right-click on empty space, not on a file) and select GitBash here.
-  - A GitBash window should open in the correct folder.
+    - A GitBash window should open in the correct folder.
 
 - Type pwd to confirm that you are indeed in the dojo-env-setup folder.
 
@@ -465,24 +467,25 @@ If you do not have the option to "GitBash here", you can manually navigate there
 
 - Important Note: You must know the full file path for the repo for the next step. We will refer to as <repo_filepath> in the instructions below.
 
-  -  if you used the suggested default folder 
+    - if you used the suggested default folder 
 
-    when cloning the repo, your repo_filepath should be: 
+        when cloning the repo, your repo_filepath should be: 
 
-    - " /Users/<your name>/Documents/GitHub/dojo-env-setup" 
+        - " /Users/<your name>/Documents/GitHub/dojo-env-setup" 
 
-      - But instead of <your name> it will be your actual user name for your computer
+            - But instead of <your name> it will be your actual user name for your computer
 
-      - If you are not sure what your username is, run the "whoami" command in your GitBash to see your user name.
+            - If you are not sure what your username is, run the "whoami" command in your GitBash to see your user name.
 
-  - If you did NOT use the suggested default folder, 
+    - If you did NOT use the suggested default folder, 
 
-    - Your repo_filepath will be the path displayed in the window that appeared when you cloned the repo.
-      - You should have taken note of the file path you selected, as indicated in the screenshot.
+        - Your repo_filepath will be the path displayed in the window that appeared when you cloned the repo.
+            - You should have taken note of the file path you selected, as indicated in the screenshot.
 
 - Once you know what your repo_filepath is navigate to that folder using the change directory command (cd)
-  - "cd <repo_filepath>".
-  - See the examples below:
+
+    - "cd <repo_filepath>".
+    - See the examples below:
 
 ```
 ## Examples are assuming your username is "codingdojo"
@@ -496,7 +499,32 @@ cd /Users/codingdojo/Documents/Boot Camp Stuff/
 
 Now that your terminal is open in the repo's folder, you're ready to create your dojo-env environment.
 
-###  Step 2.3.1) Run the "conda env create" command for your OS
+📌 BOOKMARK
+
+### Step 2.3.0) *(Optional, but Recommended)* Speed Up Your Environment Creation By Switching to libmamba
+
+The following step, "2.3.1) Run the conda env create command", can take anywhere from 10 - 90 minutes, depending on your computer and internet connection.  
+
+You can speed up the process by changing the default tool that checks that the packages in the new environment are compatible, called the solver. 
+
+- Make sure conda is up to date (it should be if this is the first time you've installed Anaconda)
+
+    ```bash
+    conda update -n base conda
+    ```
+
+- Run the following 2 commands to install libmamba and to make it the default solver for conda:
+
+    ```bash
+    conda install -n base conda-libmamba-solver
+    conda config --set solver libmamba
+    ```
+
+    - **Note: if you run into issues with this optional step, you can skip it and move on** to step 2.3.1) Run the conda env create command 
+
+- See [A Faster Solver for Conda: Libmamba](https://www.anaconda.com/blog/a-faster-conda-for-a-growing-community) if you'd like to learn more.
+
+###  Step 2.3.1) Run the "conda env create" command
 
 - Run the  conda env create command below in your Terminal
 
@@ -508,9 +536,9 @@ conda env create -f environment-ds_windows.yml
 
 - **You will see several progress bars during the process as Anaconda checks the list of packages requested for compatibility** with your machine. 
     - It will then download and install the final versions that it determined would work best for your machine.
-    - **Note that it can take anywhere from 15-60 minutes** to finish creating the environment, depending on your computer and internet connection.
+    - **Note that it can take anywhere from 10-90 minutes** to finish creating the environment, depending on your computer and internet connection, and if you switched to the faster solver in optional step 2.3.0.
 
--  **Once it has been completed you should see a message that says:**
+- **Once it has been completed you should see a message that says:**
 
 ```bash
 # To activate this environment use:
@@ -523,37 +551,25 @@ conda env create -f environment-ds_windows.yml
 
 - Enter the following command to display the list of your locally installed environments.
 
-  ```
-  conda env list
-  ```
+    ```
+    conda env list
+    ```
 
 - **You should see 2 environments, including dojo-env:**
 
-  - `base`
-  - `dojo-env`
+    - `base`
+    - `dojo-env`
 
-  - **If you see dojo-env in the list:**
+    - **If you see dojo-env in the list:**
 
-    - **Success! dojo-env was successfully created! But we aren't using it yet just yet.** 
-    - We must first "activate" an environment to determine which version of python & packages are currently being used.
+        - **Success! dojo-env was successfully created! But we aren't using it yet just yet.** 
+        - We must first "activate" an environment to determine which version of Python & packages are currently being used.
 
-  - **If you do not see dojo-env**:
+    - **If you do not see dojo-env**:
 
-      - Something went wrong during your installation. **You should reach out for assistance on the discord channel.**
+        - Something went wrong during your installation. **You should reach out for assistance on the discord channel.**
 
-          
-
-
-
-## Step 2.4) Set `dojo-env` as the default environment
-
-- Step 2.4.1) Activate dojo-env & add dojo-env kernel to Jupyter
-- Step 2.4.2) (if needed) Troubleshoot Conda Activate Errors:
-    - Conda Activate Solution #1
-    - Conda Activate Solution #2
-- Step 2.4.3) Confirm that your User folder is your home folder ("~")
-
-### Step 2.4.1) Activate dojo-env & add dojo-env kernel to Jupyter
+### Step 2.3.4) Activate dojo-env & add dojo-env kernel in Jupyter
 
 - **Run the following 2 commands in your Terminal:**
 
@@ -565,7 +581,7 @@ python -m ipykernel install --user --name dojo-env --display-name "Python (dojo-
 - The first line in the code block above will switch to dojo-env environment.
 - The second line will install dojo-env as an option in Jupyter Notebook.
 
-### Step 2.4.2) (if needed)**Troubleshoot Conda Activate Errors:**
+### Step 2.3.5) *(Only if needed)*Troubleshoot Conda Activate Errors:
 
 -  **Problem**: when you attempt to run "conda activate dojo-env" you see a message that says something like "your terminal is not set up for conda activate". See the example below: 
 
@@ -651,7 +667,18 @@ source activate dojo-env
 python -m ipykernel install --user --name dojo-env --display-name "Python (dojo-env)"
 ```
 
+## Step 2.4) Set `dojo-env` as the default environment
 
+The next steps will ensure that the dojo-env is automatically activated for you. 
+
+### Step 2.4.1) Make sure you've activated dojo-env in the previous step. 
+
+- Make sure that you've followed the previous step and activated dojo-env.
+- You should see (dojo-env) in parentheses either above or next to your Terminal prompt.
+
+### Step 2.4.2) (if needed) Troubleshoot Conda Activate Errors:
+
+If you receive an error message when activating your dojo-env, please see "Step 2.3.5) *(Only if needed)* Troubleshoot Conda Activate Errors."
 
 ### Step 2.4.3) Confirm that your User folder is your home folder ("~")
 
@@ -666,17 +693,16 @@ We will use the "~" character in the following commands, so we must ensure that 
     ``` 
     cd ~
     ```
-    
+
 - **Run the following command to print the name of the folder:**
 
     ```
     pwd
     ```
-    
+
 - **If the folder it displays looks like: "/c/Users/YOUR_USERNAME"**:
 
     - Then you're all set to move on to the next step!
-      
 
 - **If the file path does *not* start with** "/c/Users/":
 
@@ -688,15 +714,12 @@ We will use the "~" character in the following commands, so we must ensure that 
         touch /c/Users/{your-username}/.bash_profile
         source /c/Users/{your-username}/.bash_profile
         ```
-    
+
         - Note: if you do not know your User folder's name, you can run the `whoami` command to see the name of your User folder.
-    
+
         <img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691619428__changesource.png">
-    
 
-## TO DO:
 
-- Mention pasting into Windows Terminal
 
 ### Step 2.4.4) Add automatic activation of dojo-env
 
@@ -705,7 +728,7 @@ We will use the "~" character in the following commands, so we must ensure that 
 
 - Run the following commands to automatically activate dojo-env and to add shortcuts for Jupyter:
     - Note: **it is very important that you do not add any spaces next to the "="** in the alias commands below:
-    - **Reminder: You can paste in Windows Terminal by simply right-clicking** anywhere within the activate Terminal window.
+    - **Tip: You can paste in Windows Terminal by simply right-clicking** anywhere within the activate Terminal window.
 
 
 ```bash
@@ -724,8 +747,8 @@ echo 'alias lab="jupyter lab"' >> ~/.bash_profile
 ##### Confirm `dojo-env` is your default env
 
 - To confirm that dojo-env is now your default environment:
-  - **Open a new terminal window.**
-  - **You should see `(dojo-env)` appear next to, or above, your prompt.**
+    - **Open a new terminal window.**
+    - **You should see `(dojo-env)` appear next to, or above, your prompt.**
 
 ![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1647634446__confirm_dojo_env.png)
 
@@ -751,7 +774,7 @@ echo 'alias lab="jupyter lab"' >> ~/.bash_profile
 
 It is very important that you shut down Jupyter Notebook in the correct way. 
 
-- Closing the web browser tabs for Jupyter Notebook **doe**s not shut down the jupyter notebook! The notebook is still running in the jupyter server** that was launched in your Terminal window. 
+- Closing the web browser tabs for Jupyter Notebook **does not shut down the jupyter notebook!** The notebook is still running in the jupyter server that was launched in your Terminal window. 
 - **Do not force-close the Terminal window by closing it if it is running Jupyter!** If you simply X out of Terminal while Jupyter server was running, it can lead to issues with Windows Terminal, such as the "could not fork child process" error in the screenshot below:
 
 <img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691694396__forkchildprocess.png" width=500px>
@@ -767,8 +790,8 @@ It is very important that you shut down Jupyter Notebook in the correct way.
 
 - **Click on File > Shut Down**
 
-  <img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691692985__jupyterfilesshutdown.png">
-  
+    <img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691692985__jupyterfilesshutdown.png">
+
 - If a confirmation window appears, click on Shut Down:
 
 <img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691693251__jupytershutdownconfirm.png">
@@ -801,29 +824,29 @@ To test that your installation and packages are working correctly, You are going
 ### 2.5.1) Open the environment tester notebook with jupyter notebook
 
 - **Make sure Jupyter Notebook is not running in any Terminal windows.**
-  - Check any open terminals and make sure that they are not running the notebook server. 
-  - If you see a lot of text in your terminal window and the final line is not an empty command prompt, like in the screenshot below:
-  - <img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691620120__jupyterrunning.png">
+    - Check any open terminals and make sure that they are not running the notebook server. 
+    - If you see a lot of text in your terminal window and the final line is not an empty command prompt, like in the screenshot below:
+    - <img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691620120__jupyterrunning.png">
 
-- Next, you will close all of your previous Terminal/GitBash windows BUT before you do:
-  - if your terminal is still running jupyter notebook and you do not see the prompt waiting for a command:
-    - You must press "Control +C" to force-quit jupyter.
-    - Make sure to reply "y" if asked for confirmation.
-  - If the cursor appears waiting for a new command, you are all set.
+- **Next, you will close all of your previous Terminal/GitBash windows BUT before you do:**
+    - **if your terminal is still running jupyter notebook** and you do not see the prompt waiting for a command:
+        - You must press "Control +C" to force-quit jupyter.
+        - Make sure to reply "y" if asked for confirmation.
+    - If the cursor appears waiting for a new command, you are all set.
 
-- Now, return to GitHub desktop and click on the "Open in Terminal/GitBash" to open a terminal in the dojo-env-setup folder.
+- **Now, return to GitHub desktop and click on the "Open in Terminal/GitBash"** to open a terminal in the dojo-env-setup folder.
 
-- Type pwd to confirm it says dojo-env-setup.
-  - Note: if you do not see the button for Open in Terminal:
-      - Click on the menu for "Repository" at the very top of the window (if using Windows) or at the very top of your screen on your menu bar (if using a Mac).
+- **Type pwd to confirm it says dojo-env-setup.**
+    - Note: if you do not see the button for Open in Terminal:
+        - Click on the menu for "Repository" at the very top of the window (if using Windows) or at the very top of your screen on your menu bar (if using a Mac).
 
-      - You should see the word "Repository" next to the FIle, Edit, View menus.
-          - From the Repository menu: click on Open in Terminal/GitBash
-
-
+        - You should see the word "Repository" next to the FIle, Edit, View menus.
+            - From the Repository menu: click on Open in Terminal/GitBash
 
 
-- In the new window that opens, start jupyter notebook by entering the `jupyter notebook` command in your terminal (or the "jnb" shortcut!)
+
+
+- **In the new window that opens, start jupyter notebook** by entering either the full `jupyter notebook` command, or the `jnb` shortcut.
 
 A new tab should open in your web browser that shows the File view for jupyter notebook.
 
@@ -832,8 +855,8 @@ You should see all of the files that were in the dojo-env-folder.
 ![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691542923__jupyterfilesviewtabs.png)
 
 - There are 2 "EnvironmentTester" notebooks:
-  - "EnvironmentTester-mac.ipynb" for macs (both Intel and Apple Chip macs)
-  - "EnvironmentTester-windows.ipynb" for Windows.
+    - "EnvironmentTester-mac.ipynb" for macs (both Intel and Apple Chip macs)
+    - "EnvironmentTester-windows.ipynb" for Windows.
 
 - **Click on the "EnvironmentTester-windows.ipynb" notebook to open it.**
 
@@ -857,7 +880,7 @@ We want to run all of the cells in this notebook and confirm it can make it to t
 
     <img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691543640__jupyterkernelarrow.png">
 
--   Select Python(dojo-env) from the dropdown menu:
+- Select Python(dojo-env) from the dropdown menu:
 
     <img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691543640__jupyterdropdown.png">
 
@@ -869,84 +892,101 @@ We want to run all of the cells in this notebook and confirm it can make it to t
 
 - **Run the Entire Notebook:**
 
-  - **Select the "Kernel" Menu > "Restart and Run All Cells"**
+    - **Select the "Kernel" Menu > "Restart and Run All Cells"**
 
-      - You can also use the toolbar button, which resembles a fast-forward symbol >>.
+        - You can also use the toolbar button, which resembles a fast-forward symbol >>.
 
-      <img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691544402__jupyternotebooktoolbarrunall.jpg">
+        <img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691544402__jupyternotebooktoolbarrunall.jpg">
 
 - **Wait patiently.** 
 
-  The testing notebook is going to run through several modeling and EDA steps to confirm that the packages are working correctly.
+    The testing notebook is going to run through several modeling and EDA steps to confirm that the packages are working correctly.
 
-  - This could take anywhere from 2-20 minutes to run.
-  - You will see the web browser tab icon turn to an hourglass when the notebook is running and back to an orange notebook icon when it is done.
+    - This could take anywhere from 2-20 minutes to run.
+    - You will see the web browser tab icon turn to an hourglass when the notebook is running and back to an orange notebook icon when it is done.
 
 - **Scroll down to the bottom of the notebook and confirm the cells have run:**
 
-  - Check if the very last cell printed the success message.
+    - Check if the very last cell printed the success message.
 
 ![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1657130803__env_tester_final_msg.png)
 
 
 
 - If the entire notebook ran successfully
-  - Congrats! Your dojo-env is fully functional and you can move on to the next step/lesson!
+
+    - Congrats! Your dojo-env is fully functional and you can move on to the next step/lesson!
 
 - If your notebook did not run the entire notebook successfully:
-  - You need to contact your instructor or a TA for assistance.
-  - Before contacting them, please follow the instructions below to prepare the troubleshooting files to give to your instructor.
-  
+
+    - You need to contact your instructor or a TA for assistance.
+    - Before contacting them, please follow the instructions below to prepare the troubleshooting files to give to your instructor.
+
 - Shut down the notebook by clicking on the **File menu>Close and shut down the notebook.** 
-  
-  <img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691543984__closeandshutdownnotebook.png">
 
-### ✅TO DO: To Get Help Troubleshooting Your Environment.
+    <img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691543984__closeandshutdownnotebook.png">
 
-***TO DO: FIgure out the best formatted version of the following text (may be in the Ask for Help.md file)***
+## To Get Help Troubleshooting Your Environment. 
+
+#### Download Troubleshooting Files to Share 
 
 - There are 2 files that you should share with your instructor/TA
-  1. A copy of your Environment Tester notebook that error'd.
-  2. A copy of "FINAL_REPORT.txt" file that is in the Troubleshooting folder of the repo.
+    1. A copy of your Environment Tester notebook that error'd.
+    2. A copy of "FINAL_REPORT.txt" file that is in the Troubleshooting folder of the repo.
 
 1. To share your notebook with an instructor/TA for help:
 
-   - Click File > Save & Checkpoint.
+    - Click File > Save & Checkpoint.
 
-   - Click File > Download
+    - Click File > Download
 
-   - Your web browser should save a copy of the notebook to your normal "Downloads" folder.
+    - Your web browser should save a copy of the notebook to your normal "Downloads" folder.
 
-     
+      ​      
 
-     ![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691543895__downloadnotebook.png)
+        ![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691543895__downloadnotebook.png)
 
 2. To share a copy of your FINAL_REPORT.txt:
 
-   - In the first Files tab that opened when you started jupyter notebook you should see a folder called "Troubleshooting"
-   - Click on the Troubleshooting folder.
-   - Inside the folder you should have a file called "FINAL_REPORT.txt".
-   - Check the checkbox next to the file and click on the "Download" button that appears at the top of the list of files.
-   - Your web browser will also save this file to your Downloads folder.
+    - In the first Files tab that opened when you started jupyter notebook you should see a folder called "Troubleshooting"
+    - Click on the Troubleshooting folder.
+    - Inside the folder you should have a file called "FINAL_REPORT.txt".
+    - Check the checkbox next to the file and click on the "Download" button that appears at the top of the list of files.
+    - Your web browser will also save this file to your Downloads folder.
 
 ![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691544219__downloadfinalreport.png)
 
 
 
-- Send an email to your instructor 
-  - Attach the 2 files listed above. They are located in your Downloads folder.
-  - Add any additional details or info you think may be helpful for us to know.
-    - For example:
-      - "my computer is really old and I think that may be part of the problem."
-      - "I share this computer with someone else who also uses python"
-- An instructor or TA will get back to you within 1 business day with the next steps for you to try.
-  - You will most likely need to set up a Zoom call and share your screen for us to help.
+
+### ASK FOR HELP
+
+- **First, please check the "Troubleshooting" chapter on the learnig platform for a lesson that mentions your problem.** about the problem you are running into. (The Troubleshooting section is the 3rd chapter in this course - see the screenshot below)
+
+<img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1658334627__Troubleshooting-chapter.png" width=200px>
+
+
+​    
+
+- **Second, reach out on the \#[ds-python-installation Discord channel](https://discord.com/channels/738494436467539968/1099094868762042400) with the following info:**
+    - A) Which step are you on? (e.g. Step 2.3.3 Confirm the env was created)
+    - B) Which OS you are using (e.g. Windows 10, Windows 11, Mac with an mchip, Mac with an Intel processor, etc.)
+    - C) Let us know if you've previously installed an older version of Python.
+    - D) Attach your copy of the  environment tester notebook and the FINAL_REPORT.txt files.
+    - E) Include any additional screenshots of the error/issue you are running into, whenever possible.
+    - F) Add any additional details or info you think may be helpful for us to know.
+        - For example:
+            - "My computer is really old and I think that may be part of the problem."
+            - "I share this computer with someone else who also uses python"
+            - "This is my work computer and I am not an administrator." etc
+
+- **Third, if you do not receive a response by the end of the day on Discord, please email your instructor with the same information.**
+    - An instructor or TA will get back to you within 1 business day with the next steps for you to try.
+    - You will most likely need to set up a Zoom call and share your screen for us to help.
 
 ___
 
-##  Step 2.6) Jupyter Notebook Preferences
-
-`ADMIN`: Should this become a separate #'d step?
+##  Step 3) Jupyter Notebook Preferences
 
 There are several convenient features in Jupyter Notebook that are not enabled by default. We strongly suggest updating your Jupyter Notebook settings according to the instructions below:
 
@@ -965,7 +1005,7 @@ ___
 
 
 
-- Activate the following options:
+- **Activate the following options:**
     - Autosave Documents
     - Auto Close Brackets
     - Enable Extension Manager
@@ -1092,73 +1132,50 @@ To ensure that jupyter shuts down the notebooks and kernels after closing them, 
 
 
 
-# ADMIN
+___
 
-## 🛑END OF OS-SPECIFIC INSTRUCTIONS
-
-# ✅TO DO
-
-- **Address cygwyine (cygdrive?)  (I *think* this was addressed by confirming ~ is your User folder)**
-- **Decide if Jupyter Notebook Preferenes should become a separate numbered step?** 
-
-
-
-## WIP BELOW:
-
-# Step 3: Install a Code Text Editor
+# Step 4: Install a Code Text Editor
 
 ## Visual Studio Code
 
-- The final tool to install is a text editor that is designed for programmers.
-
-  - There are several text editors available, but we will be using Visual Studio Code.
-
-- Visual Studio Code (A.K.A "VS Code") 
-
-  is a free editor that is highly customizable and supports many languages.
-
-  - It is maintained by Microsoft and has a robust community of extensions and add-ons.
-  - It is very popular and is used by many companies (e.g. Facebook/Meta)
-
-- How will we use VS Code?
-
-  - We could technically run all of our jupyter notebooks using VS Code, but this is not recommended at this point in your education. 
-
+- **The final tool to install is a text editor that is designed for programmers.**
+- There are several text editors available, but we will be using Visual Studio Code.
+- **Visual Studio Code (A.K.A "VS Code")  is a free editor that is highly customizable and supports many languages.**
+- It is maintained by Microsoft and has a robust community of extensions and add-ons. It is very popular and is used by many companies (e.g. Facebook/Meta).
+- **How will we use VS Code?**
+- We could technically run all of our jupyter notebooks using VS Code, but this is not recommended at this point in your education. 
+    
     - While VS Code is convenient for quickly opening and working with a repository or viewing a notebook, it has some limitations in how notebooks look and some quirks to the interface for notebooks.
+    
+- Instead, we will focus on using jupyter notebook or jupyter lab in the lessons and live class.
+    
+    - You are welcome to try VS Code for notebooks, but it is recommended you become comfortable with jupyter first.
+- **We will use VS Code for editing simple code files or hidden files.**
+    - We can open and edit the settings file for your terminal (e.g.: "`~/.bash_profile"`.or "~/.zshrc"
+    
+    - We will use it to create and store credentials for APIs (Stack 4)
+    - We can use VS Code to edit your projects' README files while previewing them in real time!
+    - Finally, while beyond the scope of the standard curriculum, we can also use VS Code to store functions in external files that we can use just like pandas, matplotlib,
 
-    - Instead, we will focus on using
-
-       jupyter notebook or jupyter lab in the lessons and live class.
-
-      - You are welcome to try VS Code for notebooks, but it is recommended you become comfortable with jupyter first.
-
-- We will use VS Code for editing simple code files or hidden files.
-
-  - We can open and edit the settings file for your terminal (e.g.: "`~/.bash_profile"`.or "~/.zshrc"
-
-  - We will use it to create and store credentials for APIs (Stack 4)
-  - We can use VS Code to edit your projects' README files while previewing them in real time!
-  - Finally, while beyond the scope of the standard curriculum, we can also use VS Code to store functions in external files that we can use just like pandas, matplotlib,
-
-## Install Visual Studio Code
+## Step 4.1) Install Visual Studio Code
 
 - Go to https://code.visualstudio.com/
 
-  - It should auto-recognize your OS and have a blue Download button with a version for your OS.
-  - Click Download to download the installer.
+    - It should auto-recognize your OS and have a blue Download button with a version for your OS.
+    - Click Download to download the installer.
 
-  - Click on the installer to run it.
-  - Select the default options.
+    - Click on the installer to run it.
+    - Select the default options.
 
 - Once Visual Studio Code installation is completed, open it!
 
-  - Check your Start Menu to find Visual Studio Code (VS Code)
+    - Check your Start Menu to find Visual Studio Code (VS Code)
 
-    
+        
 
 ![png](https://raw.githubusercontent.com/coding-dojo-data-science/dojo-env-setup/main/images/vs_code_get_started.png)
 
-## Install Python Extensions
+## Step 4.2) Install Python Extensions
 
 - On the left sidebar, there are several icons for different menus.
 - Click on the Extensions sidebar icon (5th down, looks like 4 squares).
@@ -1166,18 +1183,18 @@ To ensure that jupyter shuts down the notebooks and kernels after closing them, 
 ![png](https://raw.githubusercontent.com/coding-dojo-data-science/dojo-env-setup/main/images/1_extension_sidebar.png)
 
 - On the Extension sidebar, there will be several sections (INSTALLED/POPULAR/RECOMMENDED).
-  - Right now you should have nothing under the INSTALLED menu.
-  - You should see "Python" listed under POPULAR.
-    - If not, you can enter "Python" in the search box at the top of the sidebar
-    - OR you can click on [this link to the extension ](https://marketplace.visualstudio.com/items?itemName=ms-python.python)on the extension marketplace website.
-  - Click on the "Install" button for the Python extension.
-    ![png](https://raw.githubusercontent.com/coding-dojo-data-science/dojo-env-setup/main/images/2_extension_installation.png)
+    - Right now you should have nothing under the INSTALLED menu.
+    - You should see "Python" listed under POPULAR.
+        - If not, you can enter "Python" in the search box at the top of the sidebar
+        - OR you can click on [this link to the extension ](https://marketplace.visualstudio.com/items?itemName=ms-python.python)on the extension marketplace website.
+    - Click on the "Install" button for the Python extension.
+        ![png](https://raw.githubusercontent.com/coding-dojo-data-science/dojo-env-setup/main/images/2_extension_installation.png)
 - Note: the Python extension will also install several required extensions. When installation is complete, you should see the following under the "INSTALLED" section:
-  - Python, Pylance, Jupyter Notebook renderer, Jupyter, and Jupyter Keymap
+    - Python, Pylance, Jupyter Notebook renderer, Jupyter, and Jupyter Keymap
 
 ![png](https://raw.githubusercontent.com/coding-dojo-data-science/dojo-env-setup/main/images/3_installed_extensions.png)
 
-## Setting VS Code to use your `dojo-env` as the default Python installation
+## Step 4.3) Setting VS Code to use your `dojo-env` as the default Python installation
 
 - We must teach the Python extension where to find our `dojo-env`'s version of Python.
 
@@ -1185,55 +1202,54 @@ To ensure that jupyter shuts down the notebooks and kernels after closing them, 
 
 - You should see a new "Settings" pane open in the main window.
 
-  - Take note of the "Default Interpreter Path".
-    - It is currently set to just "python".
-      ![png](https://raw.githubusercontent.com/coding-dojo-data-science/dojo-env-setup/main/images/5_settings_default_interp.png)
+    - Take note of the "Default Interpreter Path".
+        - It is currently set to just "python".
+            ![png](https://raw.githubusercontent.com/coding-dojo-data-science/dojo-env-setup/main/images/5_settings_default_interp.png)
 
 - We need to change this setting to match the exact filepath for our `dojo-env`'s python.
 
 - In your terminal or GitBash:
 
-  - Make sure your dojo-env is activated
+    - Make sure your dojo-env is activated
 
-  - Run the command: 
+    - Run the command: 
 
-    ```
-    which python
-    ```
+        ```
+        which python
+        ```
 
-    - It will print out a filepath to your dojo-env.
-      ![png](https://raw.githubusercontent.com/coding-dojo-data-science/dojo-env-setup/main/images/6_which_python.png)
+        - It will print out a filepath to your dojo-env.
+            ![png](https://raw.githubusercontent.com/coding-dojo-data-science/dojo-env-setup/main/images/6_which_python.png)
 
-  - Copy and paste that exact file path into the "Default Interpreter Path" field in the Python extension settings.
+    - Copy and paste that exact file path into the "Default Interpreter Path" field in the Python extension settings.
 
 ![png](https://raw.githubusercontent.com/coding-dojo-data-science/dojo-env-setup/main/images/7_replace_default_interp.png)
 
-### Test the `code` command
+### Step 4.4) Test the `code` command
 
 - Open a new terminal or GitBash window.
 - Run the command `code` to verify that VS Code opens.
 - Note: You can add a specific folder or filename to open, after the word code.
-  - To open the current folder `code .`
+    - To open the current folder `code .`
 - If it opens, great!
-  - If not, make sure you've opened a new terminal window AFTER installing the code command.
+    - If not, make sure you've opened a new terminal window AFTER installing the code command.
 
 > Congratulations! You are all set up with your local python environment! 
-> You may want to read the Final Notes + Appendix lesson so that you are aware of the contents, in case you need them.
 
 # Final Notes
 
 Congrats! You've got a fully functional professional data science environment on your local machine!
 
-- Please see the next chapter "Working Locally" for:
-  -  a walkthrough of how to use your new local installation and tools together
-  -  a summary of terminal commands
-  - jupyter notebook chgeat sheets
-  - how to install additional packages
-  -  & more!
+- **Please see the next chapter "Working Locally" for:**
+    -  a walkthrough of how to use your new local installation and tools together
+    -  a summary of terminal commands
+    -  jupyter notebook cheat sheets
+    -  how to install additional packages
+    -  & more!
 
-- Please see the "Troubleshooting" chapter for commonly encountered errors and any known solutions. including:
-  - Reinstalling your dojo-env
-  - "code" command not working
-  - GitBash "Could not fork child process" error
+- **Please see the "Troubleshooting" chapter for commonly encountered errors and any known solutions. including:**
+    - Reinstalling your dojo-env
+    - "code" command not working
+    - GitBash "Could not fork child process" error
 
 ## Enjoy your new dojo-env! 
