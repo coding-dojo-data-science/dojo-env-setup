@@ -591,7 +591,7 @@ echo 'alias lab="jupyter lab"' >> ~/.zshrc
 
     - You should see a lot of messages printed in the terminal and then your web browser should open  jupyter automatically .
 
-    <img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691620120__jupyterrunning.png">
+    <img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1692723419__jupyterserverrunningmac.png">
 
     - **If jupyter notebook launches, you're all set!**
 
@@ -627,7 +627,7 @@ It is very important that you shut down Jupyter Notebook in the correct way.
 
 - The terminal running Jupyter should stop running the server and return to an empty prompt, waiting for input.
 
-<img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691620127__jupytershutdown.png">
+<img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1692723524__jupyterservershutdownmac.png">
 
 #### Option B) Shut down jupyter from the terminal
 
@@ -635,10 +635,11 @@ It is very important that you shut down Jupyter Notebook in the correct way.
 - Press "Control+C" to shut down the server. 
     - The jupyter server should shut down and the prompt should reappear, ready for new commands:
 - If you're asked to confirm, respond "y" and press enter.
+    <img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1692723637__jupytercontrolcconfirm.png">
 
 - The terminal should stop running the server and return to an empty prompt, waiting for input.
 
-<img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691620127__jupytershutdown.png">
+<img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1692723645__jupytercontrolcshutdown.png">
 
 
 
@@ -661,7 +662,7 @@ To test that your installation and packages are working correctly, You are going
 - **Make sure Jupyter Notebook is not running in any Terminal windows.**
     - Check any open terminals and make sure that they are not running the notebook server. 
     - If you see a lot of text in your terminal window and the final line is not an empty command prompt, like in the screenshot below:
-    - <img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691620120__jupyterrunning.png">
+    - <img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1692723419__jupyterserverrunningmac.png">
 
 - **Next, you will close all of your previous Terminal windows.**
 
@@ -682,11 +683,11 @@ You should see all of the files that were in the dojo-env-folder.
     - "EnvironmentTester-mac.ipynb" for macs (both Intel and Apple Chip macs)
     - "EnvironmentTester-windows.ipynb" for Windows.
 
-- **Click on the "EnvironmentTester-mac" notebook to open it.** (Note: the screenshot is showing the Windows notebook, but you want to the Mac notebook.)
+- **Click on the "EnvironmentTester-mac" notebook to open it.**
 
 Once the notebook interface has loaded, you should see a toolbar with several menu choices.
 
-![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691543038__jupyternotebookview.png)
+![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1692723795__envtesternotebookmac.png)
 
 
 
@@ -758,7 +759,7 @@ We want to run all of the cells in this notebook and confirm it can make it to t
 
 1. To share your notebook with an instructor/TA for help:
 
-    - Click File > Save & Checkpoint.
+    - Click File > Save Notebook
 
     - Click File > Download
 

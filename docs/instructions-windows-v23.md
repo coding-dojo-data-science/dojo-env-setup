@@ -936,7 +936,7 @@ We want to run all of the cells in this notebook and confirm it can make it to t
 
 1. To share your notebook with an instructor/TA for help:
 
-    - Click File > Save & Checkpoint.
+    - Click File > Save Notebook
 
     - Click File > Download
 
@@ -1144,11 +1144,11 @@ ___
 - It is maintained by Microsoft and has a robust community of extensions and add-ons. It is very popular and is used by many companies (e.g. Facebook/Meta).
 - **How will we use VS Code?**
 - We could technically run all of our jupyter notebooks using VS Code, but this is not recommended at this point in your education. 
-    
+  
     - While VS Code is convenient for quickly opening and working with a repository or viewing a notebook, it has some limitations in how notebooks look and some quirks to the interface for notebooks.
     
 - Instead, we will focus on using jupyter notebook or jupyter lab in the lessons and live class.
-    
+  
     - You are welcome to try VS Code for notebooks, but it is recommended you become comfortable with jupyter first.
 - **We will use VS Code for editing simple code files or hidden files.**
     - We can open and edit the settings file for your terminal (e.g.: "`~/.bash_profile"`.or "~/.zshrc"

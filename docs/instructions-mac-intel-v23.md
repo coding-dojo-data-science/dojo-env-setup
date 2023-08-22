@@ -109,8 +109,6 @@ Note: steps for Tools # 1 and 2 are the same for Mac users with an Intel process
 
 
 
-### 
-
 > You are all set to move on to the next lesson "2. Setting Up Your dojo-env Environment"
 
 # **Step 2) Setting Up the dojo-env Environment**
@@ -183,79 +181,7 @@ Note: steps for Tools # 1 and 2 are the same for Mac users with an Intel process
 
 GitHub Desktop will download a copy of the repository into a new folder on your computer.Step 2.2: Open the Repo in Terminal/GitBash
 
-# 2. Setting Up Your dojo-env Environment
-
-### Table of Contents - Step 2
-
-- Step 2  Overview
-- Step 2.1: Clone the dojo-env-setup repository
-- Step 2.2: Open the repo in your Terminal
-- Step 2.3: Create the dojo-env environment
-- Step 2.4: Set `dojo-env` as the default environment.
-- Step 2.5: Testing the Environment
-
-## Step 2 Overview:
-
-- In Step 1, we installed the foundational tools needed for our local python installation. 
-    - While we did install a Python distribution with a basic copy of Python (Anaconda or miniforge), we have not installed all of the packages and tools that we need as data scientists.
-
-- In Step 2, you will be creating a custom python environment called "dojo-env". 
-
-    - An "environment" is a bundle of specific python packages that are used together. Importantly, an environment specifies specific version #'s of the packages to ensure that all of the versions installed are mutually compatible.
-
-    - You can install many environments on your computer and switch between them as needed for different projects.
-
-    -  We have designed the dojo-env to include everything you'd need for our program, so you may not have a reason to add additional environments. 
-
-
-- The environment files (and a backup of these instructions) are in the [dojo-env-setup repository](https://github.com/coding-dojo-data-science/dojo-env-setup)
-    - The Detailed Instructions below will guide you through how to clone and use the environment setup repository.
-
-
-## Step 2.1 Clone the dojo-env-setup repository
-
-- **Open the dojo-env-setup repository on GitHub.com:** https://github.com/coding-dojo-data-science/dojo-env-setup
-- **Before the next step, make sure that :**
-    - you are logged in to your account on GitHub.com 
-    - you are logged into the SAME account in the GitHub Desktop app
-
-- **Click on the green `Code` button and then click `Open in GitHub desktop.`**
-- GitHub desktop should open automatically and ask you what folder you would like to store your repository in.
-
-![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1656806399__clone-repo-menu.png)
-
-
-
-- **Troubleshooting Note: if you are brought to the Download GitHub Desktop web page instead:**
-
-    - It means you were not logged into the same account on GitHub.com and GitHub Desktop when you clicked Open in GitHub Desktop. 
-        - Make sure you see your user profile pic in the top right of GitHub.com 
-        - and check your Account in GitHub Desktop's Preferences/Options menu.
-        - and then try again.
-
-- **Decide where to save the repo:**
-
-    - By default, GitHub Desktop will use a new "GitHub" folder in your Documents folder.
-        - GitHub Desktop will create a NEW folder with the same name as the repository INSIDE of whichever folder you select.
-        - If you use the default options, then this will create a "dojo-env-setup/" folder inside of "Documents/GitHub/"
-    - **Note: it is strongly recommended that you use the Documents/GitHub folder for this repository.**
-        - But if you'd rather save the folder somewhere else: 
-            - Use the "Choose" button (the button name may be "Browse" on Windows).
-            - A window should pop up for you to find and click on the folder where you want to create the "dojo-env-setup" folder.
-            - Once you have selected a new folder using the Browse button, you should see the full folder path displayed.
-
-- **Once you've decided where you will clone the repository:**
-
-    - Remember the full file path of the folder you selected!  **(See the screenshot below. )**
-        ![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1656806548__clone-repo-menu%20annotated.png)
-
-        
-
-1. **Click Clone**
-
-GitHub Desktop will download a copy of the repository into a new folder on your computer.
-
-# Step 2.2: Open the Repo in Terminal
+## Step 2.2) Open the Repo in Terminal
 
 ## Step 2.2.1) Open the dojo-env repository in Terminal
 
@@ -455,7 +381,7 @@ echo 'alias lab="jupyter lab"' >> ~/.zshrc
 
     - You should see a lot of messages printed in the terminal and then your web browser should open  jupyter automatically .
 
-    <img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691620120__jupyterrunning.png">
+    <img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1692723419__jupyterserverrunningmac.png">
 
     - **If jupyter notebook launches, you're all set!**
 
@@ -487,7 +413,7 @@ It is very important that you shut down Jupyter Notebook in the correct way.
 
 - The terminal running Jupyter should stop running the server and return to an empty prompt, waiting for input.
 
-<img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691620127__jupytershutdown.png">
+<img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1692723524__jupyterservershutdownmac.png">
 
 #### Option B) Shut down jupyter from the terminal
 
@@ -495,10 +421,11 @@ It is very important that you shut down Jupyter Notebook in the correct way.
 - Press "Control+C" to shut down the server. 
     - The jupyter server should shut down and the prompt should reappear, ready for new commands:
 - If you're asked to confirm, respond "y" and press enter.
+<img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1692723637__jupytercontrolcconfirm.png">
 
 - The terminal should stop running the server and return to an empty prompt, waiting for input.
 
-<img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691620127__jupytershutdown.png">
+<img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1692723645__jupytercontrolcshutdown.png">
 
 
 
@@ -519,7 +446,7 @@ To test that your installation and packages are working correctly, You are going
 - **Make sure Jupyter Notebook is not running in any Terminal windows.**
     - Check any open terminals and make sure that they are not running the notebook server. 
     - If you see a lot of text in your terminal window and the final line is not an empty command prompt, like in the screenshot below:
-    - <img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691620120__jupyterrunning.png">
+    - <img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1692723419__jupyterserverrunningmac.png">
 
 - **Next, you will close all of your previous Terminal windows.**
 
@@ -540,11 +467,11 @@ You should see all of the files that were in the dojo-env-folder.
     - "EnvironmentTester-mac.ipynb" for macs (both Intel and Apple Chip macs)
     - "EnvironmentTester-windows.ipynb" for Windows.
 
-- **Click on the "EnvironmentTester-mac" notebook to open it.** (Note: the screenshot is showing the Windows notebook, but you want to the Mac notebook.)
+- **Click on the "EnvironmentTester-mac" notebook to open it.** 
 
 Once the notebook interface has loaded, you should see a toolbar with several menu choices.
 
-![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691543038__jupyternotebookview.png)
+![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1692723795__envtesternotebookmac.png)
 
 
 
@@ -616,7 +543,7 @@ We want to run all of the cells in this notebook and confirm it can make it to t
 
 1. To share your notebook with an instructor/TA for help:
 
-    - Click File > Save & Checkpoint.
+    - Click File > Save Notebook
 
     - Click File > Download
 
