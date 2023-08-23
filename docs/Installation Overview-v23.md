@@ -122,3 +122,12 @@ Our Linux installation instructions are still in beta. While they have successfu
 Now, navigate to the correct instructions page, based on your operating system, as explained above.
 
 ## Now, navigate to the correct instructions page, based on your operating system, as explained above.
+
+
+## Links
+> 08/23/23 Note: Switch to the `v2023` branch in the dojo-env-setup repo in GitHub Desktop for the correct env files. 
+- [Instructions for Mac (Intel Processors)](https://hackmd.io/@jirvingphd/dojo-env-mac-intel)
+- [Instructions for Mac (Apple Chips)](https://hackmd.io/@jirvingphd/dojo-env-mac-apple-chip)
+- [Instructions for Windows](https://hackmd.io/@jirvingphd/dojo-env-windows)
+- [Updating to a New dojo-env](https://hackmd.io/@jirvingphd/update-dojo-env)
+
