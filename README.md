@@ -93,9 +93,15 @@ ___
 - A window with your computer's specs will appear like the one in the screenshots below, depending on how which version of macOS you have installed. 
 
 <left>
-<img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691528956__aboutthismacintelannotated.png" width=300px></left>
+<img src="https://github.com/coding-dojo-data-science/dojo-env-setup/blob/main/images/lp/About_this_Mac_-Intel.png?raw=true" width=300px></left>
 <right>
-<img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691528713__aboutthismac2023annotated.png" width=200px></right>
+<img src="https://github.com/coding-dojo-data-science/dojo-env-setup/blob/v2023/images/about-this-mac-2023-annotated.png?raw=true" width=200px></right>
+
+
+<!-- <img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691528956__aboutthismacintelannotated.png" width=300px></left> -->
+
+
+<!-- <img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691528713__aboutthismac2023annotated.png" width=200px></right> -->
 
 
 - **If it has a "Processor" line that says "Intel"** you should follow the Instructions: Mac (Intel Processor).
