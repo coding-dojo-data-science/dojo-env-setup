@@ -1,6 +1,14 @@
 # Python Installation for Data Science - Overview
+<center>
+<img src="https://github.com/coding-dojo-data-science/dojo-env-setup/blob/main/images/Data%20Science%20Thumbnail.png?raw=true" width=500px></center>
 
-So far in this program, you have worked in Google Colab, which provides a cloud-based coding environment. We will transition to using a Python environment stored on your local machine. You will work in Jupyter Notebook, which is very common in the data industry. In addition, these instructions will include the installation of Github Desktop and Visual Studio Code (VS Code).
+
+
+So far in this program, you have worked in Google Colab, which provides a cloud-based coding environment. 
+- We will transition to using a Python environment stored on your local machine. 
+    - Jupyter Notebook will replace Google Colab. 
+    - GitHub Desktop will sync your work.
+
 
 ___
 
