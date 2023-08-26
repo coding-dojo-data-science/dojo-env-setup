@@ -29,10 +29,9 @@ By the end of this installation, you will:
 
 **2) Install a Python distribution:**
 
-- The foundation/infrastructure for installing our custom Python environment.
-    - Windows and Intel-Macs will install Anaconda. 
-
-    - Apple Chip Macs will installing a lightweight alternative called miniforge. 
+The foundation/infrastructure for installing our custom Python environment.
+- Windows and Intel-Macs will install Anaconda. 
+- Apple Chip Macs will installing a lightweight alternative called miniforge. 
 
 **3) Install GitHub Desktop**
 
@@ -40,10 +39,10 @@ By the end of this installation, you will:
 
 **4) Create our custom Python environment (dojo-env)**
 
-- An environment is a bundle of specific versions of python packages that are mutually compatible. Google Colab had a default environment that you used.
-- We will install our custom Python environment, located in the [dojo-env-setup repository](https://github.com/coding-dojo-data-science/dojo-env-setup).  
+- An environment is a bundle of specific versions of python packages that are mutually compatible.
+- We will install our custom `dojo-env`` Python environment, located in the [dojo-env-setup repository](https://github.com/coding-dojo-data-science/dojo-env-setup).  
 
-**5) Test & customize the environment using  Jupyter Notebook**
+**5) Test & customize the environment using Jupyter Notebook**
 
 - Jupyter Notebook will replace Google Colab on your local computer.
 
@@ -53,19 +52,22 @@ By the end of this installation, you will:
 
 - We will use it to edit special files later in the course, but it can also run notebooks too!
 
+___ 
+
 # OS-Specific Instructions
 
-There are multiple versions of the instructions, depending on what operating system you are using. **Please make sure you select the correct instructions page, based on your computer's operating system!**
+**Please make sure you select the correct instructions page, based on your computer's operating system!**
 
-### Currently Supported Operating Systems
+### Supported Operating Systems
 
 We have prepared environment files (.yml files) for 4 different OS configurations:
 - Windows (10 & 11)
-- Mac (with Intel Processors)*
-- Mac (Apple Chips)*
+- Mac (with Intel Processors)†
+- Mac (Apple Chips)†
 
+___
 
-#### *Note for Mac users - if you don't know which type of Mac you have :
+### †Mac users - if you don't know which type of Mac you have :
 
 **Check the "About this Mac" screen for your computer:**
 
