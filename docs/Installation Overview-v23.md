@@ -144,6 +144,7 @@ Our Linux installation instructions are still in beta. While they have successfu
 
 ___
 
+# APPENDIX
 
 ## Links of Interest
 > 08/23/23 Note: Switch to the `v2023` branch in the dojo-env-setup repo in GitHub Desktop for the correct env files. 
@@ -158,3 +159,84 @@ ___
 - [conda: Mangaging Environments - CheatSheet](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#activating-an-environment)
 
 - [Working Locally (PDF[`COMING SOON!`])]()
+
+
+
+## Reference: Helpful Commands
+
+### Installation Commands
+
+- To activate dojo-env and add it to Jupyter (after installation)
+
+```bash
+conda activate dojo-env               
+python -m ipykernel install --user --name dojo-env --display-name "Python (dojo-env)"
+```
+
+- To re-add `conda` command:
+
+```bash
+# Generic command (doesn't always work)
+conda init
+
+# Windows
+conda init  bash
+
+# Mac 
+conda init zsh
+```
+
+### Uninstall commands
+
+#### Uninstall dojo-env
+
+- To remove the current dojo-env:
+
+```bash
+conda activate base                             
+conda remove --name dojo-env-ds --all
+```
+
+- Then answer `y` for yes
+
+------
+
+### Setting Default Env
+
+#### For Mac Users (using the default terminal - zsh)
+
+```bash
+touch ~/.zshrc
+echo "conda activate dojo-env" >> ~/.zshrc
+echo 'alias jnb="jupyter notebook"' >> ~/.zshrc
+echo 'alias lab="jupyter lab"' >> ~/.zshrc
+```
+
+#### For Windows Users (or mac users who switched to bash)
+
+- To set dojo-env as the default Python env and add Jupyter shortcuts
+
+Note: you may need to replace `~` with the full path to your user folder. (e.g. "/Users/codingdojo/.bash_profile" instead of "~/.bash_profile")
+
+```bash
+touch ~/.bash_profile
+echo "conda activate dojo-env" >> ~/.bash_profile
+echo 'alias jnb="jupyter notebook"' >> ~/.bash_profile
+echo 'alias lab="jupyter lab"' >> ~/.bash_profile
+```
+
+------
+
+### Managing Jupyter Kernels
+
+- To see the list of kernels that jupyter will display as options:
+
+```bash
+jupyter kernelspec list 
+```
+
+- To remove a kernel that no longer exists (replace `<kernel name>` with name of kernel from the jupyter kernelspec list command ):
+
+```bash
+jupyter kernelspec remove dojo-env-old
+```
