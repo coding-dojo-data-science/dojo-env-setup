@@ -2,26 +2,23 @@
 <center>
 <img src="https://github.com/coding-dojo-data-science/dojo-env-setup/blob/main/images/Data%20Science%20Thumbnail.png?raw=true" width=500px></center>
 
-
-
 So far in this program, you have worked in Google Colab, which provides a cloud-based coding environment. 
 - We will transition to using a Python environment stored on your local machine. 
     - Jupyter Notebook will replace Google Colab. 
     - GitHub Desktop will sync your work.
-
-
 ___
 
 ## Installation Timeline/Deadline
 
 - In the Data Enrichment course, you will need to submit a CORE ASSIGNMENT containing the error-free test notebook that is included within these instructions. This will ensure that you have the tools you will need to be successful.
 - We recommend you begin the step-by-step installation AS SOON AS POSSIBLE to ensure you have time to troubleshoot any difficulties you may encounter.
-
-- If you run into issues during installation, post your questions/issues on the [ds-python-installation](https://discord.com/channels/738494436467539968/1099094868762042400) Discord channel, and tag your instructor in your question (e.g. @dojo_Instructor_name).
 - These steps should take ~30-90 minutes, depending on the speed of your machine and internet connection.
+
+- If you run into issues during installation, see the "How to Ask for Help" secton at the bottom of this page. 
+
 - The [dojo-env-setup repository](https://github.com/coding-dojo-data-science/dojo-env-setup), which you will clone in  Step 2.1, contains a backup copy of the entire set of instructions on the README, for convenience.
 
-***Note: if you previously installed the dojo-env and are upgrading to the current version, please see the "Updating to New dojo-env" at the end of this chapter (after the Final Notes lesson)***
+***Note: if you previously installed the dojo-env and are upgrading to the current version, please see the "Updating to New dojo-env" instructions***
 
 <hr>
 
