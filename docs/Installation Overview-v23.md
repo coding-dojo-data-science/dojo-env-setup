@@ -60,42 +60,49 @@ There are multiple versions of the instructions, depending on what operating sys
 ### Currently Supported Operating Systems
 
 We have prepared environment files (.yml files) for 4 different OS configurations:
-
 - Windows (10 & 11)
-- Mac (with Intel processors)*
+- Mac (with Intel Processors)*
 - Mac (Apple Chips)*
-- Linux**
+
 
 #### *Note for Mac users - if you don't know which type of Mac you have :
 
 **Check the "About this Mac" screen for your computer:**
 
-- Click on the Apple symbol in the top-left corner of your screen.
-- Click About This Mac.
+- Click on the Apple symbol in the top-left corner of your screen >  Click "About This Mac".
 
-A window with your computer's specs will appear like the one in the screenshots below, depending on how which version of macOS you have installed. 
+- A window with your computer's specs will appear like the one in the screenshots below, depending on how which version of macOS you have installed. 
 
-![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691528956__aboutthismacintelannotated.png)
+<left>
+<img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691528956__aboutthismacintelannotated.png" width=300px></left>
+<right>
+<img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691528713__aboutthismac2023annotated.png" width=200px></right>
 
-<img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691528713__aboutthismac2023annotated.png" style="cursor: pointer; max-width: 100%; height: 562px; width: 325px;" width="325" height="562">
 
-- **If it has a "Processor" line that says "Intel" you should follow the Instructions: Mac (Intel Processor).**
+- **If it has a "Processor" line that says "Intel"** you should follow the Instructions: Mac (Intel Processor).
 
-- **If it has a "Chip" line that says "Apple" then you should follow the Instructions: Mac (Apple Chip).**
+- **If it has a "Chip" line that says "Apple"** then you should follow the Instructions: Mac (Apple Chip).
 
-#### **Note to Linux Users: 
 
-Our Linux installation instructions are still in beta. While they have successfully been installed on students' Linux machines, we currently do not have a Linux machine available for troubleshooting.
+## Installation Instructions Pages
 
-<hr>
+> **Please review the How to Ask for Help Section At the Bottom of this page if you get stuck!**
 
-# If you encounter an error during installation:
+For New Installations:
+- [Instructions for Mac (Intel Processors)](https://hackmd.io/@jirvingphd/dojo-env-mac-intel)
+- [Instructions for Mac (Apple Chips)](https://hackmd.io/@jirvingphd/dojo-env-mac-apple-chip)
+- [Instructions for Windows](https://hackmd.io/@jirvingphd/dojo-env-windows)
 
+For updating Pre-Existing Install: 
+- [Updating to a New dojo-env](https://hackmd.io/@jirvingphd/update-dojo-env)
+___
+
+## How to Ask for Help
+
+**If you encounter an error during installation:**
 ***You may continue to work through the first half of the data enrichment week 1 lessons & assignments while troubleshooting your local installation!*** The first lessons and assignments can be completed using Google Colab.
 
 - **First, read a little further down in the instructions** to make sure we do not already address the error message that you ran into.
-
-
 
 - **Second, please check the "Troubleshooting" chapter on the learnig platform for a lesson that mentions your problem.** about the problem you are running into. (The Troubleshooting section is the 3rd chapter in this course - see the screenshot below)
 
@@ -119,15 +126,28 @@ Our Linux installation instructions are still in beta. While they have successfu
     - An instructor or TA will get back to you within 1 business day with the next steps for you to try.
     - You will most likely need to set up a Zoom call and share your screen for us to help.
 
-Now, navigate to the correct instructions page, based on your operating system, as explained above.
-
-## Now, navigate to the correct instructions page, based on your operating system, as explained above.
+> **Now, navigate to the correct instructions page, based on your operating system, as explained above:**
 
 
-## Links
+<!-- #### **Note to Linux Users: 
+
+Our Linux installation instructions are still in beta. While they have successfully been installed on students' Linux machines, we currently do not have a Linux machine available for troubleshooting.
+
+<hr> -->
+
+___
+
+
+## Links of Interest
 > 08/23/23 Note: Switch to the `v2023` branch in the dojo-env-setup repo in GitHub Desktop for the correct env files. 
+- [Overview Page(This Page)](https://hackmd.io/@jirvingphd/dojo-env-overview)
+- [dojo-env-setup repo](https://github.com/coding-dojo-data-science/dojo-env-setup)
 - [Instructions for Mac (Intel Processors)](https://hackmd.io/@jirvingphd/dojo-env-mac-intel)
 - [Instructions for Mac (Apple Chips)](https://hackmd.io/@jirvingphd/dojo-env-mac-apple-chip)
 - [Instructions for Windows](https://hackmd.io/@jirvingphd/dojo-env-windows)
 - [Updating to a New dojo-env](https://hackmd.io/@jirvingphd/update-dojo-env)
 
+
+- [conda: Mangaging Environments - CheatSheet](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#activating-an-environment)
+
+- [Working Locally (PDF[`COMING SOON!`])]()
