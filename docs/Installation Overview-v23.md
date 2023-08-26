@@ -1,6 +1,8 @@
 # Python Installation for Data Science - Overview
+
 <center>
 <img src="https://github.com/coding-dojo-data-science/dojo-env-setup/blob/main/images/Data%20Science%20Thumbnail.png?raw=true" width=500px></center>
+
 
 So far in this program, you have worked in Google Colab, which provides a cloud-based coding environment. 
 - We will transition to using a Python environment stored on your local machine. 
