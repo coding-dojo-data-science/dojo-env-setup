@@ -499,8 +499,6 @@ cd /Users/codingdojo/Documents/Boot Camp Stuff/
 
 Now that your terminal is open in the repo's folder, you're ready to create your dojo-env environment.
 
-📌 BOOKMARK
-
 ### Step 2.3.0) *(Optional, but Recommended)* Speed Up Your Environment Creation By Switching to libmamba
 
 The following step, "2.3.1) Run the conda env create command", can take anywhere from 10 - 90 minutes, depending on your computer and internet connection.  

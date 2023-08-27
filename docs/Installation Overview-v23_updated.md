@@ -59,7 +59,7 @@ The foundation/infrastructure for installing our custom Python environment.
 
 - We will use it to edit special files later in the course, but it can also run notebooks too!
 
-___ 
+___
 
 # OS-Specific Instructions
 
@@ -239,6 +239,12 @@ jupyter kernelspec list
 
 - To remove a kernel that no longer exists (replace `<kernel name>` with name of kernel from the jupyter kernelspec list command ):
 
+```
+jupyter kernelspec remove <kernel name>
+```
+
 ```bash
+# Example:
 jupyter kernelspec remove dojo-env-old
 ```
+
