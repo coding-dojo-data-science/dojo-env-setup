@@ -34,25 +34,28 @@
 
 **Step 4) Install a Text Editor - VS Code**
 
-## Step 0) Determine which kind of Mac you have
+## Step 0) Determine Which Type of Mac You Have
 
-**Note for Mac users - if you don't know which type of Mac you have :**
+### If you don't know which type of Mac you have :
 
-- Check the "About this Mac" screen for your computer.
-  - Click on the Apple symbol on the top-left corner of your screen.
-  
-  - Click About This Mac.
-  
-  - A window with your computer's specs will appear like the one in the screenshot below
-    - ![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1656714456__About%20this%20Mac%20-Intel.png)
-  
-    
-  
-  - If it has a "Processor" line that says "Intel" **you should** follow these Instructions. 
-  
-  - If it has a "Chip" line that says "Apple" then **you should not follow** these Instructions.Please navigate to the instructions for Mac (Apple Chip).
-  
-  
+**Check the "About this Mac" screen for your computer:**
+
+- Click on the Apple symbol in the top-left corner of your screen >  Click "About This Mac".
+
+- A window with your computer's specs will appear like the one in the screenshots below, depending on how which version of macOS you have installed. 
+
+<left>
+<img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691528956__aboutthismacintelannotated.png" width=300px></left>
+<right>
+<img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691528713__aboutthismac2023annotated.png" width=200px></right>
+
+
+
+- **If it has a "Processor" line that says "Intel"** you should follow the Instructions: Mac (Intel Processor).
+
+- **If it has a "Chip" line that says "Apple"** then you should follow the Instructions: Mac (Apple Chip).
+
+
 
 ------
 
