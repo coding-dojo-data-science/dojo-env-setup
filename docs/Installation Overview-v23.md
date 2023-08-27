@@ -239,7 +239,7 @@ jupyter kernelspec list
 
 - To remove a kernel that no longer exists (replace `<kernel name>` with name of kernel from the jupyter kernelspec list command ):
 
-```
+```bash
 jupyter kernelspec remove <kernel name>
 ```
 
