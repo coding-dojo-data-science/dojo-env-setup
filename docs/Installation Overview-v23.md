@@ -200,7 +200,7 @@ conda init zsh
 
 ```bash
 conda activate base                             
-conda remove --name dojo-env-ds --all
+conda remove --name dojo-env --all
 ```
 
 - Then answer `y` for yes
