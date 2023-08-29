@@ -36,6 +36,9 @@ ___
 
 ## Installation Overview:
 
+<img src="docs/images/1693253644__PythonInstallationforDSOverviewv234.png">
+
+
 By the end of this installation, you will:
 
 **1) Install or Set Up a Terminal application:**
@@ -69,6 +72,10 @@ The foundation/infrastructure for installing our custom Python environment.
 
 - We will use it to edit special files later in the course, but it can also run notebooks too!
 
+
+<img src="docs/images/1693253662__PythonInstallationforDSOverviewv235.png">
+
+
 ___ 
 
 # OS-Specific Instructions
@@ -97,11 +104,6 @@ ___
 <right>
 <img src="https://github.com/coding-dojo-data-science/dojo-env-setup/blob/v2023/images/about-this-mac-2023-annotated.png?raw=true" width=200px></right>
 
-
-<!-- <img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691528956__aboutthismacintelannotated.png" width=300px></left> -->
-
-
-<!-- <img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691528713__aboutthismac2023annotated.png" width=200px></right> -->
 
 
 - **If it has a "Processor" line that says "Intel"** you should follow the Instructions: Mac (Intel Processor).
