@@ -167,7 +167,7 @@ ___
 # APPENDIX
 
 ## Links of Interest
-> 08/23/23 Note: Switch to the `v2023` branch in the dojo-env-setup repo in GitHub Desktop for the correct env files. 
+
 - [Overview Page(This Page)](https://hackmd.io/@jirvingphd/dojo-env-overview)
 - [dojo-env-setup repo](https://github.com/coding-dojo-data-science/dojo-env-setup)
 - [Instructions for Mac (Intel Processors)](https://hackmd.io/@jirvingphd/dojo-env-mac-intel)
