@@ -1,6 +1,8 @@
 # Mac (Apple Chip) Installation Overview
 
 
+<img src="images/1693270391__MacApplechipPythonInstallationforDSOverviewv2023.png">
+
 
 ## Table of Contents
 

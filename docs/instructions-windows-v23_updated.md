@@ -1,5 +1,7 @@
 # Windows Installation Instructions
 
+<img src="images/1693270300__WIndowstoolsPythonInstallationforDSOverviewv2023.png">
+
 ## Table of Contents
 
 **Step 1) Download and install required applications**
@@ -37,11 +39,12 @@
     - Step 2.5.1) Open the environment tester notebook 
     - Step 2.5.2) Change the notebook's kernel to dojo-env
     - Step 2.5.3) Run the environment test notebook from start to finish.
-- To Get Help Troubleshooting Your Environment
 
-**Step 3) Jupyter Notebook Preferences**
+- **Step 3) Jupyter Notebook Preferences**
 
-**Step 4) Install a Text Editor - VS Code**
+- **Step 4) Install a Text Editor - VS Code**
+
+
 
 ___
 

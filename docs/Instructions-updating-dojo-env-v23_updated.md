@@ -232,6 +232,8 @@ python -m ipykernel install --user --name dojo-env --display-name "Python (dojo-
 
 - **Check the `conda env list` command again to determine which solution to use.**
 
+<img src="images/1692724550__condaenvlist.png">
+
 - **Solution A): If you see `dojo-env` in the env list:**
 
     - You may have skipped Step 1.3: rename or remove your dojo-env or something went wrong during step 1.3
@@ -258,12 +260,6 @@ python -m ipykernel install --user --name dojo-env --display-name "Python (dojo-
 
 
 
-### TO DO: 
-
-Conda env list screenshot to see path:
-
-<img src="images/1692724550__condaenvlist.png">
-
 ```bash
 rm -rf <ENVIRONMENT_FPATH>
 ```
@@ -275,12 +271,6 @@ rm -rf <ENVIRONMENT_FPATH>
     
 
 ___
-
-
-
-
-
-
 
 # Appendix
 
@@ -301,7 +291,7 @@ ___
 
 ## Backup Your Env/Export Your Env to a .yml file
 
-Alternatively, could export your current dojo-env to a new .yml file, just like the original `dojo-env` environment file. 
+Instead of renaming your old env, you could export your current dojo-env to a new .yml file, just like the original `dojo-env` environment file. 
 
 - To export your environment to a file called "my-old-environment.yml" in your User folder, run the command:
 
@@ -314,10 +304,6 @@ conda env export > ~/my-old-environment.yml --no-builds
 ```bash
 conda env create -f ~/my-old-environment.yml
 ```
-
-
-
-
 
 
 
