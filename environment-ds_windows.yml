@@ -347,5 +347,6 @@ dependencies:
     - yellowbrick==1.5
     - yfinance==0.2.18
     - collinearity==0.6.1
+    - openpyxl==3.1.2
 
 prefix: C:\Users\james\anaconda3\envs\dojo-env-ds-STARTER
