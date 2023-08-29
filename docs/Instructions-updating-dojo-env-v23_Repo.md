@@ -17,7 +17,7 @@ To install the new dojo-env, you will need to remove your old dojo-env.  However
 conda env list
 ```
 
-<img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691687306__01condaenvlist.png">
+<img src="images/1691687306__01condaenvlist.png">
 
 
 
@@ -41,7 +41,7 @@ conda deactivate
 conda activate base
 ```
 
-<img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691687365__02condadeactivate.png">
+<img src="images/1691687365__02condadeactivate.png">
 
 ## Step 1.3: Remove or rename your old dojo-env
 
@@ -59,15 +59,15 @@ If you want to keep a copy of your old dojo-env, you can rename it using the fol
 conda rename -n dojo-env dojo-env-old
 ```
 
-<img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691687508__03renameexecuting.png">
+<img src="images/1691687508__03renameexecuting.png">
 
 This command may take a few minutes to finish. It clones your old dojo-env and create a new clone of it called dojo-env-old, so it must go through the same installation steps.
 
-<img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691687619__04postrename.png">
+<img src="images/1691687619__04postrename.png">
 
 - Once the process has finished, run the `conda env list` command again to confirm that your env has been renamed and dojo-env no longer exists.
 
-<img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691687624__05condaenvlistagain.png">
+<img src="images/1691687624__05condaenvlistagain.png">
 
 #### Step 1.3.A.2) Add The Renamed Env to Jupyter Notebook's Kernels
 
@@ -78,7 +78,7 @@ conda activate dojo-env-old
 python -m ipykernel install --user --name dojo-env-old --display-name "Python (dojo-env-old)"
 ```
 
-<img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691687894__06ipykernel.png">
+<img src="images/1691687894__06ipykernel.png">
 
 You're ready to install the new dojo-env!
 
@@ -100,18 +100,18 @@ You're ready to install the new dojo-env!
 conda remove --name dojo-env --all
 ```
 
-<img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691689962__10condaenvremovea.png">
+<img src="images/1691689962__10condaenvremovea.png">
 
 - Enter `y` to approve the removal of the environment.
 - Wait for the env to be removed.
 
-<img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691689962__10condaenvremoveb.png">
+<img src="images/1691689962__10condaenvremoveb.png">
 
-- **Note: if you see the following message, you forgot to deactivate dojo-env (Step 12)**<img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691689719__09cannotremovecurrentenv.png">
+- **Note: if you see the following message, you forgot to deactivate dojo-env (Step 12)**<img src="images/1691689719__09cannotremovecurrentenv.png">
 
 - **Confirm the environment has been deleted using `conda env list`**
 
-<img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691690201__11condaenvlistempty.png">
+<img src="images/1691690201__11condaenvlistempty.png">
 
 
 
@@ -125,7 +125,7 @@ conda remove --name dojo-env --all
 jupyter kernelspec list
 ```
 
-<img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691688144__07jupyterkernelspeclist.png">
+<img src="images/1691688144__07jupyterkernelspeclist.png">
 
 - To remove a kernel from the list, run the following remove command to remove the dojo-env kernel, since that actual environment has been deleted:
 
@@ -133,7 +133,7 @@ jupyter kernelspec list
 jupyter kernelspec remove dojo-env
 ```
 
-<img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691688375__08jupyterkernelspecremove.png">
+<img src="images/1691688375__08jupyterkernelspecremove.png">
 
  
 
@@ -145,7 +145,7 @@ To install the new dojo-env, you will need to download the updated environment.y
 
 - Open the [dojo-env-setup](https://github.com/coding-dojo-data-science/dojo-env-setup) repo in GitHub Desktop again.
 
-    ![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1667599464__github-desktop-changes.png)
+    <img src="images/1667599464__github-desktop-changes.png" />
 
     ### Step 2.2) Discard any changes to the dojo-env-setup repo
 
@@ -157,20 +157,20 @@ To install the new dojo-env, you will need to download the updated environment.y
 
     - Right-click on the top of the changes view (see screenshot below) 
 
-        ![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1667599434__github-desktop-changes%20annotated.png)
+        <img src="images/1667599434__github-desktop-changes annotated.png" />
 
     - **Then select "Discard All Changes"**
 
-        ![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1667599540__discard-changes.png)
+        <img src="images/1667599540__discard-changes.png" />
 
     ### Step 2.3) Update your local copy of the repo
 
-    - **Click on the "Fetch Origin" button in the top right corner of GitHub Desktp**![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1667599099__github-desktop-fetch-origin.png)
+    - **Click on the "Fetch Origin" button in the top right corner of GitHub Desktp**<img src="images/1667599099__github-desktop-fetch-origin.png" />
 
 - GitHub Desktop will check for new commits to the repository. 
     If there are any, an arrow will appear, and the button will change to "Pull Origin". 
 
-    ![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1667599799__github-desktop-pull-origin.png)
+    <img src="images/1667599799__github-desktop-pull-origin.png" />
 
 - **Click the "Pull Origin" button to get the updated repo/environment.**
 
@@ -207,7 +207,7 @@ conda env create -f environment-ds_mac_mchip.yml
 
 - **Wait for the process to finish and for the message with instructions on how to activate your environment to appear**
 
-    ![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1667600885__Screenshot%202022-11-04%20at%206.27.54%20PM.png)
+    <img src="images/1667600885__Screenshot 2022-11-04 at 6.27.54 PM.png" />
 
 - Activate your dojo-env environment and add the dojo-env kernel to Jupyter Notebook:
 
@@ -222,7 +222,7 @@ python -m ipykernel install --user --name dojo-env --display-name "Python (dojo-
 
 - You receive an error when you attempt to re-create the dojo-env that says `"CondaValueError: previx already exists {filepath to env}"` like the screenshot below
 
-<img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691700179__prefixalreadyexists.png">
+<img src="images/1691700179__prefixalreadyexists.png">
 
 **Cause**:
 
@@ -232,7 +232,7 @@ python -m ipykernel install --user --name dojo-env --display-name "Python (dojo-
 
 - **Check the `conda env list` command again to determine which solution to use.**
 
-<img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1692724550__condaenvlist.png">
+<img src="images/1692724550__condaenvlist.png">
 
 - **Solution A): If you see `dojo-env` in the env list:**
 
@@ -276,7 +276,7 @@ ___
 
 ### Activating dojo-env is still the default, but it no longer exists
 
-<img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691688537__00envnamenotfound.png">
+<img src="images/1691688537__00envnamenotfound.png">
 
 - The command to `conda activate dojo-env` is still in terminal's settings file. 
 - Manually open the correct file for your Terminal and remove the conda activate command. 

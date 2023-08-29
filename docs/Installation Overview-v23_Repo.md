@@ -1,7 +1,7 @@
 # Python Installation for Data Science - Overview
 
 <center>
-<img src="https://github.com/coding-dojo-data-science/dojo-env-setup/blob/main/images/Data%20Science%20Thumbnail.png?raw=true" width=500px></center>
+<img src="images/Data Science Thumbnail.png_raw=true" width=500px></center>
 
 
 So far in this program, you have worked in Google Colab, which provides a cloud-based coding environment. 
@@ -26,7 +26,7 @@ ___
 
 ## Installation Overview:
 
-<img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1693253644__PythonInstallationforDSOverviewv234.png">
+<img src="images/1693253644__PythonInstallationforDSOverviewv234.png">
 
 By the end of this installation, you will:
 
@@ -61,7 +61,7 @@ The foundation/infrastructure for installing our custom Python environment.
 
 - We will use it to edit special files later in the course, but it can also run notebooks too!
 
-<img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1693253662__PythonInstallationforDSOverviewv235.png">
+<img src="images/1693253662__PythonInstallationforDSOverviewv235.png">
 
 ___
 
@@ -87,9 +87,9 @@ ___
 - A window with your computer's specs will appear like the one in the screenshots below, depending on how which version of macOS you have installed. 
 
 <left>
-<img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691528956__aboutthismacintelannotated.png" width=300px></left>
+<img src="images/1691528956__aboutthismacintelannotated.png" width=300px></left>
 <right>
-<img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691528713__aboutthismac2023annotated.png" width=200px></right>
+<img src="images/1691528713__aboutthismac2023annotated.png" width=200px></right>
 
 
 - **If it has a "Processor" line that says "Intel"** you should follow the Instructions: Mac (Intel Processor).
@@ -119,7 +119,7 @@ ___
 
 - **Second, please check the "Troubleshooting" chapter on the learnig platform for a lesson that mentions your problem.** about the problem you are running into. (The Troubleshooting section is the 3rd chapter in this course - see the screenshot below)
 
-    <img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1658334627__Troubleshooting-chapter.png" width=200px>
+<img src="images/1658334627__Troubleshooting-chapter.png" width=200px>
 
 - **Third, reach out on the \#[ds-python-installation Discord channel](https://discord.com/channels/738494436467539968/1099094868762042400) with the following info:**
 
@@ -164,7 +164,6 @@ ___
 
 - [conda: Mangaging Environments - CheatSheet](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#activating-an-environment)
 
-<!-- - [Working Locally (PDF[`COMING SOON!`])]() -->
 
 
 
