@@ -1,6 +1,6 @@
 # Windows Installation Instructions
 
-<img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1693270300__WIndowstoolsPythonInstallationforDSOverviewv2023.png">
+<img src="images/1693270300__WIndowstoolsPythonInstallationforDSOverviewv2023.png">
 
 ## Table of Contents
 
@@ -76,29 +76,29 @@ NOTE: Windows 11 comes with Windows Terminal pre-installed. If you are running W
 
 - For Windows 10 users, open your start menu using your Windows key or clicking on the Start Menu in the bottom left corner.
 
-![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1670872974__1A_start_menu.png)
+<img src="images/1670872974__1A_start_menu.png" />
 
 - Type "Store" with the start menu open and it will automatically start searching. You should see "Microsoft Store" appear.
 
-![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1670873063__1_search_windows_store.png)
+<img src="images/1670873063__1_search_windows_store.png" />
 
 - Click on the Microsoft Store app on the left or click "Open" on the right sidebar to open the Microsoft store.
 - Once the Microsoft store opens, click on the Search box on the top of app.
 
-![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1670873315__2A_microsoft_store_home.png)
+<img src="images/1670873315__2A_microsoft_store_home.png" />
 
 - Enter "Windows Terminal" in the search box and you should see the Windows Terminal result appear with a blue "Get" button like in the screenshot below:
 
-![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1670873463__2_search_windows_terminal.png)
+<img src="images/1670873463__2_search_windows_terminal.png" />
 
 - Click on the blue "Get" button to start downloading the app.
 
-![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1670873501__3_download_windows_terminal.png)
+<img src="images/1670873501__3_download_windows_terminal.png" />
 
 - Once its done downloading, the blue "Get" button will become an "Open" button. Click on "Open" to confirm that Windows Terminal is properly installed.
 - A new "Windows Terminal" window running Powershell should appear, like in the screenshot below:
 
-![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1670873594__4_open_windows_terminal.png)
+<img src="images/1670873594__4_open_windows_terminal.png" />
 
 - After confirming windows terminal is installed, click on the X in the top right corner to close the app. You are all set to move on to the next step!
 
@@ -112,42 +112,42 @@ NOTE: Windows 11 comes with Windows Terminal pre-installed. If you are running W
 
 - On the first page, make sure to UNCHECK "Only show new options" like in the screenshot below:
 
-![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1670711700__Screenshot_20221210_050015.png)
+<img src="images/1670711700__Screenshot_20221210_050015.png" />
 
 - <font color=red>Make sure to select the option pictured below "Add Git Bash Profile to Windows Terminal"!!</font></font>
 
-![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1670711711__Screenshot_20221210_050049.png)
+<img src="images/1670711711__Screenshot_20221210_050049.png" />
 
 - Then select the default options for the remaining options (unless noted otherwise below):
 
-![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1670711823__Screenshot_20221210_050110.png)
+<img src="images/1670711823__Screenshot_20221210_050110.png" />
 
-![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1670711934__Screenshot_20221210_050114.png)
+<img src="images/1670711934__Screenshot_20221210_050114.png" />
 
-![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1670711962__Screenshot_20221210_050119.png)
+<img src="images/1670711962__Screenshot_20221210_050119.png" />
 
-![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1670711972__Screenshot_20221210_050124.png)
+<img src="images/1670711972__Screenshot_20221210_050124.png" />
 
-![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1670711985__Screenshot_20221210_050129.png)
+<img src="images/1670711985__Screenshot_20221210_050129.png" />
 
-![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1670712004__Screenshot_20221210_050133.png)
+<img src="images/1670712004__Screenshot_20221210_050133.png" />
 
-![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1670712057__Screenshot_20221210_050138.png)
+<img src="images/1670712057__Screenshot_20221210_050138.png" />
 
-![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1670712094__Screenshot_20221210_050148.png)
+<img src="images/1670712094__Screenshot_20221210_050148.png" />
 
 - One non-default option that you may want to select is to "Enable symbolic links" in the screenshot below.
     - This option will be helpful if you ever need to access data stored on a network drive. This will *not* be required for the program.
 
-![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1670712081__Screenshot_20221210_050152.png)
+<img src="images/1670712081__Screenshot_20221210_050152.png" />
 
-![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1670712246__Screenshot_20221210_050157.png)
+<img src="images/1670712246__Screenshot_20221210_050157.png" />
 
 - TROUBLESHOOTING NOTE:
     - If you see the following "Replacing in-use files" screen (screenshot below) about closing open instances of gitbash: close all other windows of GitBash.
     - If it still shows items that are running that you cannot find, the easiest solution is to cancel the installation, restart your computer, and then open the installer again before opening any gitbash windows.
 
-![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1670712402__Screenshot_20221210_050206.png)
+<img src="images/1670712402__Screenshot_20221210_050206.png" />
 
 - Click install and wait for the process to finish. Next, move on to Tool #2: GitHub Desktop.
 
@@ -156,20 +156,20 @@ NOTE: Windows 11 comes with Windows Terminal pre-installed. If you are running W
 - From your Windows Start menu, search for "Terminal" and open a new Windows Terminal window.
 - It will open using the default shell "Powershell", pictured below:
 
-![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1670713406__Screenshot_20221210_060318.png)
+<img src="images/1670713406__Screenshot_20221210_060318.png" />
 
 - Click on the drop down arrow to reveal the menu.
     - Select Settings
 
-![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1670713567__Screenshot_20221210_060553.png)
+<img src="images/1670713567__Screenshot_20221210_060553.png" />
 
 - The settings tab will open and should look like the screenshot below:
 
-![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1670713596__Screenshot_20221210_050800.png)
+<img src="images/1670713596__Screenshot_20221210_050800.png" />
 
 - Click on the drop down menu for the first option "Default Profile" and select GitBash
 
-![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1670713683__Screenshot_20221210_060802.png)
+<img src="images/1670713683__Screenshot_20221210_060802.png" />
 
 - Click the blue Save button in the bottom right corner.
 
@@ -178,7 +178,7 @@ NOTE: Windows 11 comes with Windows Terminal pre-installed. If you are running W
 - To test if the default shell is now set to GitBash, open a new Terminal window.
 - If you see a window like the one below that has the GitBash icon (the multicolored 4-squares in the top left corner), then you are all set!
 
-![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1670713874__Screenshot_20221210_061055.png)
+<img src="images/1670713874__Screenshot_20221210_061055.png" />
 
 - You're all set up with Windows Terminal and GitBash!
 
@@ -196,23 +196,23 @@ NOTE: Windows 11 comes with Windows Terminal pre-installed. If you are running W
 
 ### Step 1.2.2) Make Windows Terminal the Default Shell in GitHub Desktop
 
-- Once you have logged into the app, open the Options menu.![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1670712744__Screenshot_20221210_050900.png)
+- Once you have logged into the app, open the Options menu.<img src="images/1670712744__Screenshot_20221210_050900.png" />
 
 - Click on `File` in the menu bar and then select `Options`
 
-![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1670712811__Screenshot_20221210_055322.png)
+<img src="images/1670712811__Screenshot_20221210_055322.png" />
 
 - Select the "Integrations" tab on the left sidebar of the Options window.
 
-![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1670712772__Screenshot_20221210_050917.png)
+<img src="images/1670712772__Screenshot_20221210_050917.png" />
 
 
 
 - Click on the drop-down menu for Shell and select Windows Terminal. (Windows 10 users, if you do not see this option, make sure you have followed Step 0 of these instructions. If you still do not see Windows Terminal as an option, please restart your computer and try again.)
 
-![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1670712965__Screenshot_20221210_055455.png)
+<img src="images/1670712965__Screenshot_20221210_055455.png" />
 
-- Click Save and the window will close.![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1670713097__Screenshot_20221210_055706.png)
+- Click Save and the window will close.<img src="images/1670713097__Screenshot_20221210_055706.png" />
 
 - Click Save. You may close Github Desktop for now.
 
@@ -234,7 +234,7 @@ ___
     - Select "Add Anaconda3 to my Path environment variable". Disregard the warning message will appear in red text.
     - BOTH options should be checked, like in the screenshot below:
 
-![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1681423160__anacondafinalnew.png)
+<img src="images/1681423160__anacondafinalnew.png" />
 
 
 
@@ -294,7 +294,7 @@ Note: the instructions below are adapted from this [Blog Post](https://fmorenovr
     - You should **see a `conda.sh` file in this folder** (Note: depending on your settings in File Explorer, it may not show the file extension, .sh,  and may just show "conda". This is the correct file!
     - **Right-click somewhere in the "profile.d" folder and select "Open in Terminal" or "Git Bash Here"**
         - Note for Windows 11 Users: "GitBash here" is going to appear in the "Show more options" sub-menu when you right-click
-            ![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1659739323__windows_11_right_click1.png). ![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1659739359__windows_11_right_click2.png)
+            <img src="images/1659739323__windows_11_right_click1.png" />. <img src="images/1659739359__windows_11_right_click2.png" />
 
 
 
@@ -367,7 +367,7 @@ ___
 
 - **Click on the green `Code` button and then click `Open in GitHub desktop.`**
 - GitHub desktop should open automatically and ask you what folder you would like to store your repository in.
-    ![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1656806399__clone-repo-menu.png)
+    <img src="images/1656806399__clone-repo-menu.png" />
 
 
 
@@ -394,7 +394,7 @@ ___
 - **Once you've decided where you will clone the repository:**
 
     - Remember the full file path of the folder you selected!  **(See the screenshot below. )**
-        ![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1656806548__clone-repo-menu%20annotated.png)
+        <img src="images/1656806548__clone-repo-menu annotated.png" />
 
         
 
@@ -442,7 +442,7 @@ ls -a
 - **You should see a list of all the files in the current folder,** similar to the screenshot below. 
     - You should see 3 files that start with "environment-ds_" and end with ".yml" similar in the screenshot below. Note: the exact names of the environment files may be slightly different than the screenshot below.
 
-![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1656808093__dojo-env-setup%20ls%20result.png)
+<img src="images/1656808093__dojo-env-setup ls result.png" />
 
 **If so, you are all set for step 2.3: create the dojo-env environment!**
 
@@ -608,11 +608,11 @@ See 'conda init --help' for more information and options.
 
 - **Open Anaconda Prompt from your start menu.** This was installed with Anaconda automatically.
 
-![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1671129412__A1_anaconda_prompt.png)
+<img src="images/1671129412__A1_anaconda_prompt.png" />
 
 - **A window will open that looks the one below**: (if no text appears in the window, press enter and it should appear
 
-![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1671129457__a2_prompt_window.png)
+<img src="images/1671129457__a2_prompt_window.png" />
 
 - **Run the following command:**
 
@@ -620,11 +620,11 @@ See 'conda init --help' for more information and options.
 conda init bash
 ```
 
-![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1671129622__A3_A_conda_init_command.png)
+<img src="images/1671129622__A3_A_conda_init_command.png" />
 
 - **You will see a long list of file paths and should see the word "modified" next to 1-2 of them.**
 
-![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1671129488__A3_conda_init_bash.png)
+<img src="images/1671129488__A3_conda_init_bash.png" />
 
 - **Close Anaconda Prompt**
 
@@ -632,7 +632,7 @@ conda init bash
 
 - Open Windows Terminal/GitBash
 
-![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1671129694__a4_open_gitbash.png)
+<img src="images/1671129694__a4_open_gitbash.png" />
 
 - Run the same command again
 
@@ -640,11 +640,11 @@ conda init bash
 conda init bash
 ```
 
-![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1671129713__a5_conda_init_gitbash.png)
+<img src="images/1671129713__a5_conda_init_gitbash.png" />
 
 - **You will see another list of filepaths.**
 
-![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1671129743__a6_conda_init_bash_result.png)
+<img src="images/1671129743__a6_conda_init_bash_result.png" />
 
 
 
@@ -654,7 +654,7 @@ conda init bash
 source ~/.bash_profile
 ```
 
-![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1671129907__a7_source_bash_profile.png)
+<img src="images/1671129907__a7_source_bash_profile.png" />
 
 - **Now you should be able to run "conda activate dojo-env"!**  
 
@@ -718,7 +718,7 @@ We will use the "~" character in the following commands, so we must ensure that 
 
         - Note: if you do not know your User folder's name, you can run the `whoami` command to see the name of your User folder.
 
-        <img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691619428__changesource.png">
+        <img src="images/1691619428__changesource.png">
 
 
 
@@ -751,7 +751,7 @@ echo 'alias lab="jupyter lab"' >> ~/.bash_profile
     - **Open a new terminal window.**
     - **You should see `(dojo-env)` appear next to, or above, your prompt.**
 
-![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1647634446__confirm_dojo_env.png)
+<img src="images/1647634446__confirm_dojo_env.png" />
 
 
 
@@ -761,11 +761,11 @@ echo 'alias lab="jupyter lab"' >> ~/.bash_profile
 
     - You should see a lot of messages printed in the terminal and then your web browser should open  jupyter automatically .
 
-    <img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691620120__jupyterrunning.png">
+    <img src="images/1691620120__jupyterrunning.png">
 
     - **If jupyter notebook launches, you're all set!**
 
-    <img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691692984__jupyterfilesview.png" width=800px>
+    <img src="images/1691692984__jupyterfilesview.png" width=800px>
 
     - **If not, follow the instructions on How to Ask for Help from the Installation Overview** 
 
@@ -778,7 +778,7 @@ It is very important that you shut down Jupyter Notebook in the correct way.
 - Closing the web browser tabs for Jupyter Notebook **does not shut down the jupyter notebook!** The notebook is still running in the jupyter server that was launched in your Terminal window. 
 - **Do not force-close the Terminal window by closing it if it is running Jupyter!** If you simply X out of Terminal while Jupyter server was running, it can lead to issues with Windows Terminal, such as the "could not fork child process" error in the screenshot below:
 
-<img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691694396__forkchildprocess.png" width=500px>
+<img src="images/1691694396__forkchildprocess.png" width=500px>
 
 
 
@@ -786,20 +786,20 @@ It is very important that you shut down Jupyter Notebook in the correct way.
 
 - The best way to shut down Jupyter Notebook is from Jupyer's File menu.
 
-<img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691692985__jupyterfilesmenu.png">
+<img src="images/1691692985__jupyterfilesmenu.png">
 
 
 - **Click on File > Shut Down**
 
-    <img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691692985__jupyterfilesshutdown.png">
+    <img src="images/1691692985__jupyterfilesshutdown.png">
 
 - If a confirmation window appears, click on Shut Down:
 
-<img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691693251__jupytershutdownconfirm.png">
+<img src="images/1691693251__jupytershutdownconfirm.png">
 
 - The terminal running Jupyter should stop running the server and return to an empty prompt, waiting for input.
 
-<img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691620127__jupytershutdown.png">
+<img src="images/1691620127__jupytershutdown.png">
 
 #### Option B) Shut down jupyter from the terminal
 
@@ -810,7 +810,7 @@ It is very important that you shut down Jupyter Notebook in the correct way.
 
 - The terminal should stop running the server and return to an empty prompt, waiting for input.
 
-<img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691620127__jupytershutdown.png">
+<img src="images/1691620127__jupytershutdown.png">
 
 
 
@@ -827,7 +827,7 @@ To test that your installation and packages are working correctly, You are going
 - **Make sure Jupyter Notebook is not running in any Terminal windows.**
     - Check any open terminals and make sure that they are not running the notebook server. 
     - If you see a lot of text in your terminal window and the final line is not an empty command prompt, like in the screenshot below:
-    - <img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691620120__jupyterrunning.png">
+    - <img src="images/1691620120__jupyterrunning.png">
 
 - **Next, you will close all of your previous Terminal/GitBash windows BUT before you do:**
     - **if your terminal is still running jupyter notebook** and you do not see the prompt waiting for a command:
@@ -853,7 +853,7 @@ A new tab should open in your web browser that shows the File view for jupyter n
 
 You should see all of the files that were in the dojo-env-folder.
 
-![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691542923__jupyterfilesviewtabs.png)
+<img src="images/1691542923__jupyterfilesviewtabs.png" />
 
 - There are 2 "EnvironmentTester" notebooks:
     - "EnvironmentTester-mac.ipynb" for macs (both Intel and Apple Chip macs)
@@ -863,7 +863,7 @@ You should see all of the files that were in the dojo-env-folder.
 
 Once the notebook interface has loaded, you should see a toolbar with several menu choices.
 
-![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691543038__jupyternotebookview.png)
+<img src="images/1691543038__jupyternotebookview.png" />
 
 
 
@@ -875,17 +875,17 @@ We want to run all of the cells in this notebook and confirm it can make it to t
 
 - First, confirm the notebook is using dojo-env. In the top-right corner you should see "Python (dojo-env)". 
 
-    <img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691543292__jupyternotebooktoolbarannotatekernel.jpg">
+    <img src="images/1691543292__jupyternotebooktoolbarannotatekernel.jpg">
 
 - If you do not see Python(dojo-env), click on the name of the kernel displayed to open the Change Kernel menu.
 
-    <img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691543640__jupyterkernelarrow.png">
+    <img src="images/1691543640__jupyterkernelarrow.png">
 
 - Select Python(dojo-env) from the dropdown menu:
 
-    <img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691543640__jupyterdropdown.png">
+    <img src="images/1691543640__jupyterdropdown.png">
 
-    <img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691543640__jupyterdropdownselectkernel.png">
+    <img src="images/1691543640__jupyterdropdownselectkernel.png">
 
     
 
@@ -897,7 +897,7 @@ We want to run all of the cells in this notebook and confirm it can make it to t
 
         - You can also use the toolbar button, which resembles a fast-forward symbol >>.
 
-        <img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691544402__jupyternotebooktoolbarrunall.jpg">
+        <img src="images/1691544402__jupyternotebooktoolbarrunall.jpg">
 
 - **Wait patiently.** 
 
@@ -910,7 +910,7 @@ We want to run all of the cells in this notebook and confirm it can make it to t
 
     - Check if the very last cell printed the success message.
 
-![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1657130803__env_tester_final_msg.png)
+<img src="images/1657130803__env_tester_final_msg.png" />
 
 
 
@@ -925,7 +925,7 @@ We want to run all of the cells in this notebook and confirm it can make it to t
 
 - Shut down the notebook by clicking on the **File menu>Close and shut down the notebook.** 
 
-    <img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691543984__closeandshutdownnotebook.png">
+    <img src="images/1691543984__closeandshutdownnotebook.png">
 
 ## To Get Help Troubleshooting Your Environment. 
 
@@ -945,7 +945,7 @@ We want to run all of the cells in this notebook and confirm it can make it to t
 
       ​      
 
-        ![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691543895__downloadnotebook.png)
+        <img src="images/1691543895__downloadnotebook.png" />
 
 2. To share a copy of your FINAL_REPORT.txt:
 
@@ -955,7 +955,7 @@ We want to run all of the cells in this notebook and confirm it can make it to t
     - Check the checkbox next to the file and click on the "Download" button that appears at the top of the list of files.
     - Your web browser will also save this file to your Downloads folder.
 
-![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691544219__downloadfinalreport.png)
+<img src="images/1691544219__downloadfinalreport.png" />
 
 
 
@@ -964,7 +964,7 @@ We want to run all of the cells in this notebook and confirm it can make it to t
 
 - **First, please check the "Troubleshooting" chapter on the learnig platform for a lesson that mentions your problem.** about the problem you are running into. (The Troubleshooting section is the 3rd chapter in this course - see the screenshot below)
 
-<img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1658334627__Troubleshooting-chapter.png" width=200px>
+<img src="images/1658334627__Troubleshooting-chapter.png" width=200px>
 
 
 ​    
@@ -998,11 +998,11 @@ ___
 - Start from the Jupyter files page,
 - Open the Settings Menu on the toolbar. 
 
-<img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691609201__01settingsmenuwidecropped.jpg">
+<img src="images/1691609201__01settingsmenuwidecropped.jpg">
 
 - There are several options that you should select, which are highlighted in the screenshot below.
 
-<img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691609201__01settingsmenuoptionstocheck.jpg">
+<img src="images/1691609201__01settingsmenuoptionstocheck.jpg">
 
 
 
@@ -1018,11 +1018,11 @@ ___
 
 - **After selecting these options, click on the Settings Editor at the bottom of the Settings menu.**
 
-<img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691609592__02settingscheckedopensettingsedit.png">
+<img src="images/1691609592__02settingscheckedopensettingsedit.png">
 
 - The large Settings Editor will open and should look like the screenshot below:
 
-<img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691610277__03settingseditor.png">
+<img src="images/1691610277__03settingseditor.png">
 
 
 
@@ -1038,7 +1038,7 @@ Note: you can use the search box at the top of the left side bar to search for t
 - Recommended: do not check the "Enable autocompletion" box to turn on code autocompletion.
     - Instead of Autocompletion, press `Tab` when typing to have jupyter complete your command.
 
-<img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1692379310__settingscodecompletion.png">
+<img src="images/1692379310__settingscodecompletion.png">
 
 
 
@@ -1051,7 +1051,7 @@ Note: you can use the search box at the top of the left side bar to search for t
     - Show hidden files
     - Use checkboxes to select items
 
-<img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691611467__03settingsfilebrowser.png">
+<img src="images/1691611467__03settingsfilebrowser.png">
 
 ### Notebook
 
@@ -1069,7 +1069,7 @@ There are many settings on the Notebook settings tab. We have split them into se
     - Match Brackets
     - Rectangular selection
 
-<img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691611789__03settingsnotebookcodecells.png">`
+<img src="images/1691611789__03settingsnotebookcodecells.png">`
 
 ##### Rulers
 
@@ -1078,7 +1078,7 @@ Below the check boxes for Code Cell configuration is a Rulers section.
 - **Under the Rulers section, click on the "Add" button to add "rulers-0"**
 - **Enter 80 in the text field that says ""must be a number"**
 
-<img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691612584__03settingsnotebookwithrulers.png">
+<img src="images/1691612584__03settingsnotebookwithrulers.png">
 
 #### Indentation options
 
@@ -1086,7 +1086,7 @@ Below the check boxes for Code Cell configuration is a Rulers section.
     - Smart indentation is turn on.
     - Tab size is set to 4
 
-<img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691615274__03settingsnotebookindentoptions.jpeg">
+<img src="images/1691615274__03settingsnotebookindentoptions.jpeg">
 
 #### Document Manager
 
@@ -1096,7 +1096,7 @@ Below the check boxes for Code Cell configuration is a Rulers section.
     - Ask for confirmation to close a document
     - Rename Untitled File on First Save
 
-<img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691613922__03settingsdocumentmanager.png"> 
+<img src="images/1691613922__03settingsdocumentmanager.png"> 
 
 
 
@@ -1107,7 +1107,7 @@ Below the check boxes for Code Cell configuration is a Rulers section.
     - Decrease Maximum headings depth from 4 to 3.
     - Turn on Synchronize collapse state.
 
-<img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691614475__03settingstableofcontents.png">`
+<img src="images/1691614475__03settingstableofcontents.png">`
 
 #### Shut Down Options
 
@@ -1117,13 +1117,13 @@ To ensure that jupyter shuts down the notebooks and kernels after closing them, 
     - Click on the listing for **Notebook> Shut down kernel** that should appear on the left sidebar.
     - Make sure that **"Shut down kernel" is turned on.**
 
-<img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691614850__03setingsshutdownkernel.png">
+<img src="images/1691614850__03setingsshutdownkernel.png">
 
 - In the left sidebar, search for **"shut down on close"**
     - Click on the listing for **Terminal > Shut down on close** that should appear on the left sidebar.
     - Make sure that **"Shut down on close" is turned on.**
 
-<img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691615068__03settingsshutdownonclose.png">
+<img src="images/1691615068__03settingsshutdownonclose.png">
 
 
 

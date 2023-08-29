@@ -1,7 +1,7 @@
 # Mac (Apple Chip) Installation Overview
 
 
-<img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1693270391__MacApplechipPythonInstallationforDSOverviewv2023.png">
+<img src="images/1693270391__MacApplechipPythonInstallationforDSOverviewv2023.png">
 
 
 ## Table of Contents
@@ -58,9 +58,9 @@
 - A window with your computer's specs will appear like the one in the screenshots below, depending on how which version of macOS you have installed. 
 
 <left>
-<img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691528956__aboutthismacintelannotated.png" width=300px></left>
+<img src="images/1691528956__aboutthismacintelannotated.png" width=300px></left>
 <right>
-<img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691528713__aboutthismac2023annotated.png" width=200px></right>
+<img src="images/1691528713__aboutthismac2023annotated.png" width=200px></right>
 
 
 
@@ -229,7 +229,7 @@ rm -rf ~/opt/anaconda3
         - or `open .zprofile` 
         - or `open .zshrc` 
 - Examine the contents of this file and delete any lines that look like either of the screenshots below:
-    ![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1659740063__conda_init_code.png)
+    <img src="images/1659740063__conda_init_code.png" />
 
 - Or: 
 
@@ -373,7 +373,7 @@ conda init zsh
 - GitHub desktop should open automatically and ask you what folder you would like to store your repository in.
   
 
-![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1656806399__clone-repo-menu.png)
+<img src="images/1656806399__clone-repo-menu.png" />
 
 
 
@@ -395,7 +395,7 @@ conda init zsh
 - **Once you've decided where you will clone the repository:**
 
     - Remember the full file path of the folder you selected!  **(See the screenshot below. )**
-        ![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1656806548__clone-repo-menu%20annotated.png)
+        <img src="images/1656806548__clone-repo-menu annotated.png" />
 
         
 
@@ -439,7 +439,7 @@ ls -a
 - **You should see a list of all the files in the current folder,** similar to the screenshot below. 
     - You should see 3 files that start with "environment-ds_" and end with ".yml" similar in the screenshot below. Note: the exact names of the environment files may be slightly different than the screenshot below.
 
-![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1656808093__dojo-env-setup%20ls%20result.png)
+<img src="images/1656808093__dojo-env-setup ls result.png" />
 
 **If so, you are all set for step 2.3: create the dojo-env environment!**
 
@@ -590,7 +590,7 @@ echo 'alias lab="jupyter lab"' >> ~/.zshrc
     - **Open a new terminal window.**
     - **You should see `(dojo-env)` appear next to, or above, your prompt.**
 
-![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1647634446__confirm_dojo_env.png)
+<img src="images/1647634446__confirm_dojo_env.png" />
 
 
 
@@ -600,11 +600,11 @@ echo 'alias lab="jupyter lab"' >> ~/.zshrc
 
     - You should see a lot of messages printed in the terminal and then your web browser should open  jupyter automatically .
 
-    <img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1692723419__jupyterserverrunningmac.png">
+    <img src="images/1692723419__jupyterserverrunningmac.png">
 
     - **If jupyter notebook launches, you're all set!**
 
-    <img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691692984__jupyterfilesview.png" width=800px>
+    <img src="images/1691692984__jupyterfilesview.png" width=800px>
 
     - **If not, follow the instructions on How to Ask for Help from the Installation Overview** 
 
@@ -623,20 +623,20 @@ It is very important that you shut down Jupyter Notebook in the correct way.
 
 - The best way to shut down Jupyter Notebook is from Jupyer's File menu.
 
-<img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691692985__jupyterfilesmenu.png">
+<img src="images/1691692985__jupyterfilesmenu.png">
 
 
 - **Click on File > Shut Down**
 
-    <img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691692985__jupyterfilesshutdown.png">
+    <img src="images/1691692985__jupyterfilesshutdown.png">
 
 - If a confirmation window appears, click on Shut Down:
 
-<img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691693251__jupytershutdownconfirm.png">
+<img src="images/1691693251__jupytershutdownconfirm.png">
 
 - The terminal running Jupyter should stop running the server and return to an empty prompt, waiting for input.
 
-<img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1692723524__jupyterservershutdownmac.png">
+<img src="images/1692723524__jupyterservershutdownmac.png">
 
 #### Option B) Shut down jupyter from the terminal
 
@@ -644,11 +644,11 @@ It is very important that you shut down Jupyter Notebook in the correct way.
 - Press "Control+C" to shut down the server. 
     - The jupyter server should shut down and the prompt should reappear, ready for new commands:
 - If you're asked to confirm, respond "y" and press enter.
-    <img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1692723637__jupytercontrolcconfirm.png">
+    <img src="images/1692723637__jupytercontrolcconfirm.png">
 
 - The terminal should stop running the server and return to an empty prompt, waiting for input.
 
-<img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1692723645__jupytercontrolcshutdown.png">
+<img src="images/1692723645__jupytercontrolcshutdown.png">
 
 
 
@@ -671,7 +671,7 @@ To test that your installation and packages are working correctly, You are going
 - **Make sure Jupyter Notebook is not running in any Terminal windows.**
     - Check any open terminals and make sure that they are not running the notebook server. 
     - If you see a lot of text in your terminal window and the final line is not an empty command prompt, like in the screenshot below:
-    - <img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1692723419__jupyterserverrunningmac.png">
+    - <img src="images/1692723419__jupyterserverrunningmac.png">
 
 - **Next, you will close all of your previous Terminal windows.**
 
@@ -686,7 +686,7 @@ A new tab should open in your web browser that shows the File view for jupyter n
 
 You should see all of the files that were in the dojo-env-folder.
 
-![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691542923__jupyterfilesviewtabs.png)
+<img src="images/1691542923__jupyterfilesviewtabs.png" />
 
 - There are 2 "EnvironmentTester" notebooks:
     - "EnvironmentTester-mac.ipynb" for macs (both Intel and Apple Chip macs)
@@ -696,7 +696,7 @@ You should see all of the files that were in the dojo-env-folder.
 
 Once the notebook interface has loaded, you should see a toolbar with several menu choices.
 
-![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1692723795__envtesternotebookmac.png)
+<img src="images/1692723795__envtesternotebookmac.png" />
 
 
 
@@ -706,17 +706,17 @@ We want to run all of the cells in this notebook and confirm it can make it to t
 
 - First, confirm the notebook is using dojo-env. In the top-right corner you should see "Python (dojo-env)". 
 
-    <img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691543292__jupyternotebooktoolbarannotatekernel.jpg">
+    <img src="images/1691543292__jupyternotebooktoolbarannotatekernel.jpg">
 
 - If you do not see Python(dojo-env), click on the name of the kernel displayed to open the Change Kernel menu.
 
-    <img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691543640__jupyterkernelarrow.png">
+    <img src="images/1691543640__jupyterkernelarrow.png">
 
 - Select Python(dojo-env) from the dropdown menu:
 
-    <img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691543640__jupyterdropdown.png">
+    <img src="images/1691543640__jupyterdropdown.png">
 
-    <img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691543640__jupyterdropdownselectkernel.png">
+    <img src="images/1691543640__jupyterdropdownselectkernel.png">
 
     
 
@@ -728,7 +728,7 @@ We want to run all of the cells in this notebook and confirm it can make it to t
 
         - You can also use the toolbar button, which resembles a fast-forward symbol >>.
 
-        <img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691544402__jupyternotebooktoolbarrunall.jpg">
+        <img src="images/1691544402__jupyternotebooktoolbarrunall.jpg">
 
 - **Wait patiently.** 
 
@@ -741,7 +741,7 @@ We want to run all of the cells in this notebook and confirm it can make it to t
 
     - Check if the very last cell printed the success message.
 
-![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1657130803__env_tester_final_msg.png)
+<img src="images/1657130803__env_tester_final_msg.png" />
 
 
 
@@ -756,7 +756,7 @@ We want to run all of the cells in this notebook and confirm it can make it to t
 
 - Shut down the notebook by clicking on the **File menu>Close and shut down the notebook.** 
 
-    <img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691543984__closeandshutdownnotebook.png">
+    <img src="images/1691543984__closeandshutdownnotebook.png">
 
 ## To Get Help Troubleshooting Your Environment. 
 
@@ -776,7 +776,7 @@ We want to run all of the cells in this notebook and confirm it can make it to t
 
         ​      
 
-        ![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691543895__downloadnotebook.png)
+        <img src="images/1691543895__downloadnotebook.png" />
 
 2. To share a copy of your FINAL_REPORT.txt:
 
@@ -786,7 +786,7 @@ We want to run all of the cells in this notebook and confirm it can make it to t
     - Check the checkbox next to the file and click on the "Download" button that appears at the top of the list of files.
     - Your web browser will also save this file to your Downloads folder.
 
-![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691544219__downloadfinalreport.png)
+<img src="images/1691544219__downloadfinalreport.png" />
 
 
 
@@ -795,7 +795,7 @@ We want to run all of the cells in this notebook and confirm it can make it to t
 
 - **First, please check the "Troubleshooting" chapter on the learnig platform for a lesson that mentions your problem.** about the problem you are running into. (The Troubleshooting section is the 3rd chapter in this course - see the screenshot below)
 
-<img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1658334627__Troubleshooting-chapter.png" width=200px>
+<img src="images/1658334627__Troubleshooting-chapter.png" width=200px>
 
 
 ​    
@@ -829,11 +829,11 @@ ___
 - Start from the Jupyter files page,
 - Open the Settings Menu on the toolbar. 
 
-<img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691609201__01settingsmenuwidecropped.jpg">
+<img src="images/1691609201__01settingsmenuwidecropped.jpg">
 
 - There are several options that you should select, which are highlighted in the screenshot below.
 
-<img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691609201__01settingsmenuoptionstocheck.jpg">
+<img src="images/1691609201__01settingsmenuoptionstocheck.jpg">
 
 
 
@@ -849,11 +849,11 @@ ___
 
 - **After selecting these options, click on the Settings Editor at the bottom of the Settings menu.**
 
-<img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691609592__02settingscheckedopensettingsedit.png">
+<img src="images/1691609592__02settingscheckedopensettingsedit.png">
 
 - The large Settings Editor will open and should look like the screenshot below:
 
-<img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691610277__03settingseditor.png">
+<img src="images/1691610277__03settingseditor.png">
 
 
 
@@ -869,7 +869,7 @@ Note: you can use the search box at the top of the left side bar to search for t
 - Recommended: do not check the "Enable autocompletion" box to turn on code autocompletion.
     - Instead of Autocompletion, press `Tab` when typing to have jupyter complete your command.
 
-<img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1692379310__settingscodecompletion.png">
+<img src="images/1692379310__settingscodecompletion.png">
 
 
 
@@ -882,7 +882,7 @@ Note: you can use the search box at the top of the left side bar to search for t
     - Show hidden files
     - Use checkboxes to select items
 
-<img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691611467__03settingsfilebrowser.png">
+<img src="images/1691611467__03settingsfilebrowser.png">
 
 ### Notebook
 
@@ -900,7 +900,7 @@ There are many settings on the Notebook settings tab. We have split them into se
     - Match Brackets
     - Rectangular selection
 
-<img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691611789__03settingsnotebookcodecells.png">`
+<img src="images/1691611789__03settingsnotebookcodecells.png">`
 
 ##### Rulers
 
@@ -909,7 +909,7 @@ Below the check boxes for Code Cell configuration is a Rulers section.
 - **Under the Rulers section, click on the "Add" button to add "rulers-0"**
 - **Enter 80 in the text field that says ""must be a number"**
 
-<img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691612584__03settingsnotebookwithrulers.png">
+<img src="images/1691612584__03settingsnotebookwithrulers.png">
 
 #### Indentation options
 
@@ -917,7 +917,7 @@ Below the check boxes for Code Cell configuration is a Rulers section.
     - Smart indentation is turn on.
     - Tab size is set to 4
 
-<img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691615274__03settingsnotebookindentoptions.jpeg">
+<img src="images/1691615274__03settingsnotebookindentoptions.jpeg">
 
 #### Document Manager
 
@@ -927,7 +927,7 @@ Below the check boxes for Code Cell configuration is a Rulers section.
     - Ask for confirmation to close a document
     - Rename Untitled File on First Save
 
-<img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691613922__03settingsdocumentmanager.png"> 
+<img src="images/1691613922__03settingsdocumentmanager.png"> 
 
 
 
@@ -938,7 +938,7 @@ Below the check boxes for Code Cell configuration is a Rulers section.
     - Decrease Maximum headings depth from 4 to 3.
     - Turn on Synchronize collapse state.
 
-<img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691614475__03settingstableofcontents.png">`
+<img src="images/1691614475__03settingstableofcontents.png">`
 
 #### Shut Down Options
 
@@ -948,13 +948,13 @@ To ensure that jupyter shuts down the notebooks and kernels after closing them, 
     - Click on the listing for **Notebook> Shut down kernel** that should appear on the left sidebar.
     - Make sure that **"Shut down kernel" is turned on.**
 
-<img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691614850__03setingsshutdownkernel.png">
+<img src="images/1691614850__03setingsshutdownkernel.png">
 
 - In the left sidebar, search for **"shut down on close"**
     - Click on the listing for **Terminal > Shut down on close** that should appear on the left sidebar.
     - Make sure that **"Shut down on close" is turned on.**
 
-<img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1691615068__03settingsshutdownonclose.png">
+<img src="images/1691615068__03settingsshutdownonclose.png">
 
 
 
