@@ -1,14 +1,19 @@
-### remove env
 
+## check envs 
+conda env list
+
+### remove env
 conda activate base
 conda remove --name dojo-env --all  
-
 # Respond: y
 
 
-
-### Install Commands (for my macbook computer)
-cd $HOME/Documents/GitHub/_CURRICULUM/dojo-env-setup
-conda env create -f environment_py39_mac_mchip.yml
+### Install jupyter kernel
 conda activate dojo-env
 python -m ipykernel install --user --name dojo-env --display-name "Python (dojo-env)"
+
+## Export env 
+conda env export > environment-ds_PLATFORM.yml --no-builds
+
+## Clone env
+conda env create --name cloned-env --clone dojo-env

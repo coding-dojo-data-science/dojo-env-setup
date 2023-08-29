@@ -1,10 +1,11 @@
 # Admin: Constructing dojo-env
-- Workflow as of 12/09/22
-
+- Workflow as of ~~12/09/22~~ 08/08/23
+>- 08/08/23: Reconciling old method with new WIP notebook-based method (see Make Reqs and Conda Create commands.ipynb) 
+	- Instructions below need to be re-verified.
 ## Summary
 - NOTE: steps below must be repeated on a windows AND mac computer to generate each env
 
-1. Manually create a new conda environment using a (mostly verison-less) list of packages. 
+1. Manually create a new conda environment using a small ~~(mostly version-less)~~ list of packages. 
 2. Confirm the environment works with the env tester notebook
 3. Export env to .yml without build information.
 4. Remove your manually created env
@@ -17,7 +18,7 @@
 ## Workflow 
 
 ### 1. Update files
-- First, update the `admin/requirements-py39.txt` with the list of packages for the conda create command (created using .py below)
+- First, update the `admin/dev/requirements-py39.txt` with the list of packages for the conda create command (created using .py below)
 - Use `make_conda_create_commands.py` to help construct the same commands on mac and windows.
 	- Comment out lines for printing any OS besides the one you are using.
 
@@ -33,13 +34,13 @@
 
 - Example for Mac:
 ```bash
-conda env export -f  environment_mac_mchip.yml --no-builds  
+conda env export >  environment_mac_mchip.yml --no-builds  
 ```
 
 
 - Example for Windows:
 ```bash
-conda env export -f  environment_windows.yml --no-builds  
+conda env export >  environment_windows.yml --no-builds  
 ```
 
 ### 5. Remove manually created env and rebuild
