@@ -26,6 +26,8 @@ ___
 
 ## Installation Overview:
 
+<img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1693253644__PythonInstallationforDSOverviewv234.png">
+
 By the end of this installation, you will:
 
 **1) Install or Set Up a Terminal application:**
@@ -58,6 +60,8 @@ The foundation/infrastructure for installing our custom Python environment.
 - A special text editor designed for code. It has many extensions and languages available.
 
 - We will use it to edit special files later in the course, but it can also run notebooks too!
+
+<img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1693253662__PythonInstallationforDSOverviewv235.png">
 
 ___
 
@@ -160,7 +164,7 @@ ___
 
 - [conda: Mangaging Environments - CheatSheet](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#activating-an-environment)
 
-- [Working Locally (PDF[`COMING SOON!`])]()
+<!-- - [Working Locally (PDF[`COMING SOON!`])]() -->
 
 
 

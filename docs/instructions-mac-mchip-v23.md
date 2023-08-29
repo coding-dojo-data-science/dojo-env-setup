@@ -1,6 +1,8 @@
 # Mac (Apple Chip) Installation Overview
 
 
+<img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1693270391__MacApplechipPythonInstallationforDSOverviewv2023.png">
+
 
 ## Table of Contents
 

@@ -1,5 +1,7 @@
 # Mac (Intel) Installation Overview
 
+<img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1693270368__MacIntelPythonInstallationforDSOverviewv2023.png">
+
 ## Table of Contents
 
 **Step 1) Download and install required applications**
