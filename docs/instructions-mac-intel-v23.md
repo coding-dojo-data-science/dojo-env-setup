@@ -109,16 +109,20 @@ Note: steps for Tools # 1 and 2 are the same for Mac users with an Intel process
 
 - Download and run the installer from the following link:  [Anaconda Individual Edition](https://www.anaconda.com/download)
 
-- Use the default options**, EXCEPT when you see the "Advanced Installation Options" window (like in the screenshot below).**
-    - Select "Add Anaconda3 to my Path environment variable". Disregard the warning message will appear in red text.
-        - **Note: if you do not see these options, it is ok! You will confirm/fix this missing option in the following step!**
-    - BOTH options should be checked, like in the screenshot below:
+- Use the default options**, EXCEPT if you see an "Advanced Installation Options" window (like in the screenshot below).**
+    ![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1681423160__anacondafinalnew.png)
+    - **If you see these options,** select "Add Anaconda3 to my Path environment variable". Disregard the warning message will appear in red text.
+        - BOTH options should be checked, like in the screenshot above:
+    
+    - **Note: if you do not see these options**, it is ok! 
+        - You will confirm/fix this missing option in the following step!
+    
 
-![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1681423160__anacondafinalnew.png)
 
 
 
-### Step 1.3.2) Verify that Terminal/GitBash Knows “conda”
+
+### Step 1.3.2) Verify that Terminal Knows “conda”
 
 You may need to take another step to get anaconda and Terminal working together.
 
@@ -130,7 +134,7 @@ You may need to take another step to get anaconda and Terminal working together.
 - **If you see a list of available conda commands, great!**
     - **You are all set to move on to Step 2!** Disregard the final section below that says “Adding Conda to Terminal”
 - **If you see a message that says: “conda: command not found”**:
-    - Follow the instructions below under “Adding Conda to GitBash”
+    - Follow the instructions below under “Adding Conda to Terminal”
 
 ### Step 1.3.3) (if needed) Adding Conda to Terminal:
 
@@ -247,13 +251,13 @@ source ~/.zshrc
 
 - **Click Clone**
 
-GitHub Desktop will download a copy of the repository into a new folder on your computer.Step 2.2: Open the Repo in Terminal/GitBash
+GitHub Desktop will download a copy of the repository into a new folder on your computer.Step 2.2: Open the Repo in Terminal.
 
 ## Step 2.2) Open the Repo in Terminal
 
 ## Step 2.2.1) Open the dojo-env repository in Terminal
 
-Once you have cloned the repository, **you must open a terminal/gitbash window in the same folder as the repository.** The easiest way to do so is from within GitHub Desktop.
+Once you have cloned the repository, **you must open a Terminal window in the same folder as the repository.** The easiest way to do so is from within GitHub Desktop.
 
 - **In GitHub Desktop: make sure the left sidebar says "dojo-env-setup" i**n the top-left corner under Current Repository.
 
@@ -895,7 +899,7 @@ ___
 
 - We need to change this setting to match the exact filepath for our `dojo-env`'s python.
 
-- In your terminal or GitBash:
+- In your Terminal:
 
     - Make sure your dojo-env is activated
 
@@ -950,6 +954,8 @@ Congrats! You've got a fully functional professional data science environment on
 
 - **Please see the "Troubleshooting" chapter for commonly encountered errors and any known solutions. including:**
     - Reinstalling your dojo-env
+    
     - "code" command not working
-    - GitBash "Could not fork child process" error
+    
+        
 
