@@ -111,6 +111,7 @@ Note: steps for Tools # 1 and 2 are the same for Mac users with an Intel process
 
 - Use the default options**, EXCEPT when you see the "Advanced Installation Options" window (like in the screenshot below).**
     - Select "Add Anaconda3 to my Path environment variable". Disregard the warning message will appear in red text.
+        - **Note: if you do not see these options, it is ok! You will confirm/fix this missing option in the following step!**
     - BOTH options should be checked, like in the screenshot below:
 
 ![img](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1681423160__anacondafinalnew.png)

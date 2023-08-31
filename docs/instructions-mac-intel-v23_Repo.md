@@ -111,13 +111,73 @@ Note: steps for Tools # 1 and 2 are the same for Mac users with an Intel process
 
 - Use the default options**, EXCEPT when you see the "Advanced Installation Options" window (like in the screenshot below).**
     - Select "Add Anaconda3 to my Path environment variable". Disregard the warning message will appear in red text.
+        - **Note: if you do not see these options, it is ok! You will confirm/fix this missing option in the following step!**
     - BOTH options should be checked, like in the screenshot below:
 
 <img src="images/1681423160__anacondafinalnew.png" />
 
 
 
-> You are all set to move on to the next lesson "2. Setting Up Your dojo-env Environment"
+### Step 1.3.2) Verify that Terminal/GitBash Knows “conda”
+
+You may need to take another step to get anaconda and Terminal working together.
+
+- Open **a new Terminal window**. **It MUST be a new window!** There are several ways to find your Terminal application:
+    - Use  your Spotlight Search feature (Cmd + Space is the default shortcut ) and search for "Terminal".
+    - or use the Launchpad app in your dock and look/search for Terminal
+    - or open your Applications folder in Finder and locate Terminal within the Utilities sub-folder.
+- **Type the command `conda` and press enter.**
+- **If you see a list of available conda commands, great!**
+    - **You are all set to move on to Step 2!** Disregard the final section below that says “Adding Conda to Terminal”
+- **If you see a message that says: “conda: command not found”**:
+    - Follow the instructions below under “Adding Conda to GitBash”
+
+### Step 1.3.3) (if needed) Adding Conda to Terminal:
+
+**If a NEW Terminal window recognized the conda command in the previous step, then skip this step!**
+
+**If your Terminal did not recognize the conda command, perform the following steps:**
+
+- **Check which shell you are using: zsh or bash.**
+
+    - Look at the top of your Terminal window. In the middle of window Title, you should see either `zsh` or `bash`, like in the screenshot below:
+
+        <img src="images/1693502639__checkwhichshell.png">
+
+#### If the Terminal window says "bash":
+
+- Run the following commands to automatically activate dojo-env and to add shortcuts for Jupyter:
+
+```bash
+touch ~/.bash_profile
+echo "export PATH=~/anaconda3/bin:$PATH" >> ~/.bash_profile
+echo 'export PATH="/anaconda3/bin:$PATH"' >> ~/.bash_profile
+source ~/.bash_profile
+
+```
+
+```
+export PATH=~/anaconda3/bin:$PATH
+export PATH="/anaconda3/bin:$PATH"
+```
+
+#### If the Terminal window says "zsh":
+
+- Run the following commands to automatically activate dojo-env and to add shortcuts for Jupyter:
+
+```bash
+touch ~/.zshrc
+echo "export PATH=~/anaconda3/bin:$PATH" >> ~/.zshrc
+echo 'export PATH="/anaconda3/bin:$PATH"' >> ~/.zshrc
+source ~/.zshrc
+
+```
+
+#### Confirm it worked:
+
+- **Type the command `conda` and press enter.**
+    - **If you see a list of available conda commands, great!**
+    - If not, you should ask for help! (Review the How to Ask for Help section in the Installation Overview)
 
 # **Step 2) Setting Up the dojo-env Environment**
 
