@@ -259,7 +259,7 @@ You can speed up the process by changing the default tool that checks that the p
 - Run the  conda env create command below in your Terminal
 
 ```
-conda env create -f environment-ds_mac_mchip.yml
+conda env create -f environment-ds_mac_intel.yml
 ```
 
 
