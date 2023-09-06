@@ -669,8 +669,6 @@ We want to run all of the cells in this notebook and confirm it can make it to t
 
 There are several convenient features in Jupyter Notebook that are not enabled by default. We strongly suggest updating your Jupyter Notebook settings according to the instructions below:
 
-___
-
 ### Quick Settings
 
 - Start from the Jupyter files page,
@@ -810,8 +808,6 @@ To ensure that jupyter shuts down the notebooks and kernels after closing them, 
 - **When you're finished, close the Settings. The options have been saved to Jupyter's configuration files.**
 
 
-
-___
 
 
 

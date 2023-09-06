@@ -822,8 +822,6 @@ ___
 
 There are several convenient features in Jupyter Notebook that are not enabled by default. We strongly suggest updating your Jupyter Notebook settings according to the instructions below:
 
-___
-
 ### Quick Settings
 
 - Start from the Jupyter files page,
