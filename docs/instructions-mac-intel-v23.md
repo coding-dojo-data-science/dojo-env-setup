@@ -663,9 +663,9 @@ We want to run all of the cells in this notebook and confirm it can make it to t
     - An instructor or TA will get back to you within 1 business day with the next steps for you to try.
     - You will most likely need to set up a Zoom call and share your screen for us to help.
 
-___
 
-##  Step 3) Jupyter Notebook Preferences
+
+# Step 3) Jupyter Notebook Preferences
 
 There are several convenient features in Jupyter Notebook that are not enabled by default. We strongly suggest updating your Jupyter Notebook settings according to the instructions below:
 
@@ -845,7 +845,7 @@ ___
 
 
 
-## Step 2.4.1) Install Visual Studio Code
+## Step 4.1) Install Visual Studio Code
 
 - Go to https://code.visualstudio.com/
 
@@ -866,7 +866,7 @@ ___
 
 ![png](https://raw.githubusercontent.com/coding-dojo-data-science/dojo-env-setup/main/images/vs_code_get_started.png)
 
-## Step 2.4.2) Install Python Extensions
+## Step 4.2) Install Python Extensions
 
 - On the left sidebar, there are several icons for different menus.
 - Click on the Extensions sidebar icon (5th down, looks like 4 squares).
@@ -885,7 +885,7 @@ ___
 
 ![png](https://raw.githubusercontent.com/coding-dojo-data-science/dojo-env-setup/main/images/3_installed_extensions.png)
 
-## Step 2.4.3) Setting VS Code to use your `dojo-env` as the default Python installation
+## Step 4.3) Setting VS Code to use your `dojo-env` as the default Python installation
 
 - We must teach the Python extension where to find our `dojo-env`'s version of Python.
 
@@ -918,7 +918,7 @@ ___
 
 ![png](https://raw.githubusercontent.com/coding-dojo-data-science/dojo-env-setup/main/images/7_replace_default_interp.png)
 
-### Step 2.4.4) Add the `code` command to your terminal
+### Step 4.4) Add the `code` command to your terminal
 
 We want to be able to type the word "code" in our terminal and have that open up VS Code.
 
@@ -930,7 +930,7 @@ We want to be able to type the word "code" in our terminal and have that open up
 
 ![png](https://raw.githubusercontent.com/coding-dojo-data-science/dojo-env-setup/main/images/8_install_code_command.png)
 
-### Step 2.4.5) Test the `code` command
+### Step 4.5) Test the `code` command
 
 - Open a new Terminal window.
 - Run the command `code` to verify that VS Code opens.

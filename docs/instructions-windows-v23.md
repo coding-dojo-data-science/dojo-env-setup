@@ -985,9 +985,11 @@ We want to run all of the cells in this notebook and confirm it can make it to t
     - An instructor or TA will get back to you within 1 business day with the next steps for you to try.
     - You will most likely need to set up a Zoom call and share your screen for us to help.
 
+
+
 ___
 
-##  Step 3) Jupyter Notebook Preferences
+# Step 3) Jupyter Notebook Preferences
 
 There are several convenient features in Jupyter Notebook that are not enabled by default. We strongly suggest updating your Jupyter Notebook settings according to the instructions below:
 
