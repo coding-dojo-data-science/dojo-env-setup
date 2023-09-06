@@ -1109,3 +1109,16 @@ Congrats! You've got a fully functional professional data science environment on
   - "code" command not working
   - GitBash "Could not fork child process" error
 
+
+
+
+
+### References
+
+[Image Source: Anaconda](https://en.wikipedia.org/wiki/Anaconda_(Python_distribution)](https://en.wikipedia.org/wiki/Anaconda_(Python_distribution)) ;
+
+[Image Source: GitHub Desktop](https://commons.wikimedia.org/wiki/File:Github-desktop-logo-symbol.svg) ;
+
+[Image Source: GitBash](https://appuals.com/what-is-git-bash/);
+
+[Image Source: Windows Terminal](https://commons.wikimedia.org/wiki/File:Windows_Terminal_Logo.png)
