@@ -491,7 +491,7 @@ conda env create -f environment-ds_mac_mchip.yml
 # To deactivate this environment use:
  conda deactivate 
 # If conda deactivate doesn't work, activate the "base" env
- conda activate bases
+ conda activate base
 ```
 
 ### Step 2.3.3) Confirm your environment was installed
