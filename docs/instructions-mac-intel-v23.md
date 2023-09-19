@@ -378,6 +378,8 @@ python -m ipykernel install --user --name dojo-env --display-name "Python (dojo-
 - The first line in the code block above will switch to dojo-env environment.
 - The second line will install dojo-env as an option in Jupyter Notebook.
 
+
+
 ## Step 2.4: Setting `dojo-env` as the default environment
 
 The next steps will ensure that the dojo-env is automatically activated for you. 
@@ -461,7 +463,7 @@ echo 'alias lab="jupyter lab"' >> ~/.zshrc
 
     - **If not, follow the instructions on How to Ask for Help from the Installation Overview** 
 
-## 2.4.6) Shut down Jupyter (Properly)
+### 2.4.5) Shut down Jupyter (Properly)
 
 It is very important that you shut down Jupyter Notebook in the correct way. 
 
