@@ -1,5 +1,6 @@
 # Mac (Apple Chip) Installation Overview
 
+[Click here](https://hackmd.io/@jirvingphd/dojo-env-mac-apple-chip) for a web version of these instructions, with a table of contents sidebar.
 
 <img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1693270391__MacApplechipPythonInstallationforDSOverviewv2023.png">
 

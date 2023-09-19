@@ -1,5 +1,7 @@
 # Mac (Intel) Installation Overview
 
+[Click here](https://hackmd.io/@jirvingphd/dojo-env-mac-intel) for a web version of these instructions, with a table of contents sidebar.
+
 <img src="https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1693270368__MacIntelPythonInstallationforDSOverviewv2023.png">
 
 ## Table of Contents
