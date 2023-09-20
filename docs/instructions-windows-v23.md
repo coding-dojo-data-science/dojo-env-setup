@@ -243,17 +243,18 @@ ___
 
 
 
-### Step 1.3.2) Verify that Terminal/GitBash Knows "conda"
+### Step 1.3.2) Verify that Terminal/GitBash Knows "conda activate"
 
 You may need to take another step to get anaconda and Terminal working together.
 
 - Open **a new Terminal window** from your start menu. It MUST be a new window!
 
-- **Type the command `conda` and press enter.**
-- **If you see a list of available conda commands, great!**
-    - **You are all set to move on to Step 2!** Disregard the final section below that says "Adding Conda to GitBash"
-- **If you see a message that says: "bash: conda: command not found"**:
+- **Type the command `conda activate ` and press enter.**
+- **If you see a message that says something like: "bash: conda: command not found"**:
     - Follow the instructions below under "Adding Conda to GitBash"
+- **If you do *not* get the command not found message:**
+    - **You are all set to move on to Step 2!** Disregard the final section below that says “Adding Conda to GitBash”
+
 
 ### Step 1.3.3) (if needed) Adding Conda to GitBash:
 
