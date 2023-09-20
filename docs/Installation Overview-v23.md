@@ -1,5 +1,13 @@
 # Python Installation for Data Science - Overview
 
+___
+
+- [Click here](https://hackmd.io/@jirvingphd/dojo-env-overview) for the web version of these instructions.
+
+___
+
+
+
 <center>
 <img src="https://github.com/coding-dojo-data-science/dojo-env-setup/blob/main/images/Data%20Science%20Thumbnail.png?raw=true" width=500px></center>
 
