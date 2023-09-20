@@ -227,9 +227,7 @@ NOTE: Windows 11 comes with Windows Terminal pre-installed. If you are running W
 
 ___
 
-
-
-# **Step 1.3) Install a Python Distribution - Anaconda**
+## Step 1.3) Install a Python Distribution - Anaconda
 
 - Anaconda is a data-science-focused python distributable that comes with a convenient GUI program for working with our python environments.
 

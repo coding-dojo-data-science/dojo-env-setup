@@ -33,11 +33,10 @@ ___
     - Step 2.3.3 Confirm your environment was installed.
 - Step 2.4) Activate dojo-env and set it as your default environment.
     - Step 2.4.1) Activate dojo-env
-    - Step 2.4.2) (if needed): Troubleshoot Conda Activate Errors
-    - Step 2.4.3) Confirm that your Home folder is your User folder
-    - Step 2.4.4) Add automatic activation of dojo-env 
-    - Step 2.4.5) Confirm dojo-env is the default & "jnb" alias works.
-    - Step 2.4.6) Shut Down Jupyter (properly)
+    - Step 2.4.2) Determine Which Shell your Terminal is Using: bash or zsh?
+    - Step 2.4.3) Add automatic activation of dojo-env 
+    - Step 2.4.4) Confirm dojo-env is the default & "jnb" alias works.
+    - Step 2.4.5) Shut Down Jupyter (properly)
 - Step 2.5) Test the environment.
 
     - Step 2.5.1) Open the environment tester notebook 
@@ -89,8 +88,6 @@ In step 1, we will install:
 - GitHub Desktop:
   - The way we will work with git repositories and the starting point for our local workflows.
 
-# Step 1 - MacOS (Apple Chip)
-
 ## Preface: Good News and Bad News
 
 So...you got one of those shiny new(ish) Mac computers with an Apple chip, eh? We've got some good news and bad news for you.
@@ -109,8 +106,6 @@ The bad news:
   But don't worry: everything that is in the other OS's dojo-env is also in yours! Just a heads up if you try to install a new package and run into issues.
 
 ------
-
-# STEP # 1 INSTRUCTIONS:
 
 Note: steps for Tools # 1 and 2 are the same for Mac users with an Intel processor.
 
@@ -339,7 +334,7 @@ conda init zsh
 
 ------
 
-# 2. Setting Up Your dojo-env Environment
+# Step 2) Setting Up Your dojo-env Environment
 
 ### Table of Contents - Step 2
 
@@ -409,9 +404,11 @@ conda init zsh
 
 GitHub Desktop will download a copy of the repository into a new folder on your computer.
 
-# Step 2.2: Open the Repo in Terminal
 
-## Step 2.2.1) Open the dojo-env repository in Terminal
+
+## Step 2.2: Open the Repo in Terminal
+
+### Step 2.2.1) Open the dojo-env repository in Terminal
 
 Once you have cloned the repository, **you must open a terminal/gitbash window in the same folder as the repository.** The easiest way to do so is from within GitHub Desktop.
 
@@ -449,7 +446,7 @@ ls -a
 
 **If so, you are all set for step 2.3: create the dojo-env environment!**
 
-# Step 2.3 Create the dojo-env environment
+## Step 2.3 Create the dojo-env environment
 
 ### Step 2.3.0) *(Optional, but Recommended)* Speed Up Your Environment Creation By Switching to libmamba
 
@@ -618,7 +615,7 @@ echo 'alias lab="jupyter lab"' >> ~/.zshrc
 
 
 
-## 2.4.6) Shut down Jupyter (Properly)
+## 2.4.5) Shut down Jupyter (Properly)
 
 It is very important that you shut down Jupyter Notebook in the correct way. 
 
@@ -662,13 +659,7 @@ It is very important that you shut down Jupyter Notebook in the correct way.
 
 You are all set for the next step: Testing Your New Environment!
 
-
-
-# Step 2.5: Testing the Environment
-
-To test that your installation and packages are working properly. We are going to run a specific Environment Testing notebook that is also located in the "dojo-env-setup" folder.
-
-## Step 2.5) Testing the Environment
+## Step 2.5: Testing the Environment
 
 To test that your installation and packages are working correctly, You are going to run a specific Environment Testing notebook that is also located in the "dojo-env-setup" folder.
 
