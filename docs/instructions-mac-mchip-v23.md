@@ -963,7 +963,7 @@ ___
 
 
 
-# Step 4: Install a Code Text Editor
+# Step 4) Install a Code Text Editor
 
 ## Visual Studio Code
 

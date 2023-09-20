@@ -1,5 +1,12 @@
 # Windows Installation Instructions
 
+___
+
+- [Click here](https://hackmd.io/@jirvingphd/dojo-env-windows ) for a web version of these instructions, with a table of contents sidebar.
+- [Click here](https://hackmd.io/@jirvingphd/dojo-env-overview) for the web version of the Installation Overview.
+
+___
+
 <img src="images/1693270300__WIndowstoolsPythonInstallationforDSOverviewv2023.png">
 
 ## Table of Contents
@@ -220,9 +227,7 @@ NOTE: Windows 11 comes with Windows Terminal pre-installed. If you are running W
 
 ___
 
-
-
-# **Step 1.3) Install a Python Distribution - Anaconda**
+## Step 1.3) Install a Python Distribution - Anaconda
 
 - Anaconda is a data-science-focused python distributable that comes with a convenient GUI program for working with our python environments.
 
@@ -985,13 +990,13 @@ We want to run all of the cells in this notebook and confirm it can make it to t
     - An instructor or TA will get back to you within 1 business day with the next steps for you to try.
     - You will most likely need to set up a Zoom call and share your screen for us to help.
 
+
+
 ___
 
-##  Step 3) Jupyter Notebook Preferences
+# Step 3) Jupyter Notebook Preferences
 
 There are several convenient features in Jupyter Notebook that are not enabled by default. We strongly suggest updating your Jupyter Notebook settings according to the instructions below:
-
-___
 
 ### Quick Settings
 
@@ -1135,7 +1140,7 @@ To ensure that jupyter shuts down the notebooks and kernels after closing them, 
 
 ___
 
-# Step 4: Install a Code Text Editor
+# Step 4) Install a Code Text Editor
 
 ## Visual Studio Code
 
@@ -1254,3 +1259,15 @@ Congrats! You've got a fully functional professional data science environment on
     - GitBash "Could not fork child process" error
 
 ## Enjoy your new dojo-env! 
+
+
+
+### References
+
+[Image Source: Anaconda](https://en.wikipedia.org/wiki/Anaconda_(Python_distribution)](https://en.wikipedia.org/wiki/Anaconda_(Python_distribution)) ;
+
+[Image Source: GitHub Desktop](https://commons.wikimedia.org/wiki/File:Github-desktop-logo-symbol.svg) ;
+
+[Image Source: GitBash](https://appuals.com/what-is-git-bash/);
+
+[Image Source: Windows Terminal](https://commons.wikimedia.org/wiki/File:Windows_Terminal_Logo.png)

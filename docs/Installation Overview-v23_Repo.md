@@ -1,5 +1,13 @@
 # Python Installation for Data Science - Overview
 
+___
+
+- [Click here](https://hackmd.io/@jirvingphd/dojo-env-overview) for the web version of these instructions.
+
+___
+
+
+
 <center>
 <img src="images/Data Science Thumbnail.png_raw=true" width=500px></center>
 
@@ -119,7 +127,7 @@ ___
 
 - **Second, please check the "Troubleshooting" chapter on the learnig platform for a lesson that mentions your problem.** about the problem you are running into. (The Troubleshooting section is the 3rd chapter in this course - see the screenshot below)
 
-<img src="images/1658334627__Troubleshooting-chapter.png" width=200px>
+    <img src="images/1658334627__Troubleshooting-chapter.png" width=200px>
 
 - **Third, reach out on the \#[ds-python-installation Discord channel](https://discord.com/channels/738494436467539968/1099094868762042400) with the following info:**
 
@@ -164,6 +172,7 @@ ___
 
 - [conda: Mangaging Environments - CheatSheet](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#activating-an-environment)
 
+<!-- - [Working Locally (PDF[`COMING SOON!`])]() -->
 
 
 

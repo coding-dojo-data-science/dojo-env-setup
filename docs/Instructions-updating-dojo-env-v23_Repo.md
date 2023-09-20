@@ -1,5 +1,14 @@
 # **Updating to a new dojo-env**
 
+___
+
+- [Click here]( https://hackmd.io/@jirvingphd/update-dojo-env) for a web version of these instructions, with a table of contents sidebar.
+- [Click here](https://hackmd.io/@jirvingphd/dojo-env-overview) for the web version of the Installation Overview.
+
+___
+
+>  **If you just installedd your dojo-env for the first time, skip this step!**
+
 If you already have dojo-env installed on your computer, you must first rename it or remove it.
 Note: these instructions are intended non-OS-specific. Your terminal may not look exactly like the examples in the screenshots (for example, the file paths for the environments will be very different). However, the steps are the same across all platforms.
 

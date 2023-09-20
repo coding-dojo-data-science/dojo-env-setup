@@ -1140,7 +1140,7 @@ To ensure that jupyter shuts down the notebooks and kernels after closing them, 
 
 ___
 
-# Step 4: Install a Code Text Editor
+# Step 4) Install a Code Text Editor
 
 ## Visual Studio Code
 
